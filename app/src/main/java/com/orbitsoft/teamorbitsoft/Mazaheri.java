@@ -78,6 +78,7 @@ int[] rnum= new int[100];
         for (int i = 0; i <= 5; i++) {
 
             for (int j = i + 1; j <= 5; j++) {
+
                 if (rnum[i] < rnum[j]) {
                     temp = rnum[i];
                     rnum[i] = rnum[j];
