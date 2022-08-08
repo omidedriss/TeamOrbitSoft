@@ -154,6 +154,7 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
         for(int i = 0;i<4;i++){
             number1[i] = random.nextInt(5);
             st = String.valueOf( number1[i]);
+
         }
         for (int i = 0 ; i <4;i++){
             number1[i]=number1[i];
