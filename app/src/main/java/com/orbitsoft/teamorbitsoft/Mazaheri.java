@@ -83,6 +83,7 @@ int[] rnum= new int[100];
                     rnum[i] = rnum[j];
                     rnum[j] = temp;
                     //Toast.makeText(this, " "+rnum[i], Toast.LENGTH_SHORT).show();
+                    //
                 }
             }
 
