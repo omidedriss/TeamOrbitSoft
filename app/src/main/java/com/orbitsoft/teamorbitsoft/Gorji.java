@@ -7,7 +7,6 @@ import android.widget.TextView;
 
 import java.util.Random;
 
-
 public class Gorji extends AppCompatActivity {
 int num1 = 10,num2=18,num3=85,num4=98,sum = 0 , n=11;
 String st = "  ",st1="";
@@ -153,16 +152,14 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
     }
         fard.setText(st);//پایان تمری نعدد فرد
         //محاسبه میانگین
-        st="";
-        for(int i = 0;i<4;i++){
-            number1[i] = random.nextInt(5);
-            st = String.valueOf( number1[i]);
-
-        }
-        for (int i = 0 ; i <4;i++){
-            number1[i]=number1[i];
-        st = String.valueOf( number1[i]);
-        }
+        num1 = random.nextInt(100);
+        num2 = random.nextInt(100);
+        num3 = random.nextInt(100);
+        num4 = random.nextInt(100);
+        sum = 0;
+        sum = num1+num2+num3+num4;
+        sum = sum/4;
+        st = String.valueOf(sum);
 
         average.setText(st);
     }
