@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 
+
 public class Saaedian extends AppCompatActivity {
     int aa=1;
 
@@ -27,8 +28,6 @@ public class Saaedian extends AppCompatActivity {
     int[]array={2,4,6,80,1,26,90};
 
     int i;
-
-public class Saaedian extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,4 +85,4 @@ public class Saaedian extends AppCompatActivity {
 
 
 //    }
-}
+

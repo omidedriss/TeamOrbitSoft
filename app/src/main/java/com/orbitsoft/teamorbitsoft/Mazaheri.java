@@ -23,7 +23,7 @@ TextView jad;
     }
 
     public void zarb() {
-        jad = findViewById(R.id.textView4);
+        jad = findViewById(R.id.textView2);
         String tv = "";
         String st = "";
         int zar = 1;
