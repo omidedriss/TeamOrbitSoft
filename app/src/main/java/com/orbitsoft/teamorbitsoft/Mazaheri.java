@@ -16,14 +16,14 @@ TextView jad;
         setContentView(R.layout.activity_mazaheri);
         //salam
         zarb();
-        sixgreat();
+        //sixgreat();
 
 
 
     }
 
     public void zarb() {
-        jad = findViewById(R.id.textView2);
+        jad = findViewById(R.id.textView4maz);
         String tv = "";
         String st = "";
         int zar = 1;
@@ -52,7 +52,7 @@ TextView jad;
             tv = tv + "\n\n";
         }
         jad.setText(tv);
-
+/*
         public void sixgreat () {
 
             String tv = "";
@@ -100,7 +100,7 @@ TextView jad;
             txt.setText(tv);
 
 
-        }
+        }*/
 
     }
 }
