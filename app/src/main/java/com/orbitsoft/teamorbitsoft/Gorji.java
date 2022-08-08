@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 import java.util.Random;
 
+
 public class Gorji extends AppCompatActivity {
 int num1 = 10,num2=18,num3=85,num4=98,sum = 0 , n=11;
 String st = "  ",st1="";
