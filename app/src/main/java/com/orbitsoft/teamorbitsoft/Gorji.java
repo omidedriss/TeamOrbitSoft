@@ -147,6 +147,7 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
                 st=st+j+"\t";
             }
 
+
     }
         fard.setText(st);//پایان تمری نعدد فرد
         //محاسبه میانگین
