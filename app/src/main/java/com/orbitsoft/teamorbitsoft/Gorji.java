@@ -14,6 +14,7 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
     int[] number1 = new int[n];
     int[] number2 = new int[n];
     int[] number3 = new int[n];
+
     int[] number4 = new int[n];
     int[] number5 = new int[n];
     int[] number6 = new int[n];
