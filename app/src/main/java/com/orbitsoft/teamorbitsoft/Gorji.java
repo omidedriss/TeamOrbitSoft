@@ -10,7 +10,7 @@ import java.util.Random;
 public class Gorji extends AppCompatActivity {
 int num1 = 10,num2=18,num3=85,num4=98,sum = 0 , n=11;
 String st = "  ",st1="";
-TextView fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,zarb5,zarb6,zarb7,zarb8,zarb9,zarb10;
+TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,zarb5,zarb6,zarb7,zarb8,zarb9,zarb10;
     int[] number1 = new int[n];
     int[] number2 = new int[n];
     int[] number3 = new int[n];
@@ -29,6 +29,7 @@ TextView fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,zarb5,zarb
         setContentView(R.layout.activity_gorji);
         adadBozorgTar = findViewById(R.id.tv);
         fard=findViewById(R.id.tv_fard);
+        average= findViewById(R.id.tv_average);
         zarb1=findViewById(R.id.tv1);
         zarb2=findViewById(R.id.tv2);
         zarb3=findViewById(R.id.tv3);
@@ -149,13 +150,17 @@ TextView fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,zarb5,zarb
     }
         fard.setText(st);//پایان تمری نعدد فرد
         //محاسبه میانگین
+        st="";
         for(int i = 0;i<4;i++){
-            number1[i] = random.nextInt(100);
+            number1[i] = random.nextInt(5);
+            st = String.valueOf( number1[i]);
         }
         for (int i = 0 ; i <4;i++){
-
+            number1[i]=number1[i];
+        st = String.valueOf( number1[i]);
         }
 
+        average.setText(st);
     }
 }
 
