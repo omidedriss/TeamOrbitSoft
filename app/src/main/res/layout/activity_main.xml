@@ -35,13 +35,12 @@
         android:id="@+id/btmaz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
         android:text="مظاهری"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btactivity_gorji"
-        app:layout_constraintVertical_bias="0.071" />
+        app:layout_constraintVertical_bias="0.081" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
