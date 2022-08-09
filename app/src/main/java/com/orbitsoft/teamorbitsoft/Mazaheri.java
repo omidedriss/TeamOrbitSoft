@@ -19,27 +19,22 @@ TextView jad;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mazaheri);
 
-        btmazret=findViewById(R.id.btmazret);
-        btmazjadvis=findViewById(R.id.btmazjadvis);
         btmazsix=findViewById(R.id.btmazsix);
+        btmazret=findViewById(R.id.btmazret);
         btmazfard=findViewById(R.id.btmazfard);
         btmazemail=findViewById(R.id.btmazemail);
+        btmazjadvis=findViewById(R.id.btmazjadvis);
         btmazaverage=findViewById(R.id.btmazaverage);
-
         btmazaverage.setOnClickListener(v -> average());
         btmazemail.setOnClickListener(v -> concat());
         btmazsix.setOnClickListener(v -> sixgreat());
-        btmazfard.setOnClickListener(v -> fard());
         btmazjadvis.setOnClickListener(v -> zarb());
+        btmazfard.setOnClickListener(v -> fard());
 
         btmazret.setOnClickListener(v -> {
             Intent imazret=new Intent(this,MainActivity.class);
             startActivity(imazret);
         });
-
-
-
-
     }
 
     public void zarb() {
