@@ -14,36 +14,34 @@ import android.widget.Toast;
 
 public class Mazaheri extends AppCompatActivity {
 TextView jad,txt;
-Button btmazret,btmazjadvis,btmazsix;
+Button btmazret,btmazjadvis,btmazsix,btmazfard,btmazemail,btmazaverage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mazaheri);
-        //salam
-      //
-
-
 
 
         btmazret=findViewById(R.id.btmazret);
         btmazjadvis=findViewById(R.id.btmazjadvis);
         btmazsix=findViewById(R.id.btmazsix);
-        //setContentView(R.layout.activity_mazaheri);
-        btmazsix.setOnClickListener(v -> {
+        btmazfard=findViewById(R.id.btmazfard);
+        btmazemail=findViewById(R.id.btmazemail);
+        btmazaverage=findViewById(R.id.btmazaverage);
 
-            //     Toast.makeText(this, String.valueOf(jad.getVisibility()), Toast.LENGTH_SHORT).show();
-            //     jad.setVisibility(jad.VISIBLE);
-            sixgreat();
-            //  Log.d("vis", String.valueOf(jad.getVisibility()));
+        btmazaverage.setOnClickListener(v -> {
+            average();
         });
-
-
+        btmazemail.setOnClickListener(v -> {
+            concat();
+        });
+        btmazsix.setOnClickListener(v -> {
+            sixgreat();
+        });
+        btmazfard.setOnClickListener(v -> {
+            fard();
+        });
         btmazjadvis.setOnClickListener(v -> {
-
-          //     Toast.makeText(this, String.valueOf(jad.getVisibility()), Toast.LENGTH_SHORT).show();
-           //     jad.setVisibility(jad.VISIBLE);
             zarb();
-          //  Log.d("vis", String.valueOf(jad.getVisibility()));
         });
 
         btmazret.setOnClickListener(v -> {
@@ -114,7 +112,7 @@ Button btmazret,btmazjadvis,btmazsix;
                         temp = rnum[i];
                         rnum[i] = rnum[j];
                         rnum[j] = temp;
-                        //Toast.makeText(this, " "+rnum[i], Toast.LENGTH_SHORT).show();
+
                     }
                 }
 
@@ -137,6 +135,91 @@ Button btmazret,btmazjadvis,btmazsix;
             jad.setText(tv);
 
 
+        }
+        public void fard(){
+            jad = findViewById(R.id.textView4maz);
+
+            String tv = "";
+            String st = "";
+            for(int i=1;i<=30;i++){
+                if(i%2==1){
+                    st = String.valueOf(i);
+                    tv = tv + " , " + st;
+                }
+            }
+            jad.setText(tv);
+        }
+        public void concat(){
+            jad = findViewById(R.id.textView4maz);
+
+            String tv = "";
+            String st = "";
+            String name="حسن";
+            String famil="نوری";
+            String name_famil=name + " " + famil;
+            String email="hasan@gmail.com";
+
+            st=name;
+            tv=tv+st;
+            tv = tv + "\n\n";
+
+            st=famil;
+            tv=tv+st;
+            tv = tv + "\n\n";
+
+
+
+            tv=tv+name_famil;
+
+            tv = tv + "\n\n";
+
+            tv=tv +email;
+
+            jad.setText(tv);
+
+
+
+
+        }
+        public void average(){
+
+            jad = findViewById(R.id.textView4maz);
+            float[] avenum = new float[6];
+
+            String tv = "";
+            String st = "";
+            jad.setText(tv);
+
+            float min = 200.0f;
+            float max = 400.0f;
+            float ave = 0.0f;
+            float sum = 0.0f;
+
+            for (int i = 0; i <= 5; i++) {
+
+
+                avenum[i] = (int) (random() * (max - min + 1) + min);
+
+            }
+            for (int i = 0; i <= 5; i++) {
+
+
+                sum +=avenum[i] ;
+
+                tv = tv + " , " + Float.toString(avenum[i]); ;
+
+            }
+            ave=sum/6;
+
+             st=Float.toString(ave);
+
+            tv = tv + "\n\n"+"Average :";
+
+             tv=tv+st;
+
+            tv = tv + "\n\n";
+
+            jad.setText(tv);
         }
 
     }
