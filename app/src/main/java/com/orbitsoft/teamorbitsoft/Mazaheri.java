@@ -9,6 +9,10 @@ import android.os.Bundle;
 
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+import android.widget.Toolbar;
+
+import org.w3c.dom.Text;
 
 
 public class Mazaheri extends AppCompatActivity {
@@ -39,6 +43,7 @@ TextView jad;
 
     public void zarb() {
         jad = findViewById(R.id.textView4maz);
+        jad.setTextSize(14);
         StringBuilder tv = new StringBuilder();
         String st;
         int zar;
@@ -70,6 +75,7 @@ TextView jad;
     }
         public void sixgreat() {
             jad = findViewById(R.id.textView4maz);
+            jad.setTextSize(20);
             int[] rnum = new int[6];
 
             StringBuilder tv = new StringBuilder();
@@ -121,7 +127,7 @@ TextView jad;
         }
         public void fard(){
             jad = findViewById(R.id.textView4maz);
-
+            jad.setTextSize(14);
             StringBuilder tv = new StringBuilder();
             String st;
             for(int i=1;i<=30;i++){
@@ -134,7 +140,7 @@ TextView jad;
         }
         public void concat(){
             jad = findViewById(R.id.textView4maz);
-
+            jad.setTextSize(20);
             String tv = "";
             String st;
             String name="حسن";
@@ -167,6 +173,7 @@ TextView jad;
         public void average(){
 
             jad = findViewById(R.id.textView4maz);
+            jad.setTextSize(16);
             float[] avenum = new float[6];
 
             StringBuilder tv = new StringBuilder();
