@@ -20,7 +20,6 @@ Button btmazret,btmazjadvis,btmazsix,btmazfard,btmazemail,btmazaverage;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mazaheri);
 
-
         btmazret=findViewById(R.id.btmazret);
         btmazjadvis=findViewById(R.id.btmazjadvis);
         btmazsix=findViewById(R.id.btmazsix);
