@@ -9,10 +9,7 @@ import android.os.Bundle;
 
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.widget.Toolbar;
 
-import org.w3c.dom.Text;
 
 
 public class Mazaheri extends AppCompatActivity {
