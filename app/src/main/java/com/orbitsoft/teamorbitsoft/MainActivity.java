@@ -15,6 +15,7 @@ Button btmaz;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         btGorji = findViewById(R.id.btactivity_gorji);
         btmaz=findViewById(R.id.btmaz);
 
