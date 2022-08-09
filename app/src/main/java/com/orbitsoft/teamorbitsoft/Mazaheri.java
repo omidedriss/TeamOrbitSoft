@@ -6,22 +6,45 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class Mazaheri extends AppCompatActivity {
-TextView jad;
-Button btmazret;
+TextView jad,txt;
+Button btmazret,btmazjadvis,btmazsix;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mazaheri);
         //salam
-        zarb();
-        //sixgreat();
+      //
+
+
+
 
         btmazret=findViewById(R.id.btmazret);
+        btmazjadvis=findViewById(R.id.btmazjadvis);
+        btmazsix=findViewById(R.id.btmazsix);
+        //setContentView(R.layout.activity_mazaheri);
+        btmazsix.setOnClickListener(v -> {
+
+            //     Toast.makeText(this, String.valueOf(jad.getVisibility()), Toast.LENGTH_SHORT).show();
+            //     jad.setVisibility(jad.VISIBLE);
+            sixgreat();
+            //  Log.d("vis", String.valueOf(jad.getVisibility()));
+        });
+
+
+        btmazjadvis.setOnClickListener(v -> {
+
+          //     Toast.makeText(this, String.valueOf(jad.getVisibility()), Toast.LENGTH_SHORT).show();
+           //     jad.setVisibility(jad.VISIBLE);
+            zarb();
+          //  Log.d("vis", String.valueOf(jad.getVisibility()));
+        });
 
         btmazret.setOnClickListener(v -> {
             Intent imazret=new Intent(this,MainActivity.class);
@@ -63,11 +86,14 @@ Button btmazret;
             tv = tv + "\n\n";
         }
         jad.setText(tv);
-/*
-        public void sixgreat () {
+    }
+        public void sixgreat() {
+            jad = findViewById(R.id.textView4maz);
+            int[] rnum = new int[6];
 
             String tv = "";
-            txt.setText(tv);
+            String st = "";
+            jad.setText(tv);
 
             int min = 200;
             int max = 400;
@@ -108,10 +134,10 @@ Button btmazret;
             int sum = rnum[0] + rnum[1];
 
             tv = tv + "Sum Is : " + String.valueOf(sum);
-            txt.setText(tv);
+            jad.setText(tv);
 
 
-        }*/
+        }
 
     }
-}
+
