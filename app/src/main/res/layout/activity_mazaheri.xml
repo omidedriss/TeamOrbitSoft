@@ -7,7 +7,6 @@
 
     tools:context=".Mazaheri">
 
-
     <Button
         android:id="@+id/btmazaverage"
         android:layout_width="110dp"

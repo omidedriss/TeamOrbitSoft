@@ -4,6 +4,7 @@ import static java.lang.Math.random;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -14,11 +15,13 @@ import android.widget.TextView;
 
 public class Mazaheri extends AppCompatActivity {
 TextView jad;
+
     public Button btmazjadvis, btmazsix, btmazret,btmazfard,btmazemail,btmazaverage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mazaheri);
+
 
         btmazsix=findViewById(R.id.btmazsix);
         btmazret=findViewById(R.id.btmazret);
@@ -31,6 +34,7 @@ TextView jad;
         btmazsix.setOnClickListener(v -> sixgreat());
         btmazjadvis.setOnClickListener(v -> zarb());
         btmazfard.setOnClickListener(v -> fard());
+
 
         btmazret.setOnClickListener(v -> {
             Intent imazret=new Intent(this,MainActivity.class);
@@ -188,6 +192,7 @@ TextView jad;
                 avenum[i] = (int) (random() * (max - min + 1) + min);
 
             }
+
             for (int i = 0; i <= 5; i++) {
 
 
