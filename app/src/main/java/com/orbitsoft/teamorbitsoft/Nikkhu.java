@@ -45,8 +45,8 @@ public class Nikkhu extends AppCompatActivity {
 
             for(int j=0;j<5;j++)
                 Log.d("msg1",String.valueOf(j));
-                Log.d("msg2",String.valueOf(sum));
 
+                Log.d("msg2",String.valueOf(sum));
 
 
 
@@ -62,6 +62,14 @@ public class Nikkhu extends AppCompatActivity {
 
     }
 
+public void addedDahDarDAh(){
+    for(int i=1;i<11;i++) {
+        for (int j = 1; j < 11; j++) {
 
+            int s = i * j;
+            Log.d("msDah", (s + "\t"));
+        }
+    }
+    }
 
 }
