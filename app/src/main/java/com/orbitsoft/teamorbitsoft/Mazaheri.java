@@ -4,12 +4,15 @@ import static java.lang.Math.random;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class Mazaheri extends AppCompatActivity {
 TextView jad;
+Button btmazret;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +20,14 @@ TextView jad;
         //salam
         zarb();
         //sixgreat();
+
+        btmazret=findViewById(R.id.btmazret);
+
+        btmazret.setOnClickListener(v -> {
+            Intent imazret=new Intent(this,MainActivity.class);
+            startActivity(imazret);
+        });
+
 
 
 
