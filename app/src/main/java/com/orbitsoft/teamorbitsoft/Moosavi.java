@@ -34,6 +34,5 @@ public class Moosavi extends AppCompatActivity {
         resault = ( a + b + c + d) / 4 ;
         Log.d( " test 2 " , Integer.toString( resault ) );
 
-
     }
 }
