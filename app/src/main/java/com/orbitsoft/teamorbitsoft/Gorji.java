@@ -157,6 +157,7 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
         num3 = random.nextInt(100);
         num4 = random.nextInt(100);
         sum = 0;
+
         sum = num1+num2+num3+num4;
         sum = sum/4;
         st = String.valueOf(sum);
