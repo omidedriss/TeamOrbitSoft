@@ -36,6 +36,7 @@ public class Student {
         avg=(num1+num2+num3+num4)/4;
         return avg;
     }
+
     //محاسبه Bmi
     public float getBmi() {
         hight /=100;
