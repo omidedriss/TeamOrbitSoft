@@ -17,6 +17,7 @@ public class Saaedian extends AppCompatActivity {
     int jam;
     int miangin;
     int largest=0;
+
     int secondlargest=0;
     int sum;
     int min;
