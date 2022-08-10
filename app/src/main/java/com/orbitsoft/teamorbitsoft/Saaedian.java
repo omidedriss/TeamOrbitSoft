@@ -8,12 +8,8 @@ import android.widget.TextView;
 
 public class Saaedian extends AppCompatActivity {
     int aa=1;
-
-
-
-
     String bb="";
-    TextView test;
+    public TextView test;
     int a=1;
     int b=2;
     int c=4;
@@ -28,13 +24,11 @@ public class Saaedian extends AppCompatActivity {
 
     int i;
 
-public class Saaedian extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saaedian);
-        test = findViewById(R.id.textView);
+        test = findViewById(R.id.textview_s);
         //adadfard ta 30
         while (a<=30)
         {
@@ -42,7 +36,7 @@ public class Saaedian extends AppCompatActivity {
             bb= bb+Integer.toString(a)+"\n";
 
 
-            test.setText(b);
+            test.setText(bb);
             a=a+2;
         }
         ///////////////////////////////////////////
@@ -53,7 +47,7 @@ public class Saaedian extends AppCompatActivity {
         jam=a+b+c+d;
         miangin=jam/4;
 
-        test = findViewById(R.id.textView);
+        //test = findViewById(R.id.textView);
         test.setText("miangin="+Integer.toString(miangin));
         ////////////////////////////////
         //jame dota bozorgtarin
@@ -86,4 +80,4 @@ public class Saaedian extends AppCompatActivity {
 
 
 //    }
-}
+
