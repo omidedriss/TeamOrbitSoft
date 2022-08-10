@@ -10,7 +10,7 @@ import com.orbitsoft.teamorbitsoft.R;
 
 public class Saaedian extends AppCompatActivity {
     int aa=1;
-    String bb="";
+    String bb="test";
     public TextView test;
     int a=1;
     int b=2;
@@ -19,6 +19,7 @@ public class Saaedian extends AppCompatActivity {
     int jam;
     int miangin;
     int largest=0;
+
     int secondlargest=0;
     int sum;
     int min;
