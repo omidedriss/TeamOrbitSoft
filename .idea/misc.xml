@@ -6,10 +6,15 @@
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_main.xml" value="0.25076923076923074" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_mazaheri.xml" value="0.2504528985507246" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_saaedian.xml" value="0.26461538461538464" />
+        <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_hatami.xml" value="0.5" />
+        <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_intent.xml" value="0.1" />
+        <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_saaedian.xml" value="0.9758064516129032" />
+        <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/browser.xml" value="0.1" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
