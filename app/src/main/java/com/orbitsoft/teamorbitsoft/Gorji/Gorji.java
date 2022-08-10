@@ -3,6 +3,11 @@ package com.orbitsoft.teamorbitsoft.Gorji;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.method.PasswordTransformationMethod;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.NumberPicker;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -10,12 +15,17 @@ import com.orbitsoft.teamorbitsoft.R;
 
 import java.util.Random;
 
-public class Gorji extends AppCompatActivity {
+public class Gorji extends AppCompatActivity implements View.OnClickListener, View.OnLongClickListener {
 /*int num1 = 10,num2=18,num3=85,num4=98,sum = 0 , n=11;
 String st = "  ",st1="";
 TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,zarb5,zarb6,zarb7,zarb8,zarb9,zarb10;
    */
+    String name = "1",family="",hight,nationalCode1,weight;
+    //int hight,nationalCode1;
+
+    Button ok;
     TextView mavg , mbmi;
+    EditText entry;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -157,22 +167,76 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
         average.setText(st);*/ // تمرین اول
         mbmi = findViewById(R.id.tv_show);
         mavg = findViewById(R.id.tv_average);
-        school ();
+        entry = findViewById(R.id.join);
+        ok = findViewById(R.id.accept);
+        ok.setOnClickListener(this);
+        ok.setOnLongClickListener(this);
+
         Toast.makeText(getApplicationContext(),"onrCeate",Toast.LENGTH_LONG).show();
 
     }
+
     //متد برای فراخوانی کلاس student
     public void school(){
         Student huaman = new Student();
-        huaman.setName("Abbas");
-        huaman.setFamily("gorji");
-        huaman.setHight(178);
-        huaman.setNationalCode(5400024432l);
-        huaman.setWeight(60f);
+        huaman.setName(name);
+        huaman.setFamily(family);
+        huaman.setHight(Integer.valueOf(hight));
+        huaman.setNationalCode(Integer.valueOf(nationalCode1));
+        huaman.setWeight(Float.valueOf(weight));
         float bmi = huaman.getBmi();
         mbmi.setText(String.valueOf(bmi));
         float avg = huaman.calAvg(15.5f,19.87f,10f,17.75f);
         mavg.setText(String.valueOf(avg));
+    }
+
+    @Override
+    public void onClick(View v) {
+        Student huaman = new Student();
+        for(int i =0 ;i<=4;i++){
+            Toast.makeText(getApplicationContext(),"for run",Toast.LENGTH_LONG).show();
+            if (i==0){
+            Toast.makeText(getApplicationContext(),"name run",Toast.LENGTH_LONG).show();
+            name = entry.getText().toString();
+            entry.setText("");
+
+        }
+        if(i==1){
+            entry.setHint("Family");
+            Toast.makeText(getApplicationContext(),"fami run",Toast.LENGTH_LONG).show();
+            family = entry.getText().toString();
+            entry.setText("");
+
+        }
+        if(i==2){
+            entry.setHint("Hight");
+            Toast.makeText(getApplicationContext(),"قد",Toast.LENGTH_LONG).show();
+            entry.setInputType(3);
+            hight = entry.getText().toString();
+            entry.setText("");
+
+        }
+        if(i==3){
+            entry.setHint("Nationalcod");
+            entry.setInputType(3);
+            nationalCode1=entry.getText().toString();
+            entry.setText("");
+            i++;
+        }
+        if(i==4){
+            entry.setHint("Weight");
+            entry.setInputType(3);
+            weight = entry.getText().toString();
+            entry.setText("");
+
+        }
+    }//end for
+    }
+
+    @Override
+    public boolean onLongClick(View v) {
+        school ();
+        return true;
     }
 }
 
