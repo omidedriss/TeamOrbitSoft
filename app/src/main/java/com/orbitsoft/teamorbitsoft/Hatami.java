@@ -15,9 +15,9 @@ public class Hatami extends AppCompatActivity {
     //txt5 is for next practice
     TextView txt5;
     int RNnum1=10,RNnum2=20,RNnum3=30,RNnum4=40,RNnum5=50,Rnnum6=60,all=0;
-    int i=1;
+  //  int i=1;
     String RESULT;
-    private int j;
+   // int j;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,15 +85,13 @@ public class Hatami extends AppCompatActivity {
         String jadval="";
           //      int ii=0;
             //    int jj=0;
-                for( int i=1;i<=10;i++);{
-                    for( int jj=1;jj<=10;jj++);{
-
-                        jadval=jadval+i+"*" + j+"=" +i*j +"\n";
-
+                for (int i=1;i<=10;i++){
+                    for (int j=1;j<=10;j++){
+                        jadval=jadval+i+"*"+j+"="+i*j+"\n";
                     }
-                    jadval+= jadval+"\n";
-
+                    jadval+=jadval+"\n";
                 }
+
                 txt5.setText (jadval);
 
             }

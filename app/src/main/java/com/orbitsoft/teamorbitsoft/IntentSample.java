@@ -47,18 +47,19 @@ public class IntentSample extends AppCompatActivity {
         b2.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View arg0){
-            	/*
+
                 Intent i = new
-                    Intent(android.content.Intent.ACTION_DIAL);
+                Intent(android.content.Intent.ACTION_DIAL,
+                        Uri.parse("tel:+651234567"));
                 startActivity(i);
-                */
+
 
                 //---OR---
 
-                Intent i = new
-                        Intent(android.content.Intent.ACTION_CALL,
-                        Uri.parse("tel:+651234567"));
-                startActivity(i);
+//                Intent i = new
+//                        Intent(android.content.Intent.ACTION_CALL,
+//                        Uri.parse("tel:+651234567"));
+//                startActivity(i);
 
             }
         });
@@ -93,13 +94,13 @@ public class IntentSample extends AppCompatActivity {
         {
             public void onClick(View arg0)
             {
-            	/*
+
             	//---Method 1---
             	Intent i = new
-                    Intent("net.learn2develop.MyBrowser");
+                    Intent("com.orbitsoft.teamorbitsoft.MyBrowser");
             	i.setData(Uri.parse("http://www.amazon.com"));
                 startActivity(i);
-            	*/
+
 
             	/*
                 //---Method 2---
@@ -110,12 +111,12 @@ public class IntentSample extends AppCompatActivity {
                 */
 
                 //---Method 3---
-                Intent i = new
-                        Intent("net.learn2develop.MyBrowser",
-                        Uri.parse("http://www.amazon.com"));
-                i.addCategory("net.learn2develop.OtherApps");
-                i.addCategory("net.learn2develop.SomeOtherApps");
-                startActivity(i);
+//                Intent i = new
+//                        Intent("com.orbitsoft.teamorbitsoft.MyBrowser",
+//                        Uri.parse("http://www.amazon.com"));
+//                i.addCategory("com.orbitsoft.teamorbitsoft.OtherApps");
+//                i.addCategory("com.orbitsoft.teamorbitsoft.SomeOtherApps");
+//                startActivity(i);
             }
         });
     }

@@ -59,7 +59,7 @@ Button btmaz,btMoosavi,btSaeedian,btHatami,btIntent,btLifeCycle;
                 }
         );
         btLifeCycle.setOnClickListener(v -> {
-                    Intent imaz=new Intent(this,IntentSample.class);
+                    Intent imaz=new Intent(this,LifeCycleActivity.class);
                     startActivity(imaz);
                 }
         );

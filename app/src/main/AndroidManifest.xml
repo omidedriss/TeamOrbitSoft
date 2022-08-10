@@ -55,10 +55,10 @@
             android:exported="true">
             <intent-filter tools:ignore="AppLinkUrlError">
                 <action android:name="android.intent.action.VIEW" />
-                <action android:name="net.learn2develop.MyBrowser" />
+                <action android:name="com.orbitsoft.teamorbitsoft.MyBrowser" />
                 <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="net.learn2develop.Apps" />
-                <category android:name="net.learn2develop.OtherApps" />
+                <category android:name="com.orbitsoft.teamorbitsoft.Apps" />
+                <category android:name="com.orbitsoft.teamorbitsoft.OtherApps" />
                 <data android:scheme="http" />
             </intent-filter>
         </activity>
