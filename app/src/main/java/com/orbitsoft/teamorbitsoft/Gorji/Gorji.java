@@ -1,9 +1,11 @@
-package com.orbitsoft.teamorbitsoft;
+package com.orbitsoft.teamorbitsoft.Gorji;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.orbitsoft.teamorbitsoft.R;
 
 import java.util.Random;
 
@@ -140,7 +142,7 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
         }
         // تمرین چاپ اسم فامیل و ایمیل
         st="Abbas";
-        st1="Gorji";
+        st1= "Gorji";
         show.setText(st+"\t"+st1+"\n"+"absgorji@gmail.com");
         //نمایش اعداد فرد تا 30
         st="";

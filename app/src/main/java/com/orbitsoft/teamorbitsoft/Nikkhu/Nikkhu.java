@@ -1,4 +1,4 @@
-package com.orbitsoft.teamorbitsoft;
+package com.orbitsoft.teamorbitsoft.Nikkhu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.orbitsoft.teamorbitsoft.R;
 
 import java.util.Arrays;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package com.orbitsoft.teamorbitsoft;
+package com.orbitsoft.teamorbitsoft.example;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.orbitsoft.teamorbitsoft.R;
 
 public class IntentSample extends AppCompatActivity {
 

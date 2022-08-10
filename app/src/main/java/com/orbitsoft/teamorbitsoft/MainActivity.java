@@ -7,6 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.orbitsoft.teamorbitsoft.Gorji.Gorji;
+import com.orbitsoft.teamorbitsoft.Hatami.Hatami;
+import com.orbitsoft.teamorbitsoft.Mazaheri.Mazaheri;
+import com.orbitsoft.teamorbitsoft.Moosavi.Moosavi;
+import com.orbitsoft.teamorbitsoft.Saeedian.Saaedian;
+import com.orbitsoft.teamorbitsoft.example.IntentSample;
+import com.orbitsoft.teamorbitsoft.example.LifeCycleActivity;
+
 public class MainActivity extends AppCompatActivity {
 Button btGorji;
 Button btmaz,btMoosavi,btSaeedian,btHatami,btIntent,btLifeCycle;
@@ -27,39 +35,39 @@ Button btmaz,btMoosavi,btSaeedian,btHatami,btIntent,btLifeCycle;
         btGorji.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent gorji = new Intent(getApplicationContext(),Gorji.class);
+                Intent gorji = new Intent(getApplicationContext(), Gorji.class);
                 startActivity(gorji);
 
             }
         });
 
         btmaz.setOnClickListener(v -> {
-                Intent imaz=new Intent(this,Mazaheri.class);
+                Intent imaz=new Intent(this, Mazaheri.class);
                 startActivity(imaz);
                 }
         );
         btSaeedian.setOnClickListener(v -> {
-                    Intent imaz=new Intent(this,Saaedian.class);
+                    Intent imaz=new Intent(this, Saaedian.class);
                     startActivity(imaz);
                 }
         );
         btMoosavi.setOnClickListener(v -> {
-                    Intent imaz=new Intent(this,Moosavi.class);
+                    Intent imaz=new Intent(this, Moosavi.class);
                     startActivity(imaz);
                 }
         );
         btHatami.setOnClickListener(v -> {
-                    Intent imaz=new Intent(this,Hatami.class);
+                    Intent imaz=new Intent(this, Hatami.class);
                     startActivity(imaz);
                 }
         );
         btIntent.setOnClickListener(v -> {
-                    Intent imaz=new Intent(this,IntentSample.class);
+                    Intent imaz=new Intent(this, IntentSample.class);
                     startActivity(imaz);
                 }
         );
         btLifeCycle.setOnClickListener(v -> {
-                    Intent imaz=new Intent(this,LifeCycleActivity.class);
+                    Intent imaz=new Intent(this, LifeCycleActivity.class);
                     startActivity(imaz);
                 }
         );

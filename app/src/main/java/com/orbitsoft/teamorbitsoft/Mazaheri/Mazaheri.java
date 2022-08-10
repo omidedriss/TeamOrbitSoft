@@ -1,4 +1,4 @@
-package com.orbitsoft.teamorbitsoft;
+package com.orbitsoft.teamorbitsoft.Mazaheri;
 
 import static java.lang.Math.random;
 
@@ -11,6 +11,8 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.orbitsoft.teamorbitsoft.MainActivity;
+import com.orbitsoft.teamorbitsoft.R;
 
 
 public class Mazaheri extends AppCompatActivity {
@@ -37,7 +39,7 @@ TextView jad;
 
 
         btmazret.setOnClickListener(v -> {
-            Intent imazret=new Intent(this,MainActivity.class);
+            Intent imazret=new Intent(this, MainActivity.class);
             startActivity(imazret);
         });
     }

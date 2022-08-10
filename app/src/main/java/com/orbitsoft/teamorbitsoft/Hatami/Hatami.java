@@ -1,10 +1,12 @@
-package com.orbitsoft.teamorbitsoft;
+package com.orbitsoft.teamorbitsoft.Hatami;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
+
+import com.orbitsoft.teamorbitsoft.R;
 
 public class Hatami extends AppCompatActivity {
     TextView txt1;TextView txt2;

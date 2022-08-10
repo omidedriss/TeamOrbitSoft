@@ -1,10 +1,12 @@
-package com.orbitsoft.teamorbitsoft;
+package com.orbitsoft.teamorbitsoft.example;
 
 import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import com.orbitsoft.teamorbitsoft.R;
 
 public class MyBrowserActivity extends Activity {
 	/** Called when the activity is first created. */

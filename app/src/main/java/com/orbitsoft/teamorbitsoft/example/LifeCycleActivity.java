@@ -1,9 +1,11 @@
-package com.orbitsoft.teamorbitsoft;
+package com.orbitsoft.teamorbitsoft.example;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+
+import com.orbitsoft.teamorbitsoft.R;
 
 public class LifeCycleActivity extends AppCompatActivity {
 

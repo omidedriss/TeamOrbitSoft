@@ -1,8 +1,10 @@
-package com.orbitsoft.teamorbitsoft;
+package com.orbitsoft.teamorbitsoft.Kanani;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.orbitsoft.teamorbitsoft.R;
 
 public class Kanani extends AppCompatActivity {
 
