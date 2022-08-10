@@ -4,33 +4,23 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.orbitsoft.teamorbitsoft.R;
 
 import java.util.Random;
 
 public class Gorji extends AppCompatActivity {
-int num1 = 10,num2=18,num3=85,num4=98,sum = 0 , n=11;
+/*int num1 = 10,num2=18,num3=85,num4=98,sum = 0 , n=11;
 String st = "  ",st1="";
 TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,zarb5,zarb6,zarb7,zarb8,zarb9,zarb10;
-    int[] number1 = new int[n];
-    int[] number2 = new int[n];
-    int[] number3 = new int[n];
-
-    int[] number4 = new int[n];
-    int[] number5 = new int[n];
-    int[] number6 = new int[n];
-    int[] number7 = new int[n];
-    int[] number8 = new int[n];
-    int[] number9 = new int[n];
-    int[] number10 = new int[n];
-    int[] sotun = new int[n];
-    int[] satr = new int[n];
+   */
+    TextView mavg , mbmi;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gorji);
-        adadBozorgTar = findViewById(R.id.tv);
+        /* adadBozorgTar = findViewById(R.id.tv);
         fard=findViewById(R.id.tv_fard);
         average= findViewById(R.id.tv_average);
         zarb1=findViewById(R.id.tv1);
@@ -164,7 +154,25 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
         sum = sum/4;
         st = String.valueOf(sum);
 
-        average.setText(st);
+        average.setText(st);*/ // تمرین اول
+        mbmi = findViewById(R.id.tv_show);
+        mavg = findViewById(R.id.tv_average);
+        school ();
+        Toast.makeText(getApplicationContext(),"onrCeate",Toast.LENGTH_LONG).show();
+
+    }
+    //متد برای فراخوانی کلاس student
+    public void school(){
+        Student huaman = new Student();
+        huaman.setName("Abbas");
+        huaman.setFamily("gorji");
+        huaman.setHight(178);
+        huaman.setNationalCode(5400024432l);
+        huaman.setWeight(60f);
+        float bmi = huaman.getBmi();
+        mbmi.setText(String.valueOf(bmi));
+        float avg = huaman.calAvg(15.5f,19.87f,10f,17.75f);
+        mavg.setText(String.valueOf(avg));
     }
 }
 
