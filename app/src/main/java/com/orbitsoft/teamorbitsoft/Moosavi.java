@@ -66,7 +66,6 @@ public class Moosavi extends AppCompatActivity {
         Log.d ( "test 4" , table ) ;
 
 
-
     }
 }
 
