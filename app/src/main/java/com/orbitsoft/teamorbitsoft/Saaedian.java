@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class Saaedian extends AppCompatActivity {
     int aa=1;
-    String bb="";
+    String bb="test";
     public TextView test;
     int a=1;
     int b=2;
