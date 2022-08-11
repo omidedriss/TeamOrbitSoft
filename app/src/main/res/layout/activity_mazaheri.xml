@@ -8,6 +8,18 @@
     tools:context=".Mazaheri.Mazaheri">
 
     <Button
+        android:id="@+id/btmazstudent"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="دانش آموزان"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btmazjadvis"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <Button
         android:id="@+id/btmazaverage"
         android:layout_width="110dp"
         android:layout_height="55dp"
@@ -27,10 +39,10 @@
         android:text="ایمیل"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btmazsix"
-        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintHorizontal_bias="0.878"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btmazfard"
-        app:layout_constraintVertical_bias="0.089"
+        app:layout_constraintVertical_bias="0.091"
         tools:ignore="HardcodedText" />
 
     <Button
@@ -100,6 +112,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4maz"
         app:layout_constraintVertical_bias="0.098"
         tools:ignore="HardcodedText" />
+
     <Button
         android:id="@+id/btmazsix"
         android:layout_width="110dp"
@@ -107,8 +120,8 @@
         android:text="@string/towg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintHorizontal_bias="0.913"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btmazjadvis"
-        app:layout_constraintVertical_bias="0.089" />
+        app:layout_constraintVertical_bias="0.091" />
 </androidx.constraintlayout.widget.ConstraintLayout>
