@@ -27,13 +27,13 @@ public class Mazaheri extends AppCompatActivity {
         btmazjadvis=findViewById(R.id.btmazjadvis);
         btmazaverage=findViewById(R.id.btmazaverage);
         btmazstudent=findViewById(R.id.btmazstudent);
-
+        btmazstudent.setOnClickListener(v -> mngstudent());
         btmazaverage.setOnClickListener(v -> average());
         btmazemail.setOnClickListener(v -> concat());
         btmazsix.setOnClickListener(v -> sixgreat());
         btmazjadvis.setOnClickListener(v -> zarb());
         btmazfard.setOnClickListener(v -> fard());
-        btmazstudent.setOnClickListener(v -> mngstudent());
+
 
 
         btmazret.setOnClickListener(v -> {
