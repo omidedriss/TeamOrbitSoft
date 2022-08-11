@@ -44,7 +44,7 @@ TextView jad;
         });
     }
 
-    public void zarb() {
+        public void zarb() {
         jad = findViewById(R.id.textView4maz);
         jad.setTextSize(14);
         StringBuilder tv = new StringBuilder();
