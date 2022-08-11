@@ -1,24 +1,19 @@
 package com.orbitsoft.teamorbitsoft.Mazaheri;
 
 import static java.lang.Math.random;
-
 import androidx.appcompat.app.AppCompatActivity;
-
-
 import android.content.Intent;
 import android.os.Bundle;
-
 import android.widget.Button;
 import android.widget.TextView;
-
 import com.orbitsoft.teamorbitsoft.MainActivity;
 import com.orbitsoft.teamorbitsoft.R;
 
-
 public class Mazaheri extends AppCompatActivity {
-TextView jad;
-
-    public Button btmazjadvis, btmazsix, btmazret,btmazfard,btmazemail,btmazaverage;
+    TextView jad;
+    Button btmazjadvis, btmazsix, btmazret,
+                  btmazfard,btmazemail,btmazaverage,
+                  btmazstudent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,20 +26,27 @@ TextView jad;
         btmazemail=findViewById(R.id.btmazemail);
         btmazjadvis=findViewById(R.id.btmazjadvis);
         btmazaverage=findViewById(R.id.btmazaverage);
+        btmazstudent=findViewById(R.id.btmazstudent);
+
         btmazaverage.setOnClickListener(v -> average());
         btmazemail.setOnClickListener(v -> concat());
         btmazsix.setOnClickListener(v -> sixgreat());
         btmazjadvis.setOnClickListener(v -> zarb());
         btmazfard.setOnClickListener(v -> fard());
+        btmazstudent.setOnClickListener(v -> mngstudent());
 
 
         btmazret.setOnClickListener(v -> {
             Intent imazret=new Intent(this, MainActivity.class);
             startActivity(imazret);
         });
+
+
+
+
     }
 
-        public void zarb() {
+    public void zarb() {
         jad = findViewById(R.id.textView4maz);
         jad.setTextSize(14);
         StringBuilder tv = new StringBuilder();
@@ -76,7 +78,7 @@ TextView jad;
         }
         jad.setText(tv.toString());
     }
-        public void sixgreat() {
+    public void sixgreat() {
             jad = findViewById(R.id.textView4maz);
             jad.setTextSize(20);
             int[] rnum = new int[6];
@@ -128,7 +130,7 @@ TextView jad;
 
 
         }
-        public void fard(){
+    public void fard(){
             jad = findViewById(R.id.textView4maz);
             jad.setTextSize(14);
             StringBuilder tv = new StringBuilder();
@@ -141,7 +143,7 @@ TextView jad;
             }
             jad.setText(tv.toString());
         }
-        public void concat(){
+    public void concat(){
             jad = findViewById(R.id.textView4maz);
             jad.setTextSize(20);
             String tv = "";
@@ -173,7 +175,7 @@ TextView jad;
 
 
         }
-        public void average(){
+    public void average(){
 
             jad = findViewById(R.id.textView4maz);
             jad.setTextSize(16);
@@ -215,6 +217,17 @@ TextView jad;
 
             jad.setText(tv.toString());
         }
-
+    public void mngstudent() {
+        jad = findViewById(R.id.textView4maz);
+        jad.setTextSize(14);
+        String st="";
+        Student st1=new Student("علی","احمدی",85.0f,140.0f,
+                1000,17.5f,18.5f);
+        Student st2=new Student("محمد","حیدری",95.0f,185.5f,
+                1001,13.5f,14.5f);
+        st=st+st1.show();
+        st=st+st2.show();
+    jad.setText(st);
     }
+}
 
