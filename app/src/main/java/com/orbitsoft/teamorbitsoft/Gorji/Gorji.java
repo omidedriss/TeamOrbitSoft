@@ -16,7 +16,12 @@ import com.orbitsoft.teamorbitsoft.R;
 import java.util.Random;
 
 public class Gorji extends AppCompatActivity implements View.OnClickListener, View.OnLongClickListener {
-/*int num1 = 10,num2=18,num3=85,num4=98,sum = 0 , n=11;
+float num1 =0;
+    float num2=1;
+    float num3=2;
+    float num4=3;
+    int num5=4;
+    /*int num1 = 10,num2=18,num3=85,num4=98,sum = 0 , n=11;
 String st = "  ",st1="";
 TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,zarb5,zarb6,zarb7,zarb8,zarb9,zarb10;
    */
@@ -24,8 +29,8 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
     //int hight,nationalCode1;
 
     Button ok;
-    TextView mavg , mbmi;
-    EditText entry;
+    TextView mavg , mbmi , showAvg ,showBmi;
+    EditText ename,efamily,eweight,ehight,ecationalcod;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -167,11 +172,16 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
         average.setText(st);*/ // تمرین اول
         mbmi = findViewById(R.id.tv_show);
         mavg = findViewById(R.id.tv_average);
-        entry = findViewById(R.id.join);
+        ename = findViewById(R.id.eName);
+        efamily=findViewById(R.id.eFamily);
+        ecationalcod=findViewById(R.id.nationalCod);
+        eweight = findViewById(R.id.eWeight);
+        ehight=findViewById(R.id.ehight);
         ok = findViewById(R.id.accept);
         ok.setOnClickListener(this);
         ok.setOnLongClickListener(this);
-
+        showAvg = findViewById(R.id.tv1);
+        showBmi=findViewById(R.id.tv_fard);
         Toast.makeText(getApplicationContext(),"onrCeate",Toast.LENGTH_LONG).show();
 
     }
@@ -186,66 +196,98 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
         huaman.setWeight(Float.valueOf(weight));
         float bmi = huaman.getBmi();
         mbmi.setText(String.valueOf(bmi));
-        float avg = huaman.calAvg(15.5f,19.87f,10f,17.75f);
+        float avg = huaman.calAvg(num1,num2,num3,num4);
         mavg.setText(String.valueOf(avg));
     }
 
     @Override
     public void onClick(View v) {
-        Student huaman = new Student();
-        for(int i =0 ;i<=4;i++) {
+        name=ename.getText().toString().trim();
+        family=efamily.getText().toString().trim();
+        weight=eweight.getText().toString().trim();
+        hight=ehight.getText().toString().trim();
+        nationalCode1=ecationalcod.getText().toString().trim();
+        ename.setText(name+"\t"+family);
+        ehight.setText("");
+        eweight.setText("");
+        ecationalcod.setText("");
+        efamily.setText("");
+        efamily.setHint("num1");
+        eweight.setText("");
+        eweight.setHint("num2");
+        ehight.setText("");
+        ehight.setHint("num3");
+        ecationalcod.setText("");
+        ecationalcod.setHint("num4");
+        showBmi.setText("بعد از وارد کردن اعداد روی دکمه کلیک طولانی کنید");
+        showBmi.setTextSize(28f);
+       /* for(int i =0 ;i<=4;i++) {
             Toast.makeText(getApplicationContext(), "for run", Toast.LENGTH_LONG).show();
-            /*if (i==0){
+            if (num1==0){
             Toast.makeText(getApplicationContext(),"name run",Toast.LENGTH_LONG).show();
             name = entry.getText().toString();
             entry.setText("");
-
+            num1+=1;
         }
-        if(i==1){
+            else
+                Toast.makeText(getApplicationContext(),"else run",Toast.LENGTH_LONG).show();
+        ;
+        if(num2==1){
             entry.setHint("Family");
             Toast.makeText(getApplicationContext(),"fami run",Toast.LENGTH_LONG).show();
             family = entry.getText().toString();
             entry.setText("");
+            num2+=1;
+        }else
+            Toast.makeText(getApplicationContext(),"else run",Toast.LENGTH_LONG).show();
 
-        }
-        if(i==2){
+        if(num3==2){
             entry.setHint("Hight");
             Toast.makeText(getApplicationContext(),"قد",Toast.LENGTH_LONG).show();
             entry.setInputType(3);
             hight = entry.getText().toString();
             entry.setText("");
+            num3+=1;
+        }else
+            Toast.makeText(getApplicationContext(),"else run",Toast.LENGTH_LONG).show();
 
-        }
-        if(i==3){
+        if(num4==3){
             entry.setHint("Nationalcod");
             entry.setInputType(3);
             nationalCode1=entry.getText().toString();
             entry.setText("");
-            i++;
-        }
-        if(i==4){
+            num4+=1;
+        }else
+            Toast.makeText(getApplicationContext(),"else run",Toast.LENGTH_LONG).show();
+
+        if(num5==4){
             entry.setHint("Weight");
             entry.setInputType(3);
             weight = entry.getText().toString();
             entry.setText("");
+            num5+=1;
 
         }
+        else
+            Toast.makeText(getApplicationContext(),"else run",Toast.LENGTH_LONG).show();
+
     }//end for */
-            switch (i){
+       /* for(int i = 0 ;i<=4;i++) {
+            switch (i) {
                 case 0:
-                    Toast.makeText(getApplicationContext(),"name run",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "name run", Toast.LENGTH_LONG).show();
                     name = entry.getText().toString();
                     entry.setText("");
                     break;
                 case 1:
                     entry.setHint("Family");
-                    Toast.makeText(getApplicationContext(),"fami run",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "fami run", Toast.LENGTH_LONG).show();
                     family = entry.getText().toString();
                     entry.setText("");
                     break;
                 case 2:
                     entry.setHint("Hight");
-                    Toast.makeText(getApplicationContext(),"قد",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "قد", Toast.LENGTH_LONG).show();
                     entry.setInputType(3);
                     hight = entry.getText().toString();
                     entry.setText("");
@@ -253,7 +295,7 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
                 case 3:
                     entry.setHint("Nationalcod");
                     entry.setInputType(3);
-                    nationalCode1=entry.getText().toString();
+                    nationalCode1 = entry.getText().toString();
                     entry.setText("");
                     i++;
                     break;
@@ -263,12 +305,28 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
                     weight = entry.getText().toString();
                     entry.setText("");
                     break;
+                default:
+                    break;
             }
-        }
+        }*/
     }
+
+
 
     @Override
     public boolean onLongClick(View v) {
+        num1=Float.valueOf(efamily.getText().toString());
+        num2=Float.valueOf(eweight.getText().toString());
+        num3=Float.valueOf(ehight.getText().toString());
+        num4=Float.valueOf(ecationalcod.getText().toString());
+        efamily.setVisibility(View.INVISIBLE);
+        ecationalcod.setVisibility(View.INVISIBLE);
+        eweight.setVisibility(View.INVISIBLE);
+        ehight.setVisibility(View.INVISIBLE);
+        showAvg.setText(name +"\t"+family+"\t"+"Averagr");
+        showBmi.setText(name +"\n"+family+"\t"+"Bmi");
+        showBmi.setTextSize(14f);
+
         school ();
         return true;
     }
