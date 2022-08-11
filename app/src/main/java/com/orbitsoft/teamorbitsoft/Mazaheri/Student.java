@@ -4,6 +4,7 @@ public class Student {
     String name,family;
     double height,weight,lesson1,lesson2;
     int stunum;
+    // تعریف سازنده کلاس برای مقدار دهی اولیه آبجکت ها
      Student(String name, String family, double weight,
                         double height, int stunum,double lesson1,
                         double lesson2) {
@@ -15,9 +16,8 @@ public class Student {
         this.lesson1=lesson1;
         this.lesson2=lesson2;
     }
-
-    public String show(){
-         String st="";
+    //متد نمایش داده ها
+    public String show(){String st="";
         st=st+"\n";
         st= "نام و فامیل : "+this.name +" " + this.family;
         st=st+"\n";
@@ -40,7 +40,7 @@ public class Student {
         st=st+"\n\n\n";
         return st;
     }
-
+    //متد معدل گیری
     public double avarage(double lesson1,double lesson2){
         return (lesson1+lesson2)/2;
     }

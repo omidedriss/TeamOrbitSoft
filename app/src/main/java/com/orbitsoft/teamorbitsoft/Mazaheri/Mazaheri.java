@@ -227,7 +227,7 @@ public class Mazaheri extends AppCompatActivity {
                 1001,13.5f,14.5f);
         st=st+st1.show();
         st=st+st2.show();
-    jad.setText(st);
+        jad.setText(st);
     }
 }
 
