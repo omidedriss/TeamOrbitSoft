@@ -44,14 +44,14 @@ public class Student {
     public double avarage(double lesson1,double lesson2){
         return (lesson1+lesson2)/2;
     }
-
+    //متد محاسبه BMI دانش آموزان
     public double bmi(double weight, double height){
         //BMI=weight/height^2
         double v =weight / (Math.pow(height/100,2));
         v=Math.round(v*10.0)/10.0;
          return v;
     }
-
+    // متد تحلیل BMI
     public String tahlilBMI(double bmi){
         String tahlil="";
          if(bmi<=18.5){

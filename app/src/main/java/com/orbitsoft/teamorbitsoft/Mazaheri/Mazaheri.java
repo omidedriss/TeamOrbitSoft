@@ -45,7 +45,7 @@ public class Mazaheri extends AppCompatActivity {
 
 
     }
-
+    //متد جدول ضرب
     public void zarb() {
         jad = findViewById(R.id.textView4maz);
         jad.setTextSize(14);
@@ -67,7 +67,7 @@ public class Mazaheri extends AppCompatActivity {
                     st = String.valueOf(zar);
                 }
                 if (st.length() == 1) {
-                    st = st + "     ";
+                    st = st + "     ";   // تنظیم سطر و ستون ها با توجه به تعداد ارقام هر عدد
                 }
                 if (st.length() == 2) {
                     st = st + "   ";
@@ -78,6 +78,7 @@ public class Mazaheri extends AppCompatActivity {
         }
         jad.setText(tv.toString());
     }
+    //متد مرتب سازی شش عدد
     public void sixgreat() {
             jad = findViewById(R.id.textView4maz);
             jad.setTextSize(20);
@@ -130,6 +131,7 @@ public class Mazaheri extends AppCompatActivity {
 
 
         }
+    // متد اعداد فرد
     public void fard(){
             jad = findViewById(R.id.textView4maz);
             jad.setTextSize(14);
@@ -143,6 +145,7 @@ public class Mazaheri extends AppCompatActivity {
             }
             jad.setText(tv.toString());
         }
+    //متد چسباندن اسم و فامیل
     public void concat(){
             jad = findViewById(R.id.textView4maz);
             jad.setTextSize(20);
@@ -175,6 +178,7 @@ public class Mazaheri extends AppCompatActivity {
 
 
         }
+    // متد معدل گیری
     public void average(){
 
             jad = findViewById(R.id.textView4maz);
@@ -217,6 +221,7 @@ public class Mazaheri extends AppCompatActivity {
 
             jad.setText(tv.toString());
         }
+    // متد دانش آموزان
     public void mngstudent() {
         jad = findViewById(R.id.textView4maz);
         jad.setTextSize(14);
