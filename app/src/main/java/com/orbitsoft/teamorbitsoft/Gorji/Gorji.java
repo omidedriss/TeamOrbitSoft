@@ -326,7 +326,6 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
         showAvg.setText(name +"\t"+family+"\t"+"Averagr");
         showBmi.setText(name +"\n"+family+"\t"+"Bmi");
         showBmi.setTextSize(14f);
-
         school ();
         return true;
     }
