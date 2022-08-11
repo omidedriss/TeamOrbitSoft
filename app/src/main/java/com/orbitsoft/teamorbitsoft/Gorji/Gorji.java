@@ -193,9 +193,9 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
     @Override
     public void onClick(View v) {
         Student huaman = new Student();
-        for(int i =0 ;i<=4;i++){
-            Toast.makeText(getApplicationContext(),"for run",Toast.LENGTH_LONG).show();
-            if (i==0){
+        for(int i =0 ;i<=4;i++) {
+            Toast.makeText(getApplicationContext(), "for run", Toast.LENGTH_LONG).show();
+            /*if (i==0){
             Toast.makeText(getApplicationContext(),"name run",Toast.LENGTH_LONG).show();
             name = entry.getText().toString();
             entry.setText("");
@@ -230,7 +230,41 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
             entry.setText("");
 
         }
-    }//end for
+    }//end for */
+            switch (i){
+                case 0:
+                    Toast.makeText(getApplicationContext(),"name run",Toast.LENGTH_LONG).show();
+                    name = entry.getText().toString();
+                    entry.setText("");
+                    break;
+                case 1:
+                    entry.setHint("Family");
+                    Toast.makeText(getApplicationContext(),"fami run",Toast.LENGTH_LONG).show();
+                    family = entry.getText().toString();
+                    entry.setText("");
+                    break;
+                case 2:
+                    entry.setHint("Hight");
+                    Toast.makeText(getApplicationContext(),"قد",Toast.LENGTH_LONG).show();
+                    entry.setInputType(3);
+                    hight = entry.getText().toString();
+                    entry.setText("");
+                    break;
+                case 3:
+                    entry.setHint("Nationalcod");
+                    entry.setInputType(3);
+                    nationalCode1=entry.getText().toString();
+                    entry.setText("");
+                    i++;
+                    break;
+                case 4:
+                    entry.setHint("Weight");
+                    entry.setInputType(3);
+                    weight = entry.getText().toString();
+                    entry.setText("");
+                    break;
+            }
+        }
     }
 
     @Override
