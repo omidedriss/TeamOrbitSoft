@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_main.xml" value="0.26875" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_mazaheri.xml" value="0.25885416666666666" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_mazaheri_student.xml" value="0.27291666666666664" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_thesheox.xml" value="0.12395833333333334" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/browser.xml" value="0.27291666666666664" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/student.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/layout/activity_gorji.xml" value="0.15" />
