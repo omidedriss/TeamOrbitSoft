@@ -226,9 +226,9 @@ public class Mazaheri extends AppCompatActivity {
         jad = findViewById(R.id.textView4maz);
         jad.setTextSize(14);
         String st="";
-        Student st1=new Student("علی","احمدی",85.0f,140.0f,
+        Student_costractor st1=new Student_costractor("علی","احمدی",85.0f,140.0f,
                 1000,17.5f,18.5f);
-        Student st2=new Student("محمد","حیدری",95.0f,185.5f,
+        Student_costractor st2=new Student_costractor("محمد","حیدری",95.0f,185.5f,
                 1001,13.5f,14.5f);
         st=st+st1.show();
         st=st+st2.show();

@@ -2,13 +2,11 @@
     <string name="app_name">TeamOrbitSoft</string>
     <string name="jadval">جدول ضرب</string>
     <string name="towg">دو عدد بزرگتر</string>
-    <string name="title_activity_main">MainActivity</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="gorgi">Gorgi</string>
+    <string name="mazaheri">مظاهری</string>
+    <string name="saeedian">saeedian</string>
+    <string name="moosavi">moosavi</string>
+    <string name="hatami">hatami</string>
+    <string name="life_cycle">life_cycle</string>
+    <string name="intent">intent</string>
 </resources>
