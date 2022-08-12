@@ -1,22 +1,19 @@
-package com.orbitsoft.teamorbitsoft;
+package com.orbitsoft.teamorbitsoft.Mazaheri;
 
 import static java.lang.Math.random;
-
 import androidx.appcompat.app.AppCompatActivity;
-
-
 import android.content.Intent;
 import android.os.Bundle;
-
 import android.widget.Button;
 import android.widget.TextView;
-
-
+import com.orbitsoft.teamorbitsoft.MainActivity;
+import com.orbitsoft.teamorbitsoft.R;
 
 public class Mazaheri extends AppCompatActivity {
-TextView jad;
-
-    public Button btmazjadvis, btmazsix, btmazret,btmazfard,btmazemail,btmazaverage;
+    TextView jad;
+    Button btmazjadvis, btmazsix, btmazret,
+                  btmazfard,btmazemail,btmazaverage,
+                  btmazstudent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +26,8 @@ TextView jad;
         btmazemail=findViewById(R.id.btmazemail);
         btmazjadvis=findViewById(R.id.btmazjadvis);
         btmazaverage=findViewById(R.id.btmazaverage);
+        btmazstudent=findViewById(R.id.btmazstudent);
+        btmazstudent.setOnClickListener(v -> mngstudent());
         btmazaverage.setOnClickListener(v -> average());
         btmazemail.setOnClickListener(v -> concat());
         btmazsix.setOnClickListener(v -> sixgreat());
@@ -36,12 +35,17 @@ TextView jad;
         btmazfard.setOnClickListener(v -> fard());
 
 
+
         btmazret.setOnClickListener(v -> {
-            Intent imazret=new Intent(this,MainActivity.class);
+            Intent imazret=new Intent(this, MainActivity.class);
             startActivity(imazret);
         });
-    }
 
+
+
+
+    }
+    //متد جدول ضرب
     public void zarb() {
         jad = findViewById(R.id.textView4maz);
         jad.setTextSize(14);
@@ -63,7 +67,7 @@ TextView jad;
                     st = String.valueOf(zar);
                 }
                 if (st.length() == 1) {
-                    st = st + "     ";
+                    st = st + "     ";   // تنظیم سطر و ستون ها با توجه به تعداد ارقام هر عدد
                 }
                 if (st.length() == 2) {
                     st = st + "   ";
@@ -74,7 +78,8 @@ TextView jad;
         }
         jad.setText(tv.toString());
     }
-        public void sixgreat() {
+    //متد مرتب سازی شش عدد
+    public void sixgreat() {
             jad = findViewById(R.id.textView4maz);
             jad.setTextSize(20);
             int[] rnum = new int[6];
@@ -126,7 +131,8 @@ TextView jad;
 
 
         }
-        public void fard(){
+    // متد اعداد فرد
+    public void fard(){
             jad = findViewById(R.id.textView4maz);
             jad.setTextSize(14);
             StringBuilder tv = new StringBuilder();
@@ -139,7 +145,8 @@ TextView jad;
             }
             jad.setText(tv.toString());
         }
-        public void concat(){
+    //متد چسباندن اسم و فامیل
+    public void concat(){
             jad = findViewById(R.id.textView4maz);
             jad.setTextSize(20);
             String tv = "";
@@ -171,7 +178,8 @@ TextView jad;
 
 
         }
-        public void average(){
+    // متد معدل گیری
+    public void average(){
 
             jad = findViewById(R.id.textView4maz);
             jad.setTextSize(16);
@@ -213,6 +221,18 @@ TextView jad;
 
             jad.setText(tv.toString());
         }
-
+    // متد دانش آموزان
+    public void mngstudent() {
+        jad = findViewById(R.id.textView4maz);
+        jad.setTextSize(14);
+        String st="";
+        Student_costractor st1=new Student_costractor("علی","احمدی",85.0f,140.0f,
+                1000,17.5f,18.5f);
+        Student_costractor st2=new Student_costractor("محمد","حیدری",95.0f,185.5f,
+                1001,13.5f,14.5f);
+        st=st+st1.show();
+        st=st+st2.show();
+        jad.setText(st);
     }
+}
 

@@ -1,14 +1,16 @@
-package com.orbitsoft.teamorbitsoft;
+package com.orbitsoft.teamorbitsoft.Salimi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Kanani extends AppCompatActivity {
+import com.orbitsoft.teamorbitsoft.R;
+
+public class SalimiActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kanani);
+        setContentView(R.layout.activity_salimi);
     }
 }
