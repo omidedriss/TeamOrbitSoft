@@ -13,7 +13,7 @@
         android:id="@+id/btactivity_gorji"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Gorgi"
+        android:text="@string/gorgi"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.448"
@@ -25,7 +25,7 @@
         android:id="@+id/btmaz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="مظاهری"
+        android:text="@string/mazaheri"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.448"
@@ -37,7 +37,7 @@
         android:id="@+id/saeedian"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="saeedian"
+        android:text="@string/saeedian"
         tools:layout_editor_absoluteX="145dp"
         tools:layout_editor_absoluteY="186dp" />
 
@@ -45,28 +45,28 @@
         android:id="@+id/moosavi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="moosavi"
+        android:text="@string/moosavi"
         tools:layout_editor_absoluteX="143dp"
         tools:layout_editor_absoluteY="255dp" />
     <Button
         android:id="@+id/hatami"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="hatami"
+        android:text="@string/hatami"
         tools:layout_editor_absoluteX="143dp"
         tools:layout_editor_absoluteY="255dp" />
     <Button
         android:id="@+id/life_cycle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="life_cycle"
+        android:text="@string/life_cycle"
         tools:layout_editor_absoluteX="143dp"
         tools:layout_editor_absoluteY="255dp" />
     <Button
         android:id="@+id/intent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="intent"
+        android:text="@string/intent"
         tools:layout_editor_absoluteX="143dp"
         tools:layout_editor_absoluteY="255dp" />
 

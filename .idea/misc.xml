@@ -3,10 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_mazaheri.xml" value="0.2504528985507246" />
-        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/activity_saaedian.xml" value="0.22554347826086957" />
-        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/activity_saeedian.xml" value="0.1" />
-        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/activity_saeidian.xml" value="0.1" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_mazaheri.xml" value="0.25885416666666666" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_mazaheri_student.xml" value="0.27291666666666664" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/browser.xml" value="0.27291666666666664" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/student.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/layout/activity_gorji.xml" value="0.15" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/layout/activity_mazaheri.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
