@@ -245,8 +245,8 @@ public class Mazaheri extends AppCompatActivity {
         String st="";
         Student_through_method st1 = new Student_through_method();
         Student_through_method st2 = new Student_through_method();
-        st1.insertRecord("علی","احمدی",173.0f,70.0f,1000,17.5f,18.5f);
-        st2.insertRecord("محمد","حیدری",175.0f,85.5f,1001,13.5f,14.5f);
+        st1.insertRecord("حسن","احمدی",173.0f,70.0f,1000,17.5f,18.5f);
+        st2.insertRecord("محمد","سلامی",175.0f,85.5f,1001,13.5f,14.5f);
         st=st+st1.show();
         st=st+st2.show();
         jad.setText(st);
@@ -258,8 +258,8 @@ public class Mazaheri extends AppCompatActivity {
         String st="";
         Student_through_method st1 = new Student_through_method();
         Student_through_method st2 = new Student_through_method();
-        st1.name="علی";st1.family="احمدی";st1.height=160.0f;st1.weight=70.0f;st1.stunum=1000;st1.lesson1=17.5f;st1.lesson2=18.5f;
-        st2.name="محمد";st2.family="حیدری";st2.height=175.0f;st2.weight=75.5f;st2.stunum=1001;st2.lesson1=13.5f;st2.lesson2=14.5f;
+        st1.name="رضا";st1.family="خجسته";st1.height=160.0f;st1.weight=70.0f;st1.stunum=1000;st1.lesson1=17.5f;st1.lesson2=18.5f;
+        st2.name="محسن";st2.family="صدری";st2.height=175.0f;st2.weight=75.5f;st2.stunum=1001;st2.lesson1=13.5f;st2.lesson2=14.5f;
 
         st=st+st1.show();
         st=st+st2.show();
