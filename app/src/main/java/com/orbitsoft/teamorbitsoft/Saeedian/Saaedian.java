@@ -23,6 +23,7 @@ public class Saaedian extends AppCompatActivity {
         student.setWeight(100);
         student.setHeight(1.75F);
         student.setNumber(111);
+        //
 student.setBmi(student.getWeight()/ student.getHeight()/student.getHeight());
 student.setAvg((student.getS1()+student.getS2()+student.getS3()+student.getS4()+student.getS5()+student.getS6()+student.getS7())/7);
 
