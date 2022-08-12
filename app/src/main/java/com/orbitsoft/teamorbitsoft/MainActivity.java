@@ -11,19 +11,20 @@ import com.orbitsoft.teamorbitsoft.Gorji.Gorji;
 import com.orbitsoft.teamorbitsoft.Hatami.Hatami;
 import com.orbitsoft.teamorbitsoft.Mazaheri.Mazaheri;
 import com.orbitsoft.teamorbitsoft.Moosavi.Moosavi;
+import com.orbitsoft.teamorbitsoft.Nikkhu.Nikkhu;
 import com.orbitsoft.teamorbitsoft.Saeedian.Saaedian;
 import com.orbitsoft.teamorbitsoft.example.IntentSample;
 import com.orbitsoft.teamorbitsoft.example.LifeCycleActivity;
 
 public class MainActivity extends AppCompatActivity {
 Button btGorji;
-Button btmaz,btMoosavi,btSaeedian,btHatami,btIntent,btLifeCycle;
+Button btmaz,btMoosavi,btSaeedian,btHatami,btIntent,btLifeCycle,btNickQue;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        btNickQue = findViewById(R.id.btNickQue);
         btGorji = findViewById(R.id.btactivity_gorji);
         btmaz=findViewById(R.id.btmaz);
         btMoosavi=findViewById(R.id.moosavi);
@@ -68,6 +69,11 @@ Button btmaz,btMoosavi,btSaeedian,btHatami,btIntent,btLifeCycle;
         );
         btLifeCycle.setOnClickListener(v -> {
                     Intent imaz=new Intent(this, LifeCycleActivity.class);
+                    startActivity(imaz);
+                }
+        );
+        btNickQue.setOnClickListener(v -> {
+                    Intent imaz=new Intent(this, Nikkhu.class);
                     startActivity(imaz);
                 }
         );

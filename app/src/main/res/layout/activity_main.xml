@@ -70,5 +70,11 @@
         tools:layout_editor_absoluteX="143dp"
         tools:layout_editor_absoluteY="255dp" />
 
+    <Button
+        android:id="@+id/btNickQue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nick que" />
+
 
 </LinearLayout>
