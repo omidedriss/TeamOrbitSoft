@@ -17,6 +17,9 @@
         android:theme="@style/Theme.TeamOrbitSoft"
         tools:targetApi="31">
         <activity
+            android:name=".saeidian"
+            android:exported="false" />
+        <activity
             android:name=".SalimiActivity"
             android:exported="false" />
         <activity
