@@ -1,12 +1,12 @@
 package com.orbitsoft.teamorbitsoft.Mazaheri;
 
-public class Student {
+public class Student_costractor {
     String name,family;
     double height,weight,lesson1,lesson2;
     int stunum;
     // تعریف سازنده کلاس برای مقدار دهی اولیه آبجکت ها
-     Student(String name, String family, double weight,
-                        double height, int stunum,double lesson1,
+     Student_costractor(String name, String family, double weight,
+                        double height, int stunum, double lesson1,
                         double lesson2) {
         this.name = name;
         this.family = family;
