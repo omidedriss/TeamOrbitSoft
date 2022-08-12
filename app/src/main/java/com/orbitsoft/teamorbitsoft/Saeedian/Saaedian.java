@@ -27,7 +27,7 @@ public class Saaedian extends AppCompatActivity {
 student.setBmi(student.getWeight()/ student.getHeight()/student.getHeight());
 student.setAvg((student.getS1()+student.getS2()+student.getS3()+student.getS4()+student.getS5()+student.getS6()+student.getS7())/7);
 
-        shayan.setText(student.getAvg()+"\n"+student.getBmi()+"\n"+"idnumber : "+student.getNumber()+"\n"+"name : "+student.getName() + "\n"+"family : "+student.getFamily()+ "\n"+"height : "+student.getHeight()+ "\n"+"weight : "+student.getWeight());
+        shayan.setText("idnumber : "+student.getNumber()+"\n"+"name : "+student.getName() + "\n"+"family : "+student.getFamily()+ "\n"+"height : "+student.getHeight()+ "\n"+"weight : "+student.getWeight()+"avg : "+student.getAvg()+"\n"+"bmi : "+student.getBmi());
 
 
     }
