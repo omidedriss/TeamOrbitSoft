@@ -40,6 +40,7 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
             String Name = bundle.getString("test", "nothing");
             Long number = bundle.getLong("test2", 12);
             Toast.makeText(Gorji.this, Name+Long.toString(number), Toast.LENGTH_LONG).show();
+
         }
         /* adadBozorgTar = findViewById(R.id.tv);
         fard=findViewById(R.id.tv_fard);
