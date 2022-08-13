@@ -14,7 +14,7 @@ public class saeidian extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_saaedian);
+        setContentView(R.layout.activity_saaidian);
         shayan = findViewById(R.id.textView);
         thesheox student = new thesheox();
         student.setName("shayan");
