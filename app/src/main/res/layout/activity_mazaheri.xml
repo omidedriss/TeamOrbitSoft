@@ -8,21 +8,48 @@
     tools:context=".Mazaheri.Mazaheri">
 
     <Button
+        android:id="@+id/btmazstudent3"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="0dp"
+        android:text="دانش آموزان3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btmazstudent2"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btmazsix"
+        app:layout_constraintVertical_bias="0.185"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btmazstudent2"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/students2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btmazsix"
+        app:layout_constraintVertical_bias="0.183" />
+
+    <Button
         android:id="@+id/btmazstudent"
         android:layout_width="110dp"
         android:layout_height="50dp"
-        android:text="دانش آموزان"
+        android:text="@string/students"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.053"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btmazjadvis"
-        app:layout_constraintVertical_bias="0.091" />
+        app:layout_constraintVertical_bias="0.089" />
 
     <Button
         android:id="@+id/btmazaverage"
         android:layout_width="110dp"
-        android:layout_height="55dp"
+        android:layout_height="50dp"
         android:text="میانگین شش عدد"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btmazfard"
@@ -48,7 +75,7 @@
     <Button
         android:id="@+id/btmazfard"
         android:layout_width="110dp"
-        android:layout_height="55dp"
+        android:layout_height="50dp"
         android:text="اعداد فرد ۱ تا ۳۰"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btmazjadvis"
@@ -88,26 +115,27 @@
 
     <Button
         android:id="@+id/btmazret"
-        android:layout_width="100dp"
+        android:layout_width="110dp"
         android:layout_height="50dp"
         android:layout_marginBottom="30dp"
         android:text="بازگشت"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintEnd_toStartOf="@+id/btmazstudent3"
+        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btmazemail"
-        app:layout_constraintVertical_bias="0.41"
+        app:layout_constraintTop_toBottomOf="@+id/btmazstudent"
+        app:layout_constraintVertical_bias="0.253"
         tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/btmazjadvis"
         android:layout_width="110dp"
-        android:layout_height="55dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
         android:text="@string/jadval"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintHorizontal_bias="0.913"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4maz"
         app:layout_constraintVertical_bias="0.098"

@@ -14,6 +14,11 @@ public class MyBrowserActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.browser);
+
+        Bundle bundle = getIntent().getExtras();
+        if(bundle!=null){
+            Long hotelName = bundle.getLong("testputLong",0);
+        }
         
         Uri url = getIntent().getData();
         WebView webView = (WebView) findViewById(R.id.WebView01);

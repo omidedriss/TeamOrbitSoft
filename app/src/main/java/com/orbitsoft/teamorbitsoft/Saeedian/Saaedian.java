@@ -3,84 +3,32 @@ package com.orbitsoft.teamorbitsoft.Saeedian;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 import com.orbitsoft.teamorbitsoft.R;
 
 
 public class Saaedian extends AppCompatActivity {
-    int aa=1;
-    String bb="test";
-    public TextView test;
-    int a=1;
-    int b=2;
-    int c=4;
-    int d=9;
-    int jam;
-    int miangin;
-    int largest=0;
-
-    int secondlargest=0;
-    int sum;
-    int min;
-    int[]array={2,4,6,80,1,26,90};
-
-    int i;
+    TextView shayan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saaedian);
-        test = findViewById(R.id.textview_s);
-        //adadfard ta 30
-        while (a<=30)
-        {
+        shayan = findViewById(R.id.textView);
+        thesheox student = new thesheox();
+        student.setName("shayan");
+        student.setFamily("saeidain");
+        student.setWeight(100);
+        student.setHeight(1.75F);
+        student.setNumber(111);
+        //
+student.setBmi(student.getWeight()/ student.getHeight()/student.getHeight());
+student.setAvg((student.getS1()+student.getS2()+student.getS3()+student.getS4()+student.getS5()+student.getS6()+student.getS7())/7);
 
-            bb= bb+Integer.toString(a)+"\n";
+        shayan.setText("idnumber : "+student.getNumber()+"\n"+"name : "+student.getName() + "\n"+"family : "+student.getFamily()+ "\n"+"height : "+student.getHeight()+ "\n"+"weight : "+student.getWeight()+"avg : "+student.getAvg()+"\n"+"bmi : "+student.getBmi());
 
-
-            test.setText(bb);
-            a=a+2;
-        }
-        ///////////////////////////////////////////
-        //esm va famil va email
-        test.setText("shayan"+"saeidian"+"\n"+"thesheox@gmail.com");
-        //////////////////////////////////////////////
-        //miangin adad
-        jam=a+b+c+d;
-        miangin=jam/4;
-
-        //test = findViewById(R.id.textView);
-        test.setText("miangin="+Integer.toString(miangin));
-        ////////////////////////////////
-        //jame dota bozorgtarin
-        for(int i=0;i<array.length; i++)
-        {
-            if(array[i]>largest)
-            {
-                secondlargest=largest;
-                largest=array[i];
-            }
-            else if (array[i]>secondlargest)
-            {
-                secondlargest=array[i];
-            }
-
-        }
-        test.setText(Integer.toString(largest+secondlargest));
-        ///////////////////////////////////////////////////////
-        //jadvalzarb:to layout hamasho neveshtam
 
     }
 }
-
-
-
-
-
-
-
-
-
-//    }
-
