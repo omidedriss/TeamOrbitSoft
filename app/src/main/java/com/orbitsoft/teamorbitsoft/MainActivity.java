@@ -12,7 +12,7 @@ import com.orbitsoft.teamorbitsoft.Hatami.Hatami;
 import com.orbitsoft.teamorbitsoft.Mazaheri.Mazaheri;
 import com.orbitsoft.teamorbitsoft.Moosavi.Moosavi;
 import com.orbitsoft.teamorbitsoft.Nikkhu.Nikkhu;
-import com.orbitsoft.teamorbitsoft.Saeedian.Saaedian;
+import com.orbitsoft.teamorbitsoft.Saeidian.saeidian;
 import com.orbitsoft.teamorbitsoft.example.IntentSample;
 import com.orbitsoft.teamorbitsoft.example.LifeCycleActivity;
 import com.orbitsoft.teamorbitsoft.example.MyDialog;
@@ -50,7 +50,7 @@ Button btmaz,btMoosavi,btSaeedian,btHatami,btIntent,btLifeCycle,btNickQue,my_dia
                 }
         );
         btSaeedian.setOnClickListener(v -> {
-                    Intent imaz=new Intent(this, Saaedian.class);
+                    Intent imaz=new Intent(this, saeidian.class);
                     startActivity(imaz);
                 }
         );
