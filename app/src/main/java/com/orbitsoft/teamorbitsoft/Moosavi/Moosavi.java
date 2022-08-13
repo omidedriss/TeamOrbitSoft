@@ -136,6 +136,7 @@ TextView name , lname , bmi , schoolname , grade , avgscore ;
         schoolname.setText ( "School name :" ) ;
         grade.setText ( "Grade :" ) ;
         avgscore.setText ( "Average Score :" ) ;
+
     }
 }
 
