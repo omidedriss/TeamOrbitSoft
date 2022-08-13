@@ -15,10 +15,11 @@ import com.orbitsoft.teamorbitsoft.Nikkhu.Nikkhu;
 import com.orbitsoft.teamorbitsoft.Saeedian.Saaedian;
 import com.orbitsoft.teamorbitsoft.example.IntentSample;
 import com.orbitsoft.teamorbitsoft.example.LifeCycleActivity;
+import com.orbitsoft.teamorbitsoft.example.MyDialog;
 
 public class MainActivity extends AppCompatActivity {
 Button btGorji;
-Button btmaz,btMoosavi,btSaeedian,btHatami,btIntent,btLifeCycle,btNickQue;
+Button btmaz,btMoosavi,btSaeedian,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +33,7 @@ Button btmaz,btMoosavi,btSaeedian,btHatami,btIntent,btLifeCycle,btNickQue;
         btHatami=findViewById(R.id.hatami);
         btIntent=findViewById(R.id.intent);
         btLifeCycle=findViewById(R.id.life_cycle);
+        my_dialog=findViewById(R.id.my_dialog);
 
         btGorji.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,6 +76,11 @@ Button btmaz,btMoosavi,btSaeedian,btHatami,btIntent,btLifeCycle,btNickQue;
         );
         btNickQue.setOnClickListener(v -> {
                     Intent imaz=new Intent(this, Nikkhu.class);
+                    startActivity(imaz);
+                }
+        );
+        my_dialog.setOnClickListener(v -> {
+                    Intent imaz=new Intent(this, MyDialog.class);
                     startActivity(imaz);
                 }
         );

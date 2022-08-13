@@ -11,7 +11,7 @@
 
     <Button
         android:id="@+id/btactivity_gorji"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/gorgi"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,7 +23,7 @@
 
     <Button
         android:id="@+id/btmaz"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/mazaheri"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,7 +35,7 @@
 
     <Button
         android:id="@+id/saeedian"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/saeedian"
         tools:layout_editor_absoluteX="145dp"
@@ -43,38 +43,46 @@
 
     <Button
         android:id="@+id/moosavi"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/moosavi"
         tools:layout_editor_absoluteX="143dp"
         tools:layout_editor_absoluteY="255dp" />
     <Button
         android:id="@+id/hatami"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/hatami"
         tools:layout_editor_absoluteX="143dp"
         tools:layout_editor_absoluteY="255dp" />
+
+    <Button
+        android:id="@+id/btNickQue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="nick que" />
     <Button
         android:id="@+id/life_cycle"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/life_cycle"
         tools:layout_editor_absoluteX="143dp"
         tools:layout_editor_absoluteY="255dp" />
     <Button
         android:id="@+id/intent"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/intent"
         tools:layout_editor_absoluteX="143dp"
         tools:layout_editor_absoluteY="255dp" />
-
     <Button
-        android:id="@+id/btNickQue"
-        android:layout_width="wrap_content"
+        android:id="@+id/my_dialog"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="nick que" />
+        android:text="@string/myDialog"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="255dp" />
+
 
 
 </LinearLayout>
