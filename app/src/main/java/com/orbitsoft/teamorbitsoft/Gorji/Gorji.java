@@ -35,6 +35,12 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gorji);
+        Bundle bundle = getIntent().getExtras();
+        if(bundle!=null) {
+            String Name = bundle.getString("test", "nothing");
+            Long number = bundle.getLong("test2", 12);
+            Toast.makeText(Gorji.this, Name+Long.toString(number), Toast.LENGTH_LONG).show();
+        }
         /* adadBozorgTar = findViewById(R.id.tv);
         fard=findViewById(R.id.tv_fard);
         average= findViewById(R.id.tv_average);
@@ -328,6 +334,7 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
         showBmi.setTextSize(14f);
         school ();
         return true;
+
     }
 }
 
