@@ -13,7 +13,7 @@
         android:id="@+id/btactivity_gorji"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/gorgi"
+        android:text="@string/Gorji"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.448"
@@ -37,7 +37,7 @@
         android:id="@+id/saeedian"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/saeedian"
+        android:text="@string/saeidian"
         tools:layout_editor_absoluteX="145dp"
         tools:layout_editor_absoluteY="186dp" />
 
