@@ -1,11 +1,14 @@
 package com.orbitsoft.teamorbitsoft.Mazaheri;
 
 import static java.lang.Math.random;
-import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.orbitsoft.teamorbitsoft.MainActivity;
 import com.orbitsoft.teamorbitsoft.R;
 
@@ -13,38 +16,24 @@ public class Mazaheri extends AppCompatActivity {
     TextView jad;
     Button btmazjadvis, btmazsix, btmazret,
                   btmazfard,btmazemail,btmazaverage,
-                  btmazstudent,btmazstudent2,btmazstudent3;
+                  btmazstudent,btmazstudent2,btmazstudent3,
+                  btmazintent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mazaheri);
 
-
-        btmazsix=findViewById(R.id.btmazsix);
-        btmazret=findViewById(R.id.btmazret);
-        btmazfard=findViewById(R.id.btmazfard);
-        btmazemail=findViewById(R.id.btmazemail);
-        btmazjadvis=findViewById(R.id.btmazjadvis);
-        btmazaverage=findViewById(R.id.btmazaverage);
-        btmazstudent=findViewById(R.id.btmazstudent);
-        btmazstudent2=findViewById(R.id.btmazstudent2);
-        btmazstudent3=findViewById(R.id.btmazstudent3);
-        btmazstudent.setOnClickListener(v -> mngstudent());
-        btmazstudent2.setOnClickListener(v -> mngstudent2());
-        btmazstudent3.setOnClickListener(v -> mngstudent3());
-        btmazaverage.setOnClickListener(v -> average());
-        btmazemail.setOnClickListener(v -> concat());
-        btmazsix.setOnClickListener(v -> sixgreat());
-        btmazjadvis.setOnClickListener(v -> zarb());
-        btmazfard.setOnClickListener(v -> fard());
-
-
+        initialliz();
 
         btmazret.setOnClickListener(v -> {
             Intent imazret=new Intent(this, MainActivity.class);
             startActivity(imazret);
         });
 
+        btmazintent.setOnClickListener(v -> {
+            Intent imazintent=new Intent(Mazaheri.this, MazIntent.class);
+            startActivity(imazintent);
+        });
 
 
 
@@ -265,5 +254,29 @@ public class Mazaheri extends AppCompatActivity {
         st=st+st2.show();
         jad.setText(st);
     }
+    //مقدار دهی اولیه کلیدها
+    public void initialliz(){
+        btmazsix=findViewById(R.id.btmazsix);
+        btmazret=findViewById(R.id.btmazret);
+        btmazfard=findViewById(R.id.btmazfard);
+        btmazemail=findViewById(R.id.btmazemail);
+        btmazjadvis=findViewById(R.id.btmazjadvis);
+        btmazaverage=findViewById(R.id.btmazaverage);
+        btmazstudent=findViewById(R.id.btmazstudent);
+        btmazstudent2=findViewById(R.id.btmazstudent2);
+        btmazstudent3=findViewById(R.id.btmazstudent3);
+        btmazintent=findViewById(R.id.btmazintent);
+
+        btmazstudent.setOnClickListener(v -> mngstudent());
+        btmazstudent2.setOnClickListener(v -> mngstudent2());
+        btmazstudent3.setOnClickListener(v -> mngstudent3());
+        btmazaverage.setOnClickListener(v -> average());
+        btmazemail.setOnClickListener(v -> concat());
+        btmazsix.setOnClickListener(v -> sixgreat());
+        btmazjadvis.setOnClickListener(v -> zarb());
+        btmazfard.setOnClickListener(v -> fard());
+
+    }
+
 }
 

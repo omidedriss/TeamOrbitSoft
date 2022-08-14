@@ -52,6 +52,9 @@
             android:name=".Mazaheri.Mazaheri"
             android:exported="false" />
         <activity
+            android:name=".Mazaheri.MazIntent"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

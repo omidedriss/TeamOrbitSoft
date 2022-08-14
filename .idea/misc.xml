@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_mazaheri.xml" value="0.2504528985507246" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_mazaheri.xml" value="0.5259259259259259" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_mazintent.xml" value="0.27291666666666664" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_my_dialog.xml" value="0.27291666666666664" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/menu/activity_main.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/activity_saaedian.xml" value="0.22554347826086957" />
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/activity_saaidian.xml" value="0.25" />
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/activity_saeedian.xml" value="0.1" />

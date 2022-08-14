@@ -1,16 +1,14 @@
 package com.orbitsoft.teamorbitsoft.example;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.orbitsoft.teamorbitsoft.R;
 
@@ -18,10 +16,12 @@ public class MyDialog extends AppCompatActivity {
 
     CharSequence[] items = {"google","apple"};
     boolean[] itemsChecked = new boolean [items.length];
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_dialog);
+
         Button btn = (Button) findViewById(R.id.button1);
         btn.setOnClickListener(new View.OnClickListener() {
 
