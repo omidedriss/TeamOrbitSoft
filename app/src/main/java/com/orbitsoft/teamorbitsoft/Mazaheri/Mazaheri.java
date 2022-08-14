@@ -1,11 +1,14 @@
 package com.orbitsoft.teamorbitsoft.Mazaheri;
 
 import static java.lang.Math.random;
-import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.orbitsoft.teamorbitsoft.MainActivity;
 import com.orbitsoft.teamorbitsoft.R;
 
@@ -13,34 +16,24 @@ public class Mazaheri extends AppCompatActivity {
     TextView jad;
     Button btmazjadvis, btmazsix, btmazret,
                   btmazfard,btmazemail,btmazaverage,
-                  btmazstudent;
+                  btmazstudent,btmazstudent2,btmazstudent3,
+                  btmazintent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mazaheri);
 
-
-        btmazsix=findViewById(R.id.btmazsix);
-        btmazret=findViewById(R.id.btmazret);
-        btmazfard=findViewById(R.id.btmazfard);
-        btmazemail=findViewById(R.id.btmazemail);
-        btmazjadvis=findViewById(R.id.btmazjadvis);
-        btmazaverage=findViewById(R.id.btmazaverage);
-        btmazstudent=findViewById(R.id.btmazstudent);
-        btmazstudent.setOnClickListener(v -> mngstudent());
-        btmazaverage.setOnClickListener(v -> average());
-        btmazemail.setOnClickListener(v -> concat());
-        btmazsix.setOnClickListener(v -> sixgreat());
-        btmazjadvis.setOnClickListener(v -> zarb());
-        btmazfard.setOnClickListener(v -> fard());
-
-
+        initialliz();
 
         btmazret.setOnClickListener(v -> {
             Intent imazret=new Intent(this, MainActivity.class);
             startActivity(imazret);
         });
 
+        btmazintent.setOnClickListener(v -> {
+            Intent imazintent=new Intent(Mazaheri.this, MazIntent.class);
+            startActivity(imazintent);
+        });
 
 
 
@@ -221,7 +214,7 @@ public class Mazaheri extends AppCompatActivity {
 
             jad.setText(tv.toString());
         }
-    // متد دانش آموزان
+    // متد دانش آموزان روش اول مقداردهی توسط سازنده
     public void mngstudent() {
         jad = findViewById(R.id.textView4maz);
         jad.setTextSize(14);
@@ -234,5 +227,56 @@ public class Mazaheri extends AppCompatActivity {
         st=st+st2.show();
         jad.setText(st);
     }
+    // متد دانش آموزان روش دوم مقداردهی توسط متد
+    public void mngstudent2() {
+        jad = findViewById(R.id.textView4maz);
+        jad.setTextSize(14);
+        String st="";
+        Student_through_method st1 = new Student_through_method();
+        Student_through_method st2 = new Student_through_method();
+        st1.insertRecord("حسن","احمدی",173.0f,70.0f,1000,17.5f,18.5f);
+        st2.insertRecord("محمد","سلامی",175.0f,85.5f,1001,13.5f,14.5f);
+        st=st+st1.show();
+        st=st+st2.show();
+        jad.setText(st);
+    }
+    //متد دانش آموزان روش سوم مقداردهی توسط رفرنس
+    public void mngstudent3() {
+        jad = findViewById(R.id.textView4maz);
+        jad.setTextSize(14);
+        String st="";
+        Student_through_method st1 = new Student_through_method();
+        Student_through_method st2 = new Student_through_method();
+        st1.name="رضا";st1.family="خجسته";st1.height=160.0f;st1.weight=70.0f;st1.stunum=1000;st1.lesson1=17.5f;st1.lesson2=18.5f;
+        st2.name="محسن";st2.family="صدری";st2.height=175.0f;st2.weight=75.5f;st2.stunum=1001;st2.lesson1=13.5f;st2.lesson2=14.5f;
+
+        st=st+st1.show();
+        st=st+st2.show();
+        jad.setText(st);
+    }
+    //مقدار دهی اولیه کلیدها
+    public void initialliz(){
+        btmazsix=findViewById(R.id.btmazsix);
+        btmazret=findViewById(R.id.btmazret);
+        btmazfard=findViewById(R.id.btmazfard);
+        btmazemail=findViewById(R.id.btmazemail);
+        btmazjadvis=findViewById(R.id.btmazjadvis);
+        btmazaverage=findViewById(R.id.btmazaverage);
+        btmazstudent=findViewById(R.id.btmazstudent);
+        btmazstudent2=findViewById(R.id.btmazstudent2);
+        btmazstudent3=findViewById(R.id.btmazstudent3);
+        btmazintent=findViewById(R.id.btmazintent);
+
+        btmazstudent.setOnClickListener(v -> mngstudent());
+        btmazstudent2.setOnClickListener(v -> mngstudent2());
+        btmazstudent3.setOnClickListener(v -> mngstudent3());
+        btmazaverage.setOnClickListener(v -> average());
+        btmazemail.setOnClickListener(v -> concat());
+        btmazsix.setOnClickListener(v -> sixgreat());
+        btmazjadvis.setOnClickListener(v -> zarb());
+        btmazfard.setOnClickListener(v -> fard());
+
+    }
+
 }
 

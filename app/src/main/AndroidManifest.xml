@@ -5,6 +5,7 @@
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
 
     <application
         android:allowBackup="true"
@@ -17,7 +18,11 @@
         android:theme="@style/Theme.TeamOrbitSoft"
         tools:targetApi="31">
         <activity
-            android:name=".SalimiActivity"
+
+            android:name=".Salimi.SalimiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".example.MyDialog"
             android:exported="false" />
         <activity
             android:name=".example.IntentSample"
@@ -26,7 +31,7 @@
             android:name=".example.LifeCycleActivity"
             android:exported="false" />
         <activity
-            android:name=".Saeedian.Saaedian"
+            android:name=".Saeidian.saeidian"
             android:exported="false" />
         <activity
             android:name=".Hatami.Hatami"
@@ -45,6 +50,9 @@
             android:exported="false" />
         <activity
             android:name=".Mazaheri.Mazaheri"
+            android:exported="false" />
+        <activity
+            android:name=".Mazaheri.MazIntent"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -11,9 +11,9 @@
 
     <Button
         android:id="@+id/btactivity_gorji"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Gorgi"
+        android:text="@string/Gorji"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.448"
@@ -23,9 +23,9 @@
 
     <Button
         android:id="@+id/btmaz"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="مظاهری"
+        android:text="@string/mazaheri"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.448"
@@ -35,40 +35,54 @@
 
     <Button
         android:id="@+id/saeedian"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="saeedian"
+        android:text="@string/saeidian"
         tools:layout_editor_absoluteX="145dp"
         tools:layout_editor_absoluteY="186dp" />
 
     <Button
         android:id="@+id/moosavi"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="moosavi"
+        android:text="@string/moosavi"
         tools:layout_editor_absoluteX="143dp"
         tools:layout_editor_absoluteY="255dp" />
     <Button
         android:id="@+id/hatami"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="hatami"
+        android:text="@string/hatami"
         tools:layout_editor_absoluteX="143dp"
         tools:layout_editor_absoluteY="255dp" />
+
+    <Button
+        android:id="@+id/btNickQue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="nick que" />
     <Button
         android:id="@+id/life_cycle"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="life_cycle"
+        android:text="@string/life_cycle"
         tools:layout_editor_absoluteX="143dp"
         tools:layout_editor_absoluteY="255dp" />
     <Button
         android:id="@+id/intent"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="intent"
+        android:text="@string/intent"
         tools:layout_editor_absoluteX="143dp"
         tools:layout_editor_absoluteY="255dp" />
+    <Button
+        android:id="@+id/my_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/myDialog"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="255dp" />
+
 
 
 </LinearLayout>

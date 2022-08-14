@@ -22,7 +22,6 @@ public class Saaedian extends AppCompatActivity {
 
     int secondlargest=0;
     int sum;
-
     int min;
     int[]array={2,4,6,80,1,26,90};
 
