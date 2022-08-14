@@ -19,7 +19,7 @@ public class Mazaheri extends AppCompatActivity {
     Button btmazjadvis, btmazsix, btmazret,
                   btmazfard,btmazemail,btmazaverage,
                   btmazstudent,btmazstudent2,btmazstudent3,
-                  btmazintent,btmaznamefamil;
+                  btmazintent,btmaznamefamil,btmazstartonresult;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +51,10 @@ public class Mazaheri extends AppCompatActivity {
             startActivity(imaznamefamil);
         });
 
+        btmazstartonresult.setOnClickListener(v -> {
+            Intent imazresult=new Intent(Mazaheri.this, MazStartForResult_firstActivity.class);
+            startActivity(imazresult);
+        });
     }
     //متد جدول ضرب
     public void zarb() {
@@ -281,6 +285,7 @@ public class Mazaheri extends AppCompatActivity {
         btmazstudent3=findViewById(R.id.btmazstudent3);
         btmazintent=findViewById(R.id.btmazintent);
         btmaznamefamil=findViewById(R.id.btmaznamefamil);
+        btmazstartonresult=findViewById(R.id.btmazstartforresult);
 
         btmazstudent.setOnClickListener(v -> mngstudent());
         btmazstudent2.setOnClickListener(v -> mngstudent2());

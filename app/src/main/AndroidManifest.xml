@@ -60,6 +60,13 @@
         <activity
             android:name=".Mazaheri.MazShowNameFamil"
             android:exported="false" />
+        <activity
+            android:name=".Mazaheri.MazStartForResult_firstActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Mazaheri.MazStartForResult_SecondActivity"
+            android:exported="false" />
+
 
 
         <activity

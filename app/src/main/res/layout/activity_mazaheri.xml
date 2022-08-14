@@ -8,10 +8,26 @@
     tools:context=".Mazaheri.Mazaheri">
 
     <Button
+        android:id="@+id/btmazstartforresult"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:text="اجرای شرطی اینتنت"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btmazstudent3"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btmazstudent"
+        app:layout_constraintVertical_bias="0.073"
+        tools:ignore="HardcodedText" />
+
+    <Button
         android:id="@+id/btmaznamefamil"
         android:layout_width="110dp"
         android:layout_height="50dp"
         android:text="ارسال نام و فامیل"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.514"
@@ -73,6 +89,7 @@
         android:layout_width="110dp"
         android:layout_height="50dp"
         android:text="میانگین شش عدد"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btmazfard"
         app:layout_constraintHorizontal_bias="0.555"
@@ -99,6 +116,7 @@
         android:layout_width="110dp"
         android:layout_height="50dp"
         android:text="اعداد فرد ۱ تا ۳۰"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btmazjadvis"
         app:layout_constraintHorizontal_bias="0.939"
@@ -139,14 +157,15 @@
         android:id="@+id/btmazret"
         android:layout_width="110dp"
         android:layout_height="50dp"
+        android:layout_marginTop="0dp"
         android:layout_marginBottom="30dp"
         android:text="بازگشت"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btmazstudent3"
         app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btmazstudent"
-        app:layout_constraintVertical_bias="0.073"
+        app:layout_constraintTop_toBottomOf="@+id/btmazstartforresult"
+        app:layout_constraintVertical_bias="0.137"
         tools:ignore="HardcodedText" />
 
     <Button
