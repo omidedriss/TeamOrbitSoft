@@ -8,10 +8,21 @@
     tools:context=".Mazaheri.Mazaheri">
 
     <Button
+        android:id="@+id/btmaznamefamil"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="ارسال نام و فامیل"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btmazstudent2"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <Button
         android:id="@+id/btmazintent"
         android:layout_width="110dp"
         android:layout_height="50dp"
-        android:layout_marginTop="0dp"
         android:text="@string/intent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

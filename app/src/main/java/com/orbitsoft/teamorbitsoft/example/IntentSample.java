@@ -1,7 +1,5 @@
 package com.orbitsoft.teamorbitsoft.example;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -9,6 +7,8 @@ import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.orbitsoft.teamorbitsoft.R;
 
@@ -45,7 +45,7 @@ public class IntentSample extends AppCompatActivity {
         });
 
         //---Make calls button---
-        b2 = (Button) findViewById(R.id.btn_makecalls);
+        b2 = (Button) findViewById(R.id.maz_makecalls);
         b2.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View arg0){

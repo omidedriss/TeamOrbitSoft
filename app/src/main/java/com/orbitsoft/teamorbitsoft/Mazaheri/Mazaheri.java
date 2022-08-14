@@ -4,6 +4,8 @@ import static java.lang.Math.random;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -17,11 +19,20 @@ public class Mazaheri extends AppCompatActivity {
     Button btmazjadvis, btmazsix, btmazret,
                   btmazfard,btmazemail,btmazaverage,
                   btmazstudent,btmazstudent2,btmazstudent3,
-                  btmazintent;
+                  btmazintent,btmaznamefamil;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
+        getSupportActionBar().hide(); // hide the title bar
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
+
         setContentView(R.layout.activity_mazaheri);
+
+
+
 
         initialliz();
 
@@ -35,7 +46,10 @@ public class Mazaheri extends AppCompatActivity {
             startActivity(imazintent);
         });
 
-
+        btmaznamefamil.setOnClickListener(v -> {
+            Intent imaznamefamil=new Intent(Mazaheri.this, MazGetNameFamil.class);
+            startActivity(imaznamefamil);
+        });
 
     }
     //متد جدول ضرب
@@ -266,6 +280,7 @@ public class Mazaheri extends AppCompatActivity {
         btmazstudent2=findViewById(R.id.btmazstudent2);
         btmazstudent3=findViewById(R.id.btmazstudent3);
         btmazintent=findViewById(R.id.btmazintent);
+        btmaznamefamil=findViewById(R.id.btmaznamefamil);
 
         btmazstudent.setOnClickListener(v -> mngstudent());
         btmazstudent2.setOnClickListener(v -> mngstudent2());

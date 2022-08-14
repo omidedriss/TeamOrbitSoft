@@ -55,6 +55,14 @@
             android:name=".Mazaheri.MazIntent"
             android:exported="false" />
         <activity
+            android:name=".Mazaheri.MazGetNameFamil"
+            android:exported="false" />
+        <activity
+            android:name=".Mazaheri.MazShowNameFamil"
+            android:exported="false" />
+
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
