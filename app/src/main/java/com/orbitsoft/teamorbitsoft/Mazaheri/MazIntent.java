@@ -13,7 +13,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.orbitsoft.teamorbitsoft.R;
-import com.orbitsoft.teamorbitsoft.example.MyBrowserActivity;
 
 public class MazIntent extends AppCompatActivity {
 
@@ -100,25 +99,25 @@ public class MazIntent extends AppCompatActivity {
             }
         });
 
-        b5 = (Button) findViewById(R.id.btn_launchMyBrowser);
-        b5.setOnClickListener(new View.OnClickListener()
-        {
-            public void onClick(View arg0)
-            {
+//        b5 = (Button) findViewById(R.id.btn_launchMyBrowser);
+//        b5.setOnClickListener(new View.OnClickListener()
+//        {
+//            public void onClick(View arg0)
+//            {
 
             	//---Method 1---
-//            	Intent i = new
-//                    Intent("com.orbitsoft.teamorbitsoft.MyBrowser");
-//            	i.setData(Uri.parse("http://www.amazon.com"));
+// //            	Intent i = new
+// //                   Intent("com.orbitsoft.teamorbitsoft.MyBrowser");
+// //           	i.setData(Uri.parse("http://www.amazon.com"));
+// //               startActivity(i);
+//
+//                Intent i = new
+//                        Intent(MazIntent.this, MyBrowserActivity.class);
+//               Bundle bundle = new Bundle();
+//               bundle.putLong("testputLong",12);
+//               i.putExtra("test", bundle);
+//
 //                startActivity(i);
-
-                Intent i = new
-                        Intent(MazIntent.this, MyBrowserActivity.class);
-               Bundle bundle = new Bundle();
-               bundle.putLong("testputLong",12);
-               i.putExtra("test", bundle);
-
-                startActivity(i);
 
 
 
@@ -137,8 +136,13 @@ public class MazIntent extends AppCompatActivity {
 //                i.addCategory("com.orbitsoft.teamorbitsoft.OtherApps");
 //                i.addCategory("com.orbitsoft.teamorbitsoft.SomeOtherApps");
 //                startActivity(i);
-            }
-        });
+//            }
+//        });
+
+
+
+
+
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
