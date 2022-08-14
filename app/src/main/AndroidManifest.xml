@@ -18,6 +18,9 @@
         android:theme="@style/Theme.TeamOrbitSoft"
         tools:targetApi="31">
         <activity
+            android:name=".Salimi.SalimiActivity"
+            android:exported="false" />
+        <activity
             android:name=".example.MyDialog"
             android:exported="false" />
         <activity
