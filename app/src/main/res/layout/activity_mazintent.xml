@@ -14,6 +14,12 @@
         android:text="Web Browser" />
     -->
     <Button
+        android:id="@+id/b6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="to CALL EMIDIATE set phone permision " />
+
+    <Button
         android:id="@+id/maz_makecalls"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -25,15 +31,18 @@
         android:layout_height="wrap_content"
         android:text="Show Map" />
     -->
+
     <Button
         android:id="@+id/btn_chooseContact"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Choose Contact" />
+
     <Button
         android:id="@+id/btn_launchMyBrowser"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Launch My Browser" />
+
 
 </LinearLayout>

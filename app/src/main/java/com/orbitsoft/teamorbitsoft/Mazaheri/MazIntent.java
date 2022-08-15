@@ -1,6 +1,7 @@
 package com.orbitsoft.teamorbitsoft.Mazaheri;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
@@ -16,8 +17,9 @@ import com.orbitsoft.teamorbitsoft.R;
 
 public class MazIntent extends AppCompatActivity {
 
-    Button btmazweb, b2, b3, b4, b5;
-    int request_Code = 1;
+    Button btmazweb, b2, b3, b4, b5,b6;
+    int request_Code_call = 1;
+    int request_Code_web = 2;
 
     /** Called when the activity is first created. */
     @Override
@@ -60,16 +62,23 @@ public class MazIntent extends AppCompatActivity {
 
                 Intent i = new
                 Intent(Intent.ACTION_DIAL,
-                        Uri.parse("tel:+651234567"));
+                        Uri.parse("tel:+653232546"));
                 startActivity(i);
 
+            }
+        });
 
-                //---OR---
+        //---Make calls button--- //در این حالت باید دسترسی تلفن به اپلیکیشن داده شود
+        b6 = (Button) findViewById(R.id.b6);
+        b6.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View arg0){
 
-//                Intent i = new
-//                        Intent(android.content.Intent.ACTION_CALL,
-//                        Uri.parse("tel:+651234567"));
-//                startActivity(i);
+
+                Intent i = new
+                        Intent(android.content.Intent.ACTION_CALL,
+                        Uri.parse("tel:+321654654"));
+                startActivity(i);
 
             }
         });
@@ -95,7 +104,7 @@ public class MazIntent extends AppCompatActivity {
                         Intent(Intent.ACTION_PICK);
                 //i.setType(ContactsContract.Contacts.CONTENT_TYPE);
                 i.setType(ContactsContract.CommonDataKinds.Phone.CONTENT_TYPE);
-                startActivityForResult(i,request_Code);
+                startActivityForResult(i,request_Code_call);
             }
         });
 
@@ -147,7 +156,7 @@ public class MazIntent extends AppCompatActivity {
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == request_Code) {
+        if (requestCode == request_Code_web) {
             if (resultCode == RESULT_OK) {
                 Toast.makeText(this, data.getData().toString(),
                         Toast.LENGTH_SHORT).show();
@@ -157,5 +166,30 @@ public class MazIntent extends AppCompatActivity {
                 startActivity(i);
             }
         }
+        if (requestCode == request_Code_call) {
+            if (resultCode == RESULT_OK) {
+                // گرفتن مقدار داده ها
+                Uri contactUri = data.getData();
+                // پیدا کردن ستون شماره تلفن مخاطب
+                String[] projection = {ContactsContract.CommonDataKinds.Phone.NUMBER};
+
+                //اجرای کوئری برای دریافت شماره تلفن از داخل uri
+                Cursor cursor = getContentResolver().query(contactUri, projection, null, null, null);
+                cursor.moveToFirst();
+
+                // گرفتن مقدار شماره تلفن
+                int column = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER);
+                String number = cursor.getString(column);
+                Toast.makeText(getApplicationContext(),number,Toast.LENGTH_LONG).show();
+                //برقراری تماس
+               //number="tel:"+number;
+                Intent i = new
+                       Intent(Intent.ACTION_CALL,
+                        Uri.parse("tel:"+number));
+              startActivity(i);
+
+            }
+        }
     }
+
 }
