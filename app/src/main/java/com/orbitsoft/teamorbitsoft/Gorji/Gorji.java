@@ -3,17 +3,13 @@ package com.orbitsoft.teamorbitsoft.Gorji;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.NumberPicker;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.orbitsoft.teamorbitsoft.R;
-
-import java.util.Random;
 
 public class Gorji extends AppCompatActivity implements View.OnClickListener, View.OnLongClickListener {
 float num1 =0;
@@ -36,12 +32,10 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gorji);
         Bundle bundle = getIntent().getExtras();
-        if(bundle!=null) {
-            String Name = bundle.getString("test", "nothing");
-            Long number = bundle.getLong("test2", 12);
-            Toast.makeText(Gorji.this, Name+Long.toString(number), Toast.LENGTH_LONG).show();
 
-        }
+
+
+
         /* adadBozorgTar = findViewById(R.id.tv);
         fard=findViewById(R.id.tv_fard);
         average= findViewById(R.id.tv_average);
