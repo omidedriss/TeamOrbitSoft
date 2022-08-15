@@ -17,7 +17,7 @@ public class MyBrowserActivity extends Activity {
 
         Bundle bundle = getIntent().getExtras();
         if(bundle!=null){
-            Long hotelName = bundle.getLong("testputLong",0);
+            Long hotelName = bundle.getLong("testputLong",12);
         }
         
         Uri url = getIntent().getData();
