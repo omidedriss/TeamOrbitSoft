@@ -36,6 +36,7 @@ public class saeidian extends AppCompatActivity {
     Cursor cursor = null;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
