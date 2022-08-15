@@ -142,6 +142,7 @@ public class saeidian extends AppCompatActivity {
         Log.d("phone", phoneNo);
         Intent i = new
                 Intent(Intent.ACTION_CALL, Uri.parse("tel:" + phoneNo));
+
         startActivity(i);
     }
     }
