@@ -1,7 +1,5 @@
 package com.orbitsoft.teamorbitsoft.example;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -9,6 +7,8 @@ import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.orbitsoft.teamorbitsoft.R;
 
@@ -45,7 +45,7 @@ public class IntentSample extends AppCompatActivity {
         });
 
         //---Make calls button---
-        b2 = (Button) findViewById(R.id.btn_makecalls);
+        b2 = (Button) findViewById(R.id.maz_makecalls);
         b2.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View arg0){
@@ -98,10 +98,19 @@ public class IntentSample extends AppCompatActivity {
             {
 
             	//---Method 1---
-            	Intent i = new
-                    Intent("com.orbitsoft.teamorbitsoft.MyBrowser");
-            	i.setData(Uri.parse("http://www.amazon.com"));
+//            	Intent i = new
+//                    Intent("com.orbitsoft.teamorbitsoft.MyBrowser");
+//            	i.setData(Uri.parse("http://www.amazon.com"));
+//                startActivity(i);
+
+                Intent i = new
+                        Intent(IntentSample.this,MyBrowserActivity.class);
+               Bundle bundle = new Bundle();
+               bundle.putLong("testputLong",12);
+               i.putExtra("test", bundle);
+
                 startActivity(i);
+
 
 
             	/*
@@ -122,6 +131,7 @@ public class IntentSample extends AppCompatActivity {
             }
         });
     }
+
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
