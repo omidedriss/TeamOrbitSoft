@@ -34,9 +34,6 @@ public class saeidian extends AppCompatActivity {
     private Button select;
     String phoneNo = null;
     Cursor cursor = null;
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
