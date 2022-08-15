@@ -4,22 +4,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 import com.orbitsoft.teamorbitsoft.MainActivity;
 import com.orbitsoft.teamorbitsoft.R;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Random;
 
 public class Nikkhu extends AppCompatActivity {
     TextView txt;
+    EditText my_input;
     Button bt1, bt2, bt3, btReturn;
     String[] messages= new String[]{"random number::","adade fard ::","jame Bozorgtareen Adad::"
             ,"+","=","miangeen 6 adad::","/6"};
@@ -34,15 +33,16 @@ public class Nikkhu extends AppCompatActivity {
 
         bt1 = findViewById(R.id.bt1);
         bt2 = findViewById(R.id.bt2);
-        bt3 = findViewById(R.id.bt3);
+        bt3 = (Button) findViewById(R.id.bt3);
         btReturn = findViewById(R.id.btReturn);
 
         bt1.setOnClickListener(v -> zarb());
         bt2.setOnClickListener(v -> adadeRandom());
+        bt3.setOnClickListener(v -> newactivity());
 
         btReturn.setOnClickListener(v -> {
-            Intent ints = new Intent(this, Nikkhu.class);
-            startActivity(ints);
+            Intent in = new Intent(this, Nikkhu.class);
+            startActivity(in);
 
         });
     }
@@ -139,6 +139,16 @@ public class Nikkhu extends AppCompatActivity {
         st.append(messages[6]).append(messages[4]).append(ave);
         txt.setText(st.toString());
     }
+        //*********************************************************
+        //***********************************************************
+
+
+public void newactivity(){
+        Intent i=new Intent(getApplicationContext(), nikoo_intent.class);
+        startActivity(i);
+
+}
+
 
 
 

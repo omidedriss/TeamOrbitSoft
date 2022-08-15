@@ -36,7 +36,7 @@ public class IntentSample extends AppCompatActivity {
 
                 //---OR---
                 Intent i = new
-                        Intent("android.intent.action.VIEW");
+                        Intent("android.ints.action.VIEW");
                 //Intent(android.content.Intent.ACTION_VIEW);
                 i.setData(Uri.parse("http://www.amazon.com"));
 
