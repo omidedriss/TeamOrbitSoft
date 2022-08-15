@@ -36,6 +36,7 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
 
 
 
+
         /* adadBozorgTar = findViewById(R.id.tv);
         fard=findViewById(R.id.tv_fard);
         average= findViewById(R.id.tv_average);
