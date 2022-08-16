@@ -27,7 +27,7 @@ public class SalimiActivity extends AppCompatActivity implements View.OnClickLis
         textAvarage = findViewById( R.id.average );
         editText = (EditText) findViewById( R.id.editText );
         button = (Button) findViewById( R.id.button );
-        result = (TextView) findViewById( R.id.textView );
+        result = (TextView) findViewById( R.id.maztextView);
         button.setOnClickListener( this );
         // روش اول ساده جدول ضرب
         String n = "";

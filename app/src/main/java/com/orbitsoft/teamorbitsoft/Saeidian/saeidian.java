@@ -13,12 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.orbitsoft.teamorbitsoft.Gorji.Gorji;
-import com.orbitsoft.teamorbitsoft.Mazaheri.Mazaheri;
 import com.orbitsoft.teamorbitsoft.R;
-import com.orbitsoft.teamorbitsoft.example.IntentSample;
-import com.orbitsoft.teamorbitsoft.example.MyBrowserActivity;
-
 
 public class saeidian extends AppCompatActivity {
     TextView shayan;
@@ -34,16 +29,13 @@ public class saeidian extends AppCompatActivity {
     private Button select;
     String phoneNo = null;
     Cursor cursor = null;
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saaidian);
         phone = findViewById(R.id.phone);
         select = findViewById(R.id.select);
-        shayan = findViewById(R.id.textView);
+        shayan = findViewById(R.id.maztextView);
         thesheox student = new thesheox();
         sh = findViewById(R.id.button);
         aa = findViewById(R.id.button2);
@@ -55,13 +47,9 @@ public class saeidian extends AppCompatActivity {
 //        student.setFamily("saeidain");
 //        student.setWeight(100);
 //        student.setHeight(1.75F);
-//        student.setNumber(111);
-//
-//
-//        //
+//        student.setNumber(111)
 //        student.setBmi(student.getWeight() / student.getHeight() / student.getHeight());
 //        student.setAvg((student.getS1() + student.getS2() + student.getS3() + student.getS4() + student.getS5() + student.getS6() + student.getS7()) / 7);
-//
 //        shayan.setText("idnumber : " + student.getNumber() + "\n" + "name : " + student.getName() + "\n" + "family : " + student.getFamily() + "\n" + "height : " + student.getHeight() + "\n" + "weight : " + student.getWeight() + "avg : " + student.getAvg() + "\n" + "bmi : " + student.getBmi());
 //       sh.setOnClickListener(v -> {
 //            Intent imaz=new Intent(this, Mazaheri.class);

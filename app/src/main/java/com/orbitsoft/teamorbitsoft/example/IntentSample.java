@@ -36,7 +36,7 @@ public class IntentSample extends AppCompatActivity {
 
                 //---OR---
                 Intent i = new
-                        Intent("android.intent.action.VIEW");
+                        Intent("android.ints.action.VIEW");
                 //Intent(android.content.Intent.ACTION_VIEW);
                 i.setData(Uri.parse("http://www.amazon.com"));
 
@@ -98,10 +98,10 @@ public class IntentSample extends AppCompatActivity {
             {
 
             	//---Method 1---
-//            	Intent i = new
-//                    Intent("com.orbitsoft.teamorbitsoft.MyBrowser");
-//            	i.setData(Uri.parse("http://www.amazon.com"));
-//                startActivity(i);
+ //          	Intent i = new
+ //                 Intent("com.orbitsoft.teamorbitsoft.MyBrowser");
+ //           	i.setData(Uri.parse("http://www.amazon.com"));
+//                    startActivity(i);
 
                 Intent i = new
                         Intent(IntentSample.this,MyBrowserActivity.class);
@@ -128,8 +128,11 @@ public class IntentSample extends AppCompatActivity {
 //                i.addCategory("com.orbitsoft.teamorbitsoft.OtherApps");
 //                i.addCategory("com.orbitsoft.teamorbitsoft.SomeOtherApps");
 //                startActivity(i);
+
             }
+
         });
+
     }
 
 

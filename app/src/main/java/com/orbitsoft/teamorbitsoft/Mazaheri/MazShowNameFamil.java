@@ -23,7 +23,7 @@ Button logout;
       //نام با باندل دریافت شد
       Bundle bundle = getIntent().getExtras();
        if(bundle!=null){
-            String hotelName = bundle.getString("name","");
+            String Name = bundle.getString("name","");
        }
 
 

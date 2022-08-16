@@ -21,7 +21,7 @@ EditText mazedname,mazedfamil;
         setContentView(R.layout.activity_mazgetnamefamil);
 
         btmazsendnamefamil=findViewById(R.id.button);
-        mazname=findViewById(R.id.textView);
+        mazname=findViewById(R.id.maztextView);
         mazfamil=findViewById(R.id.textView2);
         mazedname=findViewById(R.id.editTextTextPersonName);
         mazedfamil=findViewById(R.id.editTextTextPersonName2);
