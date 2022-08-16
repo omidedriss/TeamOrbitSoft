@@ -88,6 +88,7 @@ public class IntentSample extends AppCompatActivity {
                 //i.setType(ContactsContract.Contacts.CONTENT_TYPE);
                 i.setType(ContactsContract.CommonDataKinds.Phone.CONTENT_TYPE);
                 startActivityForResult(i,request_Code);
+
             }
         });
 
