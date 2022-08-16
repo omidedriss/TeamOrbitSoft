@@ -19,7 +19,7 @@ import java.text.StringCharacterIterator;
 
 public class Kanani extends AppCompatActivity {
     Button b2,b1,name,family;
-    private String name, family;
+    private String name1, family1;
     private float hight;
     private long codemeli;
     private float weight, bmi, avg;
@@ -58,15 +58,13 @@ public class Kanani extends AppCompatActivity {
 
                     Intent callIntent = new Intent(Intent.ACTION_CALL);
 
-                    callIntent.setData(Uri.parse(“tel:0377778888”));
+                    callIntent.setData(Uri.parse("tel:0377778888"));
 
-                    if (ActivityCompat.checkSelfPermission(Kanani.this,
-
-                            Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-
-                        return;
-
-                    }
+//                    if (ActivityCompat.checkSelfPermission(Kanani.this,Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+//
+//                        return;
+//
+//                    }
 
                     startActivity(callIntent);
 
