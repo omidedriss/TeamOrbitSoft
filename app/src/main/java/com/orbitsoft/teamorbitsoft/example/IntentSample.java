@@ -137,16 +137,20 @@ public class IntentSample extends AppCompatActivity {
     }
 
 
+    @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == request_Code) {
             if (resultCode == RESULT_OK) {
                 Toast.makeText(this, data.getData().toString(),
                         Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(
-                        Intent.ACTION_VIEW,
-                        Uri.parse(data.getData().toString()));
-                startActivity(i);
+//                Intent i = new Intent(
+//                        Intent.ACTION_VIEW,
+//                        Uri.parse(data.getData().toString()));
+//                startActivity(i);
+            }else {
+                Toast.makeText(this, "Not OK",
+                        Toast.LENGTH_SHORT).show();
             }
         }
     }
