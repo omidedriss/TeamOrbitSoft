@@ -2,41 +2,48 @@ package com.orbitsoft.teamorbitsoft.Gorji;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.ContactsContract;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.orbitsoft.teamorbitsoft.R;
 
-public class Gorji extends AppCompatActivity implements View.OnClickListener, View.OnLongClickListener {
-float num1 =0;
-    float num2=1;
-    float num3=2;
-    float num4=3;
-    int num5=4;
+public class Gorji extends AppCompatActivity implements  View.OnLongClickListener {
+    float num1 = 0;
+   //implements View.OnClickListener, View.OnLongClickListener
+    float num2 = 1;
+    float num3 = 2;
+    float num4 = 3;
+    int num5 = 4;
+    String phoneNo = null;
+    Cursor cursor = null;
+    private static final int CONTACT = 1;
     /*int num1 = 10,num2=18,num3=85,num4=98,sum = 0 , n=11;
 String st = "  ",st1="";
 TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,zarb5,zarb6,zarb7,zarb8,zarb9,zarb10;
    */
-    String name = "1",family="",hight,nationalCode1,weight;
+    String name = "1", family = "", hight, nationalCode1, weight;
     //int hight,nationalCode1;
-
+    CheckBox check;
     Button ok;
-    TextView mavg , mbmi , showAvg ,showBmi;
-    EditText ename,efamily,eweight,ehight,ecationalcod;
+    TextView mavg, mbmi, showAvg, showBmi;
+    EditText ename, efamily, eweight, ehight, ecationalcod;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gorji);
         Bundle bundle = getIntent().getExtras();
-
-
-
-
-
         /* adadBozorgTar = findViewById(R.id.tv);
         fard=findViewById(R.id.tv_fard);
         average= findViewById(R.id.tv_average);
@@ -175,21 +182,67 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
         mbmi = findViewById(R.id.tv_show);
         mavg = findViewById(R.id.tv_average);
         ename = findViewById(R.id.eName);
-        efamily=findViewById(R.id.eFamily);
-        ecationalcod=findViewById(R.id.nationalCod);
+        efamily = findViewById(R.id.eFamily);
+        ecationalcod = findViewById(R.id.nationalCod);
         eweight = findViewById(R.id.eWeight);
-        ehight=findViewById(R.id.ehight);
+        ehight = findViewById(R.id.ehight);
         ok = findViewById(R.id.accept);
-        ok.setOnClickListener(this);
+       // ok.setOnClickListener(this);
         ok.setOnLongClickListener(this);
         showAvg = findViewById(R.id.tv1);
-        showBmi=findViewById(R.id.tv_fard);
-        Toast.makeText(getApplicationContext(),"onrCeate",Toast.LENGTH_LONG).show();
+        showBmi = findViewById(R.id.tv_fard);
+        ehight.setVisibility(View.INVISIBLE);
+        ecationalcod.setVisibility(View.INVISIBLE);
+        eweight.setInputType(1);
+        check = findViewById(R.id.checkBox);
+        check.setChecked(true);
+        check.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                eweight.setEnabled(isChecked);
+            }
+        });
+        ok.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), SecendActivity.class);
+            intent.putExtra("name", String.valueOf(ename.getText()).toString());
+            intent.putExtra("family", String.valueOf(efamily.getText()).toString());
+            if (check.isChecked()) {
+
+                intent.putExtra("company", String.valueOf(eweight.getText()).toString());
+                // Toast.makeText(getApplicationContext(),"if",Toast.LENGTH_LONG).show();
+
+            }
+
+
+                startActivity(intent);
+
+        });
 
     }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK) {
+
+            Uri uri = data.getData();
+            cursor = getContentResolver().query(uri, null, null, null, null);
+            cursor.moveToFirst();
+            int phoneIndex = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER);
+            phoneNo = cursor.getString(phoneIndex);
+            //phone.setText (phoneNo);
+
+        } else {
+            Toast.makeText(this, "Failed To pick contact", Toast.LENGTH_SHORT).show();
+        }
+        Log.d("phone", phoneNo);
+        Intent i = new
+                Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + phoneNo));
+        startActivity(i);
+    }
+
 
     //متد برای فراخوانی کلاس student
-    public void school(){
+   /* public void school(){
         Student huaman = new Student();
         huaman.setName(name);
         huaman.setFamily(family);
@@ -200,11 +253,12 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
         mbmi.setText(String.valueOf(bmi));
         float avg = huaman.calAvg(num1,num2,num3,num4);
         mavg.setText(String.valueOf(avg));
-    }
+    }*/
 
-    @Override
-    public void onClick(View v) {
-        name=ename.getText().toString().trim();
+
+    /* @Override
+    public void onClick(View v) { */
+     /*   name=ename.getText().toString().trim();
         family=efamily.getText().toString().trim();
         weight=eweight.getText().toString().trim();
         hight=ehight.getText().toString().trim();
@@ -222,7 +276,7 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
         ecationalcod.setText("");
         ecationalcod.setHint("num4");
         showBmi.setText("بعد از وارد کردن اعداد روی دکمه کلیک طولانی کنید");
-        showBmi.setTextSize(28f);
+        showBmi.setTextSize(28f);*/
        /* for(int i =0 ;i<=4;i++) {
             Toast.makeText(getApplicationContext(), "for run", Toast.LENGTH_LONG).show();
             if (num1==0){
@@ -311,13 +365,44 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
                     break;
             }
         }*/
-    }
+
+          /*  Intent i = new
+                    Intent("android.intent.action.VIEW");
+            i.setData(Uri.parse("http://www.google.com"));
+            startActivity(i);*/
+           /* Intent i = new
+                    Intent(getApplicationContext(),MainActivity2.class);
+
+            i.putExtra("hi",22);
+            startActivity(i);*/
+         /*   Intent i = new Intent(android.content.Intent.ACTION_PICK);
+            //i.setType(ContactsContract.Contacts.CONTENT_TYPE);
+            i.setType(ContactsContract.CommonDataKinds.Phone.CONTENT_TYPE);
+            startActivityForResult(i,request_Code);*/
+          /*  Intent intent = new Intent(getApplicationContext(),SecendActivity.class);
+            intent.putExtra("name",String.valueOf(ename.getText()).toString());
+            intent.putExtra("family",String.valueOf(efamily.getText()).toString());
+            if (check.isChecked()) {
+
+                intent.putExtra("company", String.valueOf(eweight.getText()).toString());
+                // Toast.makeText(getApplicationContext(),"if",Toast.LENGTH_LONG).show();
+
+            }
+            */
+
+
+    //     startActivity(intent);
+
+
+
+
+
 
 
 
     @Override
     public boolean onLongClick(View v) {
-        num1=Float.valueOf(efamily.getText().toString());
+       /* num1=Float.valueOf(efamily.getText().toString());
         num2=Float.valueOf(eweight.getText().toString());
         num3=Float.valueOf(ehight.getText().toString());
         num4=Float.valueOf(ecationalcod.getText().toString());
@@ -328,10 +413,12 @@ TextView average,fard,show,adadBozorgTar,satrr,sotunn,zarb1,zarb2,zarb3,zarb4,za
         showAvg.setText(name +"\t"+family+"\t"+"Averagr");
         showBmi.setText(name +"\n"+family+"\t"+"Bmi");
         showBmi.setTextSize(14f);
-        school ();
+        school ();*/
+        Intent in = new Intent(Intent.ACTION_PICK, ContactsContract.CommonDataKinds.Phone.CONTENT_URI);
+        startActivityForResult(in, CONTACT);
         return true;
 
-    }
+   }
 }
 
 
