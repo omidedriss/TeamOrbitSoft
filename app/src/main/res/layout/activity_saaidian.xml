@@ -48,7 +48,6 @@
         android:layout_marginBottom="20dp"
         android:gravity="center"
         android:text="select button"
-
         android:textSize="24sp" />
 
     <Button
