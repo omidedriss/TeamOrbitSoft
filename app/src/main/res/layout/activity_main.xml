@@ -40,13 +40,13 @@
         android:text="@string/saeidian"
         tools:layout_editor_absoluteX="145dp"
         tools:layout_editor_absoluteY="186dp" />
-    <Button
-        android:id="@+id/saeidian2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/saeidian2"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="255dp" />
+<!--    <Button-->
+<!--        android:id="@+id/saeidian2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/saeidian2"-->
+<!--        tools:layout_editor_absoluteX="143dp"-->
+<!--        tools:layout_editor_absoluteY="255dp" />-->
 
     <Button
         android:id="@+id/moosavi"

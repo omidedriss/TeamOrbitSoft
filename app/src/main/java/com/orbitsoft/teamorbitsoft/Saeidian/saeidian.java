@@ -72,7 +72,7 @@ public class saeidian extends AppCompatActivity {
             Intent i = new
                     Intent(saeidian.this, saeidian2.class);
             Bundle bundle = new Bundle();
-            bundle.putString("test","shayan saeidian");
+            //bundle.putString("test","shayan saeidian");
             i.putExtras(bundle);
             startActivity(i);
             // Intent imaz=new Intent(saeidian.this, Gorji.class);

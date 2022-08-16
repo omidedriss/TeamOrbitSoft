@@ -22,6 +22,9 @@
             android:name=".Salimi.SalimiActivity"
             android:exported="false" />
         <activity
+            android:name=".Saeidian.thesheox"
+            android:exported="false" />
+        <activity
             android:name=".example.MyDialog"
             android:exported="false" />
         <activity
