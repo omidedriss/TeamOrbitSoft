@@ -108,7 +108,7 @@ public class IntentSample extends AppCompatActivity {
                Bundle bundle = new Bundle();
                bundle.putLong("testputLong",12);
                i.putExtra("test", bundle);
-
+                i.setData(Uri.parse("http://www.amazon.com"));
                 startActivity(i);
 
 
