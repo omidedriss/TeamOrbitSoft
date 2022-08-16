@@ -132,18 +132,18 @@ public class MazIntent extends AppCompatActivity {
 
 
 
-        b7 = (Button) findViewById(R.id.btmazweb);
-        b7.setOnClickListener(v -> {
-                Intent i = new
-                        Intent(MazIntent.this, MazBrowser.class);
+//        b7 = (Button) findViewById(R.id.btmazweb);
+//        b7.setOnClickListener(v -> {
+//                Intent i = new
+//                        Intent(MazIntent.this, MazBrowser.class);
 
-            i.putExtra("site","https://www.amazon.com");
-              // Bundle bundle = new Bundle();
-              // bundle.putLong("testputLong",12);
-             //  i.putExtra("https://www.google.com", bundle);
-
-            startActivity(i);
-        });
+//            i.putExtra("site","https://www.amazon.com");
+//              // Bundle bundle = new Bundle();
+//              // bundle.putLong("testputLong",12);
+//             //  i.putExtra("https://www.google.com", bundle);
+//
+//            startActivity(i);
+//        });
 //
 
 

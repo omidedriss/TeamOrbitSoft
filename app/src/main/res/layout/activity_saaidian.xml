@@ -8,8 +8,8 @@
         android:id="@+id/button"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/phone"
+        android:layout_centerHorizontal="true"
         android:text="name/family" />
     <Button
         android:id="@+id/button2"

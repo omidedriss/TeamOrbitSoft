@@ -22,6 +22,12 @@
             android:name=".Salimi.SalimiActivity"
             android:exported="false" />
         <activity
+            android:name=".Saeidian.saeidian"
+            android:exported="false" />
+        <activity
+            android:name=".Saeidian.saeidian2"
+            android:exported="false" />
+        <activity
             android:name=".Saeidian.thesheox"
             android:exported="false" />
         <activity
@@ -34,9 +40,7 @@
             android:name=".example.LifeCycleActivity"
             android:exported="false" />
 
-        <activity
-            android:name=".Saeidian.saeidian"
-            android:exported="false" />
+
         <activity
             android:name=".Hatami.Hatami"
             android:exported="false" />
@@ -70,9 +74,9 @@
         <activity
             android:name=".Mazaheri.MazStartForResult_SecondActivity"
             android:exported="false" />
-        <activity
-            android:name=".Mazaheri.MazBrowser"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".Mazaheri.MazBrowser"-->
+<!--            android:exported="false" />-->
 
 
         <activity
