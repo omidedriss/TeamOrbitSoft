@@ -13,11 +13,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.orbitsoft.teamorbitsoft.Gorji.Gorji;
-import com.orbitsoft.teamorbitsoft.Mazaheri.Mazaheri;
 import com.orbitsoft.teamorbitsoft.R;
-import com.orbitsoft.teamorbitsoft.example.IntentSample;
-import com.orbitsoft.teamorbitsoft.example.MyBrowserActivity;
+
 public class saeidian extends AppCompatActivity {
     TextView shayan;
     Button sh;
@@ -38,7 +35,7 @@ public class saeidian extends AppCompatActivity {
         setContentView(R.layout.activity_saaidian);
         phone = findViewById(R.id.phone);
         select = findViewById(R.id.select);
-        shayan = findViewById(R.id.textView);
+        shayan = findViewById(R.id.maztextView);
         thesheox student = new thesheox();
         sh = findViewById(R.id.button);
         aa = findViewById(R.id.button2);

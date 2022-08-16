@@ -1,5 +1,6 @@
 package com.orbitsoft.teamorbitsoft.Mazaheri;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
@@ -14,7 +15,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.orbitsoft.teamorbitsoft.R;
-import com.orbitsoft.teamorbitsoft.example.MyBrowserActivity;
 
 public class MazIntent extends AppCompatActivity {
 
@@ -23,6 +23,7 @@ public class MazIntent extends AppCompatActivity {
     int request_Code_web = 2;
 
     /** Called when the activity is first created. */
+    @SuppressLint("CutPasteId")
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -100,14 +101,15 @@ public class MazIntent extends AppCompatActivity {
         });
 
            //---Web browser button---
-           btmazweb = (Button) findViewById(R.id.btn_mazwebbrowser);
+           btmazweb = (Button) findViewById(R.id.b2);
            btmazweb.setOnClickListener(new View.OnClickListener()
            {
-               public void onClick(View arg0)
+               public void onClick(View arg1)
                {
 
                    Intent i = new
-                       Intent(Intent.ACTION_VIEW,Uri.parse("https://www.google.com")); //android.content.Intent.ACTION_VIEW
+                           Intent(android.content.Intent.ACTION_VIEW,
+                   Uri.parse("https://www.google.com")); //android.content.Intent.ACTION_VIEW
 
                    startActivity(i);
                }
@@ -130,22 +132,15 @@ public class MazIntent extends AppCompatActivity {
 
 
 
-
-
-
-
-
-
-
-
-
-        b7 = (Button) findViewById(R.id.btn_mazwebbrowser);
+        b7 = (Button) findViewById(R.id.btmazweb);
         b7.setOnClickListener(v -> {
                 Intent i = new
-                        Intent(MazIntent.this, MyBrowserActivity.class);
-               Bundle bundle = new Bundle();
-               bundle.putLong("testputLong",12);
-               i.putExtra("https://www.google.com", bundle);
+                        Intent(MazIntent.this, MazBrowser.class);
+
+            i.putExtra("site","https://www.amazon.com");
+              // Bundle bundle = new Bundle();
+              // bundle.putLong("testputLong",12);
+             //  i.putExtra("https://www.google.com", bundle);
 
             startActivity(i);
         });
@@ -168,6 +163,8 @@ public class MazIntent extends AppCompatActivity {
 
 
     //باز نویسی کلاس مدیریت اینتنت در بازگشت داده ها
+    //متد اینتنت بر اساس نتیجه، برای همه موارد اینتنت میباشد ، بنابر این برای مدیریت هر
+    //اینتنت باید کدی برای آن قرارداد مثل request_Code_call که برای تلفن در نظر گرفته شده است.
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

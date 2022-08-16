@@ -75,7 +75,7 @@
     <!-- edit Text for take input from user-->
     <!-- give the id editText-->
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/maztextView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="36dp"

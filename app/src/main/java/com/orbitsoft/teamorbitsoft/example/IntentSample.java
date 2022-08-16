@@ -98,11 +98,11 @@ public class IntentSample extends AppCompatActivity {
             {
 
             	//---Method 1---
-            	Intent i = new
-                    Intent("com.orbitsoft.teamorbitsoft.MyBrowser");
-            	i.setData(Uri.parse("http://www.amazon.com"));
-                startActivity(i);
-/*
+ //          	Intent i = new
+ //                 Intent("com.orbitsoft.teamorbitsoft.MyBrowser");
+ //           	i.setData(Uri.parse("http://www.amazon.com"));
+//                    startActivity(i);
+
                 Intent i = new
                         Intent(IntentSample.this,MyBrowserActivity.class);
                Bundle bundle = new Bundle();

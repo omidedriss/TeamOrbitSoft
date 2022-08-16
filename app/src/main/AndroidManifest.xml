@@ -30,6 +30,7 @@
         <activity
             android:name=".example.LifeCycleActivity"
             android:exported="false" />
+
         <activity
             android:name=".Saeidian.saeidian"
             android:exported="false" />
@@ -66,7 +67,9 @@
         <activity
             android:name=".Mazaheri.MazStartForResult_SecondActivity"
             android:exported="false" />
-
+        <activity
+            android:name=".Mazaheri.MazBrowser"
+            android:exported="false" />
 
 
         <activity

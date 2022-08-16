@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 
 import com.orbitsoft.teamorbitsoft.R;
 
@@ -21,15 +22,18 @@ public class MyBrowserActivity extends Activity {
         }
         
         Uri url = getIntent().getData();
-        WebView webView = (WebView) findViewById(R.id.WebView01);
+        Toast.makeText(this, ""+url.toString(), Toast.LENGTH_SHORT).show();
+
+        WebView webView = (WebView) findViewById(R.id.MazWebView01);
+
+
         webView.setWebViewClient(new Callback());
-        webView.loadUrl(url.toString());        
+        webView.loadUrl(url.toString());
     }
     
     private class Callback extends WebViewClient {
         @Override
-        public boolean shouldOverrideUrlLoading(WebView view, String url) {
-            return(false);
+        public boolean shouldOverrideUrlLoading(WebView view, String url) {return false;
         }
     }    
 
