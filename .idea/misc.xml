@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_mazaheri.xml" value="0.25885416666666666" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_mazaheri_student.xml" value="0.27291666666666664" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_mazintent.xml" value="0.27291666666666664" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_secend.xml" value="0.27291666666666664" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/browser.xml" value="0.27291666666666664" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/student.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/layout/activity_gorji.xml" value="0.15" />
@@ -15,14 +17,10 @@
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/activity_saaidian2.xml" value="0.1828125" />
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/activity_thesheox2.xml" value="0.1828125" />
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/saeidian2.xml" value="0.18177083333333333" />
-        <entry key="..\:/Users/THESHEOX-PC/Desktop/source code/app/src/main/res/layout/activity_mazaheri.xml" value="0.35280797101449274" />
-        <entry key="..\:/Users/THESHEOX-PC/Desktop/source code/app/src/main/res/layout/activity_mazgetnamefamil.xml" value="0.35280797101449274" />
-        <entry key="..\:/Users/THESHEOX-PC/Desktop/source code/app/src/main/res/layout/activity_saaidian2.xml" value="0.35280797101449274" />
-        <entry key="..\:/Users/THESHEOX-PC/Desktop/source code/app/src/main/res/layout/browser.xml" value="0.35280797101449274" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
