@@ -8,7 +8,7 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/maztextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="نام"
@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/maztextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.756"
         app:layout_constraintStart_toStartOf="parent" />

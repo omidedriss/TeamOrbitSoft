@@ -9,18 +9,20 @@ import android.widget.Button;
 
 import com.orbitsoft.teamorbitsoft.Gorji.Gorji;
 import com.orbitsoft.teamorbitsoft.Hatami.Hatami;
+import com.orbitsoft.teamorbitsoft.Kanani.Kanani;
 import com.orbitsoft.teamorbitsoft.Mazaheri.Mazaheri;
 import com.orbitsoft.teamorbitsoft.Moosavi.Moosavi;
 import com.orbitsoft.teamorbitsoft.Nikkhu.Nikkhu;
 import com.orbitsoft.teamorbitsoft.Saeidian.saeidian;
 import com.orbitsoft.teamorbitsoft.Saeidian.saeidian2;
+import com.orbitsoft.teamorbitsoft.Salimi.SalimiActivity;
 import com.orbitsoft.teamorbitsoft.example.IntentSample;
 import com.orbitsoft.teamorbitsoft.example.LifeCycleActivity;
 import com.orbitsoft.teamorbitsoft.example.MyDialog;
 
 public class MainActivity extends AppCompatActivity {
 Button btGorji;
-Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog;
+Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,8 +33,10 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btHatami,btIntent,btLifeCycle,btNi
         btmaz=findViewById(R.id.btmaz);
         btMoosavi=findViewById(R.id.moosavi);
         btSaeedian=findViewById(R.id.saeedian);
-        btSaeidian2=findViewById(R.id.saeidian2);
+        //btSaeidian2=findViewById(R.id.saeidian2);
         btHatami=findViewById(R.id.hatami);
+        btSalimi=findViewById(R.id.Salimi);
+        btKanani=findViewById(R.id.Kanani);
         btIntent=findViewById(R.id.intent);
         btLifeCycle=findViewById(R.id.life_cycle);
         my_dialog=findViewById(R.id.my_dialog);
@@ -43,7 +47,6 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btHatami,btIntent,btLifeCycle,btNi
             public void onClick(View v) {
                 Intent gorji = new Intent(getApplicationContext(), Gorji.class);
                 startActivity(gorji);
-
             }
         });
 
@@ -57,11 +60,11 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btHatami,btIntent,btLifeCycle,btNi
                     startActivity(imaz);
                 }
         );
-        btSaeidian2.setOnClickListener(v -> {
-                    Intent imaz=new Intent(this, saeidian2.class);
-                    startActivity(imaz);
-                }
-        );
+//        btSaeidian2.setOnClickListener(v -> {
+//                    Intent imaz=new Intent(this, saeidian2.class);
+//                    startActivity(imaz);
+//                }
+//        );
         btMoosavi.setOnClickListener(v -> {
                     Intent imaz=new Intent(this, Moosavi.class);
                     startActivity(imaz);
@@ -84,6 +87,16 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btHatami,btIntent,btLifeCycle,btNi
         );
         btNickQue.setOnClickListener(v -> {
                     Intent imaz=new Intent(this, Nikkhu.class);
+                    startActivity(imaz);
+                }
+        );
+        btSalimi.setOnClickListener(v -> {
+                    Intent imaz=new Intent(this, SalimiActivity.class);
+                    startActivity(imaz);
+                }
+        );
+        btKanani.setOnClickListener(v -> {
+                    Intent imaz=new Intent(this, Kanani.class);
                     startActivity(imaz);
                 }
         );
