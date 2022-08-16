@@ -182,6 +182,7 @@ public class thesheox extends AppCompatActivity {
             print.setText("Name : " + Name);
             print2.setText("Family: " + Family);
             //Toast.makeText(saeidian2.this, "Name/Family : "+Name, Toast.LENGTH_LONG).show();
+
 //+Long.toString(number)
         }
 

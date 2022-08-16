@@ -52,6 +52,7 @@ public class saeidian2 extends AppCompatActivity {
         namein = (EditText) findViewById(R.id.name);
         familyin = (EditText) findViewById(R.id.family);
         print = (Button) findViewById(R.id.print);
+
         print.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View view) {

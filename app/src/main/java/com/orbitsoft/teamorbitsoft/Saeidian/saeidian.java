@@ -55,6 +55,7 @@ public class saeidian extends AppCompatActivity {
 //            Intent imaz=new Intent(this, Mazaheri.class);
 //            startActivity(imaz);
 //        });
+
         //send name/family to a new class
         sh.setOnClickListener(view -> {
             Intent i = new
