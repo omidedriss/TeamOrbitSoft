@@ -18,9 +18,11 @@
         android:theme="@style/Theme.TeamOrbitSoft"
         tools:targetApi="31">
         <activity
+            android:name=".kananiActivity"
+            android:exported="false" />
+        <activity
             android:name=".Gorji.SecendActivity"
             android:exported="false" />
-
         <activity
             android:name=".Salimi.SalimiActivity"
             android:exported="false" />
@@ -42,8 +44,6 @@
         <activity
             android:name=".example.LifeCycleActivity"
             android:exported="false" />
-
-
         <activity
             android:name=".Hatami.Hatami"
             android:exported="false" />
@@ -80,8 +80,6 @@
         <activity
             android:name=".Mazaheri.MazBrowser"
             android:exported="false" />
-
-
         <activity
             android:name=".MainActivity"
             android:exported="true">

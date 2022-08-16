@@ -12,12 +12,13 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.orbitsoft.teamorbitsoft.Gorji.Student;
+import com.orbitsoft.teamorbitsoft.MainActivity;
 import com.orbitsoft.teamorbitsoft.R;
 
 import java.text.StringCharacterIterator;
 
 public class Kanani extends AppCompatActivity {
-    Button b2,b1;
+    Button b2,b1,name,family;
     private String name, family;
     private float hight;
     private long codemeli;
@@ -34,7 +35,7 @@ public class Kanani extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kanani);
         //public void school(){
-            Student S = new Student();
+           /* Student S = new Student();
             S.setName(name);
             S.setFamily(family);
             S.setHight(Integer.valueOf((int) hight));
@@ -44,6 +45,7 @@ public class Kanani extends AppCompatActivity {
             mbmi.setText(String.valueOf(bmi));
             float avg = S.calAvg(num1, num2, num3, num4);
             mavg.setText(String.valueOf(avg));
+*/
 
             //گرفتن شماره از contacts و نمایش آن
             setContentView(R.layout.activity_main);
@@ -58,7 +60,7 @@ public class Kanani extends AppCompatActivity {
 
                     callIntent.setData(Uri.parse(“tel:0377778888”));
 
-                    if (ActivityCompat.checkSelfPermission(MainActivity.this,
+                    if (ActivityCompat.checkSelfPermission(Kanani.this,
 
                             Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
 
@@ -71,7 +73,25 @@ public class Kanani extends AppCompatActivity {
                 }
 
             });
+//استفاده از 2 اکتیویتی
+        name=findViewById(R.id.name);
+        family=findViewById(R.id.family);
+        name.setOnClickListener(new View.OnClickListener() {
 
+            @Override
+            public void onClick(View v) {
+                Intent name=new Intent(Kanani.this,SecondActivity.class);
+                name.putExtra("name","name");
+                Intent family=new Intent(Kanani.this,SecondActivity.class);
+                name.putExtra("family","family");
+                startActivity(name);
+                startActivity(family);
+
+
+            }
+        });
         }
 
     }
+
+
