@@ -106,15 +106,19 @@ public class IntentSample extends AppCompatActivity {
  //           	i.setData(Uri.parse("http://www.amazon.com"));
 //                    startActivity(i);
 
-                Intent i = new
-                        Intent(IntentSample.this,MyBrowserActivity.class);
-               Bundle bundle = new Bundle();
-               bundle.putLong("testputLong",12);
-               i.putExtra("test", bundle);
-                i.setData(Uri.parse("http://www.amazon.com"));
-                startActivity(i);
+//                Intent i = new
+//                        Intent(IntentSample.this,MyBrowserActivity.class);
+//               Bundle bundle = new Bundle();
+//               bundle.putLong("testputLong",12);
+//               i.putExtra("test", bundle);
+//                i.setData(Uri.parse("http://www.amazon.com"));
+//                startActivity(i);
 
+                Uri uri = Uri.parse("https://instagram.com/metacomplex");
+                Intent i = new Intent(Intent.ACTION_VIEW, uri);
 
+                i.setPackage("com.instagram.android");
+                    startActivity(i);
 
             	/*
                 //---Method 2---
