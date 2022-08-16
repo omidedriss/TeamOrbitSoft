@@ -52,6 +52,7 @@
         android:layout_height="wrap_content"
         android:text="Launch My Browser 2" />
 
+
     <Button
         android:id="@+id/btmazweb"
         android:layout_width="match_parent"

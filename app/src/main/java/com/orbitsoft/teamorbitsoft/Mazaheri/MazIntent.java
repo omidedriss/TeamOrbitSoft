@@ -100,6 +100,7 @@ public class MazIntent extends AppCompatActivity {
             }
         });
 
+
            //---Web browser button---
            btmazweb = (Button) findViewById(R.id.b2);
            btmazweb.setOnClickListener(new View.OnClickListener()

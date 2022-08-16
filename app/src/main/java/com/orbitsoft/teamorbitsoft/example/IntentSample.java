@@ -1,6 +1,8 @@
 package com.orbitsoft.teamorbitsoft.example;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
@@ -136,7 +138,7 @@ public class IntentSample extends AppCompatActivity {
 
     }
 
-
+    @SuppressLint("Range")
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -144,6 +146,15 @@ public class IntentSample extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 Toast.makeText(this, data.getData().toString(),
                         Toast.LENGTH_SHORT).show();
+                Uri uri = data.getData();
+
+                Cursor cursor = getContentResolver().query(uri, null, null, null, null);
+
+                cursor.moveToFirst();
+              String  name = cursor.getString(cursor.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
+
+                cursor.moveToFirst();
+               String number = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
 //                Intent i = new Intent(
 //                        Intent.ACTION_VIEW,
 //                        Uri.parse(data.getData().toString()));
