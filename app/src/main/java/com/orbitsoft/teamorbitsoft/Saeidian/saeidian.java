@@ -11,6 +11,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -19,6 +21,7 @@ import android.widget.Toast;
 import com.orbitsoft.teamorbitsoft.R;
 import com.orbitsoft.teamorbitsoft.example.IntentSample;
 import com.orbitsoft.teamorbitsoft.example.MyBrowserActivity;
+import com.orbitsoft.teamorbitsoft.example.MyDialog;
 
 public class saeidian extends AppCompatActivity {
     TextView shayan;
@@ -37,6 +40,25 @@ public class saeidian extends AppCompatActivity {
     Cursor cursor = null;
     CharSequence[] items = {"ok","ok1"};
     boolean[] itemsChecked = new boolean [items.length];
+    public void saeedian(){
+        new AlertDialog.Builder(saeidian.this)
+                .setTitle("Delete entry")
+                .setMessage("Are you sure you want to delete this entry?")
+
+                // Specifying a listener allows you to take an action before dismissing the dialog.
+                // The dialog is automatically dismissed when a dialog button is clicked.
+                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // Continue with delete operation
+                    }
+                })
+
+                // A null listener allows the button to dismiss the dialog and take no further action.
+                .setNegativeButton(android.R.string.no, null)
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .show();
+
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,7 +95,15 @@ public class saeidian extends AppCompatActivity {
 //            startActivity(imaz);
 //        });
 
-        //send name/family to a new class
+
+
+//        }
+
+
+
+
+        //  return super.onCreateDialog(id);
+
         sh.setOnClickListener(view -> {
             Intent i = new
                     Intent(saeidian.this, saeidian2.class);
@@ -193,6 +223,26 @@ public class saeidian extends AppCompatActivity {
 
 
         return super.onCreateDialog(id);
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.activity_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.menu_settings:
+                  saeedian();
+                return true;
+//            case R.id.help:
+//                showHelp();
+//                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
     }
 
