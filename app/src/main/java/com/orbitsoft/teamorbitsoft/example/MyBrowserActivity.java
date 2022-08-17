@@ -31,7 +31,7 @@ public class MyBrowserActivity extends Activity {
         webView.loadUrl(url.toString());
     }
     
-    private class Callback extends WebViewClient {
+    public static class Callback extends WebViewClient {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url) {return false;
         }

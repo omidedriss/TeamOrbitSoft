@@ -14,6 +14,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.orbitsoft.teamorbitsoft.R;
+import com.orbitsoft.teamorbitsoft.example.IntentSample;
+import com.orbitsoft.teamorbitsoft.example.MyBrowserActivity;
 
 public class saeidian extends AppCompatActivity {
     TextView shayan;
@@ -71,9 +73,18 @@ public class saeidian extends AppCompatActivity {
         //open a website
         aa.setOnClickListener(view ->
         {
+//            Intent i = new
+//                    Intent("android.intent.action.VIEW");
+//            i.setData(Uri.parse("http://www.instagram.com/bigezmoge"));
+//            i.setPackage("com.instagram.android");
+//
+//            startActivity(i);
             Intent i = new
-                    Intent("android.intent.action.VIEW");
-            i.setData(Uri.parse("http://www.google.com"));
+                    Intent(saeidian.this, saeidianBrowser.class);
+            Bundle bundle = new Bundle();
+            bundle.putLong("testputLong",12);
+            i.putExtra("test", bundle);
+            i.setData(Uri.parse("https://www.google.com"));
             startActivity(i);
         });
         //put a number to dial
