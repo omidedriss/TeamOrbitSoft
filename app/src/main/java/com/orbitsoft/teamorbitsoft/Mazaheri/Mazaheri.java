@@ -21,6 +21,11 @@ public class Mazaheri extends AppCompatActivity {
                   btmazstudent,btmazstudent2,btmazstudent3,
                   btmazintent,btmaznamefamil,btmazstartonresult;
     @Override
+
+    //بازگشت به صفحه اصلی
+    //رفتن به صفحه اینتنت شامل شماره گیری سریع،شماره گیری دو مرحله ای، دفتر تلفن ،رجوع به سایت
+    //ارسال نام با باندل و فامیل با اینتنت
+    //مثالی از اجرای شرطی اینتنت
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
