@@ -1,7 +1,10 @@
 package com.orbitsoft.teamorbitsoft.Saeidian;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
@@ -25,12 +28,15 @@ public class saeidian extends AppCompatActivity {
     Button cc;
     Button dd;
     Button ff;
+    Button zz;
     int request_Code = 1;
     private static final int RESULT_PICK_CONTACT = 1;
     private TextView phone;
     private Button select;
     String phoneNo = null;
     Cursor cursor = null;
+    CharSequence[] items = {"ok","ok1"};
+    boolean[] itemsChecked = new boolean [items.length];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +50,15 @@ public class saeidian extends AppCompatActivity {
         bb = findViewById(R.id.button3);
         cc = findViewById(R.id.button4);
         dd = findViewById(R.id.button5);
+        Button zz = (Button) findViewById(R.id.button9);
+        zz.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                //showDialog(0);
+                saeidiandialog customDialogClass = new saeidiandialog(saeidian.this);
+              customDialogClass.show();
+            }
+        });
 //show bmi+avg
 //        student.setName("shayan");
 //        student.setFamily("saeidain");
@@ -143,7 +158,45 @@ public class saeidian extends AppCompatActivity {
                 Intent(Intent.ACTION_CALL, Uri.parse("tel:" + phoneNo));
         startActivity(i);
     }
+
+    @Override
+    protected Dialog onCreateDialog(int id) {
+        switch (id){
+            case 0:
+                return new AlertDialog.Builder(this)
+                        .setIcon(R.drawable.ic_action_search)
+                        .setTitle("saeidian")
+                        .setPositiveButton("true", new DialogInterface.OnClickListener() {
+
+                            public void onClick(DialogInterface dialog, int which) {
+                                // TODO Auto-generated method stub
+                                Toast.makeText(getBaseContext(), "true", Toast.LENGTH_LONG).show();
+
+                            }
+                        }).setNegativeButton("false", new DialogInterface.OnClickListener() {
+
+                            public void onClick(DialogInterface dialog, int which) {
+                                Toast.makeText(getBaseContext(), "false", Toast.LENGTH_LONG).show();
+
+                            }
+                        })
+                        .setMultiChoiceItems(items, itemsChecked, new DialogInterface.OnMultiChoiceClickListener() {
+                            public void onClick(DialogInterface dialog, int which, boolean isChecked) {
+
+                                Toast.makeText(getBaseContext(), items[which] + (isChecked ? "cheched !": "unchecked"), Toast.LENGTH_LONG).show();
+
+                            }
+                        })
+                        .create();
+        }
+
+
+
+        return super.onCreateDialog(id);
     }
+    }
+
+
 
 
 

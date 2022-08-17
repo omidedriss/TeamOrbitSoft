@@ -59,6 +59,14 @@
         android:layout_below="@+id/button5"
         android:layout_centerHorizontal="true"
         android:text="Choose contact" />
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/select"
+        android:layout_centerHorizontal="true"
+        android:text="dialog" />
 
 
 

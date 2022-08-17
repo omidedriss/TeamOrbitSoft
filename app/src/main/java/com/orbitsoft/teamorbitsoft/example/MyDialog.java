@@ -29,7 +29,6 @@ public class MyDialog extends AppCompatActivity {
 
             public void onClick(View v) {
                 showDialog(0);
-
 //                CustomDialogClass customDialogClass = new CustomDialogClass(MyDialog.this);
 //                customDialogClass.show();
             }
