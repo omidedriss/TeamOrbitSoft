@@ -1,6 +1,7 @@
-package com.cfsuman.me.androidcodesnippets;
+package com.orbitsoft.teamorbitsoft.Moosavi;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -9,8 +10,6 @@ import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.os.Build;
 import android.provider.ContactsContract;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
@@ -18,8 +17,14 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
-public class MainActivity extends AppCompatActivity {
+import com.orbitsoft.teamorbitsoft.R;
+
+
+public class Moosavi extends AppCompatActivity {
+
     private Context mContext;
     private Activity mActivity;
 
@@ -36,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Get the application context
         mContext = getApplicationContext();
-        mActivity = MainActivity.this;
+        mActivity = Moosavi.this;
 
         // Get the widget reference from xml layout
         mRootLayout = findViewById(R.id.root_layout);
@@ -98,11 +103,11 @@ public class MainActivity extends AppCompatActivity {
         while (contacts.moveToNext())
         {
             // Get the current contact name
-            String name = contacts.getString(
+            @SuppressLint("Range") String name = contacts.getString(
                     contacts.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME_PRIMARY));
 
             // Get the current contact phone number
-            String phoneNumber = contacts.getString(
+            @SuppressLint("Range") String phoneNumber = contacts.getString(
                     contacts.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
 
             // Display the contact to text view
@@ -124,6 +129,7 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
                             ActivityCompat.requestPermissions(
+
                                     mActivity,
                                     new String[]{Manifest.permission.READ_CONTACTS},
                                     MY_PERMISSION_REQUEST_CODE
@@ -149,13 +155,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults){
-        switch(requestCode){
-            case MY_PERMISSION_REQUEST_CODE:{
-                if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        switch (requestCode) {
+            case MY_PERMISSION_REQUEST_CODE: {
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     // Permission granted
                     getContacts();
-                }else {
+                } else {
                     // Permission denied
                 }
             }
