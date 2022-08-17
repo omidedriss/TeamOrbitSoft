@@ -66,25 +66,25 @@
             android:exported="false" />
         <activity
             android:name=".Mazaheri.Mazaheri"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Mazaheri.MazIntent"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Mazaheri.MazGetNameFamil"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Mazaheri.MazShowNameFamil"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Mazaheri.MazStartForResult_firstActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Mazaheri.MazStartForResult_SecondActivity"
-            android:exported="false" />
-<!--        <activity-->
-<!--            android:name=".Mazaheri.MazBrowser"-->
-<!--            android:exported="false" />-->
+            android:exported="true" />
+        <activity
+            android:name=".Mazaheri.MazBrowser"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
