@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.orbitsoft.teamorbitsoft">
+    package="com.orbitsoft.teamorbitsoft" >
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
-    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
@@ -17,9 +17,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TeamOrbitSoft"
-        tools:targetApi="31">
+        tools:targetApi="31" >
         <activity
-            android:name=".kananiActivity"
+            android:name=".Gorji.GorjiMyDialogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Kanani.SecondActivity"
             android:exported="false" />
         <activity
             android:name=".Gorji.SecendActivity"
@@ -83,7 +86,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -93,8 +96,8 @@
         <activity
             android:name=".example.MyBrowserActivity"
             android:exported="true"
-            android:label="@string/app_name">
-            <intent-filter tools:ignore="AppLinkUrlError">
+            android:label="@string/app_name" >
+            <intent-filter tools:ignore="AppLinkUrlError" >
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="com.orbitsoft.teamorbitsoft.MyBrowser" />
 

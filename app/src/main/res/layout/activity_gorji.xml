@@ -18,11 +18,10 @@
 
 
         <Button
-            android:id="@+id/insta"
+            android:id="@+id/metaco1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Inesta" />
-
+            android:text="Metaco" />
         <Button
             android:id="@+id/metaco"
             android:layout_width="match_parent"
@@ -39,6 +38,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Exit" />
+        <Button
+            android:id="@+id/insta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inesta" />
+
 
 
     </LinearLayout>
