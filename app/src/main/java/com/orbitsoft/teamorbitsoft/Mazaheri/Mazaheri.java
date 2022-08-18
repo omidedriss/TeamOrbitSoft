@@ -37,11 +37,7 @@ public class Mazaheri extends AppCompatActivity {
         setContentView(R.layout.activity_mazaheri);
 
         initialliz();
-        //بازگشت به صفحه اصلی
-        btmazret.setOnClickListener(v -> {
-            Intent imazret=new Intent(this, MainActivity.class);
-            startActivity(imazret);
-        });
+
         //رفتن به صفحه اینتنت شامل شماره گیری سریع،شماره گیری دو مرحله ای، دفتر تلفن ،رجوع به سایت
         btmazintent.setOnClickListener(v -> {
             Intent imazintent=new Intent(Mazaheri.this, MazIntent.class);
@@ -56,6 +52,11 @@ public class Mazaheri extends AppCompatActivity {
         btmazstartonresult.setOnClickListener(v -> {
             Intent imazresult=new Intent(Mazaheri.this, MazStartForResult_firstActivity.class);
             startActivity(imazresult);
+        });
+        //بازگشت به صفحه اصلی
+        btmazret.setOnClickListener(v -> {
+            Intent imazret=new Intent(this, MainActivity.class);
+            startActivity(imazret);
         });
     }
     //متد جدول ضرب
