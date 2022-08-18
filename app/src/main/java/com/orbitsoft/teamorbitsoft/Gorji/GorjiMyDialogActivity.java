@@ -37,6 +37,7 @@ private TextView infoGorji;
     protected Dialog onCreateDialog(int id) {
         switch (id){
             case 0 :
+                Toast.makeText(getApplicationContext(),"درصورت زدن close صفحه بسته میشود",Toast.LENGTH_LONG).show();
                 return new  AlertDialog.Builder(this)
                         .setIcon(R.drawable.ic_action_search)
                         .setTitle("درباره عباس گرجی")
@@ -56,7 +57,7 @@ private TextView infoGorji;
                         .setNegativeButton("Close", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
-                                Toast.makeText(getApplicationContext(),"درصورت زدن close صفحه بسته میشود",Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(),"صفحه بسته شد :)",Toast.LENGTH_LONG).show();
                                 finish();
                             }
                         })

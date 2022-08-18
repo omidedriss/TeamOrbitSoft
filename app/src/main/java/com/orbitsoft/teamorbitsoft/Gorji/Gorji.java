@@ -36,7 +36,7 @@ int x ;
     @Override
     public void onClick(View v) {
         if(v.getId()==insta.getId()){
-            Toast.makeText(getApplicationContext(),"insta",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),"به صفحه اینستا گرام عباس گرجی خوش آمدید",Toast.LENGTH_LONG).show();
             Uri uri = Uri.parse("https://instagram.com/abbas1gorji");
             Intent init = new Intent(Intent.ACTION_VIEW,uri);
             init.setPackage("com.instagram.android");
@@ -44,10 +44,13 @@ int x ;
         startActivity(init);
         }
         if(v.getId()==myInfo.getId()){
-        Intent init = new Intent(Gorji.this, GorjiMyDialogActivity.class);
+            Toast.makeText(getApplicationContext(),"صفحه درباره",Toast.LENGTH_LONG).show();
+
+            Intent init = new Intent(Gorji.this, GorjiMyDialogActivity.class);
         startActivity(init);
         }
         if(v.getId()==metaco.getId()){
+            Toast.makeText(getApplicationContext(),"سایت متاکو",Toast.LENGTH_LONG).show();
             Intent init1 = new Intent(Intent.ACTION_VIEW);
             Uri uri = Uri.parse("https://tr.metacomplex.com/");
             init1.setData(uri);
@@ -55,6 +58,8 @@ int x ;
 
         }
         if(v.getId()==exit.getId()){
+            Toast.makeText(getApplicationContext(),"صفحه خروج اجباری :)",Toast.LENGTH_LONG).show();
+
             Intent init = new Intent(getApplicationContext(),GorjiCustomDialog.class);
             startActivity(init);
         }
