@@ -22,6 +22,9 @@
             android:name=".Gorji.GorjiMyDialogActivity"
             android:exported="false" />
         <activity
+            android:name=".Gorji.GorjiCustomDialog"
+            android:exported="false" />
+        <activity
             android:name=".Kanani.SecondActivity"
             android:exported="false" />
         <activity

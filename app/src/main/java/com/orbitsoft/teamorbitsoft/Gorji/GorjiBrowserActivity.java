@@ -14,7 +14,15 @@ import com.orbitsoft.teamorbitsoft.R;
 
 public class GorjiBrowserActivity extends AppCompatActivity {
 WebView web;
-
+    /* برای استفاده باید در اکتیویتی اصلی کپی شود
+                Intent i = new
+                        Intent(Gorji.this,GorjiBrowserActivity.class);
+               Bundle bundle = new Bundle();
+               bundle.putLong("testputLong",12);
+               i.putExtra("test", bundle);
+                i.setData(Uri.parse("http://www.amazon.com"));
+               startActivity(i);
+*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

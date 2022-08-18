@@ -24,33 +24,18 @@ int x ;
         metaco=findViewById(R.id.metaco);
         exit=findViewById(R.id.exit);
         insta.setOnClickListener(this);
-        myInfo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent init = new Intent(Gorji.this, GorjiMyDialogActivity.class);
-                startActivity(init);
-
-            }
-        });
+        myInfo.setOnClickListener(this);
         metaco.setOnClickListener(this);
         exit.setOnClickListener(this);
 
-    /*
-                Intent i = new
-                        Intent(Gorji.this,GorjiBrowserActivity.class);
-               Bundle bundle = new Bundle();
-               bundle.putLong("testputLong",12);
-               i.putExtra("test", bundle);
-                i.setData(Uri.parse("http://www.amazon.com"));
-               startActivity(i);
-*/
+
 
 
         }
 
     @Override
     public void onClick(View v) {
-        if(v .equals(insta.getId())){
+        if(v.getId()==insta.getId()){
             Toast.makeText(getApplicationContext(),"insta",Toast.LENGTH_LONG).show();
             Uri uri = Uri.parse("https://instagram.com/abbas1gorji");
             Intent init = new Intent(Intent.ACTION_VIEW,uri);
@@ -58,18 +43,20 @@ int x ;
 
         startActivity(init);
         }
-       // if(v.equals(myInfo.getId())){
-
-        //}
-        if(v.equals(metaco.getId())){
+        if(v.getId()==myInfo.getId()){
+        Intent init = new Intent(Gorji.this, GorjiMyDialogActivity.class);
+        startActivity(init);
+        }
+        if(v.getId()==metaco.getId()){
             Intent init1 = new Intent(Intent.ACTION_VIEW);
             Uri uri = Uri.parse("https://tr.metacomplex.com/");
             init1.setData(uri);
             startActivity(init1);
 
         }
-        if(v.equals(exit.getId())){
-            
+        if(v.getId()==exit.getId()){
+            Intent init = new Intent(getApplicationContext(),GorjiCustomDialog.class);
+            startActivity(init);
         }
 
     }
