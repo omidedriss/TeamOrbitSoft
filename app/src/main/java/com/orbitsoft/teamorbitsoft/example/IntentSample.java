@@ -24,7 +24,6 @@ public class IntentSample extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intent);
-
         //---Web browser button---
         b1 = (Button) findViewById(R.id.btn_webbrowser);
         b1.setOnClickListener(new View.OnClickListener()
