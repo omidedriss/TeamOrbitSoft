@@ -71,7 +71,7 @@
             android:exported="false" />
         <activity
             android:name=".Mazaheri.MazIntent"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Mazaheri.MazGetNameFamil"
             android:exported="false" />
