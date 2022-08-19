@@ -58,10 +58,6 @@
             android:name=".Saeidian.saeidianBrowser"
             android:exported="false" />
         <activity
-            android:name=".Saeidian.shayan"
-            android:exported="false"
-            tools:ignore="DuplicateActivity" />
-        <activity
             android:name=".example.MyDialog"
             android:exported="false" />
         <activity
