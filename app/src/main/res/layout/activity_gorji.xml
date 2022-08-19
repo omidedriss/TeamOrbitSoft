@@ -28,12 +28,19 @@
             android:id="@+id/my_info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="My Ifno" />
+            android:text="My Info" />
         <Button
             android:id="@+id/insta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Inesta" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login" />
+
         <Button
             android:id="@+id/exit"
             android:layout_width="match_parent"

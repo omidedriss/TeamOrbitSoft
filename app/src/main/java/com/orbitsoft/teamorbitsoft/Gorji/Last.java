@@ -225,7 +225,7 @@ import com.orbitsoft.teamorbitsoft.R;
                 }
             });
             ok.setOnClickListener(v -> {
-                Intent intent = new Intent(getApplicationContext(), SecendActivity.class);
+                Intent intent = new Intent(getApplicationContext(), GorjiLoginActivity.class);
                 intent.putExtra("name", String.valueOf(ename.getText()).toString());
                 intent.putExtra("family", String.valueOf(efamily.getText()).toString());
                 if (check.isChecked()) {
@@ -402,7 +402,7 @@ import com.orbitsoft.teamorbitsoft.R;
             //i.setType(ContactsContract.Contacts.CONTENT_TYPE);
             i.setType(ContactsContract.CommonDataKinds.Phone.CONTENT_TYPE);
             startActivityForResult(i,request_Code);
-            Intent intent = new Intent(getApplicationContext(),SecendActivity.class);
+            Intent intent = new Intent(getApplicationContext(),GorjiLoginActivity.class);
             intent.putExtra("name",String.valueOf(ename.getText()).toString());
             intent.putExtra("family",String.valueOf(efamily.getText()).toString());
             if (check.isChecked()) {
@@ -446,7 +446,7 @@ import android.widget.Toast;
 
 import com.orbitsoft.teamorbitsoft.R;
 
-public class SecendActivity extends AppCompatActivity {
+public class GorjiLoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

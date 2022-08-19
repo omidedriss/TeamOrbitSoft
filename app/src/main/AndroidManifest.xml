@@ -18,12 +18,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TeamOrbitSoft"
         tools:targetApi="31">
-        <activity
-            android:name=".shayan"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -40,7 +38,7 @@
             android:name=".Kanani.SecondActivity"
             android:exported="false" />
         <activity
-            android:name=".Gorji.SecendActivity"
+            android:name=".Gorji.GorjiLoginActivity"
             android:exported="false" />
         <activity
             android:name=".Salimi.SalimiActivity"
