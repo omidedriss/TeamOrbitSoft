@@ -21,7 +21,6 @@ public class shayan extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.saeidian_custom_dialog);
     }
-
     public void btn_showDialog(View view)
     {
 final AlertDialog.Builder alert=new AlertDialog.Builder(shayan.this);
