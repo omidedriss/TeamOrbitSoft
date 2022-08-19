@@ -39,7 +39,7 @@ public class MazIntent extends AppCompatActivity {
 
         //شماره گیری سریع اینتنت معمولی
         //---Make calls button--- //در این حالت باید دسترسی تلفن به اپلیکیشن داده شود
-        b1 = (Button) findViewById(R.id.b1);
+       // b1 = (Button) findViewById(R.id.b1);
         b1.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View arg0){
@@ -57,7 +57,7 @@ public class MazIntent extends AppCompatActivity {
         //---Make calls button---
         //
         //شماره گیری معمولی با اینتنت معمولی
-        b2 = (Button) findViewById(R.id.maz_makecalls);
+        //b2 = (Button) findViewById(R.id.maz_makecalls);
         b2.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View arg0){
@@ -72,7 +72,7 @@ public class MazIntent extends AppCompatActivity {
 
         //شماره گیری با اینتنت شرطی از روی دفتر تلفن
         //---Choose Contact button---
-        b4 = (Button) findViewById(R.id.btn_chooseContact);
+        //b4 = (Button) findViewById(R.id.btn_chooseContact);
         b4.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View arg0){

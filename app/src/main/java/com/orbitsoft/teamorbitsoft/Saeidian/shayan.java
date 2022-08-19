@@ -1,5 +1,6 @@
 package com.orbitsoft.teamorbitsoft.Saeidian;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
@@ -13,47 +14,33 @@ import android.widget.Toast;
 import com.orbitsoft.teamorbitsoft.R;
 
 public class shayan extends AppCompatActivity {
-    private Dialog dialog;
-    private Button ShowDialog;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        dialog.setContentView(R.layout.activity_shayan);
-
-        //setContentView(R.layout.activity_shayan);
-
-        //ShowDialog = findViewById(R.id.dialog_btn);
-
-        //Create the Dialog here
-        dialog = new Dialog(this);
-        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        dialog.setCancelable(false); //Optional
-        //dialog.getWindow().getAttributes().windowAnimations = Build.VERSION_CODES.R.style.DialogAnimation; //Setting the animations to dialog
-        Button Okay = dialog.findViewById(R.id.btn_okay);
-        Button Cancel = dialog.findViewById(R.id.btn_cancel);
-dialog.show();
-        Okay.setOnClickListener(new View.OnClickListener() {
+        //setContentView(R.layout.saeidian_custom_dialog);
+    }
+    public void btn_showDialog(View view)
+    {
+final AlertDialog.Builder alert=new AlertDialog.Builder(shayan.this);
+View mView=getLayoutInflater().inflate(R.layout.saeidiancustomdialog,null);
+Button name = (Button)mView.findViewById(R.id.name2);
+        Button family = (Button)mView.findViewById(R.id.family2);
+        alert.setView(mView);
+        final AlertDialog alertDialog=alert.create();
+        alertDialog.setCanceledOnTouchOutside(false);
+        name.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-
-                Toast.makeText(shayan.this, "Okay", Toast.LENGTH_SHORT).show();
-                dialog.dismiss();
+            public void onClick(View view) {
+                Toast.makeText(shayan.this, "shayan", Toast.LENGTH_SHORT).show();
             }
         });
-
-        Cancel.setOnClickListener(new View.OnClickListener() {
+        family.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-
-                Toast.makeText(shayan.this, "Cancel", Toast.LENGTH_SHORT).show();
-                dialog.dismiss();
+            public void onClick(View view) {
+                Toast.makeText(shayan.this, "saeidain", Toast.LENGTH_SHORT).show();
             }
         });
-
-
-
-
-
     }
 }
