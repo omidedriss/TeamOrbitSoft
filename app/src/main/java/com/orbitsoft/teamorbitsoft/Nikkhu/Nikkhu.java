@@ -2,12 +2,17 @@ package com.orbitsoft.teamorbitsoft.Nikkhu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.orbitsoft.teamorbitsoft.MainActivity;
@@ -16,142 +21,91 @@ import com.orbitsoft.teamorbitsoft.R;
 import java.util.Arrays;
 import java.util.Random;
 
-public class Nikkhu extends AppCompatActivity {
+public class Nikkhu extends AppCompatActivity implements View.OnClickListener {
     TextView txt;
-    EditText my_input;
-    Button bt1, bt2, bt3, btReturn;
-    String[] messages= new String[]{"random number::","adade fard ::","jame Bozorgtareen Adad::"
-            ,"+","=","miangeen 6 adad::","/6"};
-    String space = "\t ";
-    String newLine="\n\n\n\n";
-    String newLine1="\n";
+
+    Button bt1, bt2, bt3,bt_info ,btReturn;
+    private Dialog d;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nikkhu);
 
 
-        bt1 = findViewById(R.id.bt1);
-        bt2 = findViewById(R.id.bt2);
+        bt1 =(Button) findViewById(R.id.bt1);
+        bt2 = (Button) findViewById(R.id.bt2);
         bt3 = (Button) findViewById(R.id.bt3);
         btReturn = findViewById(R.id.btReturn);
+        bt_info =(Button) findViewById(R.id.bt_info);
 
-        bt1.setOnClickListener(v -> zarb());
-        bt2.setOnClickListener(v -> adadeRandom());
-        bt3.setOnClickListener(v -> newactivity());
+        d=new Dialog(this);
 
-        btReturn.setOnClickListener(v -> {
-            Intent in = new Intent(this, Nikkhu.class);
-            startActivity(in);
 
-        });
+
+
     }
 
 
-    //*********************************************************************************
-    //*********************************************************************************
+    @SuppressLint("ResourceAsColor")
+    @Override
+    public void onClick(View v) {
 
-    // تایع ساخت ضرب اعداد
-    public void zarb() {
-        txt = findViewById(R.id.txt);
-        StringBuilder st = new StringBuilder();
 
-        String n = "\t ";
-        String newLine="\n";
+       switch (v.getId() ){
+            case R.id.bt1:
+                Toast.makeText(getApplicationContext(),"instgram page",Toast.LENGTH_LONG).show();
+               Uri uri= Uri.parse("https://https://instagram.com/metacomplex");
+                Intent intent= new Intent(Intent.ACTION_VIEW,uri);
+                intent.setPackage("com.instagram.android");
+                startActivity(intent);
+                break;
 
-        for (int i = 1; i < 11; i++) {
-            for (int j = 1; j < 11; j++) {
+           case R.id.bt2:
+                Intent intent1 =new Intent(Intent.ACTION_VIEW);
+                intent1.setData(Uri.parse("https://fa.metacomplex.com"));
+                startActivity(intent1);
+                break;
 
-                int s = i * j;
-                st.append(s).append(n);
-                txt.setText(st.toString());
-            }
-            st.append(newLine);
+           case R.id.bt3:
+
+               d.setContentView(R.layout.activity_nikoo_log);
+               d.getWindow().setBackgroundDrawable(new ColorDrawable(android.R.color.black));
+               Button bt_exit=d.findViewById(R.id.bt_exit);
+               Button bt_cancel=d.findViewById(R.id.bt_cancel);
+               bt_exit.setOnClickListener(new View.OnClickListener() {
+                   @Override
+                   public void onClick(View v) {
+                     Intent i =new Intent(getApplicationContext(),MainActivity.class);
+                     startActivity(i);
+                   }
+               });
+               bt_cancel.setOnClickListener(new View.OnClickListener() {
+                   @Override
+                   public void onClick(View v) {
+                       Toast.makeText(getApplicationContext(),"cancel",Toast.LENGTH_LONG).show();
+                       d.dismiss();
+                   }
+               });
+               d.show();
+               break;
+
+           case R.id.bt_info:
+
+               dilog d2 =new dilog();
+               d2.show(getSupportFragmentManager(),"info");
+               break;
+
+
+
+
+
+
+
+
+
+
 
         }
     }
-
-    //*****************************************************************************
-    //*****************************************************************************
-
-
-    public void adadeRandom(){
-        txt = findViewById(R.id.txt);
-        StringBuilder st = new StringBuilder();
-        Random myRand =new Random();
-        int[] myNumber =new int[20];
-        int[] fard= new int[20];
-
-
-        //*************************************************
-        //********* sakht adaade random ta 20 adad*********
-        for(int k=0;k<20;k++)
-            myNumber[k] = myRand.nextInt(101);
-
-        Arrays.sort(myNumber);
-        st.append(messages[0]).append(newLine1);
-        for(int k=0;k<20;k++) {
-
-            st.append(myNumber[k]).append(space);
-            txt.setText(st.toString());
-        }
-
-
-
-        //*************************************************
-        //******** sakht  adad fard  **********************
-
-        st.append(newLine).append(messages[1]).append(newLine1);
-
-        for(int k=0;k<20;k++) {
-            if (myNumber[k] % 2 != 0) {
-                fard[k] = myNumber[k];
-                st.append(fard[k]).append(space);
-                txt.setText(st.toString());
-            }
-
-        }
-
-
-        //*****************************************************
-        //***************jame  bozorg tareen********************
-        st.append(newLine).append(messages[2]).append(newLine1);
-
-        int sum=myNumber[18]+myNumber[19];
-        st.append(myNumber[18]).append(messages[3]).append(myNumber[19]).append(messages[4]).append(sum);
-        txt.setText(st.toString());
-
-        //*************************************************
-        //************* average****************************
-
-
-
-
-
-        st.append(newLine).append(messages[5]).append(newLine1);
-        int ave=0;
-        for(int k=1;k<7;k++){
-            st.append(myNumber[k]).append(messages[3]);
-            ave=+myNumber[k];
-
-        }
-        ave=(ave/6);
-        st.append(messages[6]).append(messages[4]).append(ave);
-        txt.setText(st.toString());
-    }
-        //*********************************************************
-        //***********************************************************
-
-
-public void newactivity(){
-        Intent i=new Intent(getApplicationContext(), nikoo_intent.class);
-        startActivity(i);
-
-}
-
-
-
-
-
-
 }
