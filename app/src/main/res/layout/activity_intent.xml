@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:text="Web Browser" />
     <Button
-        android:id="@+id/maz_makecalls"
+        android:id="@+id/btmazdial"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Make Calls" />
@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:text="Show Map" />
     <Button
-        android:id="@+id/btn_chooseContact"
+        android:id="@+id/btmazcontact"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Choose Contact" />

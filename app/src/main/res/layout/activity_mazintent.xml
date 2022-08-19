@@ -15,16 +15,16 @@
     -->
 
     <Button
-        android:id="@+id/b1"
+        android:id="@+id/btmazcall"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="to CALL EMIDIATE set phone permision 1" />
+        android:text="Dial  set phone permision " />
 
     <Button
-        android:id="@+id/maz_makecalls"
+        android:id="@+id/btmazdial"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="برقراری تماس" />
+        android:text="Call" />
 
     <!--
     <Button
@@ -35,10 +35,10 @@
     -->
 
     <Button
-        android:id="@+id/btn_chooseContact"
+        android:id="@+id/btmazcontact"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Choose Contact" />
+        android:text="Dial from Contact" />
 
     <Button
         android:id="@+id/btn_launchMyBrowser"
