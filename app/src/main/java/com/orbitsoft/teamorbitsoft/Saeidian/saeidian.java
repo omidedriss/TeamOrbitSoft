@@ -37,6 +37,7 @@ public class saeidian extends AppCompatActivity {
     Button call;
     Button contact ;
     Button exit;
+
     Button bmi;
     public Button name2,family2;
     //private Dialog dialog;
