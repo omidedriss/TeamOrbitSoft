@@ -19,7 +19,7 @@ public class saeidiandialog extends Dialog implements
     public Dialog d;
     public Button yes, no;
 
-//    public CustomDialogClass(Activity a) {
+    //    public CustomDialogClass(Activity a) {
 //        super(a);
 //        // TODO Auto-generated constructor stub
 //        this.c = a;

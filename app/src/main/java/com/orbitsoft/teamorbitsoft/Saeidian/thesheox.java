@@ -188,5 +188,3 @@ public class thesheox extends AppCompatActivity {
 
     }
 }
-
-
