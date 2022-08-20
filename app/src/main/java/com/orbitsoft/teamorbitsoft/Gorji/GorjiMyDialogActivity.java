@@ -30,6 +30,7 @@ private TextView infoGorji;
 
     @Override
     public void onClick(View view) {
+
         showDialog(0);
     }
 

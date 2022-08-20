@@ -47,7 +47,11 @@
             android:layout_height="wrap_content"
             android:text="Exit" />
 
-
+        <CheckBox
+            android:id="@+id/checkBox_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login_CheckBox" />
 
 
     </LinearLayout>

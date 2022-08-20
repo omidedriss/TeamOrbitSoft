@@ -12,15 +12,17 @@ import android.view.MenuItem;
 import android.view.SubMenu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import com.orbitsoft.teamorbitsoft.R;
 import com.orbitsoft.teamorbitsoft.example.MyDialog;
 
-public class Gorji extends AppCompatActivity implements View.OnClickListener {
+public class Gorji extends AppCompatActivity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
 private Button insta,myInfo,metaco,exit,login;
-
+private CheckBox loginCheckBox;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,12 +32,16 @@ private Button insta,myInfo,metaco,exit,login;
         metaco=findViewById(R.id.metaco);
         exit=findViewById(R.id.exit);
         login=findViewById(R.id.login);
+        loginCheckBox=findViewById(R.id.checkBox_login);
+        loginCheckBox.setChecked(false);
         login.setVisibility(View.GONE);
         login.setOnClickListener(this);
         insta.setOnClickListener(this);
         myInfo.setOnClickListener(this);
         metaco.setOnClickListener(this);
         exit.setOnClickListener(this);
+        loginCheckBox.setOnCheckedChangeListener(this);
+
         Toast.makeText(getApplicationContext(), "دکمه  صفحه لاگین مخفی است", Toast.LENGTH_LONG).show();
 
         }
@@ -118,5 +124,18 @@ private Button insta,myInfo,metaco,exit,login;
 
         }
 
+    }
+
+    @Override
+    public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+        if(loginCheckBox.getId() == R.id.checkBox_login){
+        login.setEnabled(b);}
+        if (loginCheckBox.getId()==R.id.checkBox_login
+                &&loginCheckBox.isChecked()) {
+            login.setVisibility(View.VISIBLE);
+        }
+        else
+        {login.setVisibility(View.GONE);
+        }
     }
 }
