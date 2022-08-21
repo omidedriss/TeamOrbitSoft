@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
@@ -26,6 +27,7 @@ public class saeidiandialog extends Dialog implements
 //    }
     public saeidiandialog(@NonNull Context context) {
         super(context);
+        this.c= (Activity) context;
     }
 
     @Override
@@ -44,7 +46,7 @@ public class saeidiandialog extends Dialog implements
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_yes:
-                c.finish();
+                Toast.makeText(c, "shayan", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btn_no:
                 dismiss();

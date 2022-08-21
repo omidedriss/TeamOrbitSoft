@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.orbitsoft.teamorbitsoft">
 
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
@@ -19,7 +21,19 @@
         android:theme="@style/Theme.TeamOrbitSoft"
         tools:targetApi="31">
         <activity
-            android:name=".SecondActivitySalimi"
+            android:name=".Saeidian2.saeidian2_main"
+            android:exported="false" />
+        <activity
+            android:name=".Saeidian2.saeidian_login3"
+            android:exported="false" />
+        <activity
+            android:name=".Saeidian2.saeidian_login2"
+            android:exported="false" />
+        <activity
+            android:name=".Saeidian2.saeidian_login1"
+            android:exported="false" />
+        <activity
+            android:name=".Salimi.SalimiActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -41,9 +55,6 @@
             android:exported="false" />
         <activity
             android:name=".Gorji.GorjiLoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Salimi.SalimiActivity"
             android:exported="false" />
         <activity
             android:name=".Saeidian.saeidian"

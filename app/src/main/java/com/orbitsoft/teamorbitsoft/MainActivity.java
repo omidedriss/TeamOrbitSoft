@@ -17,6 +17,7 @@ import com.orbitsoft.teamorbitsoft.Moosavi.Moosavi;
 import com.orbitsoft.teamorbitsoft.Nikkhu.Nikkhu;
 import com.orbitsoft.teamorbitsoft.Saeidian.saeidian;
 import com.orbitsoft.teamorbitsoft.Saeidian.saeidian2;
+import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian2_main;
 import com.orbitsoft.teamorbitsoft.Salimi.SalimiActivity;
 import com.orbitsoft.teamorbitsoft.example.IntentSample;
 import com.orbitsoft.teamorbitsoft.example.LifeCycleActivity;
@@ -24,7 +25,7 @@ import com.orbitsoft.teamorbitsoft.example.MyDialog;
 
 public class MainActivity extends AppCompatActivity {
 Button btGorji;
-Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani;
+Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +36,7 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btHatami,btIntent,btLifeCycle,btNi
         btmaz=findViewById(R.id.btmaz);
         btMoosavi=findViewById(R.id.moosavi);
         btSaeedian=findViewById(R.id.saeedian);
-        //btSaeidian2=findViewById(R.id.saeidian2);
+        btSaeidian2_main=findViewById(R.id.saeidian2);
         btHatami=findViewById(R.id.hatami);
         btSalimi=findViewById(R.id.Salimi);
         btKanani=findViewById(R.id.Kanani);
@@ -62,11 +63,11 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btHatami,btIntent,btLifeCycle,btNi
                     startActivity(imaz);
                 }
         );
-//        btSaeidian2.setOnClickListener(v -> {
-//                    Intent imaz=new Intent(this, saeidian2.class);
-//                    startActivity(imaz);
-//                }
-//        );
+        btSaeidian2_main.setOnClickListener(v -> {
+                    Intent imaz=new Intent(this, saeidian2_main.class);
+                    startActivity(imaz);
+                }
+        );
         btMoosavi.setOnClickListener(v -> {
                     Intent imaz=new Intent(this, Moosavi.class);
                     startActivity(imaz);
