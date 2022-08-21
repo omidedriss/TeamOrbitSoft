@@ -69,32 +69,32 @@ public class Nikkhu extends AppCompatActivity implements View.OnClickListener {
 
            case R.id.bt3:
 
-               d.setContentView(R.layout.activity_nikoo_log);
-               d.getWindow().setBackgroundDrawable(new ColorDrawable(android.R.color.black));
-               Button bt_exit=d.findViewById(R.id.bt_exit);
-               Button bt_cancel=d.findViewById(R.id.bt_cancel);
-               bt_exit.setOnClickListener(new View.OnClickListener() {
-                   @Override
-                   public void onClick(View v) {
-                     Intent i =new Intent(getApplicationContext(),MainActivity.class);
-                     startActivity(i);
-                   }
-               });
-               bt_cancel.setOnClickListener(new View.OnClickListener() {
-                   @Override
-                   public void onClick(View v) {
-                       Toast.makeText(getApplicationContext(),"cancel",Toast.LENGTH_LONG).show();
-                       d.dismiss();
-                   }
-               });
-               d.show();
-               break;
-
-           case R.id.bt_info:
-
-               dilog d2 =new dilog();
-               d2.show(getSupportFragmentManager(),"info");
-               break;
+//               d.setContentView(R.layout.activity_nikoo_log);
+//               d.getWindow().setBackgroundDrawable(new ColorDrawable(android.R.color.black));
+//               Button bt_exit=d.findViewById(R.id.bt_exit);
+//               Button bt_cancel=d.findViewById(R.id.bt_cancel);
+//               bt_exit.setOnClickListener(new View.OnClickListener() {
+//                   @Override
+//                   public void onClick(View v) {
+//                     Intent i =new Intent(getApplicationContext(),MainActivity.class);
+//                     startActivity(i);
+//                   }
+//               });
+//               bt_cancel.setOnClickListener(new View.OnClickListener() {
+//                   @Override
+//                   public void onClick(View v) {
+//                       Toast.makeText(getApplicationContext(),"cancel",Toast.LENGTH_LONG).show();
+//                       d.dismiss();
+//                   }
+//               });
+//               d.show();
+//               break;
+//
+//           case R.id.bt_info:
+//
+//               dilog d2 =new dilog();
+//               d2.show(getSupportFragmentManager(),"info");
+//               break;
 
 
 

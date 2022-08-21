@@ -50,6 +50,12 @@ public class saeidian_login2 extends AppCompatActivity {
                     if (get_sms2.equalsIgnoreCase(get_sms3)) {
 
                         Toast.makeText(saeidian_login2.this, "correct", Toast.LENGTH_SHORT).show();
+                        Intent i = new
+                                Intent(saeidian_login2.this, saeidian_login1.class);
+                        Bundle bundle = new Bundle();
+
+                        i.putExtras(bundle);
+                        startActivity(i);
                     } else {
                         Toast.makeText(saeidian_login2.this, "wrong", Toast.LENGTH_SHORT).show();
                     }
