@@ -59,5 +59,4 @@ private String phone ;
             Toast.makeText(getApplicationContext(),"شما روی عکس کلیک کردید",Toast.LENGTH_LONG).show();
         }
     }
-
 }
