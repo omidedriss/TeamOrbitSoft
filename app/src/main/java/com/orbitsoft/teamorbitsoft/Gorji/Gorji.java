@@ -118,7 +118,7 @@ private CheckBox loginCheckBox;
         }
         if(v.getId() == login.getId()){
 
-                Intent initLogin = new Intent(getApplicationContext(),GorjiLoginActivity.class);
+                Intent initLogin = new Intent(getApplicationContext(),GorjiPhoneNumberActivity.class);
                 startActivity(initLogin);
 
 
