@@ -4,40 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Gorji.GorjiLoginActivity">
+    tools:context=".Gorji.GorjiLoginActivity"
+
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
 
-        <LinearLayout
+        android:weightSum="100">
+
+        <EditText
+            android:id="@+id/username_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:layout_weight="10"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName" />
 
-            <EditText
-                android:id="@+id/username_login"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="textPersonName"
-                android:ems="10"
-                 />
 
-            <EditText
-                android:id="@+id/password_login"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="textPassword" />
-        </LinearLayout>
+
+        <EditText
+            android:id="@+id/password_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="10"
+            android:ems="10"
+            android:hint="Family"
+            android:inputType="textPassword"
+             />
+
+
 
         <Button
             android:id="@+id/button_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login" />
+            android:layout_weight="80"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="400dp"
+            android:text="ثبت نام" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
