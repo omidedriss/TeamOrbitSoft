@@ -44,7 +44,7 @@ private String phone ;
             if (!phone.isEmpty() && (phone.length() == 11 && phone.startsWith("09"))) {
                 Intent init = new Intent(getApplicationContext(), GorjiCodPhoneActivity.class);
                 Random random = new Random();
-                String st1 = String.valueOf(random.nextInt(100));
+                String st1 = String.valueOf(random.nextInt(1000000));
                 init.putExtra("key",st1);
                 startActivity(init);
             }else{

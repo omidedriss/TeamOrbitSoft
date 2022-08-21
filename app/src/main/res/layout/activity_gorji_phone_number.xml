@@ -19,6 +19,15 @@
             android:layout_marginLeft="125dp"
             android:layout_marginTop="50dp"
             tools:srcCompat="@mipmap/ic_launcher" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="این قسمت نمیتواند خالی باشد و شماره حتما باید  با 09 شروع شود"
+
+            />
 
 
 
@@ -27,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="25dp"
-            android:hint="شماره موبایل"
+            android:hint="Number = 09....."
             android:maxLength="11"
             android:ems="10"
             android:inputType="phone" />
