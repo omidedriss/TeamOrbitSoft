@@ -14,7 +14,7 @@ public class GorjiLoginActivity extends AppCompatActivity implements View.OnClic
     private EditText name,password;
     private Button loginButton;
     private String userName="abbas"
-            ,userPassword="123";
+            ,userPassword="gorji";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,8 +22,7 @@ public class GorjiLoginActivity extends AppCompatActivity implements View.OnClic
         name=findViewById(R.id.username_login);
         password=findViewById(R.id.password_login);
         loginButton=findViewById(R.id.button_login);
-        name.setHint("Username");
-        password.setHint("Password");
+
         loginButton.setOnClickListener(this);
     }
 
