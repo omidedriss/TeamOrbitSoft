@@ -80,6 +80,7 @@ public class Nikkhu extends AppCompatActivity implements View.OnClickListener {
 //                     startActivity(i);
 //                   }
 //               });
+
 //               bt_cancel.setOnClickListener(new View.OnClickListener() {
 //                   @Override
 //                   public void onClick(View v) {
