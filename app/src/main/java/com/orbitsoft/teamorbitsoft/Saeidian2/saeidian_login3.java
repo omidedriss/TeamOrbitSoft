@@ -29,9 +29,14 @@ public class saeidian_login3 extends AppCompatActivity {
      public String message;
    public String number;
     public String asm;
-    String phone;
+    String phone_read;
+
+    String name_read;
+    String email_read;
+    String password_read;
+   String code_read;
     String email;
-    String code_read;
+
     String code_get;
     TextView print_email;
     TextView print_phone;
@@ -50,11 +55,17 @@ Button confirm;
         code.setTextColor(Color.BLACK);
         if (bundle != null) {
              //phone = bundle.getString("email", "nothing");
-             phone = bundle.getString("phone", "nothing");
+             phone_read = bundle.getString("phone", "nothing");
             code_read = bundle.getString("code", "nothing");
 
-            print_phone.setText(phone);
+            print_phone.setText(phone_read);
             //print_phone.setText(email);
+
+                phone_read = bundle.getString("phone", "nothing");
+                name_read = bundle.getString("name", "nothing");
+                email_read = bundle.getString("email", "nothing");
+                password_read = bundle.getString("password", "nothing");
+
         }
 
 //
@@ -67,12 +78,16 @@ Button confirm;
                 if (code_get.equalsIgnoreCase(code_read)) {
 
                     Toast.makeText(saeidian_login3.this, "correct", Toast.LENGTH_SHORT).show();
-//            Intent a = new
-//                    Intent(saeidian_login2.this, saeidian_login1.class);
-//            Bundle bundle2 = new Bundle();
-//
-//            i.putExtras(bundle2);
-//            startActivity(i);
+            Intent i = new
+                    Intent(saeidian_login3.this, saeidian_login4.class);
+            Bundle bundle = new Bundle();
+                    bundle.putString("name2", name_read);
+                    bundle.putString("email2", email_read);
+                    bundle.putString("phone2", phone_read);
+                    bundle.putString("password2", password_read);
+                    bundle.putString("code2", message);
+            i.putExtras(bundle);
+            startActivity(i);
                 } else {
                     Toast.makeText(saeidian_login3.this, "wrong", Toast.LENGTH_SHORT).show();
                 }

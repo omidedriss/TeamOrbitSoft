@@ -91,7 +91,6 @@ public class saeidian_login2 extends AppCompatActivity {
                 bundle.putString("email", set_email);
                 bundle.putString("phone", set_phone);
                 bundle.putString("password", set_password);
-
                 bundle.putString("code", message);
                 i.putExtras(bundle);
                 startActivity(i);

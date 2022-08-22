@@ -131,7 +131,7 @@ android:orientation="vertical">
         android:orientation="vertical">
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/signup2"
+            android:id="@+id/exit"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/get_name2"
@@ -143,7 +143,7 @@ android:orientation="vertical">
             android:textSize="25dp"/>
 
         <TextView
-            android:id="@+id/exit"
+            android:id="@+id/ss"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Already have acount? Sign Up"

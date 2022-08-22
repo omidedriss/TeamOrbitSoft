@@ -79,6 +79,9 @@
             android:name=".Saeidian2.saeidian_login3"
             android:exported="false" />
         <activity
+            android:name=".Saeidian2.saeidian_login4"
+            android:exported="false" />
+        <activity
             android:name=".example.MyDialog"
             android:exported="false" />
         <activity
