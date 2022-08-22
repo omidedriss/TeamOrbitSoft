@@ -16,25 +16,25 @@ public class saeidian2_main extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_saeidian2_main);
+        setContentView(R.layout.activity_saeidian_login1);
         buttonx = (Button) findViewById(R.id.buttonx);
 
-        buttonx.setOnClickListener((new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                Intent i =new
-
-                        Intent(saeidian2_main .this, saeidian_login3 .class);
-
-                Bundle bundle = new Bundle();
-                i.putExtras(bundle);
-
-                startActivity(i);
-            }
-
-
-        }));
+//        buttonx.setOnClickListener((new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View view) {
+//                Intent i =new
+//
+//                        Intent(saeidian2_main .this, saeidian_login3 .class);
+//
+//                Bundle bundle = new Bundle();
+//                i.putExtras(bundle);
+//
+//                startActivity(i);
+//            }
+//
+//
+//        }));
 
     }
 }
