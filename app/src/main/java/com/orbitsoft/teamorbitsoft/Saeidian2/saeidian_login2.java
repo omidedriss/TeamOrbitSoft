@@ -3,8 +3,10 @@ package com.orbitsoft.teamorbitsoft.Saeidian2;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Message;
+import android.telephony.SmsManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,10 +23,25 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.orbitsoft.teamorbitsoft.R;
+
+import java.util.Random;
+
 public class saeidian_login2 extends AppCompatActivity {
     TextView show_number2;
     Button next2;
-    EditText get_sms;
+    EditText name;
+    EditText email;
+    EditText phone;
+    EditText password;
+    EditText confirmpassword;
+
+    String set_name;
+    String set_email;
+    String set_phone;
+    String set_password;
+    String set_confirmpassword;
+    public String message;
+    public String number;
     String get_sms2;
     String get_sms3;
     String salam = "salam";
@@ -33,34 +50,62 @@ public class saeidian_login2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saeidian_login2);
-        Bundle bundle = getIntent().getExtras();
-        if (bundle != null) {
-            get_sms3 = bundle.getString("sms", "nothing");}
-        Toast.makeText(saeidian_login2.this, get_sms3, Toast.LENGTH_SHORT).show();
-            show_number2 = findViewById(R.id.show_phone2);
-            get_sms = (EditText) findViewById(R.id.get_sms);
-            next2 = (Button) findViewById(R.id.next2);
 
-            next2.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
 
-                    get_sms2 = get_sms.getText().toString();
-                    //Toast.makeText(saeidian_login2.this, get_sms2, Toast.LENGTH_SHORT).show();
-                    if (get_sms2.equalsIgnoreCase(get_sms3)) {
+        Button signup = findViewById(R.id.signup2);
+        name = (EditText) findViewById(R.id.get_name_family);
+        email = (EditText) findViewById(R.id.get_email);
+        phone = (EditText) findViewById(R.id.get_phonenumber);
+        password = (EditText) findViewById(R.id.get_password);
+        confirmpassword = (EditText) findViewById(R.id.get_confirmpassword);
+        email.setTextColor(Color.BLACK);
+        phone.setTextColor(Color.BLACK);
+        password.setTextColor(Color.BLACK);
+        name.setTextColor(Color.BLACK);
+        confirmpassword.setTextColor(Color.BLACK);
 
-                        Toast.makeText(saeidian_login2.this, "correct", Toast.LENGTH_SHORT).show();
-                        Intent i = new
-                                Intent(saeidian_login2.this, saeidian_login1.class);
-                        Bundle bundle = new Bundle();
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                set_name = name.getText().toString();
+                set_email = email.getText().toString();
+                set_phone = phone.getText().toString();
+                set_password = password.getText().toString();
+                set_confirmpassword = confirmpassword.getText().toString();
 
-                        i.putExtras(bundle);
-                        startActivity(i);
-                    } else {
-                        Toast.makeText(saeidian_login2.this, "wrong", Toast.LENGTH_SHORT).show();
-                    }
+                Intent i = new
+                        Intent(saeidian_login2.this, saeidian_login3.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("email", set_email);
+                bundle.putString("phone", set_phone);
+                i.putExtras(bundle);
+                startActivity(i);
+                Random random = new Random();
+                    int val = random.nextInt(1000000); // save random number in an integer variable
+                    //txt.setText(Integer.toString(val)); //convert to String and set it as text inside the textview
 
-                }
-            });
-        }
+                     message = (Integer.toString(val));
+
+
+                    SmsManager mySmsManager = SmsManager.getDefault();
+                    mySmsManager.sendTextMessage(set_phone, null, message, null, null);
+
+//                get_sms2 = get_sms.getText().toString();
+//                //Toast.makeText(saeidian_login2.this, get_sms2, Toast.LENGTH_SHORT).show();
+//                if (get_sms2.equalsIgnoreCase(get_sms3)) {
+//
+//                    Toast.makeText(saeidian_login2.this, "correct", Toast.LENGTH_SHORT).show();
+//                    Intent a = new
+//                            Intent(saeidian_login2.this, saeidian_login1.class);
+//                    Bundle bundle2 = new Bundle();
+//
+//                    i.putExtras(bundle2);
+//                    startActivity(i);
+//                } else {
+//                    Toast.makeText(saeidian_login2.this, "wrong", Toast.LENGTH_SHORT).show();
+//                }
+
+            }
+        });
     }
+}

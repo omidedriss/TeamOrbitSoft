@@ -18,6 +18,7 @@ import com.orbitsoft.teamorbitsoft.Nikkhu.Nikkhu;
 import com.orbitsoft.teamorbitsoft.Saeidian.saeidian;
 import com.orbitsoft.teamorbitsoft.Saeidian.saeidian2;
 import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian2_main;
+import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_login1;
 import com.orbitsoft.teamorbitsoft.Salimi.SalimiActivity;
 import com.orbitsoft.teamorbitsoft.example.IntentSample;
 import com.orbitsoft.teamorbitsoft.example.LifeCycleActivity;
@@ -64,7 +65,7 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
                 }
         );
         btSaeidian2_main.setOnClickListener(v -> {
-                    Intent imaz=new Intent(this, saeidian2_main.class);
+                    Intent imaz=new Intent(this, saeidian_login1.class);
                     startActivity(imaz);
                 }
         );
