@@ -22,7 +22,7 @@ public class GorjiPhoneNumberActivity extends AppCompatActivity implements View.
 private ImageView contactPic;
 private Button next,close;
 private EditText phoneNumber;
-private String phone = null;
+private String phone ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +30,7 @@ private String phone = null;
         contactPic=findViewById(R.id.cantact_pic);
         next=findViewById(R.id.next);
         phoneNumber=findViewById(R.id.phone_number);
+
         close=findViewById(R.id.close);
         next.setOnClickListener(this);
         close.setOnClickListener(this);
@@ -40,15 +41,15 @@ private String phone = null;
     public void onClick(View view) {
         if(view.getId()==next.getId()){
             phone = phoneNumber.getText().toString();
-            if (phone != null) {
+            if (!phone.isEmpty() && (phone.length() == 11 && phone.startsWith("09"))) {
                 Intent init = new Intent(getApplicationContext(), GorjiCodPhoneActivity.class);
                 Random random = new Random();
-                String st1 = String.valueOf(random.nextInt(100));
+                String st1 = String.valueOf(random.nextInt(1000000));
                 init.putExtra("key",st1);
                 startActivity(init);
             }else{
-                Toast.makeText(getApplicationContext(),"قسمت شماره موبایل نباید خالی باشد",Toast.LENGTH_LONG).show();
-                phoneNumber.isFocusable();
+                Toast.makeText(getApplicationContext(),"شماره موبایل را صحیح وارد کنید",Toast.LENGTH_LONG).show();
+                phoneNumber.requestFocus();
             }
         }
         if(view.getId()==close.getId()){
@@ -58,5 +59,4 @@ private String phone = null;
             Toast.makeText(getApplicationContext(),"شما روی عکس کلیک کردید",Toast.LENGTH_LONG).show();
         }
     }
-
 }

@@ -47,7 +47,7 @@ Button resend,accept;
         if(view.getId()==resend.getId());
         if(i < 5){
         Random random = new Random();
-        String st1 = String.valueOf(random.nextInt(800));
+        String st1 = String.valueOf(random.nextInt(10000000));
        // Toast.makeText(getApplicationContext(),st1,Toast.LENGTH_LONG).show();
         codPhoneNumber.setText(st1);
         i++;}else{
