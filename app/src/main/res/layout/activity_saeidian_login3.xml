@@ -15,7 +15,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="110"
+            android:layout_weight="140"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -50,29 +50,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="100"
+            android:layout_weight="123"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/email"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
-                android:text="Entered Email Address"
-                android:textColor="#000"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-            <TextView
-                android:id="@+id/email2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:layout_gravity="center"
-                android:text="email"
-                android:textColor="#808080"
-                android:textSize="20dp"
-                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/phone1"
@@ -80,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:layout_gravity="center"
-                android:text="Entered Phone Number"
+                android:text="Entered Phone Number : "
                 android:textColor="#000"
                 android:textSize="20dp"
                 android:textStyle="bold" />
@@ -90,137 +70,43 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginBottom="0dp"
                 android:text="phone"
                 android:textColor="#808080"
                 android:textSize="20dp"
                 android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/get_code"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="Verification Code"
+                android:textColorHint="#808080"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:background="@drawable/sms_drawable"
+                android:textStyle="bold"
+                android:inputType="text"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/wrong_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wrong Number?"
+                android:textSize="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#808080"
+                android:layout_marginLeft="130dp"/>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="100"
-            >
 
-            <LinearLayout
-
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_width="75dp">
-
-                <EditText
-                    android:id="@+id/code1"
-                    android:layout_height="50dp"
-                    android:layout_width="50dp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/sms_drawable"
-                    android:ems="10"
-                    android:hint=""
-                    android:inputType="text"
-                    android:textColorHint="#000"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    tools:ignore="MissingConstraints" />
-            </LinearLayout>
-            <LinearLayout
-
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_width="75dp">
-
-                <EditText
-                    android:id="@+id/code2"
-                    android:layout_height="50dp"
-                    android:layout_width="50dp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/sms_drawable"
-                    android:ems="10"
-                    android:hint=""
-                    android:inputType="text"
-                    android:textColorHint="#000"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    tools:ignore="MissingConstraints" />
-            </LinearLayout>
-            <LinearLayout
-
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_width="75dp">
-
-                <EditText
-                    android:id="@+id/code3"
-                    android:layout_height="50dp"
-                    android:layout_width="50dp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-
-                    android:background="@drawable/sms_drawable"
-                    android:ems="10"
-                    android:hint=""
-                    android:inputType="text"
-                    android:textColorHint="#000"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    tools:ignore="MissingConstraints" />
-            </LinearLayout>
-            <LinearLayout
-
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_width="75dp">
-
-                <EditText
-                    android:id="@+id/code4"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/sms_drawable"
-                    android:ems="10"
-                    android:hint=""
-                    android:inputType="text"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="20dp"
-                    android:textColorHint="#000"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    tools:ignore="MissingConstraints" />
-            </LinearLayout>
-
-            <LinearLayout
-
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_width="75dp">
-
-                <EditText
-                    android:id="@+id/code5"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/sms_drawable"
-                    android:ems="10"
-                    android:hint=""
-                    android:inputType="text"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="20dp"
-                    android:textColorHint="#000"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    tools:ignore="MissingConstraints" />
-            </LinearLayout>
-
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"

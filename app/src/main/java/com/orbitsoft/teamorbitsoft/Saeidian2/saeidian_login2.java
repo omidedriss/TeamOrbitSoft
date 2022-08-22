@@ -72,38 +72,30 @@ public class saeidian_login2 extends AppCompatActivity {
                 set_phone = phone.getText().toString();
                 set_password = password.getText().toString();
                 set_confirmpassword = confirmpassword.getText().toString();
+                Random random = new Random();
+                int val = random.nextInt(1000000); // save random number in an integer variable
+                //txt.setText(Integer.toString(val)); //convert to String and set it as text inside the textview
+
+                message = (Integer.toString(val));
+
+
+                SmsManager mySmsManager = SmsManager.getDefault();
+                mySmsManager.sendTextMessage(set_phone, null, message, null, null);
+
 
                 Intent i = new
                         Intent(saeidian_login2.this, saeidian_login3.class);
                 Bundle bundle = new Bundle();
+//                bundle.putString("email", set_email);
+                bundle.putString("name", set_name);
                 bundle.putString("email", set_email);
                 bundle.putString("phone", set_phone);
+                bundle.putString("password", set_password);
+
+                bundle.putString("code", message);
                 i.putExtras(bundle);
                 startActivity(i);
-                Random random = new Random();
-                    int val = random.nextInt(1000000); // save random number in an integer variable
-                    //txt.setText(Integer.toString(val)); //convert to String and set it as text inside the textview
 
-                     message = (Integer.toString(val));
-
-
-                    SmsManager mySmsManager = SmsManager.getDefault();
-                    mySmsManager.sendTextMessage(set_phone, null, message, null, null);
-
-//                get_sms2 = get_sms.getText().toString();
-//                //Toast.makeText(saeidian_login2.this, get_sms2, Toast.LENGTH_SHORT).show();
-//                if (get_sms2.equalsIgnoreCase(get_sms3)) {
-//
-//                    Toast.makeText(saeidian_login2.this, "correct", Toast.LENGTH_SHORT).show();
-//                    Intent a = new
-//                            Intent(saeidian_login2.this, saeidian_login1.class);
-//                    Bundle bundle2 = new Bundle();
-//
-//                    i.putExtras(bundle2);
-//                    startActivity(i);
-//                } else {
-//                    Toast.makeText(saeidian_login2.this, "wrong", Toast.LENGTH_SHORT).show();
-//                }
 
             }
         });
