@@ -138,7 +138,6 @@ public class IntentSample extends AppCompatActivity {
             }
 
         });
-
     }
 
     @SuppressLint("Range")
