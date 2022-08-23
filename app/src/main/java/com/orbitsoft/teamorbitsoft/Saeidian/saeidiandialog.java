@@ -3,6 +3,7 @@ package com.orbitsoft.teamorbitsoft.Saeidian;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -12,6 +13,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 
 import com.orbitsoft.teamorbitsoft.R;
+import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_login3;
+import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_login4;
 
 public class saeidiandialog extends Dialog implements
         android.view.View.OnClickListener {
@@ -46,7 +49,7 @@ public class saeidiandialog extends Dialog implements
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_yes:
-                Toast.makeText(c, "shayan", Toast.LENGTH_SHORT).show();
+           c.finish();
                 break;
             case R.id.btn_no:
                 dismiss();
