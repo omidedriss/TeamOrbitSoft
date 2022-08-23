@@ -152,6 +152,7 @@ android:orientation="vertical">
             android:textColor="#808080"
             android:layout_marginLeft="60dp"/>
     </LinearLayout>
+
 </LinearLayout>
 </LinearLayout>
     </LinearLayout>
