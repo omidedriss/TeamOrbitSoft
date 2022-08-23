@@ -69,6 +69,16 @@
         android:layout_height="wrap_content"
         android:text="nick que" />
     <Button
+        android:id="@+id/Salimi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SALIMI" />
+    <Button
+        android:id="@+id/Kanani"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KANANI" />
+    <Button
         android:id="@+id/life_cycle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

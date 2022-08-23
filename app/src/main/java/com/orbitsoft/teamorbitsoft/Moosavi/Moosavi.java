@@ -1,155 +1,171 @@
 package com.orbitsoft.teamorbitsoft.Moosavi;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.Manifest;
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.pm.PackageManager;
+import android.database.Cursor;
+import android.os.Build;
+import android.provider.ContactsContract;
 import android.os.Bundle;
-import android.util.Log;
+import android.text.method.ScrollingMovementMethod;
+import android.view.View;
+import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import com.orbitsoft.teamorbitsoft.R;
 
-import java.util.jar.Attributes;
 
-public class Moosavi extends AppCompatActivity
-{
-Student shm ;
-TextView NAME ;
-TextView LNAME ;
-TextView BMI ;
-TextView SCHOOLNAME ;
-TextView GRADE ;
-TextView AVGSCORE ;
-TextView name , lname , bmi , schoolname , grade , avgscore ;
+public class Moosavi extends AppCompatActivity {
+
+    private Context mContext;
+    private Activity mActivity;
+
+    private LinearLayout mRootLayout;
+    private Button mBtnDoTask;
+    private TextView mTvResults;
+
+    private static final int MY_PERMISSION_REQUEST_CODE = 123;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_moosavi);
+        setContentView(R.layout.activity_main);
 
-        // Documents -------------------------------------------------------------------------------
+        // Get the application context
+        mContext = getApplicationContext();
+        mActivity = Moosavi.this;
 
+        // Get the widget reference from xml layout
+        mRootLayout = findViewById(R.id.root_layout);
+        mBtnDoTask = findViewById(R.id.btn_do_task);
+        mTvResults = findViewById(R.id.results);
+
+        // Make text view scrollable
+        mTvResults.setMovementMethod(new ScrollingMovementMethod());
+
+        // Set a click listener for the button
+        mBtnDoTask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+                    checkPermission();
+                }else {
+                    getContacts();
+                }
+            }
+        });
+    }
+
+    // Custom method to get contacts name and phone number
+    protected void getContacts(){
         /*
-
-        مقاله های دستنویس در باره پایه های برنامه نویسی شئ گرا
-
-
-
-            ( Encapsulation )
-            این عبارت به یک مفهوم پرکاربرد در علوم طراحی و تدارک برنامه های کامپیوتری اشاره دارد .
-            صاحب نظران ، این مفهوم را با مثال کیس پی سی ها مثال میزنند . خیلی از افراد وجود دارند
-            که در حوزه ی علوم کامپیوتری و قطعات اطلاعات زیادی دارند و گاه در پروژه هایی برای تست کردن
-            قطعات ، قطعات سیستم را بر روی یک پلتفرم { مثلا یک میز بزرگ چوبی } باز میگذارند .
-            در این حال هر قطعه از کامپیوتر در یک جای مجزا و جدا از هم بدون هیچ پوششی که انها را
-              یکی بکند قرار دارد . وی میتواند در هر لحظه با هر یک از قطعات یک حرکتی انجام دهد و هر کدام
-              اختیارات و حرکات جدایی برای خود دارند و برای مثال مهندس این کار ، میتواند یک رم را نصب کند
-               و امتحان کند ، و اگر نشد بعدی را امتحان کند یا هارد ها را جا بجا کند و دیگر قطعات و
-               بدین ترتیب هر شخصی میتواند به صورت مستقیم به هر یک از اجا دسترسی داشته باشد .
-               اما کیس کامپیوتر ها را بررسی کنیم . تمام قطعات در یک محفظه یکجا محافظت میشوند .
-               نمیتواند هر کس مستقیم به هر قطعه دسترسی داشته باشد . طبق الگوریتم کیس ها ،
-               شما میتواید در سطح دسترسی عادی ، با اتصال سیم ها از قطعات درون سیستم استفاده کنید
-                ان هم نه همه ی انهاو همهی استفاده ها . در صورت لزوم ، کیس یک درب دارد که باز شود و
-                 قطعات درون تعمیر شوند . همین موضوع نی در معیار های برنامه نویسی اجرا میشود . در
-                   برنامه نویسی در حدود 40 سال پیش اینگونه زبان ها و پلتفرم هایی برای برنامه نویسی
-                     رایج بود ، که در تمام فایل اجرایی برنامه همه ی متغیر ها و اپشن ها و توابع و ...
-               در تمام بخش های کدینگ قابل دسترسی بود . اما خب با باز شدن مبحث " برنامه نویسی تجدید پذیر "
-               یا " کد های دوباره قابل استفاده " ایده های جدیدی به ذهن ها امد . این ایده ها اینگونه بود که
-                با توجه به هم این موضوع و هم افزایش حجم برنامه ها ، میتوان انجام یک حرکت را با قرار
-                دادن متغیر ها و رفتار ها و کنترل های مجزا برای یک کیس خاص قرار داد و دیگر تمام اپشن های
-                درون ان به دیگر اجزای برنامه ارتباطی نداشته باشد . بلکه تنها ان بخش هایی که تحت کنترل ان
-                کیس ها یا همان کپسول هاست برای فراخوانی در برنامه حضور داشته باشند . بدین ترتیب فلسفه ی
-                کپسوله سای به راه افتاد . اکثرا زبان های برنامه نویسی برای اجرا کردن این طرح از
-                اضافه کردن بخشی به اسم " کلاس " استفاده کردند .
-
-             ( Inheritance )
-             مبحث وراثت    میان کلاس ها در ادامه ی پیشرفت ظرح " برنامه نویسی تجدید پذیر " مطرح شد .
-             پس از مدت ها استفاده از برنامه نویسی شئ گرا و استفاده از کلاس های مختلف و حتی ایده ی
-             استفاده از کلاس های از قبل طراحی شده ، دریافت شد که میان کلاس ها گاه اشتراکات زیادی وجود دارد ؛
-             تقریبا خیلی زیاد . مجددا تفکر " برنامه نویسی و کدهای استفاده ی مجدد " پا به عرصه گذاشت .
-             کلاس ها که خود برای هدف " یکبار نوشتن ، ملیارد ها بار استفاده کردن در جاهای مختلف " بودند ،
-             اینبار یک الگوریتمی اینکار را برای خودشان باید میکرد . این موضوع این بود ؛ میتوانستیم که
-             یک کلاس مرجع بسازیم و اشتراکات میان انها را قرار دهیم . برای مثال  ، شبکه ی میان انسان ها
-            در جامعه را در نظر بگیرید . در جامعه ی ما هر شخصی یک سری اطلاعات دارد و بسته به جایگاه
-             و گاه شغلش این اطلاعات تفاوت هایی نیز دارد . مثلا یک کلاس خواهیم داشت به اسم " انسان " .
-             در این کلاس متغیر هایی مثل " نام " ، " نام خانوادگی " ، " قد " ، " وزن " و ... وجود دارد .
-             چرا که تمام انسان ها این ها را دارند و لازم نیست که برای همه ی انسان ها جداگانه این اپشن ها
-             را قرار دهیم . سپس میگوییم که این یک کلاس مرجع یا به اصطلاح برنامه نویسی ، " پدر " است .
-            حال از روی ان کلاس چند کلاس دیگر با ذکر ارث بری از ان  درست میکنیم . مثلا کلاس " دانش اموز .
-             این کلاس دانش اموز را چند ایتم دیگر به ان اضافه میکنیم . برای مثال ، " نمره " ، " پایه ی تحصیلی "
-            ، " نام مدرسه " و ... حال میدانید که این کلاس چه اپشن هایی دارد ؟ شاید بگویید فقط نام مدرسه ، نمره و ...
-             اما خیر . نه تنها اینها را دارد ، بلکه ان اپشن های مختص " انسان " رو هم دارد . یعنی مثل
-             وزن ، قد ، نام و ... این یعنی همان وراثت . یعنی کلاس های بعدی بجز ایتم های شخصی خودشان ،
-             یکسری ویژگی دیگر هم از کلاس مرجع یا همان پدر دریافت میکنند
-
-             ( Abstraction )
-             حال فرض کنید که کلاس پدری داریم به اسم " وسیله ی نقلیه " . خب اگر بخواهیم فکر کنیم که این
-             کلاس چه ایتم هایی میتونه داشته باشه باید بگیم ایتمایی مثل " وسیله ای برای هدایت " ،
-             " موتوری برای حرکت " ، جسمی برای برجا ماندن روی ان " ، " شیئی برای قرار گیری سرنشین روی ان " ،
-             " سوختی برای تولید انرژی " و ... بنظر میرسد که کلاس های زیر مجموعه ی این پدر ، میتوانند کلاس هایی
-             همچون " هواپیما " ، " خودرو " و "قطار میان شهری " باشد . خب میخواهیم که اپشن " سوخت " را
-             میان این وارثین بررسی کنیم . سوخت هوا پیما ، GP4 هست . در صورتی که سوخب خودرو ، بنزین هست ،
-             وقطار میان شهری نیز برق هست . اما قانون وراثت اطلاعات ، این بود که ان اپشن عیناً در کلاس بعدی
-             تکرار شده باشد . اما ایا اپشن " سوخت " میان این کلاس ها یکسان است ؟ اینجاست که موضوعی به اسم
-             انتزاع وارد کار میشود . در کلاس پدر گفته میشود که اپشنی وجود دارد که همه ی موروثین باید دارای
-             ان باشند . اما خب ، هنگامی که مورثین ا او بپرسند چه چیزی ، جوابی برای گفتن نیست ! چرا که
-             مانند همین مثال ، سوخت بین این وسایل نیز مشترک نیست! تنها چیز مشترک این استکه همه ی اینها سوخت هستند !
-             پس یعنی ما با مفهوم انتزاع سر و کار داریم. در واقع از چیزی نام میبریم که وجود خارجی ندارد
-             اما طرح ان وجود دارد که حتما مورثین باید ان را دارا باشند اما هر کس به گونه ی خودش ...
-
-             ( Polymorphism )
-             خب راستی گفته میشد که در انتزاع هر یک از مورثین میتوانند هر یک انتزاع را به شیوه ی خودشان طراحی کنند .
-             به بان ساده بگوییم ما داریم در مورد مبحث چندگانگی یا چندریختی صحبت میکنیم . اینکه در هر
-             کلاس به چه مقدار ازادی تغییر بدهیم و چه میزان محدودیت ایجاد کنیم و انها را از پیش طراحی کنیم،
-             اینها مدیریتیست که در طراح فلسفه ی چند ریختی مورد بررسی قرار میگیرد
-
-
+            Cursor
+                This interface provides random read-write access to the result
+                set returned by a database query.
         */
+        /*
+            ContactsContract
+                The contract between the contacts provider and applications. Contains definitions
+                for the supported URIs and columns. These APIs supersede ContactsContract.Contacts.
+        */
+        /*
+            ContactsContract.CommonDataKinds
+                Container for definitions of common data types stored in the ContactsContract.Data table.
+        */
+        /*
+            ContactsContract.CommonDataKinds.Phone
+                A data kind representing a telephone number.
+        */
+        /*
+            CONTENT_URI
+                The content:// style URI for all data records of the CONTENT_ITEM_TYPE MIME type,
+                combined with the associated raw contact and aggregate contact data.
+        */
+        Cursor contacts = getContentResolver().query(
+                ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
+                null,
+                null,
+                null,
+                null
+        );
+        // Empty text view
+        mTvResults.setText("");
 
+        // Loop through the contacts
+        while (contacts.moveToNext())
+        {
+            // Get the current contact name
+            @SuppressLint("Range") String name = contacts.getString(
+                    contacts.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME_PRIMARY));
 
+            // Get the current contact phone number
+            @SuppressLint("Range") String phoneNumber = contacts.getString(
+                    contacts.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
 
-        // Program ---------------------------------------------------------------------------------
-        //   +{activity_moosavi.xml  +{Student.java
+            // Display the contact to text view
+            mTvResults.append(name);
+            mTvResults.append("\n" + phoneNumber + "\n\n");
+        }
+        contacts.close();
+    }
 
-        NAME = findViewById ( R.id.Name ) ;
-        LNAME = findViewById ( R.id.Lname ) ;
-        BMI = findViewById ( R.id.Bmi ) ;
-        SCHOOLNAME = findViewById ( R.id.SchoolName ) ;
-        GRADE = findViewById ( R.id.Grade ) ;
-        AVGSCORE = findViewById ( R.id.AvgScore ) ;
-        name = findViewById ( R.id.NAME ) ;
-        lname = findViewById ( R.id.LNAME ) ;
-        schoolname = findViewById ( R.id.SCHOOLNAME ) ;
-        bmi = findViewById ( R.id.BMI ) ;
-        grade = findViewById ( R.id.GRADE ) ;
-        avgscore = findViewById ( R.id.SCORE ) ;
-        shm.SetName ( "Shariar" , "Moosavi" ) ;
-        shm.SetBody ( 80 , 1.80f ) ;
-        shm.SetIdentify ( "Imam Sadegh" , 10 , 4562 ) ;
-        NAME.setText ( shm.GetName () ) ;
-        LNAME.setText ( shm.GetLName () ) ;
-        BMI.setText ( Float.toString ( shm.GetBMI () ) ) ;
-        SCHOOLNAME.setText ( shm.GetSchoolName () ) ;
-        GRADE.setText ( Integer.toString ( shm.GetGrade () ) ) ;
-        AVGSCORE.setText ( Float.toString ( shm.GetAvg () ) ) ;
-        name.setText ( "Name :" ) ;
-        lname.setText ( "Last name :" ) ;
-        bmi.setText ( "BMI :" ) ;
-        schoolname.setText ( "School name :" ) ;
-        grade.setText ( "Grade :" ) ;
-        avgscore.setText ( "Average Score :" ) ;
+    protected void checkPermission(){
+        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.M){
+            if(checkSelfPermission(Manifest.permission.READ_CONTACTS)!= PackageManager.PERMISSION_GRANTED){
+                if(shouldShowRequestPermissionRationale(Manifest.permission.READ_CONTACTS)){
+                    // show an alert dialog
+                    AlertDialog.Builder builder = new AlertDialog.Builder(mActivity);
+                    builder.setMessage("Read Contacts permission is required.");
+                    builder.setTitle("Please grant permission");
+                    builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            ActivityCompat.requestPermissions(
 
+                                    mActivity,
+                                    new String[]{Manifest.permission.READ_CONTACTS},
+                                    MY_PERMISSION_REQUEST_CODE
+                            );
+                        }
+                    });
+                    builder.setNeutralButton("Cancel",null);
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+                }else {
+                    // Request permission
+                    ActivityCompat.requestPermissions(
+                            mActivity,
+                            new String[]{Manifest.permission.READ_CONTACTS},
+                            MY_PERMISSION_REQUEST_CODE
+                    );
+                }
+            }else {
+                // Permission already granted
+                getContacts();
+            }
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        switch (requestCode) {
+            case MY_PERMISSION_REQUEST_CODE: {
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    // Permission granted
+                    getContacts();
+                } else {
+                    // Permission denied
+                }
+            }
+        }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

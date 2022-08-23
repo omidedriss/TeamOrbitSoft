@@ -75,7 +75,7 @@
     <!-- edit Text for take input from user-->
     <!-- give the id editText-->
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/maztextView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="36dp"
@@ -104,5 +104,78 @@
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="UnknownId" />
+        tools:ignore="RtlHardcoded,UnknownId,UnknownIdInLayout" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:text="Button"
+        android:textSize="22sp"
+        android:textColor="@color/cardview_dark_background"
+        app:layout_constraintBottom_toTopOf="@+id/getRandmo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:id="@+id/username"
+        android:layout_marginTop="20dp"
+        android:textSize="17dp"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:id="@+id/password"
+        android:textSize="17dp"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_below="@id/username"
+        android:layout_marginTop="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:text="Login"
+        android:layout_below="@id/password"
+        android:layout_marginTop="20dp"
+        android:background="#009688"
+        android:textColor="#f5f5f5"
+        android:textSize="17dp"
+        android:onClick="dothis"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset"
+        android:text="Reset"
+        android:layout_below="@id/login"
+        android:layout_marginTop="20dp"
+        android:background="#AD1457"
+        android:textColor="#f5f5f5"
+        android:textSize="17dp"
+        android:onClick="dorest"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reset"
+        android:layout_marginTop="40dp"
+        android:id="@+id/showerror"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#f5f5f5"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

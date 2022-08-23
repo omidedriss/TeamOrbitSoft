@@ -1,13 +1,19 @@
 package com.orbitsoft.teamorbitsoft.Salimi;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import com.orbitsoft.teamorbitsoft.R;
-public class SalimiActivity extends AppCompatActivity implements View.OnClickListener {
+public class SalimiActivity extends AppCompatActivity  {
+    //implements View.OnClickListener
     TextView text;
     TextView textRandom;
     TextView textnumberOdd;
@@ -16,38 +22,120 @@ public class SalimiActivity extends AppCompatActivity implements View.OnClickLis
     Button button;
     TextView result;
     int ans = 0;
-
+    Button button1;
+    EditText user, pass;
+    Button btn,rest;
+    TextView error;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_salimi );
-        text = findViewById( R.id.textView1 );
-        textRandom = findViewById( R.id.getRandmo );
-        textnumberOdd = findViewById( R.id.numberOdd );
-        textAvarage = findViewById( R.id.average );
-        editText = (EditText) findViewById( R.id.editText );
-        button = (Button) findViewById( R.id.button );
-        result = (TextView) findViewById( R.id.textView );
-        button.setOnClickListener( this );
+      //  text = findViewById( R.id.textView1 );
+      //  textRandom = findViewById( R.id.getRandmo );
+      //  textnumberOdd = findViewById( R.id.numberOdd );
+      //  textAvarage = findViewById( R.id.average );
+      //  editText = (EditText) findViewById( R.id.editText );
+      //  button = (Button) findViewById( R.id.button );
+      //  result = (TextView) findViewById( R.id.maztextView);
+      //  button.setOnClickListener( this );
+      //  button1 = (Button)findViewById(R.id.button1);
+      //  button1.setOnClickListener( new View.OnClickListener() {
+            //گرفتن اسم و فامیل و انتقال به اکتویتی و...
+              /*      @Override
+                   public void onClick(View v) {
+                        Intent intent = new Intent(SalimiActivity.this,SecondActivitySalimi.class);
+                        intent.putExtra(SecondActivitySalimi.KYE_NAME,"Amaneh");
+                        intent.putExtra(SecondActivitySalimi.KYE_LASTNAME,"Salimi");
+                        startActivity(intent);
+                    }
+                } );
+
+               */
+        ////////////////////////
+        /////////////////////////////تمرین صفحه ی لاگین
+        user = (EditText) findViewById(R.id.username);
+        pass = (EditText) findViewById(R.id.password);
+        btn = (Button) findViewById(R.id.login);
+        rest = (Button) findViewById(R.id.reset);
+        error = (TextView)findViewById(R.id.showerror);
+        error.setVisibility(View.INVISIBLE);
+    }
+
+    @SuppressLint("SetTextI18n")
+    public void dothis(View v) {
+        String u = user.getText().toString();
+        String p = pass.getText().toString();
+        String check_email = "sy@scp.com";
+        String check_pass = "abc@123";
+
+        if (u.equals("")) {
+            error.setVisibility(View.VISIBLE);
+            error.setBackgroundColor( Color.parseColor("#D50000"));
+            error.setText("Please enter your email");
+
+        }
+        else if (p.equals("")) {
+            error.setVisibility(View.VISIBLE);
+            error.setBackgroundColor(Color.parseColor("#D50000"));
+            error.setText("Please enter your password");
+            pass.onEditorAction( EditorInfo.IME_ACTION_DONE);
+
+        }
+        else if (!u.equals(check_email) && !p.equals(check_pass)) {
+            error.setVisibility(View.VISIBLE);
+            error.setBackgroundColor(Color.parseColor("#D50000"));
+            error.setText("Invalid Email or Invalid Password");
+            user.onEditorAction(EditorInfo.IME_ACTION_DONE);
+            pass.onEditorAction(EditorInfo.IME_ACTION_DONE);
+        }
+        else if (!u.equals(check_email)) {
+            error.setVisibility(View.VISIBLE);
+            error.setText("Invalid Email");
+            error.setBackgroundColor(Color.parseColor("#D50000"));
+        }
+        else if (!p.equals(check_pass)) {
+            error.setVisibility(View.VISIBLE);
+            error.setBackgroundColor(Color.parseColor("#D50000"));
+            error.setText("Invalid Password");
+            pass.onEditorAction(EditorInfo.IME_ACTION_DONE);
+        }
+        else if (u.equals(check_email) && p.equals(check_pass)) {
+            error.setVisibility(View.VISIBLE);
+            error.setBackgroundColor(Color.parseColor("#D50000"));
+            error.setText("Login Successfully !!");
+            error.setBackgroundColor(Color.parseColor("#00C853"));
+            pass.onEditorAction(EditorInfo.IME_ACTION_DONE);
+            setTitle("Welcome: " + u);
+        }
+    }
+    public  void dorest(View v){
+        user.setText("");
+        pass.setText("");
+        pass.clearFocus();
+    }
         // روش اول ساده جدول ضرب
-        String n = "";
+    /*    String n = "";
         for (int i = 1; i <= 10; i++) {
             for (int j = 1; j <= 10; j++) {
                 n += "\t" + i + " * " + j + " = " + (i * j);
             }
             text.setText( n );
         }
+
+     */
         //******
         //گرفتن 6 عدد رندوم
-        int SIDES = 6;
+     /*   int SIDES = 6;
         int a = 1 + (int) (Math.random() * SIDES);
         int b = 1 + (int) (Math.random() * SIDES);
         int sum = a + b;
         textRandom.setText( String.valueOf( sum ) );
+
+      */
         //******
         //چاپ عدد اول
-        String m = String.valueOf( 0 );
-        int i = 1;
+   //     String m = String.valueOf( 0 );
+   //     int i = 1;
         /*for (int i = 1; i <= 30 ; i++) {
             if (i % 2 != 0 ){
                 Log.d("text",Integer.toString(i));
@@ -57,16 +145,18 @@ public class SalimiActivity extends AppCompatActivity implements View.OnClickLis
             }
 
          */
-        while (i <= 30) {
+     /*   while (i <= 30) {
             m = m + Integer.toString( i ) + "\n";
             textnumberOdd.setText( m );
 
             Log.d( "text", Integer.toString( i ) );
             i = i + 2;
         }
+
+      */
         //******
         //میانگین
-        double[] s = {20, 16, 17, 13};
+    /*    double[] s = {20, 16, 17, 13};
         double result = 0;
         for (double x : s) {
             result += x;
@@ -74,9 +164,11 @@ public class SalimiActivity extends AppCompatActivity implements View.OnClickLis
         double avarage = result / s.length;
         textAvarage.setText( String.valueOf( avarage ) );
     }
+
+     */
     //********
     //جدول ضرب روش دوم
-    @Override
+  /*  @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.button:
@@ -99,6 +191,9 @@ public class SalimiActivity extends AppCompatActivity implements View.OnClickLis
                 result.setText(buffer);
                 break;
         }
+
     }
+
+   */
 }
 

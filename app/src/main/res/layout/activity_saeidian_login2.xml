@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sms_drawable3">
+
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_marginTop="60dp"
+android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="70"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sign Up"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:id="@+id/create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Create a new account"
+            android:textSize="20dp"
+            android:textColor="#808080"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_weight="40"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/get_name_family"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Name/Family"
+            android:textColorHint="#808080"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:background="@drawable/sms_drawable"
+            android:textStyle="bold"
+            android:inputType="text"
+            tools:ignore="MissingConstraints" />
+        <EditText
+            android:id="@+id/get_email"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Email"
+            android:textColorHint="#808080"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:background="@drawable/sms_drawable"
+            android:textStyle="bold"
+            android:inputType="text"
+            tools:ignore="MissingConstraints" />
+        <EditText
+            android:id="@+id/get_phonenumber"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:textColorHint="#808080"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:background="@drawable/sms_drawable"
+            android:textStyle="bold"
+            android:inputType="text"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/get_password"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textColorHint="#808080"
+            android:ems="10"
+            android:hint="Password"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginBottom="10dp"
+
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:background="@drawable/sms_drawable"
+            android:textStyle="bold"
+            android:inputType="text"
+            tools:ignore="MissingConstraints" />
+        <EditText
+            android:id="@+id/get_confirmpassword"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textColorHint="#808080"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginBottom="10dp"
+
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:background="@drawable/sms_drawable"
+            android:textStyle="bold"
+            android:inputType="text"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_weight="60"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signup2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/get_name2"
+            android:layout_marginLeft="25dp"
+
+            android:textColor="#000"
+            android:background="@drawable/sms_drawable2"
+            android:text="Sign Up"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/haveaccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have acount? Sign Up"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#808080"
+            android:layout_marginLeft="60dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
+    </LinearLayout>

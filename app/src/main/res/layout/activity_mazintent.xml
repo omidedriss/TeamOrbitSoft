@@ -6,24 +6,26 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     tools:context=".Mazaheri.MazIntent"    >
-    <!--
+<!--
     <Button
         android:id="@+id/btmazweb"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Web Browser" />
-    -->
+
+-->
     <Button
-        android:id="@+id/b6"
+        android:id="@+id/btmazcall"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="to CALL EMIDIATE set phone permision " />
+        android:text="Dial  set phone permision " />
 
     <Button
-        android:id="@+id/maz_makecalls"
+        android:id="@+id/btmazdial"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="برقراری تماس" />
+        android:text="Call" />
+
     <!--
     <Button
         android:id="@+id/btn_showMap"
@@ -33,16 +35,29 @@
     -->
 
     <Button
-        android:id="@+id/btn_chooseContact"
+        android:id="@+id/btmazcontact"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Choose Contact" />
+        android:text="Dial from Contact" />
 
     <Button
         android:id="@+id/btn_launchMyBrowser"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Launch My Browser" />
+        android:text="Launch My Browser 1" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Launch My Browser 2" />
+
+
+    <Button
+        android:id="@+id/btmazweb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asd" />
 
 
 </LinearLayout>

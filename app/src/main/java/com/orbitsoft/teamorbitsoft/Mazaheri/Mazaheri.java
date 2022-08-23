@@ -21,6 +21,11 @@ public class Mazaheri extends AppCompatActivity {
                   btmazstudent,btmazstudent2,btmazstudent3,
                   btmazintent,btmaznamefamil,btmazstartonresult;
     @Override
+
+    //بازگشت به صفحه اصلی
+    //رفتن به صفحه اینتنت شامل شماره گیری سریع،شماره گیری دو مرحله ای، دفتر تلفن ،رجوع به سایت
+    //ارسال نام با باندل و فامیل با اینتنت
+    //مثالی از اجرای شرطی اینتنت
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -31,29 +36,27 @@ public class Mazaheri extends AppCompatActivity {
 
         setContentView(R.layout.activity_mazaheri);
 
-
-
-
         initialliz();
 
-        btmazret.setOnClickListener(v -> {
-            Intent imazret=new Intent(this, MainActivity.class);
-            startActivity(imazret);
-        });
-
+        //رفتن به صفحه اینتنت شامل شماره گیری سریع،شماره گیری دو مرحله ای، دفتر تلفن ،رجوع به سایت
         btmazintent.setOnClickListener(v -> {
             Intent imazintent=new Intent(Mazaheri.this, MazIntent.class);
             startActivity(imazintent);
         });
-
+        //ارسال نام با باندل و فامیل با اینتنت
         btmaznamefamil.setOnClickListener(v -> {
             Intent imaznamefamil=new Intent(Mazaheri.this, MazGetNameFamil.class);
             startActivity(imaznamefamil);
         });
-
+        //مثالی از اجرای شرطی اینتنت
         btmazstartonresult.setOnClickListener(v -> {
             Intent imazresult=new Intent(Mazaheri.this, MazStartForResult_firstActivity.class);
             startActivity(imazresult);
+        });
+        //بازگشت به صفحه اصلی
+        btmazret.setOnClickListener(v -> {
+            Intent imazret=new Intent(this, MainActivity.class);
+            startActivity(imazret);
         });
     }
     //متد جدول ضرب

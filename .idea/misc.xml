@@ -3,18 +3,60 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_mazaheri.xml" value="0.25885416666666666" />
-        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_mazaheri_student.xml" value="0.27291666666666664" />
-        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/browser.xml" value="0.27291666666666664" />
-        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/student.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/layout/activity_gorji.xml" value="0.15" />
-        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/layout/activity_mazaheri.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/activity_saaidian.xml" value="0.1828125" />
-        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/activity_saaidian2.xml" value="0.1828125" />
-        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/activity_thesheox2.xml" value="0.1828125" />
-        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/saeidian2.xml" value="0.18177083333333333" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_intent.xml" value="0.22314814814814815" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_main3.xml" value="0.27291666666666664" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_mazaheri.xml" value="0.9134948096885813" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_mazgetnamefamil.xml" value="1.0" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_mazintent.xml" value="0.25885416666666666" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_mazshownamefamil.xml" value="0.2604166666666667" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_mazstartforresult_first.xml" value="0.22314814814814815" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_my_dialog.xml" value="0.27291666666666664" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_nickhoo_persnalinfo.xml" value="0.20416666666666666" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_nikkhu.xml" value="0.25" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_nikoo_info.xml" value="0.203125" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_nikoo_log.xml" value="0.203125" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/menu/activity_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/menu/main.xml" value="0.20416666666666666" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/menu/second.xml" value="0.20416666666666666" />
+        <entry key="..\:/TeamOrbitSoft_SA/app/src/main/res/layout/activity_gorji.xml" value="0.25" />
+        <entry key="..\:/TeamOrbitSoft_SA/app/src/main/res/layout/activity_salimi.xml" value="0.25" />
+        <entry key="..\:/TeamOrbitSoft_SA/app/src/main/res/layout/activity_second_salimi.xml" value="0.25" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/layout/activity_browser.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/layout/activity_gorji.xml" value="0.33" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/layout/activity_gorji_browser.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/layout/activity_gorji_cod_phone.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/layout/activity_gorji_custom_dialog.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/layout/activity_gorji_dialog.xml" value="0.1" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/layout/activity_gorji_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/layout/activity_gorji_my_dialog.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/layout/activity_main.xml" value="0.11458333333333333" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/layout/activity_my_dialog.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/layout/activity_secend.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/layout/activity_second.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/layout/activity_second2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/layout/browser.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/menu/activity_gorji_menu.xml" value="0.203125" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/menu/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/menu/main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Developer/AndroidStudioProjects/TeamOrbitSoft-master/TeamOrbitSoft-master/app/src/main/res/menu/second.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/drawable-hdpi/sms_drawable2.xml" value="0.2355" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/drawable-hdpi/sms_drawable3.xml" value="0.118" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/drawable/sms_drawable.xml" value="0.232" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/activity_saaedian.xml" value="0.22554347826086957" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/activity_saaidian.xml" value="0.25" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/activity_saaidian2.xml" value="0.1078125" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/activity_saeedian.xml" value="0.1" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/activity_saeidian.xml" value="0.1" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/activity_saeidian_login1.xml" value="0.19157608695652173" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/activity_saeidian_login2.xml" value="0.264" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/activity_saeidian_login3.xml" value="0.19157608695652173" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/activity_saeidian_login4.xml" value="0.264" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/activity_salimi.xml" value="0.25" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/activity_thesheox.xml" value="0.192481884057971" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft/app/src/main/res/layout/custom_dialog.xml" value="0.1078125" />
+        <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_gorji.xml" value="0.1" />
+        <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_salimi.xml" value="0.1" />
       </map>
     </option>
   </component>

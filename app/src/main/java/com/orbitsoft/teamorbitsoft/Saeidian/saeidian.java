@@ -27,7 +27,6 @@ public class saeidian extends AppCompatActivity {
     Button bb;
     Button cc;
     Button dd;
-
     Button ff;
     int request_Code = 1;
     private static final int RESULT_PICK_CONTACT = 1;
@@ -142,7 +141,6 @@ public class saeidian extends AppCompatActivity {
         Log.d("phone", phoneNo);
         Intent i = new
                 Intent(Intent.ACTION_CALL, Uri.parse("tel:" + phoneNo));
-
         startActivity(i);
     }
     }
