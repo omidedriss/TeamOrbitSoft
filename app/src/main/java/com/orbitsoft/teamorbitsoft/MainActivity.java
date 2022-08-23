@@ -37,7 +37,7 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
         btmaz=findViewById(R.id.btmaz);
         btMoosavi=findViewById(R.id.moosavi);
         btSaeedian=findViewById(R.id.saeedian);
-        btSaeidian2_main=findViewById(R.id.saeidian2);
+        //btSaeidian2_main=findViewById(R.id.saeidian2);
         btHatami=findViewById(R.id.hatami);
         btSalimi=findViewById(R.id.Salimi);
         btKanani=findViewById(R.id.Kanani);
@@ -60,15 +60,15 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
                 }
         );
         btSaeedian.setOnClickListener(v -> {
-                    Intent imaz=new Intent(this, saeidian.class);
-                    startActivity(imaz);
-                }
-        );
-        btSaeidian2_main.setOnClickListener(v -> {
                     Intent imaz=new Intent(this, saeidian_login1.class);
                     startActivity(imaz);
                 }
         );
+//        btSaeidian2_main.setOnClickListener(v -> {
+//                    Intent imaz=new Intent(this, saeidian_login1.class);
+//                    startActivity(imaz);
+//                }
+//        );
         btMoosavi.setOnClickListener(v -> {
                     Intent imaz=new Intent(this, Moosavi.class);
                     startActivity(imaz);
