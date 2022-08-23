@@ -46,7 +46,7 @@ public class saeidiandialog extends Dialog implements
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_yes:
-                Toast.makeText(c, "shayan", Toast.LENGTH_SHORT).show();
+                c.finish();
                 break;
             case R.id.btn_no:
                 dismiss();
