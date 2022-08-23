@@ -52,8 +52,8 @@
             android:layout_weight="60"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10"
-            android:layout_marginRight="10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             >
             <TextView
                 android:id="@+id/T1"
@@ -61,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="_"
-                android:layout_marginRight="10"
+                android:layout_marginRight="10dp"
                 />
             <TextView
                 android:id="@+id/T2"
@@ -69,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="_"
-                android:layout_marginRight="10"
+                android:layout_marginRight="10dp"
                 />
             <TextView
                 android:id="@+id/T3"
@@ -77,7 +77,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="_"
-                android:layout_marginRight="10"
+                android:layout_marginRight="10dp"
                 />
             <TextView
                 android:id="@+id/T4"
@@ -85,7 +85,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="_"
-                android:layout_marginRight="10"
+                android:layout_marginRight="10dp"
                 />
         </LinearLayout>
         <LinearLayout
@@ -96,13 +96,13 @@
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
-        android:layout_weight="750"
+        android:layout_weight="700"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         >
     </LinearLayout>
     <LinearLayout
-        android:layout_weight="500"
+        android:layout_weight="600"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:weightSum="100"
@@ -124,7 +124,7 @@
                 android:id="@+id/CLEAR"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10"
+                android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:text="Clear"
                 app:backgroundTint="#000000" />
@@ -144,7 +144,7 @@
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
-        android:layout_weight="750"
+        android:layout_weight="700"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         >
@@ -159,8 +159,8 @@
             android:id="@+id/B1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10"
-            android:layout_marginRight="10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:text="1"
             app:backgroundTint="#000000" />
@@ -168,7 +168,7 @@
             android:id="@+id/B2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginRight="10"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:text="2"
             app:backgroundTint="#000000" />
@@ -176,7 +176,7 @@
             android:id="@+id/B3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginRight="10"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:text="3"
             app:backgroundTint="#000000" />
@@ -191,8 +191,8 @@
             android:id="@+id/B4"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10"
-            android:layout_marginRight="10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:text="4"
             app:backgroundTint="#000000" />
@@ -200,7 +200,7 @@
             android:id="@+id/B5"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginRight="10"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:text="5"
             app:backgroundTint="#000000" />
@@ -208,7 +208,7 @@
             android:id="@+id/B6"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginRight="10"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:text="6"
             app:backgroundTint="#000000" />
@@ -223,8 +223,8 @@
             android:id="@+id/B7"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10"
-            android:layout_marginRight="10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:text="7"
             app:backgroundTint="#000000" />
@@ -232,7 +232,7 @@
             android:id="@+id/B8"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginRight="10"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:text="8"
             app:backgroundTint="#000000" />
@@ -240,7 +240,7 @@
             android:id="@+id/B9"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginRight="10"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:text="9"
             app:backgroundTint="#000000" />
