@@ -79,7 +79,6 @@ public class saeidian_login2 extends AppCompatActivity {
                 SmsManager mySmsManager = SmsManager.getDefault();
                 mySmsManager.sendTextMessage(set_phone, null, message, null, null);
 
-
                 Intent i = new
                         Intent(saeidian_login2.this, saeidian_login3.class);
                 Bundle bundle = new Bundle();
