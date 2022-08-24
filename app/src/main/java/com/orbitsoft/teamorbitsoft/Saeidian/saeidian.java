@@ -53,7 +53,7 @@ public class saeidian extends AppCompatActivity {
 
     public void saeedian(){
         saeidiandialog customDialogClass = new saeidiandialog(saeidian.this);
-             customDialogClass.show();
+        customDialogClass.show();
 //        new AlertDialog.Builder(saeidian.this)
 //                .setTitle("Delete entry")
 //                .setMessage("Are you sure you want to delete this entry?")
@@ -72,7 +72,7 @@ public class saeidian extends AppCompatActivity {
 //                .show();
 //
     }
-//public void CreateAlertDialog() {
+    //public void CreateAlertDialog() {
 //    list = new ArrayList<>();
 //    AlertDialog.Builder builder = new AlertDialog.Builder(this);
 //    builder.setTitle("info");
@@ -155,7 +155,6 @@ public class saeidian extends AppCompatActivity {
             Bundle bundle = new Bundle();
             i.putExtras(bundle);
             startActivity(i);
-
             //bundle.putString("test","shayan saeidian");
             // Intent imaz=new Intent(saeidian.this, Gorji.class);
             // bundle.putLong("saeidian",12);
@@ -178,7 +177,7 @@ public class saeidian extends AppCompatActivity {
                 i.putExtra("test", bundle);
                 i.setData(Uri.parse("http://www.amazon.com"));
                 startActivity(i);
-        }
+            }
         });
         //put a number to dial
         dial.setOnClickListener(view ->
@@ -210,8 +209,8 @@ public class saeidian extends AppCompatActivity {
         contact.setOnClickListener(view ->
 
         {
-                Intent in = new Intent(Intent.ACTION_PICK, ContactsContract.CommonDataKinds.Phone.CONTENT_URI);
-                startActivityForResult(in, RESULT_PICK_CONTACT);
+            Intent in = new Intent(Intent.ACTION_PICK, ContactsContract.CommonDataKinds.Phone.CONTENT_URI);
+            startActivityForResult(in, RESULT_PICK_CONTACT);
         });
 
     }
@@ -307,15 +306,15 @@ public class saeidian extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.menu_instagram:
                 Intent i = new
-                    Intent("android.intent.action.VIEW");
-            i.setData(Uri.parse("http://www.instagram.com/bigezmoge"));
-            i.setPackage("com.instagram.android");
+                        Intent("android.intent.action.VIEW");
+                i.setData(Uri.parse("http://www.instagram.com/bigezmoge"));
+                i.setPackage("com.instagram.android");
 
-            startActivity(i);
+                startActivity(i);
                 return true;
             case R.id.menu_exit:
                 saeedian();
-               return true;
+                return true;
             case R.id.menu_metaco:
                 Intent b = new
                         Intent("android.intent.action.VIEW");
@@ -323,7 +322,7 @@ public class saeidian extends AppCompatActivity {
                 startActivity(b);
                 return true;
             case R.id.menu_info:
-               showDialog(1);
+                showDialog(1);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
