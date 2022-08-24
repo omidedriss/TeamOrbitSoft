@@ -13,6 +13,7 @@ import com.orbitsoft.teamorbitsoft.Kanani.Kanani;
 import com.orbitsoft.teamorbitsoft.Mazaheri.Mazaheri;
 
 
+import com.orbitsoft.teamorbitsoft.Moosavi.moosavi_login;
 import com.orbitsoft.teamorbitsoft.Nikkhu.Nikkhu;
 import com.orbitsoft.teamorbitsoft.Saeidian.saeidian;
 import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian2_main;
@@ -68,7 +69,7 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
 //                }
 //        );
         btMoosavi.setOnClickListener(v -> {
-                    Intent imaz=new Intent(this, login_moosavi.class);
+                    Intent imaz=new Intent(this, moosavi_login.class);
                     startActivity(imaz);
                 }
         );

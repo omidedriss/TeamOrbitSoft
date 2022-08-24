@@ -58,7 +58,6 @@ login=(Button)findViewById(R.id.login2);
                 Intent i = new
                             Intent(saeidian_login1.this, saeidian_login2.class);
                     Bundle bundle = new Bundle();
-
                     i.putExtras(bundle);
                     startActivity(i);
 

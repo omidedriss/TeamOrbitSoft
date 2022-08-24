@@ -22,14 +22,9 @@
         android:theme="@style/Theme.TeamOrbitSoft"
         tools:targetApi="31">
         <activity
-            android:name=".moosavi_login"
+            android:name=".Moosavi.moosavi_login"
             android:exported="false" />
-        <activity
-            android:name=".loginMOOSAVI"
-            android:exported="false" />
-        <activity
-            android:name=".login_moosavi"
-            android:exported="false" />
+
         <activity
             android:name=".Gorji.GorjiPhoneNumberActivity"
             android:exported="false" />

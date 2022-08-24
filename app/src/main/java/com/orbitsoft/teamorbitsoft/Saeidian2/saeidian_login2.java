@@ -73,9 +73,7 @@ public class saeidian_login2 extends AppCompatActivity {
                 set_password = password.getText().toString();
                 set_confirmpassword = confirmpassword.getText().toString();
                 Random random = new Random();
-                int val = random.nextInt(1000000); // save random number in an integer variable
-                //txt.setText(Integer.toString(val)); //convert to String and set it as text inside the textview
-
+                int val = random.nextInt(1000000);
                 message = (Integer.toString(val));
 
 
