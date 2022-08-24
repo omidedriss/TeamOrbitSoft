@@ -208,7 +208,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="۰dp"
         android:layout_marginBottom="۰dp"
-        android:text="TextView"
+        android:text="نمایش فاکتوریل عدد داده شده"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
