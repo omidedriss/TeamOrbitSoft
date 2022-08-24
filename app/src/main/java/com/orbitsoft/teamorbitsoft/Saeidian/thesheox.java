@@ -174,7 +174,7 @@ public class thesheox extends AppCompatActivity {
         setContentView(R.layout.activity_thesheox);
         Bundle bundle = getIntent().getExtras();
         print= findViewById(R.id.print);
-        print2= findViewById(R.id.print2);
+       // print2= findViewById(R.id.print2);
         if (bundle != null) {
             String Name = bundle.getString("test", "nothing");
             String Family= bundle.getString("test2", "nothing");

@@ -178,10 +178,10 @@ android:orientation="vertical">
             android:textSize="25dp"/>
 
         <TextView
-            android:id="@+id/haveaccount"
+            android:id="@+id/haveaccount2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Already have acount? Sign Up"
+            android:text="Already have acount? Sign In"
             android:textSize="20dp"
             android:layout_marginTop="20dp"
             android:textColor="#808080"

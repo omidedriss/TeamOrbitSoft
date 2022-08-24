@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.telephony.SmsManager;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -26,7 +27,7 @@ public class saeidian_login3 extends AppCompatActivity {
     TextView show_phone;
     EditText enter_phone;
     Button next;
-     public String message;
+     public String message2,message;
    public String number;
     public String asm;
     String phone_read;
@@ -36,7 +37,7 @@ public class saeidian_login3 extends AppCompatActivity {
     String password_read;
    String code_read;
     String email;
-
+String phone="09173929711";
     String code_get;
     TextView print_email;
     TextView print_phone;
@@ -50,9 +51,13 @@ Button confirm;
        // print_email=findViewById(R.id.email2);
         print_phone=findViewById(R.id.phone2);
         code = (EditText) findViewById(R.id.get_code);
-
+        TextView wrongnumber = findViewById(R.id.wrong_number);
+        TextView resendcode = findViewById(R.id.resend_code);
         confirm = (Button) findViewById(R.id.confirm);
         code.setTextColor(Color.BLACK);
+        Random random2 = new Random();
+        int val = random2.nextInt(1000000);
+        message2 = (Integer.toString(val));
         if (bundle != null) {
              //phone = bundle.getString("email", "nothing");
              phone_read = bundle.getString("phone", "nothing");
@@ -93,22 +98,32 @@ Button confirm;
                 }
             }
         });
+        wrongnumber.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new
+                        Intent(saeidian_login3.this, saeidian_login2.class);
+                Bundle bundle = new Bundle();
+                i.putExtras(bundle);
+                startActivity(i);
+            }
+        });
+        resendcode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SmsManager mySmsManager = SmsManager.getDefault();
+                mySmsManager.sendTextMessage(phone, null, message2, null, null);
+            }
+        });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//        confirm.setOnClickListener(view ->
+//        {
+//            if (TextUtils.isEmpty(code.getText().toString())) {
+//                Toast.makeText(saeidian_login3.this, "Wrong Sms", Toast.LENGTH_SHORT).show();
+//            }
+//            else
+//                verifycode(code.getText().toString());
+//        });
 
 //        ActivityCompat.requestPermissions(saeidian_login3.this, new String[]{Manifest.permission.SEND_SMS, Manifest.permission.READ_SMS}, PackageManager.PERMISSION_GRANTED);
 //

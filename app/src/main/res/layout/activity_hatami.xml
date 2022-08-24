@@ -1,49 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="10dp"
     tools:context=".Hatami.Hatami">
+
 
     <TextView
         android:id="@+id/tx1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="89dp"
-        tools:layout_editor_absoluteY="70dp" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="enter your phone number"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
 
-    <TextView
-        android:id="@+id/tx2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="192dp" />
 
-    <TextView
-        android:id="@+id/tx3"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="329dp" />
+        android:layout_below="@+id/tx1"
+        android:layout_marginBottom="20dp"
+        android:autofillHints=""
+        android:hint="phone number"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:textColorHint="#757575" />
 
-    <TextView
-        android:id="@+id/tx4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="451dp" />
 
-    <TextView
-        android:id="@+id/tx5"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btn_do_task"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="488dp" />
-</LinearLayout>
+        android:layout_below="@+id/phone"
+        android:layout_marginBottom="20dp"
+        android:text="send code"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/SMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_do_task"
+        android:layout_marginBottom="20dp"
+        android:autofillHints=""
+        android:hint="SMS"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/Verifysms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SMS"
+        android:layout_marginBottom="20dp"
+        android:text="Verify_sms"
+        android:textSize="20dp" />
+</RelativeLayout>
