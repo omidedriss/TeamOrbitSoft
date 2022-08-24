@@ -75,7 +75,6 @@ public class saeidian_login2 extends AppCompatActivity {
                 Random random = new Random();
                 int val = random.nextInt(1000000);
                 message = (Integer.toString(val));
-
                 SmsManager mySmsManager = SmsManager.getDefault();
                 mySmsManager.sendTextMessage(set_phone, null, message, null, null);
 
