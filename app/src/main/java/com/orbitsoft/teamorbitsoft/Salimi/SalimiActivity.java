@@ -12,25 +12,55 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import com.orbitsoft.teamorbitsoft.R;
-public class SalimiActivity extends AppCompatActivity  {
+public class SalimiActivity extends AppCompatActivity implements View.OnClickListener {
     //implements View.OnClickListener
-    TextView text;
-    TextView textRandom;
-    TextView textnumberOdd;
+   // TextView text;
+   // TextView textRandom;
+    /*TextView textnumberOdd;
     TextView textAvarage;
     EditText editText;
     Button button;
     TextView result;
     int ans = 0;
     Button button1;
-    EditText user, pass;
-    Button btn,rest;
-    TextView error;
+
+     */
+   // EditText user, pass;
+   // Button btn,rest;
+  //  TextView error;
+    EditText number;
+    TextView answer;
+    Button okye;
+    long factorial = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_salimi );
-      //  text = findViewById( R.id.textView1 );
+        initialize();
+        calcFactorial();
+    }
+    private void initialize() {
+        number = (EditText) findViewById(R.id.editTextNumber);
+        answer = (TextView) findViewById(R.id.textView6);
+        okye = (Button) findViewById(R.id.button3);
+        okye.setOnClickListener(this);
+    }
+    private void calcFactorial() {
+        if (number.getText().toString().equals("")) number.setText("0");
+        int num = Integer.parseInt(number.getText().toString());
+        for(int i = 1; i<=num; i++){
+            factorial = i * factorial;
+        }
+
+    }
+
+    @Override
+    public void onClick(View view) {
+        calcFactorial();
+        answer.setText("Factorial of " + number.getText().toString() + " is : " +     factorial);
+    }
+
+    //  text = findViewById( R.id.textView1 );
       //  textRandom = findViewById( R.id.getRandmo );
       //  textnumberOdd = findViewById( R.id.numberOdd );
       //  textAvarage = findViewById( R.id.average );
@@ -53,7 +83,7 @@ public class SalimiActivity extends AppCompatActivity  {
                */
         ////////////////////////
         /////////////////////////////تمرین صفحه ی لاگین
-        user = (EditText) findViewById(R.id.username);
+    /*    user = (EditText) findViewById(R.id.username);
         pass = (EditText) findViewById(R.id.password);
         btn = (Button) findViewById(R.id.login);
         rest = (Button) findViewById(R.id.reset);
@@ -113,6 +143,8 @@ public class SalimiActivity extends AppCompatActivity  {
         pass.setText("");
         pass.clearFocus();
     }
+
+     */
         // روش اول ساده جدول ضرب
     /*    String n = "";
         for (int i = 1; i <= 10; i++) {
@@ -196,4 +228,3 @@ public class SalimiActivity extends AppCompatActivity  {
 
    */
 }
-
