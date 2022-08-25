@@ -13,38 +13,37 @@ import com.orbitsoft.teamorbitsoft.Saeidian.saeidian;
 import com.orbitsoft.teamorbitsoft.Saeidian.saeidian2;
 
 public class saeidian2_main extends AppCompatActivity {
-    Button buttonx;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saeidian_login1);
-        buttonx = (Button) findViewById(R.id.buttonx);
-//int x= masahat3(10,20,30);
-//        Toast.makeText(saeidian2_main.this,Integer.toString(x),Toast.LENGTH_LONG).show();
-//        buttonx.setOnClickListener((new View.OnClickListener() {
-//
-//            @Override
-//            public void onClick(View view) {
-//                Intent i =new
-//
-//                        Intent(saeidian2_main .this, saeidian_login3 .class);
-//
-//                Bundle bundle = new Bundle();
-//                i.putExtras(bundle);
-//
-//                startActivity(i);
-//            }
-//
-//
-//        }));
+        test_fact shayanfc=new test_fact();
+        int fc=shayanfc.test_fact(6);
+        Toast.makeText(saeidian2_main.this,Integer.toString(fc),Toast.LENGTH_LONG).show();
+
+//        int x = fuc(4);
+//        Toast.makeText(saeidian2_main.this, Integer.toString(x), Toast.LENGTH_LONG).show();
+    }
+    int b=1;
+    public int fuc(int a)
+    {
+        if(a==1)
+        {
+            return b;
+        }
+        else
+        {
+            b=b*a;
+            return fuc(a-1);
+        }
 
     }
-//    public int masahat3(int height,int width,int length )
-//    {
-//        int jam=length+width;
-//        int masahat= jam*height;
-//        int masahat2=masahat/2;
-//
-//        return masahat2;
-//    }
+    public void cans ()
+    {
+        test_cons shayan_cons = new test_cons("shayan","saeidian");
+        shayan_cons.setEmail("asv");
+        shayan_cons.setPass("1234");
+    }
+
+
 }

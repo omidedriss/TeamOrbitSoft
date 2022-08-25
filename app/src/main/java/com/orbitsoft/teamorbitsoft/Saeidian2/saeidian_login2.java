@@ -60,7 +60,7 @@ public class saeidian_login2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_saeidian_login2);
+        setContentView(R.layout.activity_saeidian2_login2);
 
 
         Button signup = findViewById(R.id.signup2);

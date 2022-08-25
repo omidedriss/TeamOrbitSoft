@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.telephony.SmsManager;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,6 +21,7 @@ import com.orbitsoft.teamorbitsoft.Saeidian.saeidian;
 import java.util.concurrent.TimeUnit;
 
 public class saeidian_login1 extends AppCompatActivity {
+
     EditText get_username;
     String get_username2;
     String right_username = "thesheox";
@@ -33,6 +35,9 @@ public class saeidian_login1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saeidian2_login1);
+        test_fact shayan_fact=new test_fact();
+        int fact=shayan_fact.test_fact(5);
+        Toast.makeText(saeidian_login1.this,Integer.toString(fact),Toast.LENGTH_LONG).show();
         TextView no_acountt = findViewById(R.id.no_acount);
         TextView guest = findViewById(R.id.guest);
         TextView reset = findViewById(R.id.reset);

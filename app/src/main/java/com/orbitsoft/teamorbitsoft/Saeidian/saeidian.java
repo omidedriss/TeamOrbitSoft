@@ -9,26 +9,23 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.Browser;
 import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.orbitsoft.teamorbitsoft.R;
-import com.orbitsoft.teamorbitsoft.example.IntentSample;
-import com.orbitsoft.teamorbitsoft.example.MyBrowserActivity;
-import com.orbitsoft.teamorbitsoft.example.MyDialog;
+import com.orbitsoft.teamorbitsoft.Saeidian2.test_fact;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class saeidian extends AppCompatActivity {
+
     TextView shayan;
     Button name;
     Button browser;
@@ -106,7 +103,9 @@ public class saeidian extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_saaidian);
+
         phone = findViewById(R.id.phone);
         contact = findViewById(R.id.contact);
         shayan = findViewById(R.id.maztextView);
