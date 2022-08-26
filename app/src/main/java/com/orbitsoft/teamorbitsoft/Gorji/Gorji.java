@@ -21,26 +21,13 @@ import com.orbitsoft.teamorbitsoft.R;
 import com.orbitsoft.teamorbitsoft.example.MyDialog;
 
 public class Gorji extends AppCompatActivity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
-private Button insta,myInfo,metaco,exit,login;
+private Button insta,myInfo,metaco,exit,login,fact;
 private CheckBox loginCheckBox;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gorji);
-        insta=findViewById(R.id.insta);
-        myInfo=findViewById(R.id.my_info);
-        metaco=findViewById(R.id.metaco);
-        exit=findViewById(R.id.exit);
-        login=findViewById(R.id.login);
-        loginCheckBox=findViewById(R.id.checkBox_login);
-        loginCheckBox.setChecked(false);
-        login.setVisibility(View.GONE);
-        login.setOnClickListener(this);
-        insta.setOnClickListener(this);
-        myInfo.setOnClickListener(this);
-        metaco.setOnClickListener(this);
-        exit.setOnClickListener(this);
-        loginCheckBox.setOnCheckedChangeListener(this);
+        entry();
 
         Toast.makeText(getApplicationContext(), "دکمه  صفحه لاگین مخفی است", Toast.LENGTH_LONG).show();
 
@@ -110,6 +97,10 @@ private CheckBox loginCheckBox;
             startActivity(init1);
 
         }
+        if(v.getId() == fact.getId()){
+        int x = fact1(5);
+        Toast.makeText(getApplicationContext(),String.valueOf(x),Toast.LENGTH_LONG).show();
+        }
         if(v.getId()==exit.getId()){
             Toast.makeText(getApplicationContext(),"صفحه خروج اجباری :)",Toast.LENGTH_LONG).show();
 
@@ -117,7 +108,6 @@ private CheckBox loginCheckBox;
             startActivity(init);
         }
         if(v.getId() == login.getId()){
-
                 Intent initLogin = new Intent(getApplicationContext(),GorjiPhoneNumberActivity.class);
                 startActivity(initLogin);
 
@@ -128,14 +118,51 @@ private CheckBox loginCheckBox;
 
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-        if(loginCheckBox.getId() == R.id.checkBox_login){
-        login.setEnabled(b);}
-        if (loginCheckBox.getId()==R.id.checkBox_login
-                &&loginCheckBox.isChecked()) {
+        if (loginCheckBox.isChecked()) {
             login.setVisibility(View.VISIBLE);
+            login.setEnabled(b);
         }
         else
         {login.setVisibility(View.GONE);
+        }
+        if (loginCheckBox.isChecked()){
+            fact.setVisibility(View.VISIBLE);
+            fact.setEnabled(b);
+        }else {fact.setVisibility(View.GONE);}
+
+    }
+    private void entry (){
+        insta=findViewById(R.id.insta);
+        myInfo=findViewById(R.id.my_info);
+        metaco=findViewById(R.id.metaco);
+        exit=findViewById(R.id.exit);
+        login=findViewById(R.id.login);
+        loginCheckBox=findViewById(R.id.checkBox_login);
+        fact = findViewById(R.id.fact_gorji);
+        fact.setVisibility(View.GONE);
+        fact.setOnClickListener(this);
+        loginCheckBox.setChecked(false);
+        login.setVisibility(View.GONE);
+        login.setOnClickListener(this);
+        insta.setOnClickListener(this);
+        myInfo.setOnClickListener(this);
+        metaco.setOnClickListener(this);
+        exit.setOnClickListener(this);
+        loginCheckBox.setOnCheckedChangeListener(this);
+
+    }
+
+    public int fact1(int fa){
+        int b = 1,c=1;
+
+        if (fa == c)
+        {
+            return b;
+        }
+        else
+        {
+            b*=fa;
+            return fact1(fa-1);
         }
     }
 }

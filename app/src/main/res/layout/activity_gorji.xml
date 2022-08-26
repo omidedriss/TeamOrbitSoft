@@ -42,6 +42,12 @@
             android:text="Login" />
 
         <Button
+            android:id="@+id/fact_gorji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fact" />
+
+        <Button
             android:id="@+id/exit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,8 +55,9 @@
 
         <CheckBox
             android:id="@+id/checkBox_login"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:text="Login_CheckBox" />
 
 
