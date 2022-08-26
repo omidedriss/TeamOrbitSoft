@@ -55,9 +55,7 @@ Button confirm;
         TextView resendcode = findViewById(R.id.resend_code);
         confirm = (Button) findViewById(R.id.confirm);
         code.setTextColor(Color.BLACK);
-        Random random2 = new Random();
-        int val = random2.nextInt(1000000);
-        message2 = (Integer.toString(val));
+
         if (bundle != null) {
              //phone = bundle.getString("email", "nothing");
              phone_read = bundle.getString("phone", "nothing");
@@ -80,7 +78,7 @@ Button confirm;
             public void onClick(View view) {
                 code_get = code.getText().toString();
                 //Toast.makeText(saeidian_login3.this, code_get, Toast.LENGTH_SHORT).show();
-                if (code_get.equalsIgnoreCase(code_read)) {
+                if (code_get.equalsIgnoreCase(message)|code_get.equalsIgnoreCase(message2)) {
 
                     Toast.makeText(saeidian_login3.this, "correct", Toast.LENGTH_SHORT).show();
             Intent i = new
@@ -111,6 +109,9 @@ Button confirm;
         resendcode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Random random2 = new Random();
+                int val = random2.nextInt(1000000);
+                message2 = (Integer.toString(val));
                 SmsManager mySmsManager = SmsManager.getDefault();
                 mySmsManager.sendTextMessage(phone, null, message2, null, null);
             }

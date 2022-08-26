@@ -29,6 +29,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompatSideChannelService;
 
 import com.orbitsoft.teamorbitsoft.R;
 
@@ -83,28 +84,30 @@ public class saeidian_login2 extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                set_name = name.getText().toString();
-                set_email = email.getText().toString();
-                set_phone = phone.getText().toString();
-                set_password = password.getText().toString();
-                set_confirmpassword = confirmpassword.getText().toString();
-                Random random = new Random();
-                int val = random.nextInt(1000000);
-                message = (Integer.toString(val));
-                SmsManager mySmsManager = SmsManager.getDefault();
-                mySmsManager.sendTextMessage(set_phone, null, message, null, null);
-                Intent i = new
-                        Intent(saeidian_login2.this, saeidian_login3.class);
-                Bundle bundle = new Bundle();
-//                bundle.putString("email", set_email);
-                bundle.putString("name", set_name);
-                bundle.putString("email", set_email);
-                bundle.putString("phone", set_phone);
-                bundle.putString("password", set_password);
-                bundle.putString("code", message);
-                i.putExtras(bundle);
 
-                startActivity(i);
+                    set_name = name.getText().toString();
+                    set_email = email.getText().toString();
+                    set_phone = phone.getText().toString();
+                    set_password = password.getText().toString();
+                    set_confirmpassword = confirmpassword.getText().toString();
+                if (!set_phone.isEmpty() &&!set_name.isEmpty()&& !set_email.isEmpty()&&!set_password.isEmpty()&&!set_confirmpassword.isEmpty()&&(set_phone.length() == 11 && set_phone.startsWith("09"))) {
+                    Random random = new Random();
+                    int val = random.nextInt(1000000);
+                    message = (Integer.toString(val));
+                    SmsManager mySmsManager = SmsManager.getDefault();
+                    mySmsManager.sendTextMessage(set_phone, null, message, null, null);
+                    Intent i = new
+                            Intent(saeidian_login2.this, saeidian_login3.class);
+                    Bundle bundle = new Bundle();
+//                bundle.putString("email", set_email);
+                    bundle.putString("name", set_name);
+                    bundle.putString("email", set_email);
+                    bundle.putString("phone", set_phone);
+                    bundle.putString("password", set_password);
+                    bundle.putString("code", message);
+                    i.putExtras(bundle);
+
+                    startActivity(i);
 //            if (TextUtils.isEmpty(phone.getText().toString())) {
 //                Toast.makeText(saeidian_login2.this, "Enter a valid Number", Toast.LENGTH_SHORT).show();
 //            } else {
@@ -112,7 +115,13 @@ public class saeidian_login2 extends AppCompatActivity {
 //                sendverificationcode(number);
 //            }
 
+                }
+                else
+                {
+                    Toast.makeText(saeidian_login2.this, "Enter valid Data", Toast.LENGTH_SHORT).show();
+                }
             }
+
         });
         haveaccount.setOnClickListener(new View.OnClickListener() {
             @Override

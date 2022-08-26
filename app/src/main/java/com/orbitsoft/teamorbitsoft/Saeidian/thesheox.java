@@ -17,7 +17,9 @@ package com.orbitsoft.teamorbitsoft.Saeidian;
 //    private float s6 = 18;
 //    private float s7 = 15;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -161,8 +163,9 @@ import com.orbitsoft.teamorbitsoft.R;
 //    }
 public class thesheox extends AppCompatActivity {
     //    EditText namein;
-    TextView print;
-    TextView print2;
+    TextView print_name;
+    TextView print_family;
+    Button exit;
 //    EditText familyin;
 //    Button print;
 //    String name;
@@ -173,18 +176,33 @@ public class thesheox extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thesheox);
         Bundle bundle = getIntent().getExtras();
-        print= findViewById(R.id.print);
-       // print2= findViewById(R.id.print2);
+        print_name = findViewById(R.id.print_name);
+        print_family = findViewById(R.id.print_family);
+        exit = (Button) findViewById(R.id.exit_saeidian);
         if (bundle != null) {
-            String Name = bundle.getString("test", "nothing");
-            String Family= bundle.getString("test2", "nothing");
+            String Name_x = bundle.getString("test_name", "nothing");
+            String Family_x = bundle.getString("test_family", "nothing");
             // Long number = bundle.getLong("test2", 12);
-            print.setText("Name : " + Name);
-            print2.setText("Family: " + Family);
+            print_name.setText("Name : " + Name_x);
+            print_family.setText("Family: " + Family_x);
             //Toast.makeText(saeidian2.this, "Name/Family : "+Name, Toast.LENGTH_LONG).show();
+//
+////+Long.toString(number)
+//        }
 
-//+Long.toString(number)
         }
+        exit.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new
+                        Intent(thesheox.this, saeidian.class);
+                Bundle bundle = new Bundle();
+                i.putExtras(bundle);
+                startActivity(i);
 
+
+
+            }
+        }));
     }
 }

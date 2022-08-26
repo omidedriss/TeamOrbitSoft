@@ -39,6 +39,7 @@ public class saeidian_login1 extends AppCompatActivity {
         TextView guest = findViewById(R.id.guest);
         TextView reset = findViewById(R.id.reset);
         get_username = (EditText) findViewById(R.id.get_username);
+
         login = (Button) findViewById(R.id.login2);
         get_password = (EditText) findViewById(R.id.get_password);
         get_username.setTextColor(Color.BLACK);

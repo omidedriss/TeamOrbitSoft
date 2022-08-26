@@ -18,6 +18,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.orbitsoft.teamorbitsoft.MainActivity;
 import com.orbitsoft.teamorbitsoft.R;
 import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_factorial;
 import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_login1;
@@ -38,6 +39,7 @@ public class saeidian extends AppCompatActivity {
     Button exit;
     Button factorial;
     Button bmi;
+    Button exit2;
     public Button name2,family2;
     //private Dialog dialog;
     private List<String>list;
@@ -118,6 +120,7 @@ factorial=(Button) findViewById(R.id.fact);
         browser = findViewById(R.id.browser);
         dial = findViewById(R.id.dial);
         map = findViewById(R.id.map);
+        exit2 = (Button) findViewById(R.id.exit_saeidian_2);
         call = findViewById(R.id.call);
         //bmi = findViewById(R.id.button6);
 //         exit = (Button) findViewById(R.id.exit);
@@ -151,6 +154,13 @@ factorial=(Button) findViewById(R.id.fact);
 
 
         //  return super.onCreateDialog(id);
+        exit2.setOnClickListener(view -> {
+            Intent i = new
+                    Intent(saeidian.this, MainActivity.class);
+            Bundle bundle = new Bundle();
+            i.putExtras(bundle);
+            startActivity(i);
+        });
         factorial.setOnClickListener(view -> {
             Intent i = new
                     Intent(saeidian.this, saeidian_factorial.class);

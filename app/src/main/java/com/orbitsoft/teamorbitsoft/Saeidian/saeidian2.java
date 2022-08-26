@@ -2,6 +2,7 @@ package com.orbitsoft.teamorbitsoft.Saeidian;
 
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
@@ -37,39 +38,41 @@ import com.orbitsoft.teamorbitsoft.R;
 //    }
 //}
 public class saeidian2 extends AppCompatActivity {
-    EditText namein;
-    TextView test;
-    EditText familyin;
-    Button print;
-    String name;
-    String family;
+    EditText name_sh;
+    EditText family_sh;
+
+
+    Button print_name;
+    String name_sh2;
+    String family_sh2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saaidian2);
-        test = findViewById(R.id.test);
-        namein = (EditText) findViewById(R.id.name);
-        familyin = (EditText) findViewById(R.id.family);
-        print = (Button) findViewById(R.id.print);
+        name_sh=(EditText)findViewById(R.id.enter_name_sh);
+        family_sh=(EditText)findViewById(R.id.enter_family_sh);
+        print_name = (Button) findViewById(R.id.print_name_2);
 
-        print.setOnClickListener((new View.OnClickListener() {
+        name_sh.setTextColor(Color.BLACK);
+      family_sh.setTextColor(Color.BLACK);
+        print_name.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                name = namein.getText().toString();
-                family = familyin.getText().toString();
                 Intent i = new
                         Intent(saeidian2.this, thesheox.class);
                 Bundle bundle = new Bundle();
-                bundle.putString("test", name);
-                bundle.putString("test2", family);
+                name_sh2 = name_sh.getText().toString();
+                family_sh2= family_sh.getText().toString();
+              bundle.putString("test_name", name_sh2);
+                bundle.putString("test_family", family_sh2);
                 i.putExtras(bundle);
                 startActivity(i);
 
 
-                //test.setText(name+family);
-                //Toast.makeText(MainActivity.this,name+family, Toast.LENGTH_SHORT).show();
+
             }
         }));
+
     }
 }
