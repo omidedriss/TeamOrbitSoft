@@ -76,25 +76,14 @@ private CheckBox loginCheckBox;
     @Override
     public void onClick(View v) {
         if(v.getId()==insta.getId()){
-            Toast.makeText(getApplicationContext(),"به صفحه اینستا گرام عباس گرجی خوش آمدید",Toast.LENGTH_LONG).show();
-            Uri uri = Uri.parse("https://instagram.com/abbas1gorji");
-            Intent init = new Intent(Intent.ACTION_VIEW,uri);
-            init.setPackage("com.instagram.android");
+        insta();
 
-        startActivity(init);
         }
         if(v.getId()==myInfo.getId()){
-            Toast.makeText(getApplicationContext(),"صفحه درباره",Toast.LENGTH_LONG).show();
-
-            Intent init = new Intent(Gorji.this, GorjiMyDialogActivity.class);
-        startActivity(init);
+        myInfo();
         }
         if(v.getId()==metaco.getId()){
-            Toast.makeText(getApplicationContext(),"سایت متاکو",Toast.LENGTH_LONG).show();
-            Intent init1 = new Intent(Intent.ACTION_VIEW);
-            Uri uri = Uri.parse("https://tr.metacomplex.com/");
-            init1.setData(uri);
-            startActivity(init1);
+        metaco();
 
         }
         if(v.getId() == fact.getId()){
@@ -102,10 +91,7 @@ private CheckBox loginCheckBox;
         Toast.makeText(getApplicationContext(),String.valueOf(x),Toast.LENGTH_LONG).show();
         }
         if(v.getId()==exit.getId()){
-            Toast.makeText(getApplicationContext(),"صفحه خروج اجباری :)",Toast.LENGTH_LONG).show();
-
-            Intent init = new Intent(getApplicationContext(),GorjiCustomDialog.class);
-            startActivity(init);
+            exit();
         }
         if(v.getId() == login.getId()){
                 Intent initLogin = new Intent(getApplicationContext(),GorjiPhoneNumberActivity.class);
@@ -153,16 +139,39 @@ private CheckBox loginCheckBox;
     }
 
     public int fact1(int fa){
-        int b = 1,c=1;
-
-        if (fa == c)
+        int b = 1;
+        if (fa == 1)
         {
             return b;
         }
         else
         {
-            b*=fa;
+            b *=fa;
             return fact1(fa-1);
         }
+    }
+    private void insta (){
+        Toast.makeText(getApplicationContext(),"به صفحه اینستا گرام عباس گرجی خوش آمدید",Toast.LENGTH_LONG).show();
+        Uri uri = Uri.parse("https://instagram.com/abbas1gorji");
+        Intent init = new Intent(Intent.ACTION_VIEW,uri);
+        init.setPackage("com.instagram.android");
+        startActivity(init);
+    }
+    private void myInfo(){
+        Toast.makeText(getApplicationContext(),"صفحه درباره",Toast.LENGTH_LONG).show();
+        Intent init = new Intent(Gorji.this, GorjiMyDialogActivity.class);
+        startActivity(init);
+    }
+    private void metaco(){
+        Toast.makeText(getApplicationContext(),"سایت متاکو",Toast.LENGTH_LONG).show();
+        Intent init1 = new Intent(Intent.ACTION_VIEW);
+        Uri uri = Uri.parse("https://tr.metacomplex.com/");
+        init1.setData(uri);
+        startActivity(init1);
+    }
+    private void exit(){
+        Toast.makeText(getApplicationContext(),"صفحه خروج اجباری :)",Toast.LENGTH_LONG).show();
+        Intent init = new Intent(getApplicationContext(),GorjiCustomDialog.class);
+        startActivity(init);
     }
 }
