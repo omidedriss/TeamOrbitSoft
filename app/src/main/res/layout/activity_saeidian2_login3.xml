@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,9 +11,10 @@
         android:id="@+id/otp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/otp2"
         android:layout_gravity="center"
         android:layout_marginLeft="170dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="10dp"
         android:text="OTP"
         android:textColor="#000"
         android:textSize="30dp"
@@ -113,5 +115,12 @@
         android:text="Didnt receive code? Resend code"
         android:textColor="#808080"
         android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/otp2"
+        android:layout_width="300dp"
+        android:layout_marginLeft="50dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/otp" />
 
 </RelativeLayout>
