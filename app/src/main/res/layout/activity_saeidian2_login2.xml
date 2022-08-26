@@ -104,7 +104,7 @@
         android:ems="10"
         android:hint="6 Digit Password"
         android:inputType="text"
-
+app:passwordToggleEnabled="true"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         android:textColorHint="#808080"
