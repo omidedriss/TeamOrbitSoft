@@ -46,7 +46,7 @@ Button confirm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_saeidian_login3);
+        setContentView(R.layout.activity_saeidian2_login3);
         Bundle bundle = getIntent().getExtras();
        // print_email=findViewById(R.id.email2);
         print_phone=findViewById(R.id.phone2);
