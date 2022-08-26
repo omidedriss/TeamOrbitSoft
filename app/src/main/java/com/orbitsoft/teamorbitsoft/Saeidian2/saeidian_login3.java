@@ -7,9 +7,13 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.text.TextUtils;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -17,6 +21,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
+import com.orbitsoft.teamorbitsoft.MainActivity;
 import com.orbitsoft.teamorbitsoft.R;
 import com.orbitsoft.teamorbitsoft.Saeidian.saeidian2;
 import com.orbitsoft.teamorbitsoft.Saeidian.thesheox;
@@ -31,7 +36,7 @@ public class saeidian_login3 extends AppCompatActivity {
    public String number;
     public String asm;
     String phone_read;
-
+    int x=0;
     String name_read;
     String email_read;
     String password_read;
@@ -58,17 +63,16 @@ Button confirm;
 
         if (bundle != null) {
              //phone = bundle.getString("email", "nothing");
+
              phone_read = bundle.getString("phone", "nothing");
             code_read = bundle.getString("code", "nothing");
-
             print_phone.setText(phone_read);
             //print_phone.setText(email);
-
                 phone_read = bundle.getString("phone", "nothing");
                 name_read = bundle.getString("name", "nothing");
                 email_read = bundle.getString("email", "nothing");
                 password_read = bundle.getString("password", "nothing");
-
+            code.setText(code_read);
         }
 
 //
@@ -78,9 +82,9 @@ Button confirm;
             public void onClick(View view) {
                 code_get = code.getText().toString();
                 //Toast.makeText(saeidian_login3.this, code_get, Toast.LENGTH_SHORT).show();
-                if (code_get.equalsIgnoreCase(message)|code_get.equalsIgnoreCase(message2)) {
+                if (code_get.equalsIgnoreCase(code_read)|code_get.equalsIgnoreCase(message2)) {
 
-                    Toast.makeText(saeidian_login3.this, "correct", Toast.LENGTH_SHORT).show();
+                    showToast();
             Intent i = new
                     Intent(saeidian_login3.this, saeidian_login4.class);
             Bundle bundle = new Bundle();
@@ -92,7 +96,7 @@ Button confirm;
             i.putExtras(bundle);
             startActivity(i);
                 } else {
-                    Toast.makeText(saeidian_login3.this, "wrong", Toast.LENGTH_SHORT).show();
+                    showToast1();
                 }
             }
         });
@@ -106,14 +110,29 @@ Button confirm;
                 startActivity(i);
             }
         });
+
         resendcode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Random random2 = new Random();
-                int val = random2.nextInt(1000000);
-                message2 = (Integer.toString(val));
-                SmsManager mySmsManager = SmsManager.getDefault();
-                mySmsManager.sendTextMessage(phone, null, message2, null, null);
+                if(x<5) {
+                    Random random2 = new Random();
+                    int val = random2.nextInt(1000000);
+                    message2 = (Integer.toString(val));
+                    SmsManager mySmsManager = SmsManager.getDefault();
+                    mySmsManager.sendTextMessage(phone, null, message2, null, null);
+                    code.getText().clear();
+                    code.setText(message2);
+                    x++;
+                }
+                else
+                {
+                    showToast2();
+                    Intent i = new
+                            Intent(saeidian_login3.this, MainActivity.class);
+                    Bundle bundle = new Bundle();
+                    i.putExtras(bundle);
+                    startActivity(i);
+                }
             }
         });
 
@@ -158,5 +177,59 @@ Button confirm;
 //
 //
 //            }));
+    }
+    public void showToast() {
+        LayoutInflater inflater = getLayoutInflater();
+        View layout = inflater.inflate(R.layout.saeidian_custom_toast, (ViewGroup) findViewById(R.id.toast_root));
+
+        TextView toastText = layout.findViewById(R.id.toast_text);
+        ImageView toastImage = layout.findViewById(R.id.toast_image);
+
+        toastText.setText("Correct Code");
+//            toastImage.setImageResource(R.drawable.ic_toasticon);
+
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM, 0, 300);
+        toast.setDuration(Toast.LENGTH_SHORT);
+        toast.setView(layout);
+
+        toast.show();
+
+    }
+    public void showToast1() {
+        LayoutInflater inflater = getLayoutInflater();
+        View layout = inflater.inflate(R.layout.saeidian_custom_toast, (ViewGroup) findViewById(R.id.toast_root));
+
+        TextView toastText = layout.findViewById(R.id.toast_text);
+        ImageView toastImage = layout.findViewById(R.id.toast_image);
+
+        toastText.setText("Wrong Code");
+//            toastImage.setImageResource(R.drawable.ic_toasticon);
+
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM, 0, 300);
+        toast.setDuration(Toast.LENGTH_SHORT);
+        toast.setView(layout);
+
+        toast.show();
+
+    }
+    public void showToast2() {
+        LayoutInflater inflater = getLayoutInflater();
+        View layout = inflater.inflate(R.layout.saeidian_custom_toast, (ViewGroup) findViewById(R.id.toast_root));
+
+        TextView toastText = layout.findViewById(R.id.toast_text);
+        ImageView toastImage = layout.findViewById(R.id.toast_image);
+
+        toastText.setText("5 Attemot pass Try Again Latter");
+//            toastImage.setImageResource(R.drawable.ic_toasticon);
+
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM, 0, 300);
+        toast.setDuration(Toast.LENGTH_SHORT);
+        toast.setView(layout);
+
+        toast.show();
+
     }
 }

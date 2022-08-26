@@ -7,9 +7,13 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -49,6 +53,7 @@ public class saeidian_login1 extends AppCompatActivity {
             public void onClick(View view) {
                 get_username2 = get_username.getText().toString();
                 get_password2 = get_password.getText().toString();
+
                 if (get_username2.equalsIgnoreCase(right_username) && get_password2.equalsIgnoreCase(right_password)) {
 
                     Intent i = new
@@ -58,7 +63,7 @@ public class saeidian_login1 extends AppCompatActivity {
                     i.putExtras(bundle);
                     startActivity(i);
                 } else {
-                    Toast.makeText(saeidian_login1.this, "User not found", Toast.LENGTH_LONG).show();
+                    showToast();
                 }
             }
         });
@@ -106,5 +111,24 @@ public class saeidian_login1 extends AppCompatActivity {
                 mySmsManager.sendTextMessage(phone, null, "Shayan616114", null, null);
             }
         });
+
+    }
+    public void showToast() {
+        LayoutInflater inflater = getLayoutInflater();
+        View layout = inflater.inflate(R.layout.saeidian_custom_toast, (ViewGroup) findViewById(R.id.toast_root));
+
+        TextView toastText = layout.findViewById(R.id.toast_text);
+        ImageView toastImage = layout.findViewById(R.id.toast_image);
+
+        toastText.setText("User Not Found");
+//            toastImage.setImageResource(R.drawable.ic_toasticon);
+
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM, 0, 300);
+        toast.setDuration(Toast.LENGTH_SHORT);
+        toast.setView(layout);
+
+        toast.show();
+
     }
 }

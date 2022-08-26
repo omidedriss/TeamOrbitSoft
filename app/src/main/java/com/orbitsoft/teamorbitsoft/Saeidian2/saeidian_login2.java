@@ -9,9 +9,13 @@ import android.os.Bundle;
 import android.os.Message;
 import android.telephony.SmsManager;
 import android.text.TextUtils;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -90,8 +94,9 @@ public class saeidian_login2 extends AppCompatActivity {
                     set_phone = phone.getText().toString();
                     set_password = password.getText().toString();
                     set_confirmpassword = confirmpassword.getText().toString();
-                if (!set_phone.isEmpty() &&!set_name.isEmpty()&& !set_email.isEmpty()&&!set_password.isEmpty()&&!set_confirmpassword.isEmpty()&&(set_phone.length() == 11 && set_phone.startsWith("09"))) {
+                if ( set_password.equalsIgnoreCase(set_confirmpassword)&&!set_phone.isEmpty() &&!set_name.isEmpty()&& !set_email.isEmpty()&&!set_password.isEmpty()&&set_phone.length() == 11&& set_password.length() == 6&& set_confirmpassword.length() == 6 && set_phone.startsWith("09")) {
                     Random random = new Random();
+
                     int val = random.nextInt(1000000);
                     message = (Integer.toString(val));
                     SmsManager mySmsManager = SmsManager.getDefault();
@@ -118,7 +123,7 @@ public class saeidian_login2 extends AppCompatActivity {
                 }
                 else
                 {
-                    Toast.makeText(saeidian_login2.this, "Enter valid Data", Toast.LENGTH_SHORT).show();
+                    showToast();
                 }
             }
 
@@ -133,6 +138,24 @@ public class saeidian_login2 extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+    }
+    public void showToast() {
+        LayoutInflater inflater = getLayoutInflater();
+        View layout = inflater.inflate(R.layout.saeidian_custom_toast, (ViewGroup) findViewById(R.id.toast_root));
+
+        TextView toastText = layout.findViewById(R.id.toast_text);
+        ImageView toastImage = layout.findViewById(R.id.toast_image);
+
+        toastText.setText("Fill All The Blanks Right");
+//            toastImage.setImageResource(R.drawable.ic_toasticon);
+
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM, 0, 300);
+        toast.setDuration(Toast.LENGTH_SHORT);
+        toast.setView(layout);
+
+        toast.show();
 
     }
 //    private void sendverificationcode(String phoneNumber)
