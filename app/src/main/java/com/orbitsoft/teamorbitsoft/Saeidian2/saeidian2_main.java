@@ -19,7 +19,7 @@ public class saeidian2_main extends AppCompatActivity {
         setContentView(R.layout.activity_saeidian_login1);
         test_fact shayanfc=new test_fact();
         int fc=shayanfc.test_fact(6);
-        Toast.makeText(saeidian2_main.this,Integer.toString(fc),Toast.LENGTH_LONG).show();
+//        Toast.makeText(saeidian2_main.this,Integer.toString(fc),Toast.LENGTH_LONG).show();
 
 //        int x = fuc(4);
 //        Toast.makeText(saeidian2_main.this, Integer.toString(x), Toast.LENGTH_LONG).show();

@@ -19,6 +19,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.orbitsoft.teamorbitsoft.R;
+import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_factorial;
+import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_login1;
 import com.orbitsoft.teamorbitsoft.Saeidian2.test_fact;
 
 import java.util.ArrayList;
@@ -34,7 +36,7 @@ public class saeidian extends AppCompatActivity {
     Button call;
     Button contact ;
     Button exit;
-
+    Button factorial;
     Button bmi;
     public Button name2,family2;
     //private Dialog dialog;
@@ -103,9 +105,11 @@ public class saeidian extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        test_fact shayan_fact=new test_fact();
+        int fact=shayan_fact.test_fact(5);
+//        Toast.makeText(saeidian.this,Integer.toString(fact),Toast.LENGTH_LONG).show();
         setContentView(R.layout.activity_saaidian);
-
+factorial=(Button) findViewById(R.id.fact);
         phone = findViewById(R.id.phone);
         contact = findViewById(R.id.contact);
         shayan = findViewById(R.id.maztextView);
@@ -147,7 +151,13 @@ public class saeidian extends AppCompatActivity {
 
 
         //  return super.onCreateDialog(id);
-
+        factorial.setOnClickListener(view -> {
+            Intent i = new
+                    Intent(saeidian.this, saeidian_factorial.class);
+            Bundle bundle = new Bundle();
+            i.putExtras(bundle);
+            startActivity(i);
+        });
         name.setOnClickListener(view -> {
             Intent i = new
                     Intent(saeidian.this, saeidian2.class);

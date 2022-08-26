@@ -35,9 +35,6 @@ public class saeidian_login1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saeidian2_login1);
-        test_fact shayan_fact=new test_fact();
-        int fact=shayan_fact.test_fact(5);
-        Toast.makeText(saeidian_login1.this,Integer.toString(fact),Toast.LENGTH_LONG).show();
         TextView no_acountt = findViewById(R.id.no_acount);
         TextView guest = findViewById(R.id.guest);
         TextView reset = findViewById(R.id.reset);

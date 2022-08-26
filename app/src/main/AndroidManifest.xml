@@ -62,6 +62,9 @@
             android:name=".Saeidian.saeidian"
             android:exported="false" />
         <activity
+            android:name=".Saeidian2.saeidian_factorial"
+            android:exported="false" />
+        <activity
             android:name=".Saeidian.saeidian2"
             android:exported="false" />
         <activity

@@ -2,58 +2,47 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/sms_drawable3">
 
-    <Button
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/name"
-        android:layout_width="200dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/phone"
-        android:layout_centerHorizontal="true"
-        android:text="name/family" />
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/sms_drawable2"
+        android:text="name/family"
+        android:textColor="#000"
+        android:textSize="30dp" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/browser"
-        android:layout_width="200dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/name"
-        android:layout_centerHorizontal="true"
-        android:text="Google" />
+        android:layout_below="@id/call"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sms_drawable2"
+        android:text="Google"
+        android:textColor="#000"
+        android:textSize="30dp" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/dial"
-        android:layout_width="200dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/browser"
-        android:layout_centerHorizontal="true"
-        android:text="phone" />
-
-    <Button
-        android:id="@+id/map"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/dial"
-        android:layout_centerHorizontal="true"
-        android:text="map" />
-    <Button
-        android:id="@+id/call"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/map"
-        android:text="call"/>
+        android:layout_below="@id/fact"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sms_drawable2"
+        android:text="phone"
+        android:textColor="#000"
+        android:textSize="30dp" />
 
 
-    <Button
-        android:id="@+id/contact"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/call"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:text="Choose contact" />
-
-<!--    <Button-->
+    <!--    <Button-->
 <!--        android:id="@+id/exit"-->
 <!--        android:layout_width="200dp"-->
 <!--        android:layout_height="wrap_content"-->
@@ -62,14 +51,63 @@
 <!--        android:gravity="center"-->
 <!--        android:text="dialog" />-->
 
-    <TextView
-        android:id="@+id/phone"
-        android:layout_width="match_parent"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/map"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:gravity="center"
-        android:text="select button"
+        android:layout_below="@id/name"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sms_drawable2"
+        android:text="map"
+        android:textColor="#000"
+        android:textSize="30dp" />
 
-        android:textSize="24sp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/call"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/map"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sms_drawable2"
+        android:text="call"
+        android:textColor="#000"
+        android:textSize="30dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/contact"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/browser"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sms_drawable2"
+        android:text="choose contact"
+        android:textColor="#000"
+        android:textSize="30dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fact"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sms_drawable2"
+        android:text="factorial"
+        android:textColor="#000"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_marginLeft="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Select Button"
+        android:textColor="#000"
+        android:textSize="50dp"
+        android:textStyle="bold" />
 
 </RelativeLayout>
