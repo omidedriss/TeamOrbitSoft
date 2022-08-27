@@ -18,7 +18,7 @@ public class LifeCycleActivity extends AppCompatActivity {
 
     @Override
     protected void onStart() {
-        Log.d("lifecycle", "onstart");
+        Log.d("lifecycle", "onstart Test");
         super.onStart();
     }
 
