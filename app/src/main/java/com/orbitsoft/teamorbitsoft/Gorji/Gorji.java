@@ -28,6 +28,20 @@ private CheckBox loginCheckBox;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gorji);
         entry();
+        // کامنت برای تست برنچ
+        // کامنت برای تست برنچ
+
+        // کامنت برای تست برنچ
+
+        // کامنت برای تست برنچ
+
+        // کامنت برای تست برنچ
+
+        // کامنت برای تست برنچ
+
+        // کامنت برای تست برنچ
+
+
 
         Toast.makeText(getApplicationContext(), "دکمه  صفحه لاگین مخفی است", Toast.LENGTH_LONG).show();
 
