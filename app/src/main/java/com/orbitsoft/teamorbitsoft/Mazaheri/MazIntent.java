@@ -12,6 +12,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.orbitsoft.teamorbitsoft.R;
@@ -22,24 +23,20 @@ public class MazIntent extends AppCompatActivity {
     int request_Code_call = 1;
     int request_Code_web = 2;
 
+
+
     /** Called when the activity is first created. */
-    @SuppressLint("CutPasteId")
+  //  @SuppressLint("CutPasteId")
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //مخفی کرد عنوان صفحه و فول اسکرین
-        requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
-        getSupportActionBar().hide(); // hide the title bar
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
-
         setContentView(R.layout.activity_mazintent);
-
 
 
         //شماره گیری سریع اینتنت معمولی
         //---Make calls button--- //در این حالت باید دسترسی تلفن به اپلیکیشن داده شود
-       // b1 = (Button) findViewById(R.id.b1);
+        b1 = (Button) findViewById(R.id.btmazcall);
+
         b1.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View arg0){
@@ -57,7 +54,7 @@ public class MazIntent extends AppCompatActivity {
         //---Make calls button---
         //
         //شماره گیری معمولی با اینتنت معمولی
-        //b2 = (Button) findViewById(R.id.maz_makecalls);
+        b2 = (Button) findViewById(R.id.btmazdial);
         b2.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View arg0){
