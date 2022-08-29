@@ -21,10 +21,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TeamOrbitSoft"
         tools:targetApi="31">
+
         <activity
             android:name=".Moosavi.moosavi_login"
             android:exported="false" />
-
         <activity
             android:name=".Gorji.GorjiPhoneNumberActivity"
             android:exported="false" />
@@ -113,7 +113,7 @@
             android:name=".Mazaheri.Mazaheri"
             android:exported="false" />
         <activity
-            android:name=".Mazaheri.MazIntent"
+            android:name=".Mazaheri.MazNewIntent"
             android:exported="true" />
         <activity
             android:name=".Mazaheri.MazGetNameFamil"
@@ -128,7 +128,16 @@
             android:name=".Mazaheri.MazStartForResult_SecondActivity"
             android:exported="false" />
         <activity
+            android:name=".Mazaheri.MazNewBrowser"
+            android:exported="false" />
+        <activity
             android:name=".Mazaheri.MazBrowser"
+            android:exported="false" />
+        <activity
+            android:name=".Mazaheri.MazProjects"
+            android:exported="false" />
+        <activity
+            android:name=".Mazaheri.MazMenu"
             android:exported="false" />
         <activity
             android:name=".example.MyBrowserActivity"

@@ -2,6 +2,7 @@ package com.orbitsoft.teamorbitsoft.Mazaheri;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -35,7 +36,7 @@ public class MazBrowser extends Activity {
             String Name = bundle.getString("site", "ghj");
         }
         
-       // Uri url = getIntent().getData();
+        Uri url = getIntent().getData();
         Toast.makeText(this, ""+bundle.toString(), Toast.LENGTH_SHORT).show();
 
 
