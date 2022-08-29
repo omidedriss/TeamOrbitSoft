@@ -21,13 +21,27 @@ import com.orbitsoft.teamorbitsoft.R;
 import com.orbitsoft.teamorbitsoft.example.MyDialog;
 
 public class Gorji extends AppCompatActivity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
-private Button insta,myInfo,metaco,exit,login,fact;
+private Button insta,myInfo,metaco,exit,login,fact,contact;
 private CheckBox loginCheckBox;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gorji);
         entry();
+        // کامنت برای تست برنچ
+        // کامنت برای تست برنچ
+
+        // کامنت برای تست برنچ
+
+        // کامنت برای تست برنچ
+
+        // کامنت برای تست برنچ
+
+        // کامنت برای تست برنچ
+
+        // کامنت برای تست برنچ
+
+
 
         Toast.makeText(getApplicationContext(), "دکمه  صفحه لاگین مخفی است", Toast.LENGTH_LONG).show();
 
@@ -75,6 +89,8 @@ private CheckBox loginCheckBox;
 
     @Override
     public void onClick(View v) {
+
+
         if(v.getId()==insta.getId()){
         insta();
 
@@ -84,6 +100,7 @@ private CheckBox loginCheckBox;
         }
         if(v.getId()==metaco.getId()){
         metaco();
+
 
         }
         if(v.getId() == fact.getId()){
@@ -97,7 +114,9 @@ private CheckBox loginCheckBox;
                 Intent initLogin = new Intent(getApplicationContext(),GorjiPhoneNumberActivity.class);
                 startActivity(initLogin);
 
-
+        }
+        if(v.getId() == contact.getId()){
+            contact();
         }
 
     }
@@ -115,7 +134,10 @@ private CheckBox loginCheckBox;
             fact.setVisibility(View.VISIBLE);
             fact.setEnabled(b);
         }else {fact.setVisibility(View.GONE);}
-
+        if (loginCheckBox.isChecked()){
+            contact.setVisibility(View.VISIBLE);
+            contact.setEnabled(b);
+        }else{contact.setVisibility(View.GONE);}
     }
     private void entry (){
         insta=findViewById(R.id.insta);
@@ -125,6 +147,9 @@ private CheckBox loginCheckBox;
         login=findViewById(R.id.login);
         loginCheckBox=findViewById(R.id.checkBox_login);
         fact = findViewById(R.id.fact_gorji);
+        contact= findViewById(R.id.gorji_contact);
+        contact.setVisibility(View.GONE);
+        contact.setOnClickListener(this);
         fact.setVisibility(View.GONE);
         fact.setOnClickListener(this);
         loginCheckBox.setChecked(false);
@@ -137,9 +162,8 @@ private CheckBox loginCheckBox;
         loginCheckBox.setOnCheckedChangeListener(this);
 
     }
-
+    int b = 1;
     public int fact1(int fa){
-        int b = 1;
         if (fa == 1)
         {
             return b;
@@ -173,5 +197,9 @@ private CheckBox loginCheckBox;
         Toast.makeText(getApplicationContext(),"صفحه خروج اجباری :)",Toast.LENGTH_LONG).show();
         Intent init = new Intent(getApplicationContext(),GorjiCustomDialog.class);
         startActivity(init);
+    }
+    public void contact(){
+        Intent i = new Intent(getApplicationContext(),GorjiContactActivity.class);
+        startActivity(i);
     }
 }
