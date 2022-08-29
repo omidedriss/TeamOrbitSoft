@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "18170708068",
+    "project_id": "teamorbitsoft-fce07",
+    "storage_bucket": "teamorbitsoft-fce07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18170708068:android:3c95b5b14b8ad486699f71",
+        "android_client_info": {
+          "package_name": "com.orbitsoft.teamorbitsoft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18170708068-oc8m6nons7js9g6mofgp7juvamdgqp19.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFkrOL260mXHkeDNs6zfDlLAqj3hOJ3uM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "18170708068-oc8m6nons7js9g6mofgp7juvamdgqp19.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

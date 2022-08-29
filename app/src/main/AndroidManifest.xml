@@ -21,10 +21,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TeamOrbitSoft"
         tools:targetApi="31">
+<!--        <activity-->
+<!--            android:name=".Saeidian2.sae"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".Moosavi.moosavi_login"
             android:exported="false" />
-
         <activity
             android:name=".Gorji.GorjiPhoneNumberActivity"
             android:exported="false" />

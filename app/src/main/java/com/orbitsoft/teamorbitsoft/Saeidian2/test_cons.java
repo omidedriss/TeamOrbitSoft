@@ -1,25 +1,62 @@
+//package com.orbitsoft.teamorbitsoft.Saeidian2;
+//
+//public class test_cons {
+//
+//    private String email,pass;
+//    public test_cons(String name10,String family10) {
+//
+//    }
+//
+//    public String getEmail() {
+//        return email;
+//    }
+//
+//    public void setEmail(String email) {
+//        this.email = email;
+//    }
+//
+//    public String getPass() {
+//        return pass;
+//    }
+//
+//    public void setPass(String pass) {
+//        this.pass = pass;
+//    }
+//}
 package com.orbitsoft.teamorbitsoft.Saeidian2;
 
 public class test_cons {
 
-    private String email,pass;
-    public test_cons(String name10,String family10) {
-
+    public String name2,family2,phone2;
+        public test_cons(String name,String family,String phone) {
+//        this.name2=name;
+//        this.sex2=sex;
+        name2=name;
+        family2=family;
+        phone2=phone;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPass() {
-        return pass;
-    }
-
-    public void setPass(String pass) {
-        this.pass = pass;
-    }
+//    public int bmi()
+//    {
+//        return weight2*height2;
+//    }
+//public String contact()
+//    {
+//        name2+"\n"family2+phone2;
+//    }
+//    public String getEmail() {
+//        return email;
+//    }
+//
+//    public void setEmail(String email) {
+//        this.email = email;
+//    }
+//
+//    public String getPass() {
+//        return pass;
+//    }
+//
+//    public void setPass(String pass) {
+//        this.pass = pass;
+//    }
 }

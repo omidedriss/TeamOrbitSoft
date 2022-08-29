@@ -112,5 +112,16 @@
         android:text="exit"
         android:textColor="#000"
         android:textSize="25dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/custom_contact"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fact"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/sms_drawable2"
+        android:text="custom contact"
+        android:textColor="#000"
+        android:textSize="25dp" />
 
 </RelativeLayout>

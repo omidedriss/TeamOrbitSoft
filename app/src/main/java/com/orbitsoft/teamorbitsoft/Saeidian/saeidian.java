@@ -20,6 +20,7 @@ import android.widget.Toast;
 
 import com.orbitsoft.teamorbitsoft.MainActivity;
 import com.orbitsoft.teamorbitsoft.R;
+import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian2_main;
 import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_factorial;
 import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_login1;
 import com.orbitsoft.teamorbitsoft.Saeidian2.test_fact;
@@ -40,6 +41,7 @@ public class saeidian extends AppCompatActivity {
     Button factorial;
     Button bmi;
     Button exit2;
+    Button custom_conatct;
     public Button name2,family2;
     //private Dialog dialog;
     private List<String>list;
@@ -121,6 +123,7 @@ factorial=(Button) findViewById(R.id.fact);
         dial = findViewById(R.id.dial);
         map = findViewById(R.id.map);
         exit2 = (Button) findViewById(R.id.exit_saeidian_2);
+        custom_conatct = (Button) findViewById(R.id.custom_contact);
         call = findViewById(R.id.call);
         //bmi = findViewById(R.id.button6);
 //         exit = (Button) findViewById(R.id.exit);
@@ -230,6 +233,15 @@ factorial=(Button) findViewById(R.id.fact);
         {
             Intent in = new Intent(Intent.ACTION_PICK, ContactsContract.CommonDataKinds.Phone.CONTENT_URI);
             startActivityForResult(in, RESULT_PICK_CONTACT);
+        });
+        custom_conatct.setOnClickListener(view ->
+
+        {
+            Intent i = new
+                    Intent(saeidian.this, saeidian2_main.class);
+            Bundle bundle = new Bundle();
+            i.putExtras(bundle);
+            startActivity(i);
         });
 
     }
