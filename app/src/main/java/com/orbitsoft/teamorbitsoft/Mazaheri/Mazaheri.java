@@ -4,8 +4,7 @@ import static java.lang.Math.random;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Window;
-import android.view.WindowManager;
+
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -29,20 +28,17 @@ public class Mazaheri extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
-        getSupportActionBar().hide(); // hide the title bar
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
+
 
         setContentView(R.layout.activity_mazaheri);
 
         initialliz();
 
         //رفتن به صفحه اینتنت شامل شماره گیری سریع،شماره گیری دو مرحله ای، دفتر تلفن ،رجوع به سایت
-        btmazintent.setOnClickListener(v -> {
-            Intent imazintent=new Intent(Mazaheri.this, MazIntent.class);
-            startActivity(imazintent);
-        });
+     //   btmazintent.setOnClickListener(v -> {
+     //       Intent imazintent=new Intent(Mazaheri.this, MazNewIntent.class);
+     //       startActivity(imazintent);
+     //   });
         //ارسال نام با باندل و فامیل با اینتنت
         btmaznamefamil.setOnClickListener(v -> {
             Intent imaznamefamil=new Intent(Mazaheri.this, MazGetNameFamil.class);
