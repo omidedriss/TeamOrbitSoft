@@ -36,7 +36,7 @@ public class LifeCycleActivity extends AppCompatActivity {
 
     @Override
     protected void onPause() {
-        Log.d("lifecycle", "pause");
+        Log.d("lifecycle", "pauseTest");
         super.onPause();
     }
 
