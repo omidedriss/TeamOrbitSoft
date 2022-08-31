@@ -64,7 +64,7 @@
             android:name=".Saeidian.saeidian"
             android:exported="false" />
         <activity
-            android:name=".Saeidian2.saeidian_factorial"
+            android:name=".Saeidian.saeidian_factorial"
             android:exported="false" />
         <activity
             android:name=".Saeidian.saeidian2"
@@ -76,19 +76,19 @@
             android:name=".Saeidian.saeidianBrowser"
             android:exported="false" />
         <activity
-            android:name=".Saeidian2.saeidian_custom_contact"
+            android:name=".Saeidian.saeidian_custom_contact"
             android:exported="false" />
         <activity
-            android:name=".Saeidian2.saeidian_login1"
+            android:name=".Saeidian.saeidian_login1"
             android:exported="false" />
         <activity
-            android:name=".Saeidian2.saeidian_login2"
+            android:name=".Saeidian.saeidian_login2"
             android:exported="false" />
         <activity
-            android:name=".Saeidian2.saeidian_login3"
+            android:name=".Saeidian.saeidian_login3"
             android:exported="false" />
         <activity
-            android:name=".Saeidian2.saeidian_login4"
+            android:name=".Saeidian.saeidian_login4"
             android:exported="false" />
         <activity
             android:name=".example.MyDialog"

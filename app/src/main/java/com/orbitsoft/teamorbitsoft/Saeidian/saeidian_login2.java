@@ -1,14 +1,11 @@
-package com.orbitsoft.teamorbitsoft.Saeidian2;
+package com.orbitsoft.teamorbitsoft.Saeidian;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.os.Message;
 import android.telephony.SmsManager;
-import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,20 +22,8 @@ import android.widget.Toast;
 //import com.google.firebase.auth.PhoneAuthOptions;
 //import com.google.firebase.auth.PhoneAuthProvider;
 import com.orbitsoft.teamorbitsoft.R;
-import com.orbitsoft.teamorbitsoft.Saeidian.saeidian2;
-import com.orbitsoft.teamorbitsoft.Saeidian.thesheox;
-import android.os.Bundle;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.NotificationCompatSideChannelService;
-
-import com.orbitsoft.teamorbitsoft.R;
 
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 public class saeidian_login2 extends AppCompatActivity {
     TextView show_number2;

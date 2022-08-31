@@ -20,9 +20,6 @@ import android.widget.Toast;
 
 import com.orbitsoft.teamorbitsoft.MainActivity;
 import com.orbitsoft.teamorbitsoft.R;
-import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_custom_contact;
-import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_factorial;
-import com.orbitsoft.teamorbitsoft.Saeidian2.test_fact;
 
 import java.util.ArrayList;
 import java.util.List;

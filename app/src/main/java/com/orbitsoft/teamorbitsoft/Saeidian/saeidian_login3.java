@@ -1,12 +1,9 @@
-package com.orbitsoft.teamorbitsoft.Saeidian2;
+package com.orbitsoft.teamorbitsoft.Saeidian;
 
-import android.Manifest;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.telephony.SmsManager;
-import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,16 +12,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.os.Bundle;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 
 import com.orbitsoft.teamorbitsoft.MainActivity;
 import com.orbitsoft.teamorbitsoft.R;
-import com.orbitsoft.teamorbitsoft.Saeidian.saeidian2;
-import com.orbitsoft.teamorbitsoft.Saeidian.thesheox;
 
 import java.util.Random;
 

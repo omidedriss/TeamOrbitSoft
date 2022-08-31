@@ -1,4 +1,4 @@
-package com.orbitsoft.teamorbitsoft.Saeidian2;
+package com.orbitsoft.teamorbitsoft.Saeidian;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.telephony.SmsManager;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,9 +19,6 @@ import android.widget.Toast;
 //import com.google.firebase.auth.PhoneAuthOptions;
 //import com.google.firebase.auth.PhoneAuthProvider;
 import com.orbitsoft.teamorbitsoft.R;
-import com.orbitsoft.teamorbitsoft.Saeidian.saeidian;
-
-import java.util.concurrent.TimeUnit;
 
 public class saeidian_login1 extends AppCompatActivity {
 

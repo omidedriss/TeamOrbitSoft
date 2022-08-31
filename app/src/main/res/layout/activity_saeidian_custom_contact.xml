@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Saeidian2.saeidian_custom_contact"
+    tools:context=".Saeidian.saeidian_custom_contact"
     >
 
     <FrameLayout
