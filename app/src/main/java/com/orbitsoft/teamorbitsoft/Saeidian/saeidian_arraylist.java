@@ -6,11 +6,14 @@ import android.os.Bundle;
 
 import com.orbitsoft.teamorbitsoft.R;
 
+import java.util.ArrayList;
+
 public class saeidian_arraylist extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saeidian_arraylist);
+
     }
 }

@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 import com.orbitsoft.teamorbitsoft.R;
 
+import java.util.ArrayList;
+
 public class saeidian_custom_contact extends AppCompatActivity {
     TextView c1, c2,c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16, c17, c18, c19, c20;
     TextView u1,u2,u3,u4,u5,u6,u7,u8,u9,u10,u11,u12,u13,u14,u15,u16,u17,u18,u19,u20;
@@ -151,27 +153,90 @@ public class saeidian_custom_contact extends AppCompatActivity {
         test_cons sepehr_cons = new test_cons("sepehr", "soltani", "09368927161");
         test_cons sina_cons = new test_cons("sina", "zamani", "09379163053");
 
+        ArrayList<test_cons> contact =new ArrayList<>();
+        contact.add(shayan_cons);
+        contact.add(abbas_cons);
+        contact.add(arian_cons);
+        contact.add(hossein_cons);
+        contact.add(ali_cons);
+        contact.add(mohammad_cons);
+        contact.add(amir_cons);
+        contact.add(amirali_cons);
+        contact.add(pouria_cons);
+        contact.add(ashkan_cons);
+        contact.add(mikaeil_cons);
+        contact.add(danial_cons);
+        contact.add(erfan_cons);
+        contact.add(iman_cons);
+        contact.add(kiarash_cons);
+        contact.add(saman_cons);
+        contact.add(mehdi_cons);
+        contact.add(nikan_cons);
+        contact.add(sepehr_cons);
+        contact.add(sina_cons);
 
-        String shayan=shayan_cons.name2+" "+shayan_cons.family2;
-        String abbas=abbas_cons.name2+" "+abbas_cons.family2;
-        String arian=arian_cons.name2+" "+arian_cons.family2;
-        String hossein=hossein_cons.name2+" "+hossein_cons.family2;
-        String ali=ali_cons.name2+" "+ali_cons.family2;
-        String mohammad=mohammad_cons.name2+" "+mohammad_cons.family2;
-        String amir=amir_cons.name2+" "+amir_cons.family2;
-        String amirali=amirali_cons.name2+" "+amirali_cons.family2;
-        String pouria=pouria_cons.name2+" "+pouria_cons.family2;
-        String ashkan=ashkan_cons.name2+" "+ashkan_cons.family2;
-        String mikaeil=mikaeil_cons.name2+" "+mikaeil_cons.family2;
-        String danial=danial_cons.name2+" "+danial_cons.family2;
-        String erfan=erfan_cons.name2+" "+erfan_cons.family2;
-        String iman=iman_cons.name2+" "+iman_cons.family2;
-        String kiarash=kiarash_cons.name2+" "+kiarash_cons.family2;
-        String saman=saman_cons.name2+" "+saman_cons.family2;
-        String mehdi=mehdi_cons.name2+" "+mehdi_cons.family2;
-        String nikan=nikan_cons.name2+" "+nikan_cons.family2;
-        String sepehr=sepehr_cons.name2+" "+sepehr_cons.family2;
-        String sina=sina_cons.name2+" "+sina_cons.family2;
+        test_cons get_contact0=contact.get(0);
+        test_cons get_contact1=contact.get(1);
+        test_cons get_contact2=contact.get(2);
+        test_cons get_contact3=contact.get(3);
+        test_cons get_contact4=contact.get(4);
+        test_cons get_contact5=contact.get(5);
+        test_cons get_contact6=contact.get(6);
+        test_cons get_contact7=contact.get(7);
+        test_cons get_contact8=contact.get(8);
+        test_cons get_contact9=contact.get(9);
+        test_cons get_contact10=contact.get(10);
+        test_cons get_contact11=contact.get(11);
+        test_cons get_contact12=contact.get(12);
+        test_cons get_contact13=contact.get(13);
+        test_cons get_contact14=contact.get(14);
+        test_cons get_contact15=contact.get(15);
+        test_cons get_contact16=contact.get(16);
+        test_cons get_contact17=contact.get(17);
+        test_cons get_contact18=contact.get(18);
+        test_cons get_contact19=contact.get(19);
+
+        String shayan=get_contact0.name2+get_contact0.family2;
+        String abbas=get_contact1.name2+get_contact1.family2;
+        String arian=get_contact2.name2+get_contact2.family2;
+        String hossein=get_contact3.name2+get_contact3.family2;
+        String ali=get_contact4.name2+get_contact4.family2;
+        String mohammad=get_contact5.name2+get_contact5.family2;
+        String amir=get_contact6.name2+get_contact6.family2;
+        String amirali=get_contact7.name2+get_contact7.family2;
+        String pouria=get_contact8.name2+get_contact8.family2;
+        String ashkan=get_contact9.name2+get_contact9.family2;
+        String mikaeil=get_contact10.name2+get_contact10.family2;
+        String danial=get_contact11.name2+get_contact11.family2;
+        String erfan=get_contact12.name2+get_contact12.family2;
+        String iman=get_contact13.name2+get_contact13.family2;
+        String kiarash=get_contact14.name2+get_contact14.family2;
+        String saman=get_contact15.name2+get_contact15.family2;
+        String mehdi=get_contact16.name2+get_contact16.family2;
+        String nikan=get_contact17.name2+get_contact17.family2;
+        String sepehr=get_contact18.name2+get_contact18.family2;
+        String sina=get_contact19.name2+get_contact19.family2;
+
+        String shayan2=shayan_cons.name2+" "+shayan_cons.family2;
+        String abbas2=abbas_cons.name2+" "+abbas_cons.family2;
+        String arian2=arian_cons.name2+" "+arian_cons.family2;
+        String hossein2=hossein_cons.name2+" "+hossein_cons.family2;
+        String ali2=ali_cons.name2+" "+ali_cons.family2;
+        String mohammad2=mohammad_cons.name2+" "+mohammad_cons.family2;
+        String amir2=amir_cons.name2+" "+amir_cons.family2;
+        String amirali2=amirali_cons.name2+" "+amirali_cons.family2;
+        String pouria2=pouria_cons.name2+" "+pouria_cons.family2;
+        String ashkan2=ashkan_cons.name2+" "+ashkan_cons.family2;
+        String mikaeil2=mikaeil_cons.name2+" "+mikaeil_cons.family2;
+        String danial2=danial_cons.name2+" "+danial_cons.family2;
+        String erfan2=erfan_cons.name2+" "+erfan_cons.family2;
+        String iman2=iman_cons.name2+" "+iman_cons.family2;
+        String kiarash2=kiarash_cons.name2+" "+kiarash_cons.family2;
+        String saman2=saman_cons.name2+" "+saman_cons.family2;
+        String mehdi2=mehdi_cons.name2+" "+mehdi_cons.family2;
+        String nikan2=nikan_cons.name2+" "+nikan_cons.family2;
+        String sepehr2=sepehr_cons.name2+" "+sepehr_cons.family2;
+        String sina2=sina_cons.name2+" "+sina_cons.family2;
 
 
 
@@ -218,149 +283,149 @@ public class saeidian_custom_contact extends AppCompatActivity {
         u19.setVisibility(View.GONE);
         u20.setVisibility(View.GONE);
 
-        u1.setText(shayan_cons.phone2);
-        u2.setText(abbas_cons.phone2);
-        u3.setText(arian_cons.phone2);
-        u4.setText(hossein_cons.phone2);
-        u5.setText(ali_cons.phone2);
-        u6.setText(mohammad_cons.phone2);
-        u7.setText(amir_cons.phone2);
-        u8.setText(amirali_cons.phone2);
-        u9.setText(pouria_cons.phone2);
-        u11.setText(mikaeil_cons.phone2);
-        u10.setText(ashkan_cons.phone2);
-        u12.setText(danial_cons.phone2);
-        u13.setText(erfan_cons.phone2);
-        u14.setText(iman_cons.phone2);
-        u15.setText(kiarash_cons.phone2);
-        u16.setText(saman_cons.phone2);
-        u17.setText(mehdi_cons.phone2);
-        u18.setText(nikan_cons.phone2);
-        u19.setText(sepehr_cons.phone2);
-        u20.setText(sina_cons.phone2);
+        u1.setText(get_contact0.phone2);
+        u2.setText(get_contact1.phone2);
+        u3.setText(get_contact2.phone2);
+        u4.setText(get_contact3.phone2);
+        u5.setText(get_contact4.phone2);
+        u6.setText(get_contact5.phone2);
+        u7.setText(get_contact6.phone2);
+        u8.setText(get_contact7.phone2);
+        u9.setText(get_contact8.phone2);
+        u11.setText(get_contact9.phone2);
+        u10.setText(get_contact10.phone2);
+        u12.setText(get_contact11.phone2);
+        u13.setText(get_contact12.phone2);
+        u14.setText(get_contact13.phone2);
+        u15.setText(get_contact14.phone2);
+        u16.setText(get_contact15.phone2);
+        u17.setText(get_contact16.phone2);
+        u18.setText(get_contact17.phone2);
+        u19.setText(get_contact18.phone2);
+        u20.setText(get_contact19.phone2);
 
 
         a2.setOnClickListener(view ->
         {
             Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-            sendIntent.setData(Uri.parse("sms:"+shayan_cons.phone2));
+            sendIntent.setData(Uri.parse("sms:"+get_contact0.phone2));
             startActivity(sendIntent);
 //   sendIntent.putExtra("sms_body", "tessst");
         });
         b2.setOnClickListener(view ->
         {
             Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-            sendIntent.setData(Uri.parse("sms:"+abbas_cons.phone2));
+            sendIntent.setData(Uri.parse("sms:"+get_contact1.phone2));
             startActivity(sendIntent);
 
         });
         d2.setOnClickListener(view ->
         {
             Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-            sendIntent.setData(Uri.parse("sms:"+arian_cons.phone2));
+            sendIntent.setData(Uri.parse("sms:"+get_contact2.phone2));
             startActivity(sendIntent);
 
         });
         e2.setOnClickListener(view ->
         {
             Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-            sendIntent.setData(Uri.parse("sms:"+hossein_cons.phone2));
+            sendIntent.setData(Uri.parse("sms:"+get_contact3.phone2));
             startActivity(sendIntent);
         });
         f2.setOnClickListener(view ->
         {
             Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-            sendIntent.setData(Uri.parse("sms:"+ali_cons.phone2));
+            sendIntent.setData(Uri.parse("sms:"+get_contact4.phone2));
             startActivity(sendIntent);
         });
         g2.setOnClickListener(view ->
         {
             Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-            sendIntent.setData(Uri.parse("sms:"+mohammad_cons.phone2));
+            sendIntent.setData(Uri.parse("sms:"+get_contact5.phone2));
             startActivity(sendIntent);
         });
         h2.setOnClickListener(view ->
         {
             Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-            sendIntent.setData(Uri.parse("sms:"+amir_cons.phone2));
+            sendIntent.setData(Uri.parse("sms:"+get_contact6.phone2));
             startActivity(sendIntent);
         });
         i2.setOnClickListener(view ->
         {
             Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-            sendIntent.setData(Uri.parse("sms:"+amirali_cons.phone2));
+            sendIntent.setData(Uri.parse("sms:"+get_contact7.phone2));
             startActivity(sendIntent);
         });
         j2.setOnClickListener(view ->
         {
             Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-            sendIntent.setData(Uri.parse("sms:"+pouria_cons.phone2));
+            sendIntent.setData(Uri.parse("sms:"+get_contact8.phone2));
             startActivity(sendIntent);
         });
         y2.setOnClickListener(view ->
         {
             Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-            sendIntent.setData(Uri.parse("sms:"+mikaeil_cons.phone2));
+            sendIntent.setData(Uri.parse("sms:"+get_contact9.phone2));
             startActivity(sendIntent);
         });
         k2.setOnClickListener(view ->
         {
             Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-            sendIntent.setData(Uri.parse("sms:"+ashkan_cons.phone2));
+            sendIntent.setData(Uri.parse("sms:"+get_contact10.phone2));
             startActivity(sendIntent);
         });
         l2.setOnClickListener(view ->
         {
             Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-            sendIntent.setData(Uri.parse("sms:"+danial_cons.phone2));
+            sendIntent.setData(Uri.parse("sms:"+get_contact11.phone2));
             startActivity(sendIntent);
         });
         m2.setOnClickListener(view ->
         {
             Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-            sendIntent.setData(Uri.parse("sms:"+erfan_cons.phone2));
+            sendIntent.setData(Uri.parse("sms:"+get_contact12.phone2));
             startActivity(sendIntent);
         });
         n2.setOnClickListener(view ->
         {
             Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-            sendIntent.setData(Uri.parse("sms:"+iman_cons.phone2));
+            sendIntent.setData(Uri.parse("sms:"+get_contact13.phone2));
             startActivity(sendIntent);
         });
         o2.setOnClickListener(view ->
         {
             Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-            sendIntent.setData(Uri.parse("sms:"+kiarash_cons.phone2));
+            sendIntent.setData(Uri.parse("sms:"+get_contact14.phone2));
             startActivity(sendIntent);
         });
         p2.setOnClickListener(view ->
         {
             Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-            sendIntent.setData(Uri.parse("sms:"+saman_cons.phone2));
+            sendIntent.setData(Uri.parse("sms:"+get_contact15.phone2));
             startActivity(sendIntent);
         });
         q2.setOnClickListener(view ->
         {
             Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-            sendIntent.setData(Uri.parse("sms:"+mehdi_cons.phone2));
+            sendIntent.setData(Uri.parse("sms:"+get_contact16.phone2));
             startActivity(sendIntent);
         });
         r2.setOnClickListener(view ->
         {
             Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-            sendIntent.setData(Uri.parse("sms:"+nikan_cons.phone2));
+            sendIntent.setData(Uri.parse("sms:"+get_contact17.phone2));
             startActivity(sendIntent);
         });
         s2.setOnClickListener(view ->
         {
             Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-            sendIntent.setData(Uri.parse("sms:"+sepehr_cons.phone2));
+            sendIntent.setData(Uri.parse("sms:"+get_contact18.phone2));
             startActivity(sendIntent);
         });
         t2.setOnClickListener(view ->
         {
             Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-            sendIntent.setData(Uri.parse("sms:"+sina_cons.phone2));
+            sendIntent.setData(Uri.parse("sms:"+get_contact19.phone2));
             startActivity(sendIntent);
         });
 
