@@ -12,135 +12,13 @@ import android.widget.TextView;
 import com.orbitsoft.teamorbitsoft.R;
 
 public class saeidian_custom_contact extends AppCompatActivity {
-    TextView c1;
-    TextView c2;
-    TextView c3;
-    TextView c4;
-    TextView c5;
-    TextView c6;
-    TextView c7;
-    TextView c8;
-    TextView c9;
-    TextView c10;
-    TextView c11;
-    TextView c12;
-    TextView c13;
-    TextView c14;
-    TextView c15;
-    TextView c16;
-    TextView c17;
-    TextView c18;
-    TextView c19;
-    TextView c20;
-
+    TextView c1, c2,c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16, c17, c18, c19, c20;
+    TextView u1,u2,u3,u4,u5,u6,u7,u8,u9,u10,u11,u12,u13,u14,u15,u16,u17,u18,u19,u20;
+    Button a1, b1, d1, e1, f1, g1, h1, i1, j1, y1, k1, l1, m1, n1, o1, p1, q1, r1, s1, t1;
+    Button a2, b2, d2, e2, f2, g2, h2, i2, j2, y2, k2, l2, m2, n2, o2, p2, q2, r2, s2, t2;
+    Button a3, b3, d3, e3, f3, g3, h3, i3, j3, y3, k3, l3, m3, n3, o3, p3, q3, r3, s3, t3;
     String aa;
-
-    TextView u1;
-    TextView u2;
-    TextView u3;
-    TextView u4;
-    TextView u5;
-    TextView u6;
-    TextView u7;
-    TextView u8;
-    TextView u9;
-    TextView u10;
-    TextView u11;
-    TextView u12;
-    TextView u13;
-    TextView u14;
-    TextView u15;
-    TextView u16;
-    TextView u17;
-    TextView u18;
-    TextView u19;
-    TextView u20;
-
-    Button a1;
-    Button b1;
-    Button d1;
-    Button e1;
-    Button f1;
-    Button g1;
-    Button h1;
-    Button i1;
-    Button j1;
-    Button y1;
-    Button k1;
-    Button l1;
-    Button m1;
-    Button n1;
-    Button o1;
-    Button p1;
-    Button q1;
-    Button r1;
-    Button s1;
-    Button t1;
-
-    Button a2;
-    Button b2;
-    Button d2;
-    Button e2;
-    Button f2;
-    Button g2;
-    Button h2;
-    Button i2;
-    Button j2;
-    Button y2;
-    Button k2;
-    Button l2;
-    Button m2;
-    Button n2;
-    Button o2;
-    Button p2;
-    Button q2;
-    Button r2;
-    Button s2;
-    Button t2;
-
-    Button a3;
-    Button b3;
-    Button d3;
-    Button e3;
-    Button f3;
-    Button g3;
-    Button h3;
-    Button i3;
-    Button j3;
-    Button y3;
-    Button k3;
-    Button l3;
-    Button m3;
-    Button n3;
-    Button o3;
-    Button p3;
-    Button q3;
-    Button r3;
-    Button s3;
-    Button t3;
-
-int aa1;
-    int aa2;
-    int aa3;
-    int aa4;
-    int aa5;
-    int aa6;
-    int aa7;
-    int aa8;
-    int aa9;
-    int aa10;
-    int aa11;
-    int aa12;
-    int aa13;
-    int aa14;
-    int aa15;
-    int aa16;
-    int aa17;
-    int aa18;
-    int aa19;
-    int aa20;
-
-
+    int aa1, aa2, aa3, aa4, aa5, aa6, aa7, aa8, aa9, aa10, aa11, aa12, aa13, aa14, aa15, aa16, aa17, aa18, aa19, aa20;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -250,35 +128,6 @@ int aa1;
         Button r3 = (Button) findViewById(R.id.r3);
         Button s3 = (Button) findViewById(R.id.s3);
         Button t3 = (Button) findViewById(R.id.t3);
-
-
-//        test_fact shayanfc=new test_fact();
-//        int fc=shayanfc.test_fact(6);
-//        Toast.makeText(saeidian2_main.this,Integer.toString(fc),Toast.LENGTH_LONG).show();
-
-//        int x = fuc(4);
-//        Toast.makeText(saeidian2_main.this, Integer.toString(x), Toast.LENGTH_LONG).show();
-
-//    int b=1;
-//    public int fuc(int a)
-//    {
-//        if(a==1)
-//        {
-//            return b;
-//        }
-//        else
-//        {
-//            b=b*a;
-//            return fuc(a-1);
-//        }
-//
-//    }
-//    public void cans ()
-//    {
-//        test_cons shayan_cons = new test_cons("shayan","saeidian");
-//        shayan_cons.setEmail("asv");
-//        shayan_cons.setPass("1234");
-//    }
 
 
         test_cons shayan_cons = new test_cons("shayan", "saeidian", "09173929711");
