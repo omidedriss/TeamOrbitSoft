@@ -512,7 +512,7 @@ int aa1;
             {
                 u3.setVisibility(View.VISIBLE);
             }
-            else if(aa3==1)
+            else if(aa3==2)
             {
                 u3.setVisibility(View.GONE);
             }
