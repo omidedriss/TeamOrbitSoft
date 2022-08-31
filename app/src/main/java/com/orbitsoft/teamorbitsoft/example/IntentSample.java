@@ -115,8 +115,10 @@ public class IntentSample extends AppCompatActivity {
                         Intent(IntentSample.this,MyBrowserActivity.class);
                Bundle bundle = new Bundle();
                bundle.putLong("testputLong",12);
-               i.putExtra("test", bundle);
-                i.setData(Uri.parse("http://www.amazon.com"));
+
+               i.putExtras( bundle);
+
+              //  i.setData(Uri.parse("http://www.amazon.com"));
                 startActivity(i);
 
 //                Uri uri = Uri.parse("https://instagram.com/metacomplex");
