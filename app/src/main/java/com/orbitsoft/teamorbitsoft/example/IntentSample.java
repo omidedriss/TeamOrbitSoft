@@ -51,11 +51,14 @@ public class IntentSample extends AppCompatActivity {
         {
             public void onClick(View arg0){
 
-                Intent i = new
-                Intent(android.content.Intent.ACTION_DIAL,
-                        Uri.parse("tel:+651234567"));
-                startActivity(i);
-
+//                Intent i = new
+//                Intent(android.content.Intent.ACTION_DIAL,
+//                        Uri.parse("tel:+651234567"));
+//                startActivity(i);
+                Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+                sendIntent.setData(Uri.parse("sms:"+"09132708488"));
+                sendIntent.putExtra("sms_body", "tessst");
+                startActivity(sendIntent);
 
                 //---OR---
 
