@@ -24,6 +24,9 @@ public class IntentSample extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intent);
+
+
+
         //---Web browser button---
         b1 = (Button) findViewById(R.id.btn_webbrowser);
         b1.setOnClickListener(new View.OnClickListener()
@@ -46,7 +49,7 @@ public class IntentSample extends AppCompatActivity {
         });
 
         //---Make calls button---
-        //b2 = (Button) findViewById(R.id.maz_makecalls);
+        b2 = (Button) findViewById(R.id.btmazdial);
         b2.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View arg0){
@@ -83,7 +86,7 @@ public class IntentSample extends AppCompatActivity {
         });
 
         //---Choose Contact button---
-       // b4 = (Button) findViewById(R.id.btn_chooseContact);
+        b4 = (Button) findViewById(R.id.btmazcontact);
         b4.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View arg0){
