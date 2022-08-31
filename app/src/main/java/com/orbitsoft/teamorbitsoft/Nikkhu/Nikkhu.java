@@ -24,7 +24,7 @@ import java.util.Random;
 public class Nikkhu extends AppCompatActivity implements View.OnClickListener {
     TextView txt;
 
-    Button bt1, bt2, bt3,bt_info ,btReturn;
+    Button bt1, bt2, bt3,bt_info ,btReturn,btn_factor;
     private Dialog d;
 
     @Override
@@ -34,6 +34,7 @@ public class Nikkhu extends AppCompatActivity implements View.OnClickListener {
 
 
         bt1 =(Button) findViewById(R.id.bt1);
+        btn_factor =(Button) findViewById(R.id.btn_factor);
         bt2 = (Button) findViewById(R.id.bt2);
         bt3 = (Button) findViewById(R.id.bt3);
         btReturn = findViewById(R.id.btReturn);
@@ -69,38 +70,38 @@ public class Nikkhu extends AppCompatActivity implements View.OnClickListener {
 
            case R.id.bt3:
 
-//               d.setContentView(R.layout.activity_nikoo_log);
-//               d.getWindow().setBackgroundDrawable(new ColorDrawable(android.R.color.black));
-//               Button bt_exit=d.findViewById(R.id.bt_exit);
-//               Button bt_cancel=d.findViewById(R.id.bt_cancel);
-//               bt_exit.setOnClickListener(new View.OnClickListener() {
-//                   @Override
-//                   public void onClick(View v) {
-//                     Intent i =new Intent(getApplicationContext(),MainActivity.class);
-//                     startActivity(i);
-//                   }
-//               });
+               d.setContentView(R.layout.activity_nikoo_log);
+               d.getWindow().setBackgroundDrawable(new ColorDrawable(android.R.color.black));
+               Button bt_exit=d.findViewById(R.id.bt_exit);
+               Button bt_cancel=d.findViewById(R.id.bt_cancel);
+              bt_exit.setOnClickListener(new View.OnClickListener() {
+                   @Override
+                   public void onClick(View v) {
+                     Intent i =new Intent(getApplicationContext(),MainActivity.class);
+                     startActivity(i);
+                   }
+               });
+               bt_cancel.setOnClickListener(new View.OnClickListener() {
+                   @Override
+                   public void onClick(View v) {
+                       Toast.makeText(getApplicationContext(),"cancel",Toast.LENGTH_LONG).show();
+                       d.dismiss();
+                   }
+               });
+               d.show();
+               break;
 
-//               bt_cancel.setOnClickListener(new View.OnClickListener() {
-//                   @Override
-//                   public void onClick(View v) {
-//                       Toast.makeText(getApplicationContext(),"cancel",Toast.LENGTH_LONG).show();
-//                       d.dismiss();
-//                   }
-//               });
-//               d.show();
-//               break;
-//
-//           case R.id.bt_info:
-//
-//               dilog d2 =new dilog();
-//               d2.show(getSupportFragmentManager(),"info");
-//               break;
+           case R.id.bt_info:
 
+               dilog d2 =new dilog(Nikkhu.this);
+               d2.show(getSupportFragmentManager(),"info");
+               break;
+           case R.id.btn_factor:
 
+                Intent i=new Intent(this,contact_list.class);
+                startActivity(i);
 
-
-
+               break;
 
 
 
@@ -108,5 +109,9 @@ public class Nikkhu extends AppCompatActivity implements View.OnClickListener {
 
 
         }
+
     }
+
+
+
 }

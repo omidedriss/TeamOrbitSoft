@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_contact_list.xml" value="0.16576086956521738" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_gorji.xml" value="0.2259963768115942" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_gorji_login.xml" value="0.2259963768115942" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_intent.xml" value="0.22314814814814815" />
@@ -19,7 +20,19 @@
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_nikkhu.xml" value="0.25" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_nikoo_info.xml" value="0.203125" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_nikoo_log.xml" value="0.203125" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_saaidian.xml" value="0.12228260869565218" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_saaidian2.xml" value="0.16576086956521738" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_saeidian2_login1.xml" value="0.16576086956521738" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_saeidian2_login2.xml" value="0.16576086956521738" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_saeidian2_login3.xml" value="0.16576086956521738" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_saeidian2_login4.xml" value="0.16576086956521738" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_saeidian2_main.xml" value="0.16576086956521738" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_saeidian_factorial.xml" value="0.2259963768115942" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_saeidian_login1.xml" value="0.16576086956521738" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_saeidian_login2.xml" value="0.16576086956521738" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_saeidian_login3.xml" value="0.16576086956521738" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_saeidian_login4.xml" value="0.16576086956521738" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_saeidianbrowser.xml" value="0.16576086956521738" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/menu/activity_main.xml" value="0.27291666666666664" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/menu/main.xml" value="0.20416666666666666" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/menu/second.xml" value="0.20416666666666666" />
