@@ -36,6 +36,8 @@ public class saeidian2_main extends AppCompatActivity {
     TextView c19;
     TextView c20;
 
+    String aa;
+
     TextView u1;
     TextView u2;
     TextView u3;
@@ -394,86 +396,126 @@ int aa1;
 
         a2.setOnClickListener(view ->
         {
-            u1.setText(shayan_cons.phone2);
-
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setData(Uri.parse("sms:"+shayan_cons.phone2));
+            startActivity(sendIntent);
+//   sendIntent.putExtra("sms_body", "tessst");
         });
         b2.setOnClickListener(view ->
         {
-            u2.setText(abbas_cons.phone2);
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setData(Uri.parse("sms:"+abbas_cons.phone2));
+            startActivity(sendIntent);
 
         });
         d2.setOnClickListener(view ->
         {
-            u3.setText(arian_cons.phone2);
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setData(Uri.parse("sms:"+arian_cons.phone2));
+            startActivity(sendIntent);
 
         });
         e2.setOnClickListener(view ->
         {
-            u4.setText(hossein_cons.phone2);
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setData(Uri.parse("sms:"+hossein_cons.phone2));
+            startActivity(sendIntent);
         });
         f2.setOnClickListener(view ->
         {
-            u5.setText(ali_cons.phone2);
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setData(Uri.parse("sms:"+ali_cons.phone2));
+            startActivity(sendIntent);
         });
         g2.setOnClickListener(view ->
         {
-            u6.setText(mohammad_cons.phone2);
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setData(Uri.parse("sms:"+mohammad_cons.phone2));
+            startActivity(sendIntent);
         });
         h2.setOnClickListener(view ->
         {
-            u7.setText(amir_cons.phone2);
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setData(Uri.parse("sms:"+amir_cons.phone2));
+            startActivity(sendIntent);
         });
         i2.setOnClickListener(view ->
         {
-            u8.setText(amirali_cons.phone2);
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setData(Uri.parse("sms:"+amirali_cons.phone2));
+            startActivity(sendIntent);
         });
         j2.setOnClickListener(view ->
         {
-            u9.setText(pouria_cons.phone2);
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setData(Uri.parse("sms:"+pouria_cons.phone2));
+            startActivity(sendIntent);
         });
         y2.setOnClickListener(view ->
         {
-            u10.setText(ashkan_cons.phone2);
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setData(Uri.parse("sms:"+mikaeil_cons.phone2));
+            startActivity(sendIntent);
         });
         k2.setOnClickListener(view ->
         {
-            u11.setText(mikaeil_cons.phone2);
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setData(Uri.parse("sms:"+ashkan_cons.phone2));
+            startActivity(sendIntent);
         });
         l2.setOnClickListener(view ->
         {
-            u12.setText(danial_cons.phone2);
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setData(Uri.parse("sms:"+danial_cons.phone2));
+            startActivity(sendIntent);
         });
         m2.setOnClickListener(view ->
         {
-            u13.setText(erfan_cons.phone2);
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setData(Uri.parse("sms:"+erfan_cons.phone2));
+            startActivity(sendIntent);
         });
         n2.setOnClickListener(view ->
         {
-            u14.setText(iman_cons.phone2);
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setData(Uri.parse("sms:"+iman_cons.phone2));
+            startActivity(sendIntent);
         });
         o2.setOnClickListener(view ->
         {
-            u15.setText(kiarash_cons.phone2);
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setData(Uri.parse("sms:"+kiarash_cons.phone2));
+            startActivity(sendIntent);
         });
         p2.setOnClickListener(view ->
         {
-            u16.setText(saman_cons.phone2);
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setData(Uri.parse("sms:"+saman_cons.phone2));
+            startActivity(sendIntent);
         });
         q2.setOnClickListener(view ->
         {
-            u17.setText(mehdi_cons.phone2);
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setData(Uri.parse("sms:"+mehdi_cons.phone2));
+            startActivity(sendIntent);
         });
         r2.setOnClickListener(view ->
         {
-            u18.setText(nikan_cons.phone2);
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setData(Uri.parse("sms:"+nikan_cons.phone2));
+            startActivity(sendIntent);
         });
         s2.setOnClickListener(view ->
         {
-            u19.setText(sepehr_cons.phone2);
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setData(Uri.parse("sms:"+sepehr_cons.phone2));
+            startActivity(sendIntent);
         });
         t2.setOnClickListener(view ->
         {
-            u20.setText(sina_cons.phone2);
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setData(Uri.parse("sms:"+sina_cons.phone2));
+            startActivity(sendIntent);
         });
 
 
@@ -481,11 +523,11 @@ int aa1;
         a3.setOnClickListener(view ->
         {
             aa1++;
-            if(aa1==1)
+            if(aa1%2==1)
             {
                 u1.setVisibility(View.VISIBLE);
             }
-            else if(aa1==2)
+            else if(aa1%2==0)
             {
                 u1.setVisibility(View.GONE);
             }
@@ -495,11 +537,11 @@ int aa1;
         b3.setOnClickListener(view ->
         {
             aa2++;
-            if(aa2==1)
+            if(aa2%2==1)
             {
                 u2.setVisibility(View.VISIBLE);
             }
-            else if(aa2==2)
+            else if(aa2%2==0)
             {
                 u2.setVisibility(View.GONE);
             }
@@ -508,11 +550,11 @@ int aa1;
         {
 
             aa3++;
-            if(aa3==1)
+            if(aa3%2==1)
             {
                 u3.setVisibility(View.VISIBLE);
             }
-            else if(aa3==2)
+            else if(aa3%2==0)
             {
                 u3.setVisibility(View.GONE);
             }
@@ -520,11 +562,11 @@ int aa1;
         e3.setOnClickListener(view ->
         {
             aa4++;
-            if(aa4==1)
+            if(aa4%2==1)
             {
                 u4.setVisibility(View.VISIBLE);
             }
-            else if(aa4==2)
+           else if(aa4%2==0)
             {
                 u4.setVisibility(View.GONE);
             }
@@ -532,11 +574,11 @@ int aa1;
         f3.setOnClickListener(view ->
         {
             aa5++;
-            if(aa5==1)
+            if(aa5%2==1)
             {
                 u5.setVisibility(View.VISIBLE);
             }
-            else if(aa5==2)
+            else if(aa5%2==0)
             {
                 u5.setVisibility(View.GONE);
             }
@@ -544,11 +586,11 @@ int aa1;
         g3.setOnClickListener(view ->
         {
             aa6++;
-            if(aa6==1)
+            if(aa6%2==1)
             {
                 u6.setVisibility(View.VISIBLE);
             }
-            else if(aa6==2)
+            else if(aa6%2==0)
             {
                 u6.setVisibility(View.GONE);
             }
@@ -556,11 +598,11 @@ int aa1;
         h3.setOnClickListener(view ->
         {
             aa7++;
-            if(aa7==1)
+            if(aa7%2==1)
             {
                 u7.setVisibility(View.VISIBLE);
             }
-            else if(aa7==2)
+            else if(aa7%2==0)
             {
                 u7.setVisibility(View.GONE);
             }
@@ -568,11 +610,11 @@ int aa1;
         i3.setOnClickListener(view ->
         {
             aa8++;
-            if(aa8==1)
+            if(aa8%2==1)
             {
                 u8.setVisibility(View.VISIBLE);
             }
-            else if(aa8==2)
+            else if(aa8%2==0)
             {
                 u8.setVisibility(View.GONE);
             }
@@ -580,11 +622,11 @@ int aa1;
         j3.setOnClickListener(view ->
         {
             aa9++;
-            if(aa9==1)
+            if(aa9%2==1)
             {
                 u9.setVisibility(View.VISIBLE);
             }
-            else if(aa9==2)
+           else if(aa9%2==0)
             {
                 u9.setVisibility(View.GONE);
             }
@@ -593,11 +635,11 @@ int aa1;
         y3.setOnClickListener(view ->
         {
             aa10++;
-            if(aa10==1)
+            if(aa10%2==1)
             {
                 u10.setVisibility(View.VISIBLE);
             }
-            else if(aa10==2)
+            else if(aa10%2==0)
             {
                 u10.setVisibility(View.GONE);
             }
@@ -605,11 +647,11 @@ int aa1;
         k3.setOnClickListener(view ->
         {
             aa11++;
-            if(aa11==1)
+            if(aa11%2==1)
             {
                 u11.setVisibility(View.VISIBLE);
             }
-            else if(aa11==2)
+            else if(aa11%2==0)
             {
                 u11.setVisibility(View.GONE);
             }
@@ -617,11 +659,11 @@ int aa1;
         l3.setOnClickListener(view ->
         {
             aa12++;
-            if(aa12==1)
+            if(aa12%2==1)
             {
                 u12.setVisibility(View.VISIBLE);
             }
-            else if(aa12==2)
+           else if(aa12%2==0)
             {
                 u12.setVisibility(View.GONE);
             }
@@ -629,11 +671,11 @@ int aa1;
         m3.setOnClickListener(view ->
         {
             aa13++;
-            if(aa13==1)
+            if(aa13%2==1)
             {
                 u13.setVisibility(View.VISIBLE);
             }
-            else if(aa13==2)
+            else if(aa13%2==0)
             {
                 u13.setVisibility(View.GONE);
             }
@@ -641,11 +683,11 @@ int aa1;
         n3.setOnClickListener(view ->
         {
             aa14++;
-            if(aa14==1)
+            if(aa14%2==1)
             {
                 u14.setVisibility(View.VISIBLE);
             }
-            else if(aa14==2)
+            else if(aa14%2==0)
             {
                 u14.setVisibility(View.GONE);
             }
@@ -653,11 +695,11 @@ int aa1;
         o3.setOnClickListener(view ->
         {
         aa15++;
-        if(aa15==1)
+            if(aa15%2==1)
         {
             u15.setVisibility(View.VISIBLE);
         }
-        else if(aa15==2)
+           else if(aa15%2==0)
         {
             u15.setVisibility(View.GONE);
         }
@@ -665,11 +707,11 @@ int aa1;
         p3.setOnClickListener(view ->
         {
             aa16++;
-            if(aa14==1)
+            if(aa16%2==1)
             {
                 u16.setVisibility(View.VISIBLE);
             }
-            else if(aa16==2)
+            else if(aa16%2==0)
             {
                 u16.setVisibility(View.GONE);
             }
@@ -677,11 +719,11 @@ int aa1;
         q3.setOnClickListener(view ->
         {
             aa17++;
-            if(aa17==1)
+            if(aa17%2==1)
             {
                 u17.setVisibility(View.VISIBLE);
             }
-            else if(aa17==2)
+           else if(aa17%2==0)
             {
                 u17.setVisibility(View.GONE);
             }
@@ -689,11 +731,11 @@ int aa1;
         r3.setOnClickListener(view ->
         {
             aa18++;
-            if(aa18==1)
+            if(aa18%2==1)
             {
                 u18.setVisibility(View.VISIBLE);
             }
-            else if(aa18==2)
+            else if(aa18%2==0)
             {
                 u18.setVisibility(View.GONE);
             }
@@ -701,11 +743,11 @@ int aa1;
         s3.setOnClickListener(view ->
         {
             aa19++;
-            if(aa19==1)
+            if(aa19%2==1)
             {
                 u19.setVisibility(View.VISIBLE);
             }
-            else if(aa19==2)
+            else if(aa19%2==0)
             {
                 u19.setVisibility(View.GONE);
             }
@@ -713,11 +755,11 @@ int aa1;
         t3.setOnClickListener(view ->
         {
             aa20++;
-            if(aa20==1)
+            if(aa20%2==1)
             {
                 u20.setVisibility(View.VISIBLE);
             }
-            else if(aa20==2)
+            else if(aa20%2==0)
             {
                 u20.setVisibility(View.GONE);
             }
