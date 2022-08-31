@@ -76,7 +76,7 @@
             android:name=".Saeidian.saeidianBrowser"
             android:exported="false" />
         <activity
-            android:name=".Saeidian2.saeidian2_main"
+            android:name=".Saeidian2.saeidian_custom_contact"
             android:exported="false" />
         <activity
             android:name=".Saeidian2.saeidian_login1"

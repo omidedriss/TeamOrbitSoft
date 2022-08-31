@@ -15,8 +15,6 @@ import com.orbitsoft.teamorbitsoft.Mazaheri.Mazaheri;
 
 import com.orbitsoft.teamorbitsoft.Moosavi.moosavi_login;
 import com.orbitsoft.teamorbitsoft.Nikkhu.Nikkhu;
-import com.orbitsoft.teamorbitsoft.Saeidian.saeidian;
-import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian2_main;
 import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_login1;
 import com.orbitsoft.teamorbitsoft.Salimi.SalimiActivity;
 import com.orbitsoft.teamorbitsoft.example.IntentSample;

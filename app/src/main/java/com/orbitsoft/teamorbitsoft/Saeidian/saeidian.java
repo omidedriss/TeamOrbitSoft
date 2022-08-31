@@ -20,9 +20,8 @@ import android.widget.Toast;
 
 import com.orbitsoft.teamorbitsoft.MainActivity;
 import com.orbitsoft.teamorbitsoft.R;
-import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian2_main;
+import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_custom_contact;
 import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_factorial;
-import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_login1;
 import com.orbitsoft.teamorbitsoft.Saeidian2.test_fact;
 
 import java.util.ArrayList;
@@ -238,7 +237,7 @@ factorial=(Button) findViewById(R.id.fact);
 
         {
             Intent i = new
-                    Intent(saeidian.this, saeidian2_main.class);
+                    Intent(saeidian.this, saeidian_custom_contact.class);
             Bundle bundle = new Bundle();
             i.putExtras(bundle);
             startActivity(i);

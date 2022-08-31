@@ -8,13 +8,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.orbitsoft.teamorbitsoft.R;
-import com.orbitsoft.teamorbitsoft.Saeidian.saeidian;
-import com.orbitsoft.teamorbitsoft.Saeidian.saeidian2;
 
-public class saeidian2_main extends AppCompatActivity {
+public class saeidian_custom_contact extends AppCompatActivity {
     TextView c1;
     TextView c2;
     TextView c3;
@@ -147,7 +144,7 @@ int aa1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_saeidian2_main);
+        setContentView(R.layout.activity_saeidian_custom_contact);
 //        cans();
         TextView c1 = findViewById(R.id.c1);
         TextView c2 = findViewById(R.id.c2);
