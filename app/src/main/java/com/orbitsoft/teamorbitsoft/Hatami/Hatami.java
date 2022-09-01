@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.telephony.SmsManager;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,19 +19,15 @@ import android.widget.Toast;
 
 //import com.google.firebase.auth.PhoneAuthOptions;
 //import com.google.firebase.auth.PhoneAuthProvider;
-import com.orbitsoft.teamorbitsoft.Hatami.logedIn;
 import com.orbitsoft.teamorbitsoft.R;
-import com.orbitsoft.teamorbitsoft.Saeidian.saeidian;
-
-import java.util.concurrent.TimeUnit;
 
 public class Hatami extends AppCompatActivity {
 
     EditText get_username;
     String get_username2;
-    String right_username = "alireza";
+    String right_username ="alireza";
     String get_password2;
-    String right_password = "12345aaa";
+    String right_password ="12345aaa";
     EditText get_password;
     Button login;
     String phone="09130169816";
@@ -41,7 +36,7 @@ public class Hatami extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hatami);
-        TextView no_acountt = findViewById(R.id.no_acount);
+        TextView no_account = findViewById(R.id.no_acount);
         TextView guest = findViewById(R.id.guest);
         TextView reset = findViewById(R.id.reset);
         get_username = (EditText) findViewById(R.id.get_username);
@@ -66,7 +61,7 @@ public class Hatami extends AppCompatActivity {
                 showToast();
             }
         });
-        no_acountt.setOnClickListener(view -> {
+        no_account.setOnClickListener(view -> {
             Intent i = new
                     Intent(Hatami.this, logedIn.class);
             Bundle bundle = new Bundle();
