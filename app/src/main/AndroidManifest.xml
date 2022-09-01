@@ -143,6 +143,12 @@
             android:name=".Mazaheri.MazMenu"
             android:exported="false" />
         <activity
+            android:name=".Mazaheri.MazTel1"
+            android:exported="false" />
+        <activity
+            android:name=".Mazaheri.MazTel2"
+            android:exported="false" />
+        <activity
             android:name=".example.MyBrowserActivity"
             android:exported="true"
             android:label="@string/app_name">
