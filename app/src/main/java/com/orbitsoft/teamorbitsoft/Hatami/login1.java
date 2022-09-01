@@ -57,7 +57,7 @@ public class login1 extends AppCompatActivity {
         signup.setOnClickListener(this::onClick);
         have_account.setOnClickListener(view -> {
             Intent i = new
-                    Intent(login1.this, logedIn.class);
+                    Intent(login1.this, login2.class);
             Bundle bundle = new Bundle();
             i.putExtras(bundle);
             startActivity(i);
