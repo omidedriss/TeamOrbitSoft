@@ -1,28 +1,110 @@
 package com.orbitsoft.teamorbitsoft.Hatami;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.net.Uri;
+import android.graphics.Color;
 import android.os.Bundle;
-import android.text.TextUtils;
+import android.telephony.SmsManager;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
-
-import com.orbitsoft.teamorbitsoft.MainActivity;
+//import com.google.firebase.auth.PhoneAuthOptions;
+//import com.google.firebase.auth.PhoneAuthProvider;
+import com.orbitsoft.teamorbitsoft.Hatami.logedIn;
 import com.orbitsoft.teamorbitsoft.R;
+import com.orbitsoft.teamorbitsoft.Saeidian.saeidian;
 
 import java.util.concurrent.TimeUnit;
 
 public class Hatami extends AppCompatActivity {
 
+    EditText get_username;
+    String get_username2;
+    String right_username = "alireza";
+    String get_password2;
+    String right_password = "12345aaa";
+    EditText get_password;
+    Button login;
+    String phone="09130169816";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hatami);
+        TextView no_acountt = findViewById(R.id.no_acount);
+        TextView guest = findViewById(R.id.guest);
+        TextView reset = findViewById(R.id.reset);
+        get_username = (EditText) findViewById(R.id.get_username);
+
+        login = (Button) findViewById(R.id.login2);
+        get_password = (EditText) findViewById(R.id.get_password);
+        get_username.setTextColor(Color.BLACK);
+        get_password.setTextColor(Color.BLACK);
+        login.setOnClickListener(view -> {
+            get_username2 = get_username.getText().toString();
+            get_password2 = get_password.getText().toString();
+
+            if (get_username2.equalsIgnoreCase(right_username) && get_password2.equalsIgnoreCase(right_password)) {
+
+                Intent i = new
+                        Intent(Hatami.this, logedIn.class);
+                Bundle bundle = new Bundle();
+
+                i.putExtras(bundle);
+                startActivity(i);
+            } else {
+                showToast();
+            }
+        });
+        no_acountt.setOnClickListener(view -> {
+            Intent i = new
+                    Intent(Hatami.this, logedIn.class);
+            Bundle bundle = new Bundle();
+            i.putExtras(bundle);
+            startActivity(i);
+
+
+
+        });
+        guest.setOnClickListener(view -> {
+            Intent i = new
+                    Intent(Hatami.this, logedIn.class);
+            Bundle bundle = new Bundle();
+            i.putExtras(bundle);
+            startActivity(i);
+        });
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SmsManager mySmsManager = SmsManager.getDefault();
+                mySmsManager.sendTextMessage(phone, null, "Shayan616114", null, null);
+            }
+        });
+
+    }
+    @SuppressLint("SetTextI18n")
+    public void showToast() {
+        LayoutInflater inflater = getLayoutInflater();
+        View layout = inflater.inflate(R.layout.saeidian_custom_toast, (ViewGroup) findViewById(R.id.toast_root));
+        TextView toastText = layout.findViewById(R.id.toast_text);
+        ImageView toastImage = layout.findViewById(R.id.toast_image);
+        toastText.setText("User Not Found");
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM, 0, 300);
+        toast.setDuration(Toast.LENGTH_SHORT);
+        toast.setView(layout);
+
+        toast.show();
+
     }
 }
