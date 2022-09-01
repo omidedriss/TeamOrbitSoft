@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Moosavi.moosavi_main_login_activity"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/moosavi_main_login_textview_toptext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="      Please enter the code below \n( with out any letter in capital mode )"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:fontFamily="casual" />
+
+    <EditText
+        android:id="@+id/moosavi_main_login_edittext_enterpass"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/moosavi_main_login_textview_toptext"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="10dp"
+        android:text="-----------------------------------------------"
+        android:textColor="#737373" />
+
+    <Button
+        android:id="@+id/moosavi_main_login_button_ok"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/moosavi_main_login_edittext_enterpass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="finish"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        app:backgroundTint="#FFFFFF"
+        app:fontFamily="casual" />
+    <FrameLayout
+        android:id="@+id/moosavi_main_login_framelayout_showpass"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/moosavi_main_login_textview_toptext"
+        android:layout_marginTop="80dp"
+        >
+        <ImageView
+            android:id="@+id/moosavi_main_login_imageview_showpass"
+            android:scaleType="fitCenter"
+            android:src="@drawable/moosavi_main_login_drawable_png_b394q17"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            />
+    </FrameLayout>
+</RelativeLayout>
