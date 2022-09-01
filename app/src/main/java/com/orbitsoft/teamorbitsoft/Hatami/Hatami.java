@@ -87,7 +87,7 @@ public class Hatami extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 SmsManager mySmsManager = SmsManager.getDefault();
-                mySmsManager.sendTextMessage(phone, null, "Shayan616114", null, null);
+                mySmsManager.sendTextMessage(phone, null, "12345aaa", null, null);
             }
         });
 
