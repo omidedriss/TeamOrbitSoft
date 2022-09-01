@@ -11,6 +11,7 @@ import com.orbitsoft.teamorbitsoft.Gorji.Gorji;
 import com.orbitsoft.teamorbitsoft.Hatami.Hatami;
 import com.orbitsoft.teamorbitsoft.Kanani.Kanani;
 //import com.orbitsoft.teamorbitsoft.Mazaheri.MazProjects;
+import com.orbitsoft.teamorbitsoft.Mazaheri.MazProjects;
 import com.orbitsoft.teamorbitsoft.Mazaheri.Mazaheri;
 
 
@@ -55,8 +56,8 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
         });
 
         btmaz.setOnClickListener(v -> {
-//                Intent imaz=new Intent(this, MazProjects.class);
-//                startActivity(imaz);
+                Intent imaz=new Intent(this, MazProjects.class);
+               startActivity(imaz);
                 }
         );
         btSaeedian.setOnClickListener(v -> {
