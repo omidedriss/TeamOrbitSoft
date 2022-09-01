@@ -83,12 +83,9 @@ public class Hatami extends AppCompatActivity {
             i.putExtras(bundle);
             startActivity(i);
         });
-        reset.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                SmsManager mySmsManager = SmsManager.getDefault();
-                mySmsManager.sendTextMessage(phone, null, "12345aaa", null, null);
-            }
+        reset.setOnClickListener(view -> {
+            SmsManager mySmsManager = SmsManager.getDefault();
+            mySmsManager.sendTextMessage(phone, null, "12345aaa", null, null);
         });
 
     }
