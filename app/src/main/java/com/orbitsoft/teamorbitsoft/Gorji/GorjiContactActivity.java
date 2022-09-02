@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.orbitsoft.teamorbitsoft.R;
 
+import java.time.Duration;
 import java.util.Random;
 
 public class GorjiContactActivity extends AppCompatActivity {
@@ -43,8 +44,8 @@ private long number = 9162020267l;
                 tv.setText("name : " + us.getName().toString() + "\t" + us.getFamily().toString()
                         + "\n \t" + us.getNumber());
                 tv.setTextSize(22f);
-                tv.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
-                        ViewGroup.LayoutParams.WRAP_CONTENT));
+                tv.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT
+                , ViewGroup.LayoutParams.WRAP_CONTENT));
                 ((LinearLayout) v1).addView(tv);}
                 case 1:{
                     User us = new User("Ali", "alavi", 9632514875l);
