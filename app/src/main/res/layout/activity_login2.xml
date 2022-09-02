@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images">
+
+
+    <TextView
+        android:id="@+id/otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otp2"
+        android:layout_gravity="center"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        android:text="Verification"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/yellowtail"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:text="Enter Verification code sent by sms"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/yellowtail" />
+
+
+    <TextView
+        android:id="@+id/phone1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/code"
+        android:layout_gravity="center"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="20dp"
+        android:text="Entered Phone Number : "
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/yellowtail" />
+
+    <TextView
+        android:id="@+id/phone2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone1"
+        android:layout_gravity="center"
+        android:layout_marginLeft="140dp"
+        android:layout_marginBottom="0dp"
+        android:text="phone"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/get_code"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/phone2"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/sms_drawable"
+        android:ems="10"
+        android:hint="Verification Code"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/wrong_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/get_code"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Wrong Number?"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirm"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wrong_number"
+        android:layout_marginLeft="35dp"
+
+        android:layout_marginTop="۸dp"
+        android:background="@color/material_dynamic_tertiary50"
+        android:text="confirm"
+        android:textColor="#000"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/resend_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirm"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Didnt receive code? Resend code"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:fontFamily="@font/yellowtail" />
+
+</RelativeLayout>

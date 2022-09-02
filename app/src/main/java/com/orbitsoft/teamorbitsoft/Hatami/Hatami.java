@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 //import com.google.firebase.auth.PhoneAuthOptions;
 //import com.google.firebase.auth.PhoneAuthProvider;
+import com.orbitsoft.teamorbitsoft.MainActivity;
 import com.orbitsoft.teamorbitsoft.R;
 
 public class Hatami extends AppCompatActivity {
@@ -52,7 +53,7 @@ public class Hatami extends AppCompatActivity {
             if (get_username2.equalsIgnoreCase(right_username) && get_password2.equalsIgnoreCase(right_password)) {
 
                 Intent i = new
-                        Intent(Hatami.this, logedIn.class);
+                        Intent(Hatami.this, MainActivity.class);
                 Bundle bundle = new Bundle();
 
                 i.putExtras(bundle);
@@ -63,7 +64,7 @@ public class Hatami extends AppCompatActivity {
         });
         no_account.setOnClickListener(view -> {
             Intent i = new
-                    Intent(Hatami.this, logedIn.class);
+                    Intent(Hatami.this,  login1.class);
             Bundle bundle = new Bundle();
             i.putExtras(bundle);
             startActivity(i);
@@ -73,7 +74,7 @@ public class Hatami extends AppCompatActivity {
         });
         guest.setOnClickListener(view -> {
             Intent i = new
-                    Intent(Hatami.this, logedIn.class);
+                    Intent(Hatami.this, MainActivity.class);
             Bundle bundle = new Bundle();
             i.putExtras(bundle);
             startActivity(i);
