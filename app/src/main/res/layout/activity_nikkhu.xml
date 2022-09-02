@@ -78,6 +78,21 @@
         app:layout_constraintVertical_bias="0.342" />
 
     <Button
+        android:id="@+id/btn_login"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onClick"
+        android:text="login page"
+        app:layout_constraintBottom_toTopOf="@+id/btReturn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_info"
+        app:layout_constraintVertical_bias="0.325"
+        tools:ignore="MissingConstraints" />
+
+    <Button
         android:id="@+id/btn_factor"
         android:layout_width="350dp"
         android:layout_height="50dp"

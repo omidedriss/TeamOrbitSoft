@@ -24,7 +24,7 @@ import java.util.Random;
 public class Nikkhu extends AppCompatActivity implements View.OnClickListener {
     TextView txt;
 
-    Button bt1, bt2, bt3,bt_info ,btReturn,btn_factor;
+    Button bt1, bt2, bt3,bt_info ,btReturn,btn_factor,btn_login;
     private Dialog d;
 
     @Override
@@ -37,6 +37,7 @@ public class Nikkhu extends AppCompatActivity implements View.OnClickListener {
         btn_factor =(Button) findViewById(R.id.btn_factor);
         bt2 = (Button) findViewById(R.id.bt2);
         bt3 = (Button) findViewById(R.id.bt3);
+        btn_login = (Button) findViewById(R.id.btn_login);
         btReturn = findViewById(R.id.btReturn);
         bt_info =(Button) findViewById(R.id.bt_info);
 
@@ -100,6 +101,12 @@ public class Nikkhu extends AppCompatActivity implements View.OnClickListener {
 
                 Intent i=new Intent(this,contact_list.class);
                 startActivity(i);
+
+               break;
+           case R.id.btn_login:
+
+              i=new Intent(this,nickoo_login.class);
+               startActivity(i);
 
                break;
 

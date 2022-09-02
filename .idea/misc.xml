@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/drawable-hdpi/edittex_style.xml" value="0.178" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/drawable-hdpi/sms_drawable2.xml" value="0.178" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/drawable-hdpi/sms_drawable3.xml" value="0.178" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/drawable/sms_drawable.xml" value="0.178" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_contact_list.xml" value="0.25" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_gorji.xml" value="0.2259963768115942" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_gorji_login.xml" value="0.2259963768115942" />
@@ -17,6 +21,8 @@
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_mazstartforresult_first.xml" value="0.22314814814814815" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_my_dialog.xml" value="0.27291666666666664" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_nickhoo_persnalinfo.xml" value="0.20416666666666666" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_nickoo_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_nickoo_sign_up.xml" value="0.20416666666666666" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_nikkhu.xml" value="0.25" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_nikoo_info.xml" value="0.203125" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_nikoo_log.xml" value="0.203125" />
