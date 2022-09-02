@@ -63,8 +63,6 @@ public class login2 extends AppCompatActivity {
             code_get = code.getText().toString();
 
             if (code_get.equalsIgnoreCase(code_read)|code_get.equalsIgnoreCase(message2)) {
-
-                showToast();
                 Intent i = new
                         Intent(login2.this, login3.class);
                 Bundle bundle1 = new Bundle();
@@ -111,23 +109,7 @@ public class login2 extends AppCompatActivity {
 
 
     }
-    @SuppressLint("SetTextI18n")
-    public void showToast() {
-        LayoutInflater inflater = getLayoutInflater();
-        View layout = inflater.inflate(R.layout.saeidian_custom_toast, (ViewGroup) findViewById(R.id.toast_root));
 
-        TextView toastText = layout.findViewById(R.id.toast_text);
-        toastText.setText("Correct_Input");
-
-
-        Toast toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.BOTTOM, 0, 300);
-        toast.setDuration(Toast.LENGTH_SHORT);
-        toast.setView(layout);
-
-        toast.show();
-
-    }
     @SuppressLint("SetTextI18n")
     public void showToast1() {
         LayoutInflater inflater = getLayoutInflater();

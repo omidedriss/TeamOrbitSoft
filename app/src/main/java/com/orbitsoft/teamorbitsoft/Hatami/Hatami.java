@@ -13,12 +13,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-//import com.google.firebase.auth.PhoneAuthOptions;
-//import com.google.firebase.auth.PhoneAuthProvider;
 import com.orbitsoft.teamorbitsoft.MainActivity;
 import com.orbitsoft.teamorbitsoft.R;
 
@@ -90,13 +87,11 @@ public class Hatami extends AppCompatActivity {
         LayoutInflater inflater = getLayoutInflater();
         View layout = inflater.inflate(R.layout.saeidian_custom_toast, (ViewGroup) findViewById(R.id.toast_root));
         TextView toastText = layout.findViewById(R.id.toast_text);
-        ImageView toastImage = layout.findViewById(R.id.toast_image);
         toastText.setText("User Not Found");
         Toast toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.BOTTOM, 0, 300);
         toast.setDuration(Toast.LENGTH_SHORT);
         toast.setView(layout);
-
         toast.show();
 
     }

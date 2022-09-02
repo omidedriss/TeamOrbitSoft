@@ -105,7 +105,7 @@
         android:layout_below="@+id/wrong_number"
         android:layout_marginLeft="35dp"
 
-        android:layout_marginTop="۸dp"
+        android:layout_marginTop="8dp"
         android:background="@color/material_dynamic_tertiary50"
         android:text="confirm"
         android:textColor="#000"

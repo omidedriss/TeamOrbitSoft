@@ -17,7 +17,6 @@ public class login3 extends AppCompatActivity {
     TextView phone;
     TextView password;
     String phone_read2;
-
     String name_read2;
     String email_read2;
     String password_read2;
