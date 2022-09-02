@@ -27,7 +27,7 @@ public class saeidian_login4 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_saeidian2_login4);
+        setContentView(R.layout.activity_saeidian3_login4);
 
         Bundle bundle = getIntent().getExtras();
         name =  findViewById(R.id.entered_name);

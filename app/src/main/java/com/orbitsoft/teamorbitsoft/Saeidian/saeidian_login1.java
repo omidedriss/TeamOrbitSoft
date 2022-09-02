@@ -34,7 +34,7 @@ public class saeidian_login1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_saeidian2_login1);
+        setContentView(R.layout.activity_saeidian3_login1);
         TextView no_acountt = findViewById(R.id.no_acount);
         TextView guest = findViewById(R.id.guest);
         TextView reset = findViewById(R.id.reset);

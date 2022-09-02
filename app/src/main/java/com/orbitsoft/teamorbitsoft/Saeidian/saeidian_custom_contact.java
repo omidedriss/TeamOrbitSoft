@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -153,6 +154,7 @@ public class saeidian_custom_contact extends AppCompatActivity {
         test_cons sepehr_cons = new test_cons("sepehr", "soltani", "09368927161");
         test_cons sina_cons = new test_cons("sina", "zamani", "09379163053");
 
+
         ArrayList<test_cons> contact =new ArrayList<>();
         contact.add(shayan_cons);
         contact.add(abbas_cons);
@@ -174,6 +176,20 @@ public class saeidian_custom_contact extends AppCompatActivity {
         contact.add(nikan_cons);
         contact.add(sepehr_cons);
         contact.add(sina_cons);
+//        ArrayList<String> people =new ArrayList<>();
+//        people.add("shayan");
+//        people.add("abaas");
+//        people.add("sepehr");
+//        people.add("sina");
+//        for(int i=0;i<contact.size();i++)
+//        {
+//           c1.setText(contact.get(i));
+//        }
+//
+//        for(test_cons test:contact)
+//        {
+//
+//        }
 
         test_cons get_contact0=contact.get(0);
         test_cons get_contact1=contact.get(1);
@@ -196,49 +212,47 @@ public class saeidian_custom_contact extends AppCompatActivity {
         test_cons get_contact18=contact.get(18);
         test_cons get_contact19=contact.get(19);
 
-        String shayan=get_contact0.name2+get_contact0.family2;
-        String abbas=get_contact1.name2+get_contact1.family2;
-        String arian=get_contact2.name2+get_contact2.family2;
-        String hossein=get_contact3.name2+get_contact3.family2;
-        String ali=get_contact4.name2+get_contact4.family2;
-        String mohammad=get_contact5.name2+get_contact5.family2;
-        String amir=get_contact6.name2+get_contact6.family2;
-        String amirali=get_contact7.name2+get_contact7.family2;
-        String pouria=get_contact8.name2+get_contact8.family2;
-        String ashkan=get_contact9.name2+get_contact9.family2;
-        String mikaeil=get_contact10.name2+get_contact10.family2;
-        String danial=get_contact11.name2+get_contact11.family2;
-        String erfan=get_contact12.name2+get_contact12.family2;
-        String iman=get_contact13.name2+get_contact13.family2;
-        String kiarash=get_contact14.name2+get_contact14.family2;
-        String saman=get_contact15.name2+get_contact15.family2;
-        String mehdi=get_contact16.name2+get_contact16.family2;
-        String nikan=get_contact17.name2+get_contact17.family2;
-        String sepehr=get_contact18.name2+get_contact18.family2;
-        String sina=get_contact19.name2+get_contact19.family2;
+        String shayan=get_contact0.name2+" "+get_contact0.family2;
+        String abbas=get_contact1.name2+" "+get_contact1.family2;
+        String arian=get_contact2.name2+" "+get_contact2.family2;
+        String hossein=get_contact3.name2+" "+get_contact3.family2;
+        String ali=get_contact4.name2+" "+get_contact4.family2;
+        String mohammad=get_contact5.name2+" "+get_contact5.family2;
+        String amir=get_contact6.name2+" "+get_contact6.family2;
+        String amirali=get_contact7.name2+" "+get_contact7.family2;
+        String pouria=get_contact8.name2+" "+get_contact8.family2;
+        String ashkan=get_contact9.name2+" "+get_contact9.family2;
+        String mikaeil=get_contact10.name2+" "+get_contact10.family2;
+        String danial=get_contact11.name2+" "+get_contact11.family2;
+        String erfan=get_contact12.name2+" "+get_contact12.family2;
+        String iman=get_contact13.name2+" "+get_contact13.family2;
+        String kiarash=get_contact14.name2+" "+get_contact14.family2;
+        String saman=get_contact15.name2+" "+get_contact15.family2;
+        String mehdi=get_contact16.name2+" "+get_contact16.family2;
+        String nikan=get_contact17.name2+" "+get_contact17.family2;
+        String sepehr=get_contact18.name2+" "+get_contact18.family2;
+        String sina=get_contact19.name2+" "+get_contact19.family2;
 
-        String shayan2=shayan_cons.name2+" "+shayan_cons.family2;
-        String abbas2=abbas_cons.name2+" "+abbas_cons.family2;
-        String arian2=arian_cons.name2+" "+arian_cons.family2;
-        String hossein2=hossein_cons.name2+" "+hossein_cons.family2;
-        String ali2=ali_cons.name2+" "+ali_cons.family2;
-        String mohammad2=mohammad_cons.name2+" "+mohammad_cons.family2;
-        String amir2=amir_cons.name2+" "+amir_cons.family2;
-        String amirali2=amirali_cons.name2+" "+amirali_cons.family2;
-        String pouria2=pouria_cons.name2+" "+pouria_cons.family2;
-        String ashkan2=ashkan_cons.name2+" "+ashkan_cons.family2;
-        String mikaeil2=mikaeil_cons.name2+" "+mikaeil_cons.family2;
-        String danial2=danial_cons.name2+" "+danial_cons.family2;
-        String erfan2=erfan_cons.name2+" "+erfan_cons.family2;
-        String iman2=iman_cons.name2+" "+iman_cons.family2;
-        String kiarash2=kiarash_cons.name2+" "+kiarash_cons.family2;
-        String saman2=saman_cons.name2+" "+saman_cons.family2;
-        String mehdi2=mehdi_cons.name2+" "+mehdi_cons.family2;
-        String nikan2=nikan_cons.name2+" "+nikan_cons.family2;
-        String sepehr2=sepehr_cons.name2+" "+sepehr_cons.family2;
-        String sina2=sina_cons.name2+" "+sina_cons.family2;
-
-
+//        String shayan2=shayan_cons.name2+" "+shayan_cons.family2;
+//        String abbas2=abbas_cons.name2+" "+abbas_cons.family2;
+//        String arian2=arian_cons.name2+" "+arian_cons.family2;
+//        String hossein2=hossein_cons.name2+" "+hossein_cons.family2;
+//        String ali2=ali_cons.name2+" "+ali_cons.family2;
+//        String mohammad2=mohammad_cons.name2+" "+mohammad_cons.family2;
+//        String amir2=amir_cons.name2+" "+amir_cons.family2;
+//        String amirali2=amirali_cons.name2+" "+amirali_cons.family2;
+//        String pouria2=pouria_cons.name2+" "+pouria_cons.family2;
+//        String ashkan2=ashkan_cons.name2+" "+ashkan_cons.family2;
+//        String mikaeil2=mikaeil_cons.name2+" "+mikaeil_cons.family2;
+//        String danial2=danial_cons.name2+" "+danial_cons.family2;
+//        String erfan2=erfan_cons.name2+" "+erfan_cons.family2;
+//        String iman2=iman_cons.name2+" "+iman_cons.family2;
+//        String kiarash2=kiarash_cons.name2+" "+kiarash_cons.family2;
+//        String saman2=saman_cons.name2+" "+saman_cons.family2;
+//        String mehdi2=mehdi_cons.name2+" "+mehdi_cons.family2;
+//        String nikan2=nikan_cons.name2+" "+nikan_cons.family2;
+//        String sepehr2=sepehr_cons.name2+" "+sepehr_cons.family2;
+//        String sina2=sina_cons.name2+" "+sina_cons.family2;
 
 
         c1.setText(shayan);
