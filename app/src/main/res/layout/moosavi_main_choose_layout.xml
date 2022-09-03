@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Moosavi.moosavi_main_choose_activity"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        >
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_weight="95"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="100"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_weight="20"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/moosavi_main_choose_textview_topic"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"
+                    app:fontFamily="casual"
+                    android:text="Choose an app to enter"
+                    android:layout_marginTop="50dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="80"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                >
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <Button
+                            android:id="@+id/moosavi_main_choose_button_contacts"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:backgroundTint="#FFFFFF"
+                            android:textColor="#000000"
+                            app:fontFamily="casual"
+                            android:text="contacts"
+                            android:textSize="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:id="@+id/moosavi_main_choose_textview_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    app:fontFamily="casual"
+                    android:text=" Moosavi"
+                    android:layout_alignParentLeft="true"
+                    />
+                <Button
+                    android:id="@+id/moosavi_main_choose_button_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:backgroundTint="#FFFFFF"
+                    android:textColor="#000000"
+                    app:fontFamily="casual"
+                    android:text="back"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

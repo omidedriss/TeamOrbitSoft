@@ -33,8 +33,10 @@
         android:layout_alignParentRight="true"
         android:layout_marginTop="80dp"
         android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/moosavi_main_login_imageview_showpass"
         android:text="-----------------------------------------------"
-        android:textColor="#737373" />
+        android:textColor="#737373"
+        tools:ignore="NotSibling" />
 
     <Button
         android:id="@+id/moosavi_main_login_button_ok"
@@ -48,6 +50,17 @@
         android:textSize="30dp"
         app:backgroundTint="#FFFFFF"
         app:fontFamily="casual" />
+    <TextView
+        android:id="@+id/moosavi_main_login_textview_wrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fontFamily="casual"
+        android:textColor="#FFFFFF"
+        android:text="Wrong pass word ! Try again"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/moosavi_main_login_button_ok"
+        android:layout_centerHorizontal="true"
+        />
     <FrameLayout
         android:id="@+id/moosavi_main_login_framelayout_showpass"
         android:layout_width="100dp"

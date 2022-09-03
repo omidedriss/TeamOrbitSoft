@@ -22,9 +22,20 @@
         android:theme="@style/Theme.TeamOrbitSoft"
         tools:targetApi="31">
         <activity
+            android:name=".moosavi_contacts_messaging_activity"
+            android:exported="false" />
+        <activity
+            android:name=".moosavi_checkingsim_first_activity"
+            android:exported="false" />
+        <activity
+            android:name=".moosavi_contacts_list_actvivity"
+            android:exported="false" />
+        <activity
+            android:name=".moosavi_main_choose_activity"
+            android:exported="false" />
+        <activity
             android:name=".Moosavi.moosavi_login"
             android:exported="false" />
-
         <activity
             android:name=".Gorji.GorjiPhoneNumberActivity"
             android:exported="false" />

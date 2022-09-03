@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Moosavi.moosavi_contacts_list_actvivity"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        >
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100"
+        >
+        <LinearLayout
+            android:layout_weight="95"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            >
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/moosavi_contacts_list_textview_gorji"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:text="Abbas Gorji"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp"
+                            app:fontFamily="casual" />
+
+                        <Button
+                            android:id="@+id/moosavi_contacts_list_button_gorjimessage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:text="message"
+                            android:textColor="#000000"
+                            app:backgroundTint="#FFFFFF"
+                            app:fontFamily="casual" />
+                        <Button
+                            android:id="@+id/moosavi_contacts_list_button_gorjicall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:backgroundTint="#FFFFFF"
+                            android:textColor="#000000"
+                            app:fontFamily="casual"
+                            android:text="call"
+                            android:layout_toLeftOf="@+id/moosavi_contacts_list_button_gorjimessage"
+                            android:layout_marginRight="10dp"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/moosavi_contacts_list_textview_edris"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:text="Omid Edris"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp"
+                            app:fontFamily="casual" />
+
+                        <Button
+                            android:id="@+id/moosavi_contacts_list_button_edrisimessage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:text="message"
+                            android:textColor="#000000"
+                            app:backgroundTint="#FFFFFF"
+                            app:fontFamily="casual" />
+
+                        <Button
+                            android:id="@+id/moosavi_contacts_list_button_edrisicall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@+id/moosavi_contacts_list_button_edrisimessage"
+                            android:text="call"
+                            android:textColor="#000000"
+                            app:backgroundTint="#FFFFFF"
+                            app:fontFamily="casual" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/moosavi_contacts_list_textview_hatami"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:text="Alireza Hatami"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp"
+                            app:fontFamily="casual" />
+
+                        <Button
+                            android:id="@+id/moosavi_contacts_list_button_hatamimessage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:text="message"
+                            android:textColor="#000000"
+                            app:backgroundTint="#FFFFFF"
+                            app:fontFamily="casual" />
+                        <Button
+                            android:id="@+id/moosavi_contacts_list_button_hatamiicall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:backgroundTint="#FFFFFF"
+                            android:textColor="#000000"
+                            app:fontFamily="casual"
+                            android:text="call"
+                            android:layout_toLeftOf="@+id/moosavi_contacts_list_button_hatamimessage"
+                            android:layout_marginRight="10dp"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/moosavi_contacts_list_textview_nikkhoo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:text="Hossein Nikkhoo"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp"
+                            app:fontFamily="casual" />
+
+                        <Button
+                            android:id="@+id/moosavi_contacts_list_button_nikkhoomessage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:text="message"
+                            android:textColor="#000000"
+                            app:backgroundTint="#FFFFFF"
+                            app:fontFamily="casual" />
+                        <Button
+                            android:id="@+id/moosavi_contacts_list_button_nikkhoocall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:backgroundTint="#FFFFFF"
+                            android:textColor="#000000"
+                            app:fontFamily="casual"
+                            android:text="call"
+                            android:layout_toLeftOf="@+id/moosavi_contacts_list_button_nikkhoomessage"
+                            android:layout_marginRight="10dp"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/moosavi_contacts_list_textview_salimi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:text="Amaneh Salimi"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp"
+                            app:fontFamily="casual" />
+
+                        <Button
+                            android:id="@+id/moosavi_contacts_list_button_salimimessage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:text="message"
+                            android:textColor="#000000"
+                            app:backgroundTint="#FFFFFF"
+                            app:fontFamily="casual" />
+                        <Button
+                            android:id="@+id/moosavi_contacts_list_button_salimicall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:backgroundTint="#FFFFFF"
+                            android:textColor="#000000"
+                            app:fontFamily="casual"
+                            android:text="call"
+                            android:layout_toLeftOf="@+id/moosavi_contacts_list_button_salimimessage"
+                            android:layout_marginRight="10dp"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/moosavi_contacts_list_textview_kanaani"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:text="Mitra Kanaani"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp"
+                            app:fontFamily="casual" />
+
+                        <Button
+                            android:id="@+id/moosavi_contacts_list_button_kanaanimessage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:text="message"
+                            android:textColor="#000000"
+                            app:backgroundTint="#FFFFFF"
+                            app:fontFamily="casual" />
+                        <Button
+                            android:id="@+id/moosavi_contacts_list_button_kanaanicall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:backgroundTint="#FFFFFF"
+                            android:textColor="#000000"
+                            app:fontFamily="casual"
+                            android:text="call"
+                            android:layout_toLeftOf="@+id/moosavi_contacts_list_button_kanaanimessage"
+                            android:layout_marginRight="10dp"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/moosavi_contacts_list_textview_saiedian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:text="Shayan Saiedian"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp"
+                            app:fontFamily="casual" />
+
+                        <Button
+                            android:id="@+id/moosavi_contacts_list_button_saiedianmessage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:text="message"
+                            android:textColor="#000000"
+                            app:backgroundTint="#FFFFFF"
+                            app:fontFamily="casual" />
+                        <Button
+                            android:id="@+id/moosavi_contacts_list_button_saiediancall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:backgroundTint="#FFFFFF"
+                            android:textColor="#000000"
+                            app:fontFamily="casual"
+                            android:text="call"
+                            android:layout_toLeftOf="@+id/moosavi_contacts_list_button_saiedianmessage"
+                            android:layout_marginRight="10dp"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/moosavi_contacts_list_textview_moosavi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:text="Shahriar Moosavi"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp"
+                            app:fontFamily="casual" />
+
+                        <Button
+                            android:id="@+id/moosavi_contacts_list_button_moosavimessage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:text="message"
+                            android:textColor="#000000"
+                            app:backgroundTint="#FFFFFF"
+                            app:fontFamily="casual" />
+                        <Button
+                            android:id="@+id/moosavi_contacts_list_button_moosavicall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:backgroundTint="#FFFFFF"
+                            android:textColor="#000000"
+                            app:fontFamily="casual"
+                            android:text="call"
+                            android:layout_toLeftOf="@+id/moosavi_contacts_list_button_moosavimessage"
+                            android:layout_marginRight="10dp"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/moosavi_contacts_list_textview_office"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:text="Metaco Office"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp"
+                            app:fontFamily="casual" />
+
+                        <Button
+                            android:id="@+id/moosavi_contacts_list_button_officemessage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:text="message"
+                            android:textColor="#000000"
+                            app:backgroundTint="#FFFFFF"
+                            app:fontFamily="casual" />
+                        <Button
+                            android:id="@+id/moosavi_contacts_list_button_officecall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:backgroundTint="#FFFFFF"
+                            android:textColor="#000000"
+                            app:fontFamily="casual"
+                            android:text="call"
+                            android:layout_toLeftOf="@+id/moosavi_contacts_list_button_officemessage"
+                            android:layout_marginRight="10dp"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/moosavi_contacts_list_textview_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text=" Moosavi > Contacts"
+                    android:textColor="#FFFFFF"
+                    app:fontFamily="casual" />
+                <Button
+                    android:id="@+id/moosavi_contacts_list_button_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:backgroundTint="#FFFFFF"
+                    android:textColor="#000000"
+                    app:fontFamily="casual"
+                    android:text="back"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
