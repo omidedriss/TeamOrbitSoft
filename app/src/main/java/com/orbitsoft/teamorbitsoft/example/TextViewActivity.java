@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.orbitsoft.teamorbitsoft.R;
 
@@ -42,5 +43,13 @@ public class TextViewActivity extends AppCompatActivity {
             }
         });
 
+
+        TextView textView = findViewById(R.id.textView7);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(TextViewActivity.this, "Test Click", Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }
