@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Mazaheri.MazIntent"    >
+
+    <Button
+        android:id="@+id/mazbtcall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Call" />
+
+    <Button
+        android:id="@+id/mazbtdial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dial" />
+
+    <Button
+        android:id="@+id/mazbtcontact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact" />
+
+    <Button
+        android:id="@+id/mazbtlaunchMyBrowser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Launch Browser" />
+
+    <Button
+        android:id="@+id/mazbtweb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Web" />
+
+    <Button
+        android:id="@+id/mazbtmap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Map" />
+
+    <Button
+        android:id="@+id/mazbtwebbundle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WebBundle" />
+</LinearLayout>

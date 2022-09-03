@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/maztextprojects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="My Projects" />
+
+    <Button
+        android:id="@+id/mazseries1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Series 1" />
+
+    <Button
+        android:id="@+id/mazseries2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Series 2" />
+
+    <Button
+        android:id="@+id/mazseries3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Series 3" />
+
+    <Button
+        android:id="@+id/mazseries4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Series 4" />
+
+    <Button
+        android:id="@+id/mazseries5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Series 5" />
+
+    <Button
+        android:id="@+id/mazseries6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Series 6" />
+    <Button
+        android:id="@+id/mazseries7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Series 7" />
+
+
+
+    <Button
+        android:id="@+id/mazexit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit" />
+</LinearLayout>
