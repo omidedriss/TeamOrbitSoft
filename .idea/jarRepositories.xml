@@ -46,5 +46,30 @@
       <option name="name" value="injected_offline_com" />
       <option name="url" value="file:/$PROJECT_DIR$/../../../as%20t2/.android/manual-offline-m2/com/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="injected_offline_logs" />
+      <option name="name" value="injected_offline_logs" />
+      <option name="url" value="file:/$PROJECT_DIR$/../../../as%20t2/.android/manual-offline-m2/logs/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="injected_offline_hooks" />
+      <option name="name" value="injected_offline_hooks" />
+      <option name="url" value="file:/$PROJECT_DIR$/../../../as%20t2/.android/manual-offline-m2/hooks/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="injected_offline_branches" />
+      <option name="name" value="injected_offline_branches" />
+      <option name="url" value="file:/$PROJECT_DIR$/../../../as%20t2/.android/manual-offline-m2/branches/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="injected_offline_refs" />
+      <option name="name" value="injected_offline_refs" />
+      <option name="url" value="file:/$PROJECT_DIR$/../../../as%20t2/.android/manual-offline-m2/refs/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="injected_offline_objects" />
+      <option name="name" value="injected_offline_objects" />
+      <option name="url" value="file:/$PROJECT_DIR$/../../../as%20t2/.android/manual-offline-m2/objects/" />
+    </remote-repository>
   </component>
 </project>
