@@ -6,6 +6,13 @@ public class Student extends User{
     int Avrage;
     String ClassName;
 
+    @Override
+    public void setName(String name) {
+        String NameTemp="Student Name :"+name;
+        super.setName(NameTemp);
+
+    }
+
     public int getGrade() {
         return Grade;
     }
