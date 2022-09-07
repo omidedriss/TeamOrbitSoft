@@ -1,6 +1,6 @@
 package com.orbitsoft.teamorbitsoft.example;
 
-public class Student extends User{
+public class Student extends User implements FatherUser{
 
     int Grade;
     int Avrage;
@@ -35,5 +35,10 @@ public class Student extends User{
 
     public void setClassName(String className) {
         ClassName = className;
+    }
+
+    @Override
+    public void FatherName(String res) {
+
     }
 }
