@@ -5,10 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Gorji.Gorji"
+
     >
 
 
     <LinearLayout
+        android:id="@+id/add_linear"
         android:layout_width="409dp"
         android:layout_height="729dp"
         android:orientation="vertical"
@@ -19,49 +21,76 @@
 
 
 
-        <androidx.appcompat.widget.AppCompatButton
+        <Button
             android:id="@+id/metaco"
-            android:background="@drawable/bt_background"
-            android:layout_width="match_parent"
+            app:shapeAppearanceOverlay="@style/gorji_style_metaco"
+            style="@style/gorji_style_metaco"
+            android:layout_width="400dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:text="Metaco"
-            android:textSize="25dp"
-/>
+            />
 
 
         <Button
             android:id="@+id/my_info"
-            android:layout_width="match_parent"
+            app:shapeAppearanceOverlay="@style/gorji_style_info"
+            style="@style/gorji_style_info"
+            android:layout_width="350dp"
+            android:layout_gravity="center_horizontal"
             android:layout_height="wrap_content"
             android:text="My Info" />
         <Button
             android:id="@+id/insta"
-            android:layout_width="match_parent"
+            app:shapeAppearanceOverlay="@style/gorji_style_insta"
+            style="@style/gorji_style_insta"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="Inesta" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/login"
-            android:layout_width="match_parent"
+            android:background="@drawable/gorji_background"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Login" />
 
         <Button
             android:id="@+id/fact_gorji"
-            android:layout_width="match_parent"
+            app:shapeAppearanceOverlay="@style/gorji_style_fact"
+            style="@style/gorji_style_fact"
+            android:layout_width="150dp"
+            android:layout_gravity="center_horizontal"
             android:layout_height="wrap_content"
             android:text="Fact" />
-        <androidx.appcompat.widget.AppCompatButton
+        <Button
             android:id="@+id/gorji_contact"
-            android:background="@drawable/bt_background"
-            android:layout_width="match_parent"
+            app:shapeAppearanceOverlay="@style/gorji_style_contact"
+            style="@style/gorji_style_contact"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:text="Contact"
             android:textSize="25dp"
             />
+
+        <Button
+            android:id="@+id/mohasebat"
+            android:layout_width="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:text="Mohasebat"
+            app:shapeAppearanceOverlay="@style/gorji_style_mohasebe"
+            style="@style/gorji_style_mohasebe"/>
+
         <Button
             android:id="@+id/exit"
-            android:layout_width="match_parent"
+            app:shapeAppearanceOverlay="@style/gorji_style_exit"
+            style="@style/gorji_style_exit"
+            android:layout_width="325dp"
+            android:layout_gravity="center_horizontal"
             android:layout_height="wrap_content"
             android:text="Exit" />
 
@@ -76,3 +105,4 @@
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+

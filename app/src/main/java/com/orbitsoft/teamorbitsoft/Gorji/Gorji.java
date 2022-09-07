@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,34 +12,28 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.SubMenu;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.orbitsoft.teamorbitsoft.R;
 import com.orbitsoft.teamorbitsoft.example.MyDialog;
 
 public class Gorji extends AppCompatActivity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
-private Button insta,myInfo,metaco,exit,login,fact,contact;
+private Button insta,myInfo,metaco,exit,login,fact,contact,mohasebe_bt;
 private CheckBox loginCheckBox;
+int x , y,q,w,b = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gorji);
         entry();
-        // کامنت برای تست برنچ
-        // کامنت برای تست برنچ
-        // کامنت برای تست برنچ
 
-        // کامنت برای تست برنچ
-
-        // کامنت برای تست برنچ
-
-        // کامنت برای تست برنچ
-
-        // کامنت برای تست برنچ
 
 
 
@@ -117,6 +112,10 @@ private CheckBox loginCheckBox;
         if(v.getId() == contact.getId()){
             contact();
         }
+        if(v.getId() == mohasebe_bt.getId()){
+            riazi();
+            add_text_view();
+        }
 
     }
 
@@ -147,6 +146,8 @@ private CheckBox loginCheckBox;
         loginCheckBox=findViewById(R.id.checkBox_login);
         fact = findViewById(R.id.fact_gorji);
         contact= findViewById(R.id.gorji_contact);
+        mohasebe_bt = findViewById(R.id.mohasebat);
+        mohasebe_bt.setOnClickListener(this);
         contact.setVisibility(View.GONE);
         contact.setOnClickListener(this);
         fact.setVisibility(View.GONE);
@@ -161,7 +162,7 @@ private CheckBox loginCheckBox;
         loginCheckBox.setOnCheckedChangeListener(this);
 
     }
-    int b = 1;
+
     public int fact1(int fa){
         if (fa == 1)
         {
@@ -200,5 +201,27 @@ private CheckBox loginCheckBox;
     public void contact(){
         Intent i = new Intent(getApplicationContext(),GorjiContactActivity.class);
         startActivity(i);
+    }
+    public void riazi(){
+                mohasebe  m = new mohasebe();
+                x= m.masahat(2,2,0);
+                y= m.masahat(0,0,2);
+                q=m.mohit(5,5,0);
+                w = m.mohit(0,0,6);
+
+    }
+    public void add_text_view(){
+        LinearLayout ln = findViewById(R.id.add_linear);
+        TextView tv =new TextView(Gorji.this);
+        tv.setTextSize(22f);
+        tv.setTextColor(getResources().getColor(R.color.white));
+
+        LinearLayout.LayoutParams params= new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT);
+        String st = String.valueOf("masahat mostatil = "+x + "\t masahat daire = "+y+"\t mohid mostatil = "+q
+                +"\t mohit daire = "+w);
+        tv.setLayoutParams(params);
+        tv.setText(st);
+        ln.addView(tv);
     }
 }
