@@ -25,6 +25,9 @@
             android:name=".example.TextViewActivity"
             android:exported="false" />
         <activity
+            android:name=".example.ButtonActivity"
+            android:exported="false" />
+        <activity
             android:name=".Gorji.GorjiContactActivity"
             android:exported="false" />
         <activity

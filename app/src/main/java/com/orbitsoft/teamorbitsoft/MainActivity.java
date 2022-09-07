@@ -21,6 +21,7 @@ import com.orbitsoft.teamorbitsoft.Saeidian.saeidian;
 import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian2_main;
 import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_login1;
 import com.orbitsoft.teamorbitsoft.Salimi.SalimiActivity;
+import com.orbitsoft.teamorbitsoft.example.ButtonActivity;
 import com.orbitsoft.teamorbitsoft.example.IntentSample;
 import com.orbitsoft.teamorbitsoft.example.LifeCycleActivity;
 import com.orbitsoft.teamorbitsoft.example.MyDialog;
@@ -51,7 +52,7 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
         TextViewExample.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent textView=new Intent(MainActivity.this, TextViewActivity.class);
+                Intent textView=new Intent(MainActivity.this, ButtonActivity.class);
                 startActivity(textView);
             }
         });

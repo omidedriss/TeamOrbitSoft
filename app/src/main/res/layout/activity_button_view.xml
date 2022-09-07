@@ -7,20 +7,26 @@
     android:orientation="vertical" >
 
 
-    <TextView
+    <Button
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/settings_header"
-
+        style="@style/Button.White"
 
         android:text="لطفا دکمه زیر را بزنید" />
-    <TextView
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="لطفا دکمه زیر را بزنید" />
+    <Button
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView7"
-        android:background="@drawable/selector"
+
         android:text="لطفا دکمه زیر را بزنید" />
 
     <Button
