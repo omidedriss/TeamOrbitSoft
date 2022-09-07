@@ -25,7 +25,7 @@ public class SalimiActivity extends AppCompatActivity implements View.OnClickLis
     Button button1;
 
      */
-   // EditText user, pass;
+   // EditText area, pass;
    // Button btn,rest;
   //  TextView error;
     EditText number;
@@ -83,7 +83,7 @@ public class SalimiActivity extends AppCompatActivity implements View.OnClickLis
                */
         ////////////////////////
         /////////////////////////////تمرین صفحه ی لاگین
-    /*    user = (EditText) findViewById(R.id.username);
+    /*    area = (EditText) findViewById(R.id.username);
         pass = (EditText) findViewById(R.id.password);
         btn = (Button) findViewById(R.id.login);
         rest = (Button) findViewById(R.id.reset);
@@ -93,7 +93,7 @@ public class SalimiActivity extends AppCompatActivity implements View.OnClickLis
 
     @SuppressLint("SetTextI18n")
     public void dothis(View v) {
-        String u = user.getText().toString();
+        String u = area.getText().toString();
         String p = pass.getText().toString();
         String check_email = "sy@scp.com";
         String check_pass = "abc@123";
@@ -115,7 +115,7 @@ public class SalimiActivity extends AppCompatActivity implements View.OnClickLis
             error.setVisibility(View.VISIBLE);
             error.setBackgroundColor(Color.parseColor("#D50000"));
             error.setText("Invalid Email or Invalid Password");
-            user.onEditorAction(EditorInfo.IME_ACTION_DONE);
+            area.onEditorAction(EditorInfo.IME_ACTION_DONE);
             pass.onEditorAction(EditorInfo.IME_ACTION_DONE);
         }
         else if (!u.equals(check_email)) {
@@ -139,7 +139,7 @@ public class SalimiActivity extends AppCompatActivity implements View.OnClickLis
         }
     }
     public  void dorest(View v){
-        user.setText("");
+        area.setText("");
         pass.setText("");
         pass.clearFocus();
     }

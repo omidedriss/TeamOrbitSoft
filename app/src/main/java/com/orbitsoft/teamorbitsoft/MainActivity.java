@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import com.orbitsoft.teamorbitsoft.Gorji.Gorji;
 import com.orbitsoft.teamorbitsoft.Hatami.Hatami;
+import com.orbitsoft.teamorbitsoft.Hatami.interface1;
 import com.orbitsoft.teamorbitsoft.Kanani.Kanani;
 import com.orbitsoft.teamorbitsoft.Mazaheri.Mazaheri;
 
@@ -74,7 +75,7 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
                 }
         );
         btHatami.setOnClickListener(v -> {
-                    Intent imaz=new Intent(this, Hatami.class);
+                    Intent imaz=new Intent(this, interface1.class);
                     startActivity(imaz);
                 }
         );

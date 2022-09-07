@@ -74,7 +74,7 @@
     <!-- Text view for result view-->
     <!-- give the id TextView-->
 
-    <!-- edit Text for take input from user-->
+    <!-- edit Text for take input from area-->
     <!-- give the id editText-->
     <TextView
         android:id="@+id/maztextView"
