@@ -9,6 +9,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.core.view.ViewCompat;
 
 import com.orbitsoft.teamorbitsoft.R;
 
@@ -40,6 +42,7 @@ public class ButtonActivity extends AppCompatActivity {
                 Typeface font = Typeface.createFromAsset(getAssets(), "fonts/BNazanin.ttf");
                 // Assign the typeface to the view
                 button.setTypeface(font);
+                ViewCompat.setBackgroundTintList(button, ContextCompat.getColorStateList(ButtonActivity.this, android.R.color.holo_green_light));
 
                 button.setLayoutParams(params);
                 llMain.addView(button);

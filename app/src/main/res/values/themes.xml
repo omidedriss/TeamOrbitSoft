@@ -41,7 +41,12 @@
         <item name="colorAccent">@android:color/white</item>
         <item name="android:backgroundTint">@color/black</item>
     </style>
-
+    <style name="leaf">
+        <item name="cornerSizeTopLeft">70%</item>
+<!--        <item name="cornerFamilyTopLeft">cut</item>-->
+        <item name="cornerSizeBottomRight">70%</item>
+<!--        <item name="cornerFamilyBottomRight">cut</item>-->
+    </style>
     <style name="Theme.TeamOrbitSoft.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.TeamOrbitSoft.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />

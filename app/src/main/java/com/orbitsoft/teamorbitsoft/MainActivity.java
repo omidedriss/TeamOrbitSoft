@@ -29,7 +29,7 @@ import com.orbitsoft.teamorbitsoft.example.TextViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 Button btGorji;
-Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample;
+Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,14 +48,22 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
         btLifeCycle=findViewById(R.id.life_cycle);
         my_dialog=findViewById(R.id.my_dialog);
         TextViewExample=findViewById(R.id.text_view);
-
+        ButtonExample=findViewById(R.id.button);
         TextViewExample.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent textView=new Intent(MainActivity.this, TextViewActivity.class);
+                startActivity(textView);
+            }
+        });
+        ButtonExample.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent textView=new Intent(MainActivity.this, ButtonActivity.class);
                 startActivity(textView);
             }
         });
+
         btGorji.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
