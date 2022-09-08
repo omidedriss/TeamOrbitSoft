@@ -62,6 +62,7 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
                     public void run() {
                         Intent gorji = new Intent(getApplicationContext(), Gorji.class);
                         startActivity(gorji);
+                        i--;
                     }
                 },1100);
            //     Intent gorji = new Intent(getApplicationContext(), Gorji.class);
