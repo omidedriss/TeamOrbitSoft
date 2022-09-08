@@ -77,13 +77,13 @@
             />
 
         <Button
-            android:id="@+id/mohasebat"
+            android:id="@+id/chat"
             android:layout_width="250dp"
             android:layout_gravity="center_horizontal"
             android:layout_height="wrap_content"
-            android:text="Mohasebat"
+            android:text="Chat"
             app:shapeAppearanceOverlay="@style/gorji_style_mohasebe"
-            style="@style/gorji_style_mohasebe"/>
+            style="@style/gorji_style_chat"/>
 
         <Button
             android:id="@+id/exit"

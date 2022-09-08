@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -25,7 +26,7 @@ import com.orbitsoft.teamorbitsoft.R;
 import com.orbitsoft.teamorbitsoft.example.MyDialog;
 
 public class Gorji extends AppCompatActivity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
-private Button insta,myInfo,metaco,exit,login,fact,contact,mohasebe_bt;
+private Button insta,myInfo,metaco,exit,login,fact,contact,chat;
 private CheckBox loginCheckBox;
 int x , y,q,w,b = 1;
     @Override
@@ -34,12 +35,10 @@ int x , y,q,w,b = 1;
         setContentView(R.layout.activity_gorji);
         entry();
 
-
-
-
         Toast.makeText(getApplicationContext(), "دکمه  صفحه لاگین مخفی است", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "برای پخش صدا روی چک باکس کلیک کنید", Toast.LENGTH_LONG).show();
 
-        }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -102,7 +101,9 @@ int x , y,q,w,b = 1;
         Toast.makeText(getApplicationContext(),String.valueOf(x),Toast.LENGTH_LONG).show();
         }
         if(v.getId()==exit.getId()){
-            exit();
+            sound2();
+            finish();
+            //exit();
         }
         if(v.getId() == login.getId()){
                 Intent initLogin = new Intent(getApplicationContext(),GorjiPhoneNumberActivity.class);
@@ -112,9 +113,10 @@ int x , y,q,w,b = 1;
         if(v.getId() == contact.getId()){
             contact();
         }
-        if(v.getId() == mohasebe_bt.getId()){
-            riazi();
-            add_text_view();
+        if(v.getId() == chat.getId()){
+          //  riazi();
+            //add_text_view();
+            chat();
         }
 
     }
@@ -136,6 +138,10 @@ int x , y,q,w,b = 1;
             contact.setVisibility(View.VISIBLE);
             contact.setEnabled(b);
         }else{contact.setVisibility(View.GONE);}
+        if(loginCheckBox.isChecked()){
+        sound();}else{
+            sound1();
+        }
     }
     private void entry (){
         insta=findViewById(R.id.insta);
@@ -146,8 +152,8 @@ int x , y,q,w,b = 1;
         loginCheckBox=findViewById(R.id.checkBox_login);
         fact = findViewById(R.id.fact_gorji);
         contact= findViewById(R.id.gorji_contact);
-        mohasebe_bt = findViewById(R.id.mohasebat);
-        mohasebe_bt.setOnClickListener(this);
+        chat = findViewById(R.id.chat);
+        chat.setOnClickListener(this);
         contact.setVisibility(View.GONE);
         contact.setOnClickListener(this);
         fact.setVisibility(View.GONE);
@@ -160,7 +166,7 @@ int x , y,q,w,b = 1;
         metaco.setOnClickListener(this);
         exit.setOnClickListener(this);
         loginCheckBox.setOnCheckedChangeListener(this);
-
+        sound();
     }
 
     public int fact1(int fa){
@@ -202,6 +208,10 @@ int x , y,q,w,b = 1;
         Intent i = new Intent(getApplicationContext(),GorjiContactActivity.class);
         startActivity(i);
     }
+    public void chat(){
+        Intent i = new Intent(getApplicationContext(),GorjiChat.class);
+        startActivity(i);
+    }
     public void riazi(){
                 mohasebe  m = new mohasebe();
                 x= m.masahat(2,2,0);
@@ -223,5 +233,17 @@ int x , y,q,w,b = 1;
         tv.setLayoutParams(params);
         tv.setText(st);
         ln.addView(tv);
+    }
+    public void sound(){
+        final MediaPlayer mp = MediaPlayer.create(getApplicationContext(),R.raw.start_activity);
+        mp.start();
+    }
+    public void sound1(){
+        final MediaPlayer mp = MediaPlayer.create(getApplicationContext(),R.raw.battlehorn);
+        mp.start();
+    }
+    public void sound2(){
+        final MediaPlayer mp = MediaPlayer.create(getApplicationContext(),R.raw.quit);
+        mp.start();
     }
 }

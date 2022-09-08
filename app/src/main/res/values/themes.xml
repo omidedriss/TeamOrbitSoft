@@ -63,7 +63,7 @@
         <item name="cornerFamilyTopRight">cut</item>
 
     </style>
-    <style name="gorji_style_mohasebe">
+    <style name="gorji_style_chat">
         <item name="backgroundTint">#6C4A71</item>
         <item name="cornerSizeBottomLeft">70%</item>
         <item name="cornerSizeTopRight">70%</item>
@@ -77,4 +77,12 @@
 
 
     </style>
+    <style name="gorji_style_text_view">
+        <item name="android:background">#4F5F6C</item>
+        <item name="backgroundTint">#4F5F6C</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+</style>
 </resources>
