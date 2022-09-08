@@ -3,6 +3,7 @@ package com.orbitsoft.teamorbitsoft;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,14 +24,19 @@ import com.orbitsoft.teamorbitsoft.example.IntentSample;
 import com.orbitsoft.teamorbitsoft.example.LifeCycleActivity;
 import com.orbitsoft.teamorbitsoft.example.MyDialog;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class MainActivity extends AppCompatActivity {
 Button btGorji;
+    int i = 0;
 Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //فراخانی متود
+        play();
         btNickQue = findViewById(R.id.btNickQue);
         btGorji = findViewById(R.id.btactivity_gorji);
         btmaz=findViewById(R.id.btmaz);
@@ -48,8 +54,19 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
         btGorji.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent gorji = new Intent(getApplicationContext(), Gorji.class);
-                startActivity(gorji);
+                if(i == 0){
+                    i++;
+                play_loading();
+                new Timer().schedule(new TimerTask() {
+                    @Override
+                    public void run() {
+                        Intent gorji = new Intent(getApplicationContext(), Gorji.class);
+                        startActivity(gorji);
+                    }
+                },1100);
+           //     Intent gorji = new Intent(getApplicationContext(), Gorji.class);
+            //    startActivity(gorji);
+            }
             }
         });
 
@@ -109,6 +126,14 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
                 }
         );
 
-
+    }
+    //متود اجرای صدا
+    public void play(){
+        MediaPlayer mp = MediaPlayer.create(getApplicationContext(),R.raw.start_activity);
+       mp.start();
+    }
+    public void play_loading(){
+        MediaPlayer mp = MediaPlayer.create(getApplicationContext(),R.raw.loading);
+        mp.start();
     }
 }

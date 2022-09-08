@@ -35,7 +35,7 @@ int x , y,q,w,b = 1;
         setContentView(R.layout.activity_gorji);
         entry();
 
-        Toast.makeText(getApplicationContext(), "دکمه  صفحه لاگین مخفی است", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "دکمه  صفحه لاگین مخفی است", Toast.LENGTH_SHORT).show();
         Toast.makeText(getApplicationContext(), "برای پخش صدا روی چک باکس کلیک کنید", Toast.LENGTH_LONG).show();
 
     }
@@ -244,6 +244,10 @@ int x , y,q,w,b = 1;
     }
     public void sound2(){
         final MediaPlayer mp = MediaPlayer.create(getApplicationContext(),R.raw.quit);
+        mp.start();
+    }
+    public void sound3(){
+        final MediaPlayer mp = MediaPlayer.create(getApplicationContext(),R.raw.loading);
         mp.start();
     }
 }
