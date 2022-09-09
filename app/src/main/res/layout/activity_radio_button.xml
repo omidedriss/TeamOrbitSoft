@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/radio"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="میدان نقش جهان در کدام شهر قرار دارد ؟ "
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="22sp" />
+
+    <RadioGroup
+        android:id="@+id/rgMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/teal_700"
+            android:text="تهران"
+            android:textColor="@color/purple_700"
+            android:textColorHint="@color/design_default_color_primary_dark"
+            app:buttonTint="@color/purple_500" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/purple_700"
+            android:text="اصفهان"
+            android:textColor="@color/purple_700"
+            android:textColorHint="@color/purple_700"
+            app:buttonTint="@color/purple_500" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/purple_700"
+            android:text="شیراز"
+            android:textColor="@color/purple_700"
+            android:textColorHint="@color/purple_700"
+            app:buttonTint="@color/purple_500" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/teal_700"
+            android:text="کاشان"
+            android:textColor="@color/purple_700"
+            android:textColorHint="@color/purple_700"
+            app:buttonTint="@color/purple_500" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cantata_one"
+        android:gravity="center"
+        android:text="Result : ..."
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="answerVoid"
+        android:text="پاسخ"
+        android:textStyle="bold"
+        tools:ignore="OnClick" />
+</LinearLayout>
