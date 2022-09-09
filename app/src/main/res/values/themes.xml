@@ -22,4 +22,16 @@
     <style name="Theme.TeamOrbitSoft.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.TeamOrbitSoft.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="hatamistyle">
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="cornerSizeBottomLeft">70%</item>
+        <item name="cornerSizeTopRight">30%</item>
+
+
+    </style>
 </resources>
