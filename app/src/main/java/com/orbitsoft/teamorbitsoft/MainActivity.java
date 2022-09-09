@@ -1,24 +1,18 @@
 package com.orbitsoft.teamorbitsoft;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.orbitsoft.teamorbitsoft.Gorji.Gorji;
-import com.orbitsoft.teamorbitsoft.Hatami.Hatami;
 import com.orbitsoft.teamorbitsoft.Hatami.Radio_Button;
-import com.orbitsoft.teamorbitsoft.Hatami.interface1;
 import com.orbitsoft.teamorbitsoft.Kanani.Kanani;
 import com.orbitsoft.teamorbitsoft.Mazaheri.Mazaheri;
-
-
 import com.orbitsoft.teamorbitsoft.Moosavi.moosavi_login;
 import com.orbitsoft.teamorbitsoft.Nikkhu.Nikkhu;
-import com.orbitsoft.teamorbitsoft.Saeidian.saeidian;
-import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian2_main;
 import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_login1;
 import com.orbitsoft.teamorbitsoft.Salimi.SalimiActivity;
 import com.orbitsoft.teamorbitsoft.example.IntentSample;

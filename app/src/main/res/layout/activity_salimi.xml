@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="TextView"
-        android:textColor="@color/colorblue"
+        android:textColor="@color/purple_700"
         android:textSize="22sp"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/numberOdd"

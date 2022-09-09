@@ -2,4 +2,11 @@
 <resources>
     <item name="buttonCall" type="id" />
     <item name="phone" type="id" />
+    <item name="rowTxtCode" type="id" />
+    <item name="rowTxtProductName" type="id" />
+    <item name="rowTxtPrice" type="id" />
+    <item name="rowImgProduct" type="id" />
+    <item name="txtName" type="id" />
+    <item name="txtDesc" type="id" />
+    <item name="txtPrice" type="id" />
 </resources>
