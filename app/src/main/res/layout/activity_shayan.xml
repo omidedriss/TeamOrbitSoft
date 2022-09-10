@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Saeidian.shayan_activity"
+    android:background="@drawable/sms_drawable">
+
+    <EditText
+        android:id="@+id/poly_ghaede_bozorg"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="240dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="ghaede bozorg"
+        android:inputType="textPersonName"
+        android:textColor="#0000FF"
+        android:textColorHint="#0000FF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/poly_ertefa"
+        android:layout_width="95dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="300dp"
+        android:gravity="center"
+        android:layout_marginTop="240dp"
+        android:ems="10"
+        android:hint="ertefa"
+        android:textColor="#0000FF"
+        android:textColorHint="#0000FF"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/poly_ghaede_kochak"
+        android:layout_width="135dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="240dp"
+        android:ems="10"
+        android:hint="ghaede kochak"
+        android:gravity="center"
+        android:textColor="#0000FF"
+        android:inputType="textPersonName"
+        android:textColorHint="#0000FF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/poly_bt"
+        style="@style/saeidian_chat"
+        android:layout_width="378dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="296dp"
+        android:text="masahat"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/saeidian_chat3" />
+
+    <EditText
+        android:id="@+id/rectangle_arz"
+        android:layout_width="106dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="420dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColorHint="#0000FF"
+        android:hint="arz"
+        android:textStyle="bold"
+        android:textColor="#0000FF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/rectangle_bt"
+        android:layout_width="216dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="460dp"
+        android:text="masahat"
+        style="@style/saeidian_chat"
+        app:shapeAppearanceOverlay="@style/saeidian_chat4"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/rectangle_tol"
+        android:layout_width="98dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="420dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="tol"
+        android:inputType="textPersonName"
+        android:textColorHint="#0000FF"
+        android:textStyle="bold"
+        android:textColor="#0000FF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/square_bt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="648dp"
+        android:text="masahat"
+        android:textStyle="bold"
+        style="@style/saeidian_chat"
+        app:shapeAppearanceOverlay="@style/saeidian_chat5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/square_tol"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="600dp"
+        android:ems="10"
+        android:hint="tol"
+        android:textColorHint="#0000FF"
+        android:textColor="#0000FF"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/square_show"
+        android:layout_width="238dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="556dp"
+        style="@style/saeidian_chat2"
+        android:text="square"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/triangle_ertefa"
+        android:gravity="center"
+        android:layout_width="99dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="72dp"
+        android:textColor="#0000FF"
+        android:ems="10"
+        android:hint="ertefa"
+        android:inputType="textPersonName"
+        android:textColorHint="#0000FF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/triangle_ghaede"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:gravity="center"
+        android:textColor="#0000FF"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="ghaede"
+        android:textColorHint="#0000FF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/triangle_bt"
+        android:layout_width="211dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="124dp"
+        android:text="masahat"
+        android:textStyle="bold"
+        style="@style/saeidian_chat"
+        app:shapeAppearanceOverlay="@style/saeidian_chat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/triangle_show"
+        android:layout_width="205dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="24dp"
+        android:text="triangle"
+        style="@style/saeidian_chat2"
+        app:shapeAppearanceOverlay="@style/saeidian_chat2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/poly_show"
+        android:layout_width="265dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="188dp"
+        android:text="zozanaghe"
+        style="@style/saeidian_chat2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rectangle_show"
+        android:layout_width="262dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="364dp"
+        android:text="rectangle"
+        android:textStyle="bold"
+        style="@style/saeidian_chat2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

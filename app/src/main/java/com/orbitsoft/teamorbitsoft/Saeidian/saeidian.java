@@ -38,6 +38,7 @@ public class saeidian extends AppCompatActivity {
     Button bmi;
     Button exit2;
     Button custom_conatct;
+    Button chat;
     public Button name2,family2;
     //private Dialog dialog;
     private List<String>list;
@@ -121,6 +122,7 @@ factorial=(Button) findViewById(R.id.fact);
         exit2 = (Button) findViewById(R.id.exit_saeidian_2);
         custom_conatct = (Button) findViewById(R.id.custom_contact);
         call = findViewById(R.id.call);
+        chat = findViewById(R.id.chat);
         //bmi = findViewById(R.id.button6);
 //         exit = (Button) findViewById(R.id.exit);
 //        exit.setOnClickListener(new View.OnClickListener() {
@@ -235,6 +237,15 @@ factorial=(Button) findViewById(R.id.fact);
         {
             Intent i = new
                     Intent(saeidian.this, saeidian_custom_contact.class);
+            Bundle bundle = new Bundle();
+            i.putExtras(bundle);
+            startActivity(i);
+        });
+        chat.setOnClickListener(view ->
+
+        {
+            Intent i = new
+                    Intent(saeidian.this, saeidian_chat.class);
             Bundle bundle = new Bundle();
             i.putExtras(bundle);
             startActivity(i);

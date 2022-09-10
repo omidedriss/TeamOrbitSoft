@@ -22,9 +22,23 @@
         android:theme="@style/Theme.TeamOrbitSoft"
         tools:targetApi="31">
         <activity
-            android:name=".Saeidian.saeidian_arraylist"
+            android:name=".Saeidian.saeidian_chat"
             android:exported="false" />
-        <!-- <activity -->
+        <activity
+            android:name=".Saeidian.shayan_activity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Saeidian.saeidian_arraylist"
+            android:exported="false" /> <!-- <activity -->
         <!-- android:name=".Saeidian2.sae" -->
         <!-- android:exported="false" /> -->
         <activity
@@ -36,15 +50,6 @@
         <activity
             android:name=".Salimi.SecondActivitySalimi"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".Gorji.GorjiCodPhoneActivity"
             android:exported="false" />
@@ -92,6 +97,9 @@
             android:exported="false" />
         <activity
             android:name=".Saeidian.saeidian_login4"
+            android:exported="false" />
+        <activity
+            android:name=".Saeidian.shayan"
             android:exported="false" />
         <activity
             android:name=".example.MyDialog"

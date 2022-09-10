@@ -16,8 +16,12 @@ import com.orbitsoft.teamorbitsoft.Mazaheri.Mazaheri;
 import com.orbitsoft.teamorbitsoft.Moosavi.moosavi_login;
 import com.orbitsoft.teamorbitsoft.Nikkhu.Nikkhu;
 import com.orbitsoft.teamorbitsoft.Saeidian.saeidian_arraylist;
+import com.orbitsoft.teamorbitsoft.Saeidian.saeidian_chat;
 import com.orbitsoft.teamorbitsoft.Saeidian.saeidian_custom_contact;
 import com.orbitsoft.teamorbitsoft.Saeidian.saeidian_login1;
+import com.orbitsoft.teamorbitsoft.Saeidian.saeidian_textview;
+import com.orbitsoft.teamorbitsoft.Saeidian.shayan;
+import com.orbitsoft.teamorbitsoft.Saeidian.shayan_activity;
 import com.orbitsoft.teamorbitsoft.Salimi.SalimiActivity;
 import com.orbitsoft.teamorbitsoft.example.IntentSample;
 import com.orbitsoft.teamorbitsoft.example.LifeCycleActivity;
@@ -59,7 +63,7 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
                 }
         );
         btSaeedian.setOnClickListener(v -> {
-                    Intent imaz=new Intent(this, saeidian_login1.class);
+                    Intent imaz=new Intent(this, shayan_activity.class);
                     startActivity(imaz);
                 }
         );

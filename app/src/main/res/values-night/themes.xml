@@ -13,4 +13,104 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="leaf">
+        <item name="cornerSizeTopLeft">80%</item>
+        <item name="cornerSizeTopRight">80%</item>
+        <item name="cornerSizeBottomLeft">80%</item>
+        <item name="cornerFamilyTopLeft">cut</item>
+        <item name="cornerFamilyBottomLeft">cut</item>
+        <item name="cornerFamilyTopRight">cut</item>
+        <item name="cornerSizeBottomRight">80%</item>
+        <item name="cornerFamilyBottomRight">cut</item>
+        <item name="android:textColor"> @color/white </item>
+        <item name="backgroundTint">
+            #808080
+        </item>
+
+
+    </style>
+    <style name="saeidian_chat">
+        <item name="android:layout_width"> match_parent </item>
+        <item name="android:layout_height"> wrap_content </item>
+        <item name="android:gravity"> center </item>
+        <item name="android:textSize"> 20sp </item>
+        <!--        <item name="android:shape">rectangle</item>-->
+        <item name="android:textColor"> @color/black </item>
+        <item name="backgroundTint">
+            #7FFF00
+        </item>
+        <item name="android:textStyle"> bold </item>
+        <item name="cornerFamilyTopLeft">cut</item>
+        <item name="cornerFamilyTopRight">cut</item>
+        <item name="cornerFamilyBottomLeft">cut</item>
+        <item name="cornerFamilyBottomRight">cut</item>
+        <item name="cornerSizeTopRight">50%</item>
+        <item name="cornerSizeTopLeft">50%</item>
+        <item name="cornerSizeBottomLeft">50%</item>
+        <item name="cornerSizeBottomRight">50%</item>
+        <item name="android:radius">200dp</item>
+
+    </style>
+    <style name="saeidian_chat3">
+        <item name="android:layout_width"> match_parent </item>
+        <item name="android:layout_height"> wrap_content </item>
+        <item name="android:gravity"> center </item>
+        <item name="android:textSize"> 20sp </item>
+        <!--        <item name="android:shape">rectangle</item>-->
+        <item name="android:textColor"> @color/black </item>
+        <item name="backgroundTint">
+            #7FFF00
+        </item>
+        <item name="android:textStyle"> bold </item>
+
+        <item name="cornerSizeTopRight">50%</item>
+        <item name="cornerSizeTopLeft">50%</item>
+        <item name="cornerSizeBottomLeft">50%</item>
+        <item name="cornerSizeBottomRight">50%</item>
+        <item name="android:radius">200dp</item>
+
+    </style>
+
+    <style name="saeidian_chat2">
+        <item name="android:layout_width"> match_parent </item>
+        <item name="android:layout_height"> wrap_content </item>
+        <item name="android:gravity"> center </item>
+        <item name="android:textSize"> 20sp </item>
+        <item name="android:textColor">     #FFA500 </item>
+        <item name="android:textStyle"> bold </item>
+    </style>
+    <style name="saeidian_chat4">
+        <item name="android:layout_width"> match_parent </item>
+        <item name="android:layout_height"> wrap_content </item>
+        <item name="android:gravity"> center </item>
+        <item name="android:textSize"> 20sp </item>
+        <!--        <item name="android:shape">rectangle</item>-->
+        <item name="android:textColor"> @color/black </item>
+        <item name="backgroundTint">
+            #7FFF00
+        </item>
+        <item name="android:textStyle"> bold </item>
+        <item name="cornerFamilyTopLeft">cut</item>
+        <item name="cornerFamilyBottomRight">cut</item>
+        <item name="cornerSizeTopLeft">70%</item>
+        <item name="cornerSizeBottomRight">70%</item>
+        <item name="android:radius">200dp</item>
+
+    </style>
+    <style name="saeidian_chat5">
+        <item name="android:layout_width"> match_parent </item>
+        <item name="android:layout_height"> wrap_content </item>
+        <item name="android:gravity"> center </item>
+        <item name="android:textSize"> 20sp </item>
+        <!--        <item name="android:shape">rectangle</item>-->
+        <item name="android:textColor"> @color/black </item>
+        <item name="backgroundTint">
+            #7FFF00
+        </item>
+        <item name="android:textStyle"> bold </item>
+        <item name="cornerSizeTopRight">70%</item>
+        <item name="cornerSizeBottomLeft">70%</item>
+        <item name="android:radius">200dp</item>
+
+    </style>
 </resources>

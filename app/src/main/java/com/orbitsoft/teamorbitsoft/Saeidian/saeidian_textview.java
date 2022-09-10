@@ -18,7 +18,7 @@ public class saeidian_textview extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saeidian_textview);
-
+        Button aa=findViewById(R.id.button16);
         Button saeidian_button=findViewById(R.id.shayan_button);
         saeidian_button.setOnClickListener(new View.OnClickListener() {
             @Override
