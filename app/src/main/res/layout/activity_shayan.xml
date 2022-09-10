@@ -207,8 +207,8 @@
         android:layout_marginStart="76dp"
         android:layout_marginTop="24dp"
         android:text="triangle"
+
         style="@style/saeidian_chat2"
-        app:shapeAppearanceOverlay="@style/saeidian_chat2"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

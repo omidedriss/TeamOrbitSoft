@@ -63,7 +63,7 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
                 }
         );
         btSaeedian.setOnClickListener(v -> {
-                    Intent imaz=new Intent(this, shayan_activity.class);
+                    Intent imaz=new Intent(this, saeidian_login1.class);
                     startActivity(imaz);
                 }
         );
