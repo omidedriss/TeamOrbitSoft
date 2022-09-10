@@ -4,72 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Moosavi.moosavi_contacts_messaging_activity"
+    tools:context=".Moosavi.moosavi_messager_getnumber_activity"
     >
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#000000"
         >
+
     </FrameLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:weightSum="100"
+        android:orientation="vertical"
         >
+
         <RelativeLayout
-            android:layout_weight="95"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_weight="95"
             >
             <TextView
-                android:id="@+id/moosavi_contacts_messaging_textview_title"
+                android:id="@+id/moosavi_messager_getnumber_textview_guide"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
-                app:fontFamily="casual"
-                android:text="To Example"
-                android:textSize="30dp"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="100dp"
+                android:text="Write the number you want to contact"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                app:fontFamily="casual"
                 />
 
-            <TextView
-                android:id="@+id/moosavi_contacts_messaging_textview_sents"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="50dp"
-                android:text="0 message sent"
-                android:textColor="#FFFFFF"
-                android:textSize="15dp"
-                app:fontFamily="casual" />
-
-            <Button
-                android:id="@+id/moosavi_contacts_messaging_button_sending"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="40dp"
-                android:text="send"
-                android:textColor="#000000"
-                app:backgroundTint="#FFFFFF"
-                app:fontFamily="casual" />
             <EditText
-                android:id="@+id/moosavi_contacts_messaging_edittext_thetext"
-                android:layout_width="match_parent"
+                android:id="@+id/moosavi_messager_getnumber_edittext_numgetter"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_above="@+id/moosavi_contacts_messaging_button_sending"
-                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/moosavi_messager_getnumber_textview_guide"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="_ _  _ _ _  _ _ _  _ _  _ _"
                 android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                app:fontFamily="casual" />
+            <Button
+                android:id="@+id/moosavi_messager_getnumber_button_enter"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                app:backgroundTint="#FFFFFF"
                 app:fontFamily="casual"
-                android:text="Your text ..."
+                android:textColor="#000000"
+                android:text="ok"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/moosavi_messager_getnumber_edittext_numgetter"
+                android:layout_marginTop="50dp"
                 />
         </RelativeLayout>
         <LinearLayout
@@ -84,17 +74,17 @@
                 >
 
                 <TextView
-                    android:id="@+id/moosavi_contacts_messaging_textview_address"
+                    android:id="@+id/moosavi_messager_getnumber_textview_address"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:text=" Moosavi > Contacts > messaging"
+                    android:text=" Moosavi > messager"
                     android:textColor="#FFFFFF"
                     app:fontFamily="casual"
                     android:layout_marginTop="6dp"
                     />
                 <Button
-                    android:id="@+id/moosavi_contacts_messaging_button_back"
+                    android:id="@+id/moosavi_messager_getnumber_button_back"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     app:backgroundTint="#FFFFFF"

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Moosavi.moosavi_messager_texting_activity"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        >
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="95"
+            android:weightSum="100"
+            android:orientation="vertical"
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="90">
+
+                <LinearLayout
+                    android:id="@+id/moosavi_messager_texting_viewgroup_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                </LinearLayout>
+            </ScrollView>
+            <RelativeLayout
+                android:layout_weight="10"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                >
+                <EditText
+                    android:id="@+id/moosavi_messager_texting_edittext_message"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#FFFFFF"
+                    app:fontFamily="casual"
+                    android:text="Type your message here ..."
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <Button
+                    android:id="@+id/moosavi_messager_texting_button_sending"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/moosavi_messager_texting_shape_sendingbtn"
+                    android:text=">"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    app:backgroundTint="null" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/moosavi_default_usingpages_background_addressbar"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:id="@+id/moosavi_messager_texting_textview_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="6dp"
+                    android:text=" Moosavi > Messager > Texting"
+                    android:textColor="#FFFFFF"
+                    app:fontFamily="casual" />
+                <Button
+                    android:id="@+id/moosavi_messager_texting_button_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:backgroundTint="#FFFFFF"
+                    android:textColor="#000000"
+                    app:fontFamily="casual"
+                    android:text="back"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

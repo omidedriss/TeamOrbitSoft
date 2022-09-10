@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Computer/Programing/Android/Projects/My first source/app/src/main/res/drawable/moosavi_default_usingpages_background_addressbar.xml" value="0.1835" />
+        <entry key="..\:/Computer/Programing/Android/Projects/My first source/app/src/main/res/drawable/moosavi_defaultall_baseobjbackg.xml" value="0.1325" />
+        <entry key="..\:/Computer/Programing/Android/Projects/My first source/app/src/main/res/drawable/moosavi_messager_texting_shape_sendingbtn.xml" value="0.1325" />
+        <entry key="..\:/Computer/Programing/Android/Projects/My first source/app/src/main/res/drawable/moosavi_messager_texting_shape_sendingclicked.xml" value="0.1325" />
         <entry key="..\:/Computer/Programing/Android/Projects/My first source/app/src/main/res/layout/activity_frame_layout.xml" value="0.29375" />
+        <entry key="..\:/Computer/Programing/Android/Projects/My first source/app/src/main/res/layout/activity_main.xml" value="0.29375" />
         <entry key="..\:/Computer/Programing/Android/Projects/My first source/app/src/main/res/layout/activity_moosavi_checkingsim_first_layout.xml" value="0.33" />
         <entry key="..\:/Computer/Programing/Android/Projects/My first source/app/src/main/res/layout/activity_moosavi_main_page.xml" value="0.29375" />
         <entry key="..\:/Computer/Programing/Android/Projects/My first source/app/src/main/res/layout/moosavi_checkingsim_first_layout.xml" value="0.29270833333333335" />
@@ -12,6 +17,8 @@
         <entry key="..\:/Computer/Programing/Android/Projects/My first source/app/src/main/res/layout/moosavi_main_choose_layout.xml" value="0.33" />
         <entry key="..\:/Computer/Programing/Android/Projects/My first source/app/src/main/res/layout/moosavi_main_layout.xml" value="0.33" />
         <entry key="..\:/Computer/Programing/Android/Projects/My first source/app/src/main/res/layout/moosavi_main_login_layout.xml" value="0.33" />
+        <entry key="..\:/Computer/Programing/Android/Projects/My first source/app/src/main/res/layout/moosavi_messager_getnumber_layout.xml" value="0.33" />
+        <entry key="..\:/Computer/Programing/Android/Projects/My first source/app/src/main/res/layout/moosavi_messager_texting_layout.xml" value="0.33" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_gorji.xml" value="0.2259963768115942" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_gorji_login.xml" value="0.2259963768115942" />
         <entry key="..\:/TeamOrbitSoft/app/src/main/res/layout/activity_intent.xml" value="0.22314814814814815" />

@@ -1,160 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_gravity="center"
-    tools:context=".MainActivity"
-    android:background="@drawable/sms_drawable3">
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btactivity_gorji"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/moosavibtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/enter_number"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/sms_drawable2"
-        android:text="gorji"
-        android:textColor="#000"
-        android:textSize="25dp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="477dp" />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btmaz"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/enter_number"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/sms_drawable2"
-        android:text="mazaheri"
-        android:textColor="#000"
-        android:textSize="25dp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="477dp" />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/saeedian"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/enter_number"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/sms_drawable2"
-        android:text="saeidian"
-        android:textColor="#000"
-        android:textSize="25dp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="477dp" />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/moosavi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/enter_number"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/sms_drawable2"
+        app:backgroundTint="#000000"
+        android:textColor="#FFFFFF"
         android:text="moosavi"
-        android:textColor="#000"
-        android:textSize="25dp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="477dp" />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/hatami"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/enter_number"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/sms_drawable2"
-        android:text="hatami"
-        android:textColor="#000"
-        android:textSize="25dp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="477dp" />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btNickQue"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/enter_number"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/sms_drawable2"
-        android:text="nick que"
-        android:textColor="#000"
-        android:textSize="25dp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="477dp" />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/Salimi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/enter_number"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/sms_drawable2"
-        android:text="salimi"
-        android:textColor="#000"
-        android:textSize="25dp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="477dp" />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/Kanani"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/enter_number"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/sms_drawable2"
-        android:text="kanani"
-        android:textColor="#000"
-        android:textSize="25dp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="477dp" />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/life_cycle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/enter_number"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/sms_drawable2"
-        android:text="@string/life_cycle"
-        android:textColor="#000"
-        android:textSize="25dp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="477dp" />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/intent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/enter_number"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/sms_drawable2"
-        android:text="@string/intent"
-        android:textColor="#000"
-        android:textSize="25dp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="477dp" />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/my_dialog"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/enter_number"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/sms_drawable2"
-        android:text="@string/myDialog"
-        android:textColor="#000"
-        android:textSize="25dp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="477dp" />
-
-
-
-
-
-
+        android:layout_margin="10dp"
+        />
 </LinearLayout>

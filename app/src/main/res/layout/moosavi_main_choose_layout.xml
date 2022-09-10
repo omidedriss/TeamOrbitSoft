@@ -70,6 +70,19 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             />
+                        <Button
+                            android:id="@+id/moosavi_main_choose_button_messaging"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:backgroundTint="#FFFFFF"
+                            android:textColor="#000000"
+                            app:fontFamily="casual"
+                            android:text="messager"
+                            android:textSize="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            />
                     </LinearLayout>
                 </ScrollView>
             </LinearLayout>
@@ -78,19 +91,22 @@
             android:layout_weight="5"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:background="@drawable/moosavi_default_usingpages_background_addressbar"
             >
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 >
+
                 <TextView
                     android:id="@+id/moosavi_main_choose_textview_address"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text=" Moosavi"
                     android:textColor="#FFFFFF"
                     app:fontFamily="casual"
-                    android:text=" Moosavi"
-                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="6dp"
                     />
                 <Button
                     android:id="@+id/moosavi_main_choose_button_back"

@@ -400,6 +400,7 @@
             android:layout_weight="5"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:background="@drawable/moosavi_default_usingpages_background_addressbar"
             >
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -413,7 +414,9 @@
                     android:layout_alignParentLeft="true"
                     android:text=" Moosavi > Contacts"
                     android:textColor="#FFFFFF"
-                    app:fontFamily="casual" />
+                    app:fontFamily="casual"
+                    android:layout_marginTop="6dp"
+                    />
                 <Button
                     android:id="@+id/moosavi_contacts_list_button_back"
                     android:layout_width="wrap_content"
