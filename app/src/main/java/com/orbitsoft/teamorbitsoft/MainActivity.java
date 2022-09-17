@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.appizona.yehiahd.fastsave.FastSave;
 import com.orbitsoft.teamorbitsoft.Gorji.Gorji;
 import com.orbitsoft.teamorbitsoft.Hatami.Hatami;
 import com.orbitsoft.teamorbitsoft.Kanani.Kanani;
@@ -24,7 +25,9 @@ import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian2_main;
 import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_login1;
 import com.orbitsoft.teamorbitsoft.Salimi.SalimiActivity;
 import com.orbitsoft.teamorbitsoft.example.ButtonActivity;
+import com.orbitsoft.teamorbitsoft.example.ImageViewActivity;
 import com.orbitsoft.teamorbitsoft.example.IntentSample;
+import com.orbitsoft.teamorbitsoft.example.Klid;
 import com.orbitsoft.teamorbitsoft.example.LifeCycleActivity;
 import com.orbitsoft.teamorbitsoft.example.ListViewActivity;
 import com.orbitsoft.teamorbitsoft.example.RecyclerViewActivity;
@@ -33,14 +36,16 @@ import com.orbitsoft.teamorbitsoft.example.SavingDataActivity;
 import com.orbitsoft.teamorbitsoft.example.SpinnerActivity;
 import com.orbitsoft.teamorbitsoft.example.TextViewActivity;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 Button btGorji;
-Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData;
+Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        FastSave.init(getApplicationContext());
         btNickQue = findViewById(R.id.btNickQue);
         btGorji = findViewById(R.id.btactivity_gorji);
         btmaz=findViewById(R.id.btmaz);
@@ -59,6 +64,16 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
         ListView= findViewById(R.id.list_view);
         Spinner= findViewById(R.id.spinner_view);
         SavingData= findViewById(R.id.saving_data);
+        ImageView= findViewById(R.id.image);
+//        ArrayList<Klid> klids = new ArrayList<>();
+//        Klid klid = new Klid();
+//        klid.name="omid";
+//        klids.add(klid);
+//        Klid klid2 = new Klid();
+//        klid2.name="omid";
+//        klids.add(klid2);
+//
+//        FastSave.getInstance().saveObjectsList("key",klids);
 
         SharedPreferences sharedpreferences = getSharedPreferences("data", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedpreferences.edit();
@@ -68,6 +83,13 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
             @Override
             public void onClick(View view) {
                 Intent textView=new Intent(MainActivity.this, TextViewActivity.class);
+                startActivity(textView);
+            }
+        });
+        ImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent textView=new Intent(MainActivity.this, ImageViewActivity.class);
                 startActivity(textView);
             }
         });

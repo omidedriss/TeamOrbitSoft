@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.appizona.yehiahd.fastsave.FastSave;
 import com.orbitsoft.teamorbitsoft.R;
 
 import java.util.ArrayList;
@@ -33,6 +34,7 @@ public class SavingDataActivity extends AppCompatActivity {
 //        editor.commit();
      String data=   sharedpreferences.getString("key","not Set");
         Toast.makeText(SavingDataActivity.this,data,Toast.LENGTH_LONG ).show();
+//     ArrayList<Klid> klids= (ArrayList<Klid>) FastSave.getInstance().getObjectsList("key",Klid.class);
 
 // initializing all our variables.
         courseNameEdt = findViewById(R.id.idEdtCourseName);
