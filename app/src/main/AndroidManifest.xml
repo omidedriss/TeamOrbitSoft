@@ -22,10 +22,10 @@
         android:theme="@style/Theme.TeamOrbitSoft"
         tools:targetApi="31">
         <activity
-            android:name=".ListViewActivity"
+            android:name=".example.RecyclerViewActivity"
             android:exported="false" />
         <activity
-            android:name=".ImageViewActivity"
+            android:name=".example.ImageViewActivity"
             android:exported="false" />
         <activity
             android:name=".example.TextViewActivity"

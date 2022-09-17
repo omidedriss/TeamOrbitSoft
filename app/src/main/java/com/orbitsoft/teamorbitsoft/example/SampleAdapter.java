@@ -1,10 +1,12 @@
 package com.orbitsoft.teamorbitsoft.example;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -23,8 +25,10 @@ import java.util.Objects;
 
 public class SampleAdapter extends RecyclerView.Adapter<SampleHolder> {
     private ArrayList<Klid> list;
-    public SampleAdapter(ArrayList<Klid> Data) {
+    private Context contextAdapter;
+    public SampleAdapter(Context context, ArrayList<Klid> Data) {
         list = Data;
+        contextAdapter=context;
     }
     @Override
     public SampleHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -37,20 +41,13 @@ public class SampleAdapter extends RecyclerView.Adapter<SampleHolder> {
     @Override
     public void onBindViewHolder(final SampleHolder holder, @SuppressLint("RecyclerView") final int position) {
 
-        holder.titleCateory.setText(list.get(position).getName()+"-"+list.get(position).getMobile());
+        holder.titleCateory.setText(list.get(position).getName());
+        holder.coverImageView.setImageResource(list.get(position).getPic());
         holder.delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                try {
-                    Klid klid = list.get(position);
-
-
-
-                    //this.notifyAll();
-                }catch (Exception e){
-
-                }
+                Toast.makeText( contextAdapter, "delet", Toast.LENGTH_LONG).show();
 
             }
         });
@@ -58,7 +55,7 @@ public class SampleAdapter extends RecyclerView.Adapter<SampleHolder> {
             @Override
             public void onClick(View v) {
 
-             //   MainTask.Instance.ConnectServerForTime(list,position);
+                Toast.makeText( contextAdapter, "edite", Toast.LENGTH_LONG).show();
 
             }
         });

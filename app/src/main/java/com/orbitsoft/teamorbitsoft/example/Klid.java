@@ -21,7 +21,23 @@ public class Klid  {
 
 	public String Description;
 
-	public String pic;
+	public long getKlidID() {
+		return KlidID;
+	}
+
+	public void setKlidID(long klidID) {
+		KlidID = klidID;
+	}
+
+	public int getPic() {
+		return pic;
+	}
+
+	public void setPic(int pic) {
+		this.pic = pic;
+	}
+
+	public int pic;
 
 
 	public int Active;
@@ -85,13 +101,6 @@ public class Klid  {
 		Description = description;
 	}
 
-	public String getPic() {
-		return pic;
-	}
-
-	public void setPic(String pic) {
-		this.pic = pic;
-	}
 
 
 

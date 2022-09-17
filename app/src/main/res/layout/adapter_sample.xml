@@ -86,7 +86,7 @@
 
                         android:id="@+id/title_category"
 
-                        android:textColor="#000000"
+                        android:textColor="@color/colorGreen"
                         android:textSize="12sp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="15dp"
@@ -116,7 +116,7 @@
                         android:paddingBottom="5dp"
                         android:contentDescription="@string/app_name"
 
-                        android:src="@drawable/selector" />
+                        android:src="@drawable/delete" />
 
                     <ImageView
                         android:visibility="visible"
@@ -126,7 +126,7 @@
 
                         android:contentDescription="@string/app_name"
                         android:paddingTop="5dp"
-                        android:src="@drawable/selector" />
+                        android:src="@drawable/writing" />
 
                 </LinearLayout>
 

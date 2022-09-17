@@ -24,12 +24,13 @@ import com.orbitsoft.teamorbitsoft.Salimi.SalimiActivity;
 import com.orbitsoft.teamorbitsoft.example.ButtonActivity;
 import com.orbitsoft.teamorbitsoft.example.IntentSample;
 import com.orbitsoft.teamorbitsoft.example.LifeCycleActivity;
+import com.orbitsoft.teamorbitsoft.example.RecyclerViewActivity;
 import com.orbitsoft.teamorbitsoft.example.MyDialog;
 import com.orbitsoft.teamorbitsoft.example.TextViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 Button btGorji;
-Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample;
+Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,10 +50,19 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
         my_dialog=findViewById(R.id.my_dialog);
         TextViewExample=findViewById(R.id.text_view);
         ButtonExample=findViewById(R.id.button);
+        RecycleView = findViewById(R.id.recycle_view);
+
         TextViewExample.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent textView=new Intent(MainActivity.this, TextViewActivity.class);
+                startActivity(textView);
+            }
+        });
+        RecycleView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent textView=new Intent(MainActivity.this, RecyclerViewActivity.class);
                 startActivity(textView);
             }
         });

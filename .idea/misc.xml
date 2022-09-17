@@ -79,6 +79,7 @@
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/drawable/selected_state_button.xml" value="0.138" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/drawable/selector.xml" value="0.138" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/drawable/selector_button.xml" value="0.138" />
+        <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/drawable/sms_drawable.xml" value="0.134" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_Constraint_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_TableLayout.xml" value="0.20416666666666666" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_button_view.xml" value="0.18" />
@@ -94,6 +95,7 @@
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_table_login_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_text_view.xml" value="0.20416666666666666" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/adapter_sample.xml" value="0.33" />
+        <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/listview_item.xml" value="0.1" />
       </map>
     </option>
   </component>

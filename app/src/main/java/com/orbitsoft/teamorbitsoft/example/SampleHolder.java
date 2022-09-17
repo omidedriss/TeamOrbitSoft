@@ -18,6 +18,7 @@ public class SampleHolder extends RecyclerView.ViewHolder {
         super(v);
         titleCateory =  v.findViewById(R.id.title_category);
         coverImageView =  v.findViewById(R.id.coverImageView);
+        
         delete =  v.findViewById(R.id.delete);
         edite =  v.findViewById(R.id.edit);
         cover =  v.findViewById(R.id.cover);
