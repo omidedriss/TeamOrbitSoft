@@ -1,4 +1,4 @@
-package com.orbitsoft.teamorbitsoft.Saeidian;
+package com.orbitsoft.teamorbitsoft.saeidian_recycler_view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -9,10 +9,11 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.orbitsoft.teamorbitsoft.R;
+import com.orbitsoft.teamorbitsoft.saeidian_recycler_view.saeidian_klid;
 
 import java.util.ArrayList;
 
-public class saeidian_cutsom_arraylist extends AppCompatActivity {
+public class saeidian_custom_arraylist extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,12 @@ public class saeidian_cutsom_arraylist extends AppCompatActivity {
         klid.image=(R.drawable.zz);
         klids.add(klid);
 
+        saeidian_klid klid2 = new saeidian_klid();
+        klid2.name= "abbas";
+        klid2.family="gorji";
+        klid2.phone="09131005050";
+        klid2.image=(R.drawable.ww);
+        klids.add(klid2);
 
         saeidian_adapter adapter_saeidian = new saeidian_adapter(klids);
         RecyclerView shayan_listview = (RecyclerView) findViewById(R.id.saeidian_list_custom);

@@ -16,7 +16,7 @@
     </style>
 
     <style name="MyTextViewStyle" parent="android:Widget.TextView">
-        <item name="android:textColor">#F00</item>
+        <item name="android:textColor">@color/colorblue</item>
         <item name="android:textStyle">bold</item>
     </style>
     <style name="settings_header">
