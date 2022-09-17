@@ -42,8 +42,6 @@ public class saeidian_adapter extends RecyclerView.Adapter<saeidian_holder> {
         holder.list_phone.setText((saeidian_list.get(position).getPhone()));
         holder.list_image.setImageResource((saeidian_list.get(position).getImage()));
 
-
-
     }
     @Override
     public int getItemCount() {
