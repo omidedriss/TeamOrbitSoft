@@ -14,6 +14,7 @@ import com.orbitsoft.teamorbitsoft.R;
 
 public class shayan_activity extends AppCompatActivity {
 int bb;
+    int y=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +39,10 @@ int bb;
         Button triangle_bt=findViewById(R.id.triangle_bt);
         Button poly_bt=findViewById(R.id.poly_bt);
         Button rectangle_bt=findViewById(R.id.rectangle_bt);
+        Button theme=findViewById(R.id.theme);
+
+
+
 
         square_bt.setOnClickListener(new View.OnClickListener() {
             @Override

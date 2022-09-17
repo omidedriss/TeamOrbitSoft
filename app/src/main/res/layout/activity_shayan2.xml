@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Saeidian.shayan_activity"
-    android:background="@drawable/sms_drawable">
+    android:background="@drawable/sms_drawable_f">
 
     <EditText
         android:id="@+id/poly_ghaede_bozorg"
@@ -59,8 +59,8 @@
     <Button
         android:id="@+id/poly_bt"
         style="@style/saeidian_chat"
-        android:layout_width="333dp"
-        android:layout_height="45dp"
+        android:layout_width="378dp"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="296dp"
         android:text="masahat"
@@ -234,6 +234,16 @@
         android:text="rectangle"
         android:textStyle="bold"
         style="@style/saeidian_chat2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="312dp"
+        android:layout_marginTop="16dp"
+        android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

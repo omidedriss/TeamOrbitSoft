@@ -89,11 +89,16 @@
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/drawable-hdpi/sms_drawable4.xml" value="0.11" />
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/drawable-hdpi/sms_drawable5.xml" value="0.11" />
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/drawable-ldpi/saeidian_chat.xml" value="0.156" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/drawable-v24/sms_drawable_f.xml" value="0.157" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/drawable/image.xml" value="0.157" />
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/drawable/profile.xml" value="0.156" />
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/drawable/selector.xml" value="0.156" />
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/drawable/shayan.xml" value="0.156" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/drawable/sms_drawable.xml" value="0.157" />
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/drawable/sms_drawable5.xml" value="0.11" />
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/layout/activity_button_view.xml" value="0.15789473684210525" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/layout/activity_code_textview.xml" value="0.15789473684210525" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/layout/activity_edittext.xml" value="0.15789473684210525" />
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/layout/activity_main4.xml" value="0.14901315789473685" />
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/layout/activity_saaidian.xml" value="0.15789473684210525" />
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/layout/activity_saeidian2_login1.xml" value="0.25" />
@@ -107,9 +112,13 @@
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/layout/activity_saeidian_arraylist.xml" value="0.264" />
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/layout/activity_saeidian_chat.xml" value="0.14901315789473685" />
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/layout/activity_saeidian_custom_contact.xml" value="0.22802850356294538" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/layout/activity_saeidian_cutom_arraylist.xml" value="0.15789473684210525" />
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/layout/activity_saeidian_login1.xml" value="0.1" />
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/layout/activity_saeidian_textview.xml" value="0.176" />
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/layout/activity_shayan.xml" value="0.264" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/layout/activity_shayan2.xml" value="0.15789473684210525" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/layout/edittext.xml" value="0.15723684210526315" />
+        <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/layout/saeidian_adapter.xml" value="0.15789473684210525" />
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/layout/saeidian_constrait.xml" value="0.25" />
         <entry key="..\:/Users/THESHEOX-PC/Desktop/TeamOrbitSoft4/app/src/main/res/layout/shayan.xml" value="0.15789473684210525" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_gorji.xml" value="0.1" />

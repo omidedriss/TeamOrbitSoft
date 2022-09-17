@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import com.orbitsoft.teamorbitsoft.Gorji.Gorji;
 import com.orbitsoft.teamorbitsoft.Hatami.Hatami;
@@ -15,9 +16,12 @@ import com.orbitsoft.teamorbitsoft.Mazaheri.Mazaheri;
 
 import com.orbitsoft.teamorbitsoft.Moosavi.moosavi_login;
 import com.orbitsoft.teamorbitsoft.Nikkhu.Nikkhu;
+import com.orbitsoft.teamorbitsoft.Saeidian.code_textview;
+import com.orbitsoft.teamorbitsoft.Saeidian.edittext;
 import com.orbitsoft.teamorbitsoft.Saeidian.saeidian_arraylist;
 import com.orbitsoft.teamorbitsoft.Saeidian.saeidian_chat;
 import com.orbitsoft.teamorbitsoft.Saeidian.saeidian_custom_contact;
+import com.orbitsoft.teamorbitsoft.Saeidian.saeidian_cutsom_arraylist;
 import com.orbitsoft.teamorbitsoft.Saeidian.saeidian_login1;
 import com.orbitsoft.teamorbitsoft.Saeidian.saeidian_textview;
 import com.orbitsoft.teamorbitsoft.Saeidian.shayan;
@@ -63,7 +67,7 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
                 }
         );
         btSaeedian.setOnClickListener(v -> {
-                    Intent imaz=new Intent(this, saeidian_login1.class);
+                    Intent imaz=new Intent(this, saeidian_cutsom_arraylist.class);
                     startActivity(imaz);
                 }
         );
