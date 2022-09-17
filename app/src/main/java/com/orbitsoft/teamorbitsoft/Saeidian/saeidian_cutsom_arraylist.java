@@ -25,6 +25,7 @@ public class saeidian_cutsom_arraylist extends AppCompatActivity {
         klid.phone="09173929711";
         klid.image=(R.drawable.zz);
         klids.add(klid);
+
         saeidian_adapter adapter_saeidian = new saeidian_adapter(klids);
         RecyclerView shayan_listview = (RecyclerView) findViewById(R.id.saeidian_list_custom);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
