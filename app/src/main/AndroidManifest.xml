@@ -10,6 +10,8 @@
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
 
     <application
         android:allowBackup="true"
@@ -21,6 +23,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TeamOrbitSoft"
         tools:targetApi="31">
+        <activity
+            android:name=".example.SavingDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".example.ListViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".example.SpinnerActivity"
+            android:exported="false" />
         <activity
             android:name=".example.RecyclerViewActivity"
             android:exported="false" />

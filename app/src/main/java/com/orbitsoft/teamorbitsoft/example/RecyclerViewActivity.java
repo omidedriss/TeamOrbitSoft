@@ -1,6 +1,7 @@
 package com.orbitsoft.teamorbitsoft.example;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -43,8 +44,12 @@ public class RecyclerViewActivity extends AppCompatActivity {
         klids.add(klid2);
         SampleAdapter adapter1 = new SampleAdapter(RecyclerViewActivity.this,klids);
         RecyclerView recyclerView = findViewById(R.id.recycle_view);
-        recyclerView.setLayoutManager(new LinearLayoutManager(RecyclerViewActivity.this));
-
+//        recyclerView.setLayoutManager(new LinearLayoutManager(RecyclerViewActivity.this));
+        LinearLayoutManager layoutManager
+                = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+//        LinearLayoutManager layoutManager =
+//                new GridLayoutManager(RecyclerViewActivity.this, 2, GridLayoutManager.VERTICAL, false);
+        recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter( adapter1);
 
     }
