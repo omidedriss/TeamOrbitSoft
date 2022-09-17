@@ -85,12 +85,15 @@
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_constraint_layout.xml" value="0.1331521739130435" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_frame_layout.xml" value="0.18" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_gorji.xml" value="0.1" />
+        <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_list_view.xml" value="0.2" />
+        <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_listview.xml" value="0.1" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_main.xml" value="0.10960144927536232" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_salimi.xml" value="0.1" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_tableLayout.xml" value="0.1" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_table_layout.xml" value="0.25" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_table_login_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_text_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/adapter_sample.xml" value="0.33" />
       </map>
     </option>
   </component>

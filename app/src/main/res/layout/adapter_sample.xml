@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="15dp"
+    android:layoutDirection="rtl"
+    android:layout_gravity="right"
+
+    card_view:cardCornerRadius="4dp"
+
+    tools:ignore="MissingDefaultResource">
+    <LinearLayout
+        android:id="@+id/cover"
+
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+
+        >
+
+
+
+        <androidx.cardview.widget.CardView
+        android:orientation="vertical"
+            android:layout_width="80dp"
+            card_view:cardCornerRadius="16dp"
+            android:layout_height="80dp"
+            android:background="@color/black"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal">
+
+
+            <ImageView
+
+                android:scaleType="centerInside"
+                android:id="@+id/coverImageView"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_launcher"
+
+                android:layout_gravity="center"
+
+                />
+
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+
+
+
+            android:gravity="right"
+
+            android:orientation="vertical"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="100"
+                >
+
+                <LinearLayout
+                    android:layout_weight="80"
+                    android:layout_width="0dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent">
+                    <TextView
+
+
+                        android:id="@+id/title_category"
+
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="9dp"
+                        android:text="موضوعات"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+
+
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="20"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:contentDescription="@string/app_name"
+
+                        android:src="@drawable/selector" />
+
+                    <ImageView
+                        android:visibility="visible"
+                        android:id="@+id/edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="47dp"
+
+                        android:contentDescription="@string/app_name"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/selector" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:visibility="gone"
+                android:textSize="10sp"
+
+                android:inputType="numberDecimal"
+                android:id="@+id/price_suggest_shop"
+                android:text="توضیحات 1"
+                android:lines="1"
+                android:textColor="#6C6C6C"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_height="wrap_content"
+
+
+
+                />
+            <TextView
+                android:visibility="gone"
+                android:lines="1"
+                android:id="@+id/suggest_kartak_main_price_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="توضیحات اضافی مورد نیاز"
+                android:textColor="#6C6C6C"
+                android:textSize="10sp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="3dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
