@@ -4,76 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/radio"
-    android:layoutDirection="rtl"
-    android:orientation="vertical"
-    android:padding="20dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
     <TextView
+        android:id="@+id/tvitems"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="میدان نقش جهان در کدام شهر قرار دارد ؟ "
-        android:textColor="@android:color/holo_red_dark"
-        android:textSize="22sp" />
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="null"
+        android:textSize="30dp"
+        android:textStyle="bold|italic" />
+
+    <Spinner
+        android:id="@+id/spinneritem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp" />
 
     <RadioGroup
-        android:id="@+id/rgMain"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:id="@+id/radiogroupitem">
 
         <RadioButton
+            android:id="@+id/rdone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:shadowColor="@color/teal_700"
-            android:text="تهران"
-            android:textColor="@color/purple_700"
-            android:textColorHint="@color/design_default_color_primary_dark"
-            app:buttonTint="@color/purple_500" />
+            android:fontFamily="@font/alfa_slab_one"
+            android:onClick="red"
+            android:text="RED"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold" />
 
         <RadioButton
-            android:layout_width="wrap_content"
+            android:id="@+id/rdtwo"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:shadowColor="@color/purple_700"
-            android:text="اصفهان"
-            android:textColor="@color/purple_700"
-            android:textColorHint="@color/purple_700"
-            app:buttonTint="@color/purple_500" />
+            android:fontFamily="@font/alfa_slab_one"
+            android:onClick="green"
+            android:text="GREEN"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold|italic" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:shadowColor="@color/purple_700"
-            android:text="شیراز"
-            android:textColor="@color/purple_700"
-            android:textColorHint="@color/purple_700"
-            app:buttonTint="@color/purple_500" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:shadowColor="@color/teal_700"
-            android:text="کاشان"
-            android:textColor="@color/purple_700"
-            android:textColorHint="@color/purple_700"
-            app:buttonTint="@color/purple_500" />
     </RadioGroup>
 
-    <TextView
-        android:id="@+id/txtResult"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/cantata_one"
-        android:gravity="center"
-        android:text="Result : ..."
-        android:textColor="@color/black"
-        android:textSize="22sp" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="answerVoid"
-        android:text="پاسخ"
-        android:textStyle="bold"
-        tools:ignore="OnClick" />
+
+
+
 </LinearLayout>

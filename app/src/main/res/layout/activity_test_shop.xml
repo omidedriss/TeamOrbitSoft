@@ -8,12 +8,13 @@
     tools:context=".MainActivity">
 
     <EditText
+        android:id="@+id/edSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edSearch"
-        android:gravity="center"
         android:drawableLeft="@android:drawable/ic_menu_search"
-        android:hint="search" />
+        android:gravity="center"
+        android:hint="search"
+        android:textColorHint="#757575" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcMain"
