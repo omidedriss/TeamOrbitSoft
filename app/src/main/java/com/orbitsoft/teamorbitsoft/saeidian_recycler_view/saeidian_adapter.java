@@ -17,6 +17,7 @@ import java.util.ArrayList;
 
 
 public class saeidian_adapter extends RecyclerView.Adapter<saeidian_holder> {
+    int i=0;
     private ArrayList<saeidian_klid> saeidian_list;
     public saeidian_adapter(ArrayList<saeidian_klid> Data) {
         saeidian_list = Data;
@@ -31,16 +32,26 @@ public class saeidian_adapter extends RecyclerView.Adapter<saeidian_holder> {
     }
     @Override
     public void onBindViewHolder(final saeidian_holder holder, @SuppressLint("RecyclerView") final int position) {
-        holder.list_family.setVisibility(View.GONE);
-        holder.list_image.setOnClickListener(view ->
+
+        holder.list_info.setOnClickListener(view ->
 
         {
-            holder.list_family.setVisibility(View.VISIBLE);
+            i++;
+            if(i%2==0)
+            {
+                holder.list_phone.setVisibility(View.GONE);
+            }
+            if(i%2==1)
+            {
+                holder.list_phone.setVisibility(View.VISIBLE);
+            }
+
         });
        holder.list_name.setText((saeidian_list.get(position).getName()));
-        holder.list_family.setText((saeidian_list.get(position).getFamily()));
         holder.list_phone.setText((saeidian_list.get(position).getPhone()));
-        holder.list_image.setImageResource((saeidian_list.get(position).getImage()));
+        holder.list_call.setImageResource((saeidian_list.get(position).getCall()));
+        holder.list_message.setImageResource((saeidian_list.get(position).getMessage()));
+        holder.list_info.setImageResource((saeidian_list.get(position).getInfo()));
 
     }
     @Override

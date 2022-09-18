@@ -4,9 +4,8 @@ package com.orbitsoft.teamorbitsoft.saeidian_recycler_view;
 
 public class saeidian_klid {
     public String  name;
-    public String  family;
     public String  phone;
-    public int  image;
+    public int  call;
 
     public String getName() {
         return name;
@@ -14,14 +13,6 @@ public class saeidian_klid {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getFamily() {
-        return family;
-    }
-
-    public void setFamily(String family) {
-        this.family = family;
     }
 
     public String getPhone() {
@@ -32,12 +23,31 @@ public class saeidian_klid {
         this.phone = phone;
     }
 
-    public int getImage() {
-        return image;
+    public int getCall() {
+        return call;
     }
 
-    public void setImage(int image) {
-        this.image = image;
+    public void setCall(int call) {
+        this.call = call;
     }
+
+    public int getInfo() {
+        return info;
+    }
+
+    public void setInfo(int info) {
+        this.info = info;
+    }
+
+    public int getMessage() {
+        return message;
+    }
+
+    public void setMessage(int message) {
+        this.message = message;
+    }
+
+    public int info;
+    public int message;
 }
 
