@@ -8,7 +8,6 @@ import android.telephony.SmsManager;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -41,10 +40,10 @@ public class login2 extends AppCompatActivity {
         setContentView(R.layout.activity_login2);
         Bundle bundle = getIntent().getExtras();
         print_phone=findViewById(R.id.phone2);
-        code = (EditText) findViewById(R.id.get_code);
+        code = findViewById(R.id.get_code);
         TextView wrong_number = findViewById(R.id.wrong_number);
         TextView resend_code = findViewById(R.id.resend_code);
-        confirm = (Button) findViewById(R.id.confirm);
+        confirm = findViewById(R.id.confirm);
         code.setTextColor(Color.BLACK);
 
         if (bundle != null) {
@@ -113,7 +112,7 @@ public class login2 extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     public void showToast1() {
         LayoutInflater inflater = getLayoutInflater();
-        View layout = inflater.inflate(R.layout.saeidian_custom_toast, (ViewGroup) findViewById(R.id.toast_root));
+        View layout = inflater.inflate(R.layout.saeidian_custom_toast, findViewById(R.id.toast_root));
         TextView toastText = layout.findViewById(R.id.toast_text);
         toastText.setText("Wrong_Input");
         Toast toast = new Toast(getApplicationContext());
@@ -127,7 +126,7 @@ public class login2 extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     public void showToast2() {
         LayoutInflater inflater = getLayoutInflater();
-        View layout = inflater.inflate(R.layout.saeidian_custom_toast, (ViewGroup) findViewById(R.id.toast_root));
+        View layout = inflater.inflate(R.layout.saeidian_custom_toast, findViewById(R.id.toast_root));
         TextView toastText = layout.findViewById(R.id.toast_text);
         toastText.setText("5 Attempt pass Try Again Latter");
         Toast toast = new Toast(getApplicationContext());
