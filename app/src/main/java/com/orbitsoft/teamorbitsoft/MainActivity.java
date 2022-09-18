@@ -8,7 +8,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.orbitsoft.teamorbitsoft.Gorji.Gorji;
-import com.orbitsoft.teamorbitsoft.Hatami.Radio_Button;
+import com.orbitsoft.teamorbitsoft.Hatami.Radio_Button_spinner;
 import com.orbitsoft.teamorbitsoft.Kanani.Kanani;
 import com.orbitsoft.teamorbitsoft.Mazaheri.Mazaheri;
 import com.orbitsoft.teamorbitsoft.Moosavi.moosavi_login;
@@ -70,7 +70,7 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
                 }
         );
         btHatami.setOnClickListener(v -> {
-                    Intent imaz=new Intent(this, Radio_Button.class);
+                    Intent imaz=new Intent(this, Radio_Button_spinner.class);
                     startActivity(imaz);
                 }
         );

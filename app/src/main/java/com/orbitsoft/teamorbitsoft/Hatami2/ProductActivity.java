@@ -31,23 +31,18 @@ public class ProductActivity extends AppCompatActivity {
         txtName=findViewById(R.id.txtName);
         txtDesc=findViewById(R.id.txtDesc);
         txtPrice=findViewById(R.id.txtPrice);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        CollapsingToolbarLayout toolBarLayout = (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
-//        toolbar.setBackgroundColor(getResources().getColor(R.color.design_default_color_secondary));
+        CollapsingToolbarLayout toolBarLayout = findViewById(R.id.toolbar_layout);
+        /* toolbar.setBackgroundColor(getResources().getColor(R.color.design_default_color_secondary)); */
         ImageView imageView = toolBarLayout.findViewById(R.id.imgTitle);
 
 
         toolBarLayout.setTitle(product.getName());
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(view -> Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                .setAction("Action", null).show());
         String htmlText = String.valueOf(Html.fromHtml(product.getDescription()));
         txtName.setText(product.getName());
         txtDesc.setText(htmlText);

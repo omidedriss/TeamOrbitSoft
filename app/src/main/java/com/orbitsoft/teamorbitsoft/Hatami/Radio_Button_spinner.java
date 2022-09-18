@@ -20,7 +20,7 @@ import static android.graphics.Color.YELLOW;
 
 import com.orbitsoft.teamorbitsoft.R;
 
-public class Radio_Button extends AppCompatActivity {
+public class Radio_Button_spinner extends AppCompatActivity {
 
     TextView textView;
     Spinner spinner;
