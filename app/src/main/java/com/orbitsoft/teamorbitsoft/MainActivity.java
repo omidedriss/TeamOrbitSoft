@@ -21,6 +21,7 @@ import com.orbitsoft.teamorbitsoft.example.IntentSample;
 import com.orbitsoft.teamorbitsoft.example.LifeCycleActivity;
 import com.orbitsoft.teamorbitsoft.example.MyDialog;
 import com.orbitsoft.teamorbitsoft.saeidian_recycler_view.saeidian_custom_arraylist;
+import com.orbitsoft.teamorbitsoft.saeidian_spinner.saeidian_custom_spinner;
 
 public class MainActivity extends AppCompatActivity {
 Button btGorji;
@@ -58,7 +59,7 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
                 }
         );
         btSaeedian.setOnClickListener(v -> {
-                    Intent imaz=new Intent(this, saeidian_custom_arraylist.class);
+                    Intent imaz=new Intent(this, saeidian_custom_spinner.class);
                     startActivity(imaz);
                 }
         );
