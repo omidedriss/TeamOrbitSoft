@@ -1,18 +1,17 @@
-package com.orbitsoft.teamorbitsoft.Saeidian;
+package com.orbitsoft.teamorbitsoft.Saeidian.saeidian_extend;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.orbitsoft.teamorbitsoft.R;
+import com.orbitsoft.teamorbitsoft.Saeidian.saeidian_extend.saeidian_son;
 
-public class shayan_activity extends AppCompatActivity {
+public class saeidian_mashat extends AppCompatActivity {
 int bb;
     int y=0;
     @Override

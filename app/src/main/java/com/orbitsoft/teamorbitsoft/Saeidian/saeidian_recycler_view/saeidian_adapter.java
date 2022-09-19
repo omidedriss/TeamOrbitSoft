@@ -1,8 +1,6 @@
-package com.orbitsoft.teamorbitsoft.saeidian_recycler_view;
+package com.orbitsoft.teamorbitsoft.Saeidian.saeidian_recycler_view;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,8 +8,6 @@ import android.view.ViewGroup;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.orbitsoft.teamorbitsoft.R;
-import com.orbitsoft.teamorbitsoft.saeidian_recycler_view.saeidian_holder;
-import com.orbitsoft.teamorbitsoft.saeidian_recycler_view.saeidian_klid;
 
 import java.util.ArrayList;
 

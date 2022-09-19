@@ -1,4 +1,4 @@
-package com.orbitsoft.teamorbitsoft.Saeidian;
+package com.orbitsoft.teamorbitsoft.Saeidian.saeidian_extend;
 
 public interface saeidian_interface {
     public int triangle(int ghaede, int ertefa);

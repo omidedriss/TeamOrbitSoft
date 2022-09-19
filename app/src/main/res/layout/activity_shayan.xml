@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Saeidian.shayan_activity"
+    tools:context=".Saeidian.saeidian_extend.saeidian_mashat"
     android:background="@drawable/sms_drawable">
 
     <EditText

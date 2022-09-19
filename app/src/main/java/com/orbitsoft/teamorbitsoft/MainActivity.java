@@ -15,13 +15,12 @@ import com.orbitsoft.teamorbitsoft.Mazaheri.Mazaheri;
 
 import com.orbitsoft.teamorbitsoft.Moosavi.moosavi_login;
 import com.orbitsoft.teamorbitsoft.Nikkhu.Nikkhu;
-import com.orbitsoft.teamorbitsoft.saeidian_recycler_view.saeidian_custom_arraylist;
+import com.orbitsoft.teamorbitsoft.Saeidian.saeidian_main;
+import com.orbitsoft.teamorbitsoft.Saeidian.saeidian_picaso;
 import com.orbitsoft.teamorbitsoft.Salimi.SalimiActivity;
 import com.orbitsoft.teamorbitsoft.example.IntentSample;
 import com.orbitsoft.teamorbitsoft.example.LifeCycleActivity;
 import com.orbitsoft.teamorbitsoft.example.MyDialog;
-import com.orbitsoft.teamorbitsoft.saeidian_recycler_view.saeidian_custom_arraylist;
-import com.orbitsoft.teamorbitsoft.saeidian_spinner.saeidian_custom_spinner;
 
 public class MainActivity extends AppCompatActivity {
 Button btGorji;
@@ -59,7 +58,7 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
                 }
         );
         btSaeedian.setOnClickListener(v -> {
-                    Intent imaz=new Intent(this, saeidian_custom_spinner.class);
+                    Intent imaz=new Intent(this, saeidian_main.class);
                     startActivity(imaz);
                 }
         );

@@ -1,8 +1,7 @@
-package com.orbitsoft.teamorbitsoft.saeidian_recycler_view;
+package com.orbitsoft.teamorbitsoft.Saeidian.saeidian_recycler_view;
 
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;

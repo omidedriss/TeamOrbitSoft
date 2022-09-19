@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Saeidian.saeidian_textview">
+    tools:context=".Saeidian.saeidian_code_layout.saeidian_textview">
 
     <Button
         android:id="@+id/shayan_button"

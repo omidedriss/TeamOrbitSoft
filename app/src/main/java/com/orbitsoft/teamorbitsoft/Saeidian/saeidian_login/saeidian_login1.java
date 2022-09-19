@@ -1,4 +1,4 @@
-package com.orbitsoft.teamorbitsoft.Saeidian;
+package com.orbitsoft.teamorbitsoft.Saeidian.saeidian_login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,6 +19,7 @@ import android.widget.Toast;
 //import com.google.firebase.auth.PhoneAuthOptions;
 //import com.google.firebase.auth.PhoneAuthProvider;
 import com.orbitsoft.teamorbitsoft.R;
+import com.orbitsoft.teamorbitsoft.Saeidian.saeidian_main;
 
 public class saeidian_login1 extends AppCompatActivity {
 
@@ -53,7 +54,7 @@ public class saeidian_login1 extends AppCompatActivity {
                 if (get_username2.equalsIgnoreCase(right_username) && get_password2.equalsIgnoreCase(right_password)) {
 
                     Intent i = new
-                            Intent(saeidian_login1.this, saeidian.class);
+                            Intent(saeidian_login1.this, saeidian_main.class);
                     Bundle bundle = new Bundle();
 
                     i.putExtras(bundle);
@@ -94,7 +95,7 @@ public class saeidian_login1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new
-                        Intent(saeidian_login1.this, saeidian.class);
+                        Intent(saeidian_login1.this, saeidian_main.class);
                 Bundle bundle = new Bundle();
                 i.putExtras(bundle);
                 startActivity(i);

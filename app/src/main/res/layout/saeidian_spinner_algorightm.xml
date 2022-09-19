@@ -9,7 +9,7 @@
 
     android:background="#808080"
     android:orientation="vertical"
-    tools:context=".Saeidian.shayan_activity"
+    tools:context=".Saeidian.saeidian_extend.saeidian_mashat"
     card_view:cardCornerRadius="4dp"
     tools:ignore="MissingDefaultResource"
 

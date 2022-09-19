@@ -1,4 +1,4 @@
-package com.orbitsoft.teamorbitsoft.Saeidian;
+package com.orbitsoft.teamorbitsoft.Saeidian.saeidian_printname;
 
 //public class thesheox {
 //
@@ -21,12 +21,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.orbitsoft.teamorbitsoft.R;
+import com.orbitsoft.teamorbitsoft.Saeidian.saeidian_main;
 
 //
 //    public thesheox(String name, String family, float weight, float height, int number, float avg, float bmi, float s1, float s2, float s3, float s4, float s5, float s6, float s7) {
@@ -195,7 +195,7 @@ public class thesheox extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new
-                        Intent(thesheox.this, saeidian.class);
+                        Intent(thesheox.this, saeidian_main.class);
                 Bundle bundle = new Bundle();
                 i.putExtras(bundle);
                 startActivity(i);

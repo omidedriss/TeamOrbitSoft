@@ -1,4 +1,4 @@
-package com.orbitsoft.teamorbitsoft.saeidian_spinner;
+package com.orbitsoft.teamorbitsoft.Saeidian.saeidian_spinner;
 
 
 import android.content.Context;
@@ -13,12 +13,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.orbitsoft.teamorbitsoft.R;
-import com.orbitsoft.teamorbitsoft.saeidian_recycler_view.saeidian_klid;
+import com.orbitsoft.teamorbitsoft.Saeidian.saeidian_recycler_view.saeidian_klid;
 
 import java.util.ArrayList;
 
 public class spinneradapter extends ArrayAdapter<saeidian_klid> {
-
+    int i=0;
     public spinneradapter(Context context,
                             ArrayList<saeidian_klid> saeidian_klid)
     {
@@ -53,16 +53,32 @@ public class spinneradapter extends ArrayAdapter<saeidian_klid> {
 
         list_name=convertView.findViewById(R.id.list_name);
         list_phone=convertView.findViewById(R.id.list_phone);
+
         list_info=convertView.findViewById(R.id.list_info);
         list_message=convertView.findViewById(R.id.list_message);
         list_call=convertView.findViewById(R.id.list_call);
 
         saeidian_klid currentItem = getItem(position);
         if (currentItem != null) {
+            list_info.setOnClickListener(view ->
+
+            {
+                i++;
+                if(i%2==0)
+                {
+                    list_phone.setVisibility(View.GONE);
+                }
+                if(i%2==1)
+                {
+                    list_phone.setVisibility(View.VISIBLE);
+                }
+
+            });
             list_name.setText(currentItem.getName());
             list_phone.setText(currentItem.getPhone());
             list_call.setImageResource(R.drawable.phone);
             list_message.setImageResource(R.drawable.message);
+            list_info.setImageResource(R.drawable.info);
         }
         return convertView;
     }

@@ -6,133 +6,178 @@
     android:background="@drawable/sms_drawable3">
 
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/name"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/select"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/sms_drawable2"
-        android:text="name/family"
-        android:textColor="#000"
-        android:textSize="25dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/browser"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/call"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/sms_drawable2"
-        android:text="Google"
-        android:textColor="#000"
-        android:textSize="25dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/dial"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/fact"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/sms_drawable2"
-        android:text="phone"
-        android:textColor="#000"
-        android:textSize="25dp" />
+            <TextView
+                android:id="@+id/select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="50dp"
+                android:text="Select Button"
+                android:textColor="#000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/map"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/name"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/sms_drawable2"
-        android:text="map"
-        android:textColor="#000"
-        android:textSize="25dp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/masahat"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sms_drawable2"
+                android:text="masahat"
+                android:textColor="#000"
+                android:textSize="25dp" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/call"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/map"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/sms_drawable2"
-        android:text="call"
-        android:textColor="#000"
-        android:textSize="25dp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/fact"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sms_drawable2"
+                android:text="factorial"
+                android:textColor="#000"
+                android:textSize="25dp" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/contact"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/browser"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/sms_drawable2"
-        android:text="choose contact"
-        android:textColor="#000"
-        android:textSize="25dp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/map"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sms_drawable2"
+                android:text="map"
+                android:textColor="#000"
+                android:textSize="25dp" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/fact"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/contact"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/sms_drawable2"
-        android:text="factorial"
-        android:textColor="#000"
-        android:textSize="25dp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/custom_contact"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sms_drawable2"
+                android:text="custom contact"
+                android:textColor="#000"
+                android:textSize="25dp" />
 
-    <TextView
-        android:id="@+id/select"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="70dp"
-        android:text="Select Button"
-        android:textColor="#000"
-        android:textSize="40dp"
-        android:textStyle="bold" />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/exit_saeidian_2"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/fact"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/sms_drawable2"
-        android:text="exit"
-        android:textColor="#000"
-        android:textSize="25dp" />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/custom_contact"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/fact"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/sms_drawable2"
-        android:text="custom contact"
-        android:textColor="#000"
-        android:textSize="25dp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/browser"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sms_drawable2"
+                android:text="Google"
+                android:textColor="#000"
+                android:textSize="25dp" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/masahat"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/custom_contact"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/sms_drawable2"
-        android:text="masahat"
-        android:textColor="#000"
-        android:textSize="25dp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/dial"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sms_drawable2"
+                android:text="phone"
+                android:textColor="#000"
+                android:textSize="25dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/contact"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sms_drawable2"
+                android:text="choose contact"
+                android:textColor="#000"
+                android:textSize="25dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/exit_saeidian_2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sms_drawable2"
+                android:text="exit"
+                android:textColor="#000"
+                android:textSize="25dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sms_drawable2"
+                android:text="name/family"
+                android:textColor="#000"
+                android:textSize="25dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/call"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sms_drawable2"
+                android:text="call"
+                android:textColor="#000"
+                android:textSize="25dp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/picaso"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sms_drawable2"
+                android:text="picaso"
+                android:textColor="#000"
+                android:textSize="25dp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/list_shayan"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sms_drawable2"
+                android:text="listview"
+                android:textColor="#000"
+                android:textSize="25dp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/recycleview"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sms_drawable2"
+                android:text="recycleview"
+                android:textColor="#000"
+                android:textSize="25dp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/spinner"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sms_drawable2"
+                android:text="spinner"
+                android:textColor="#000"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </RelativeLayout>

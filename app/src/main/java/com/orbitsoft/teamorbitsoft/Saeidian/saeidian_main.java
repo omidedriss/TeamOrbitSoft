@@ -20,11 +20,16 @@ import android.widget.Toast;
 
 import com.orbitsoft.teamorbitsoft.MainActivity;
 import com.orbitsoft.teamorbitsoft.R;
+import com.orbitsoft.teamorbitsoft.Saeidian.saeidian_extend.saeidian_mashat;
+import com.orbitsoft.teamorbitsoft.Saeidian.saeidian_listview.saeidian_listview;
+import com.orbitsoft.teamorbitsoft.Saeidian.saeidian_printname.saeidian2;
+import com.orbitsoft.teamorbitsoft.Saeidian.saeidian_recycler_view.saeidian_recycleview;
+import com.orbitsoft.teamorbitsoft.Saeidian.saeidian_spinner.saeidian_custom_spinner;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class saeidian extends AppCompatActivity {
+public class saeidian_main extends AppCompatActivity {
 
     TextView shayan;
     Button name;
@@ -38,7 +43,7 @@ public class saeidian extends AppCompatActivity {
     Button bmi;
     Button exit2;
     Button custom_conatct;
-    Button masahat;
+    Button masahat,spinner,list_shayan,recycleview,picaso;
     public Button name2,family2;
     //private Dialog dialog;
     private List<String>list;
@@ -52,7 +57,7 @@ public class saeidian extends AppCompatActivity {
     boolean[] itemsChecked = new boolean [items.length];
 
     public void saeedian(){
-        saeidiandialog customDialogClass = new saeidiandialog(saeidian.this);
+        saeidiandialog customDialogClass = new saeidiandialog(saeidian_main.this);
         customDialogClass.show();
 //        new AlertDialog.Builder(saeidian.this)
 //                .setTitle("Delete entry")
@@ -123,6 +128,10 @@ factorial=(Button) findViewById(R.id.fact);
         custom_conatct = (Button) findViewById(R.id.custom_contact);
         call = findViewById(R.id.call);
         masahat = findViewById(R.id.masahat);
+        picaso = findViewById(R.id.picaso);
+        spinner = findViewById(R.id.spinner);
+        list_shayan = findViewById(R.id.list_shayan);
+        recycleview = findViewById(R.id.recycleview);
         //bmi = findViewById(R.id.button6);
 //         exit = (Button) findViewById(R.id.exit);
 //        exit.setOnClickListener(new View.OnClickListener() {
@@ -157,21 +166,21 @@ factorial=(Button) findViewById(R.id.fact);
         //  return super.onCreateDialog(id);
         exit2.setOnClickListener(view -> {
             Intent i = new
-                    Intent(saeidian.this, MainActivity.class);
+                    Intent(saeidian_main.this, MainActivity.class);
             Bundle bundle = new Bundle();
             i.putExtras(bundle);
             startActivity(i);
         });
         factorial.setOnClickListener(view -> {
             Intent i = new
-                    Intent(saeidian.this, saeidian_factorial.class);
+                    Intent(saeidian_main.this, saeidian_factorial.class);
             Bundle bundle = new Bundle();
             i.putExtras(bundle);
             startActivity(i);
         });
         name.setOnClickListener(view -> {
             Intent i = new
-                    Intent(saeidian.this, saeidian2.class);
+                    Intent(saeidian_main.this, saeidian2.class);
             Bundle bundle = new Bundle();
             i.putExtras(bundle);
             startActivity(i);
@@ -191,7 +200,7 @@ factorial=(Button) findViewById(R.id.fact);
 //
 //            startActivity(i);
                 Intent i = new
-                        Intent(saeidian.this, saeidianBrowser.class);
+                        Intent(saeidian_main.this, saeidianBrowser.class);
                 Bundle bundle = new Bundle();
                 bundle.putLong("testputLong", 12);
                 i.putExtra("test", bundle);
@@ -236,7 +245,7 @@ factorial=(Button) findViewById(R.id.fact);
 
         {
             Intent i = new
-                    Intent(saeidian.this, saeidian_custom_contact.class);
+                    Intent(saeidian_main.this, saeidian_custom_contact.class);
             Bundle bundle = new Bundle();
             i.putExtras(bundle);
             startActivity(i);
@@ -245,7 +254,43 @@ factorial=(Button) findViewById(R.id.fact);
 
         {
             Intent i = new
-                    Intent(saeidian.this, shayan_activity.class);
+                    Intent(saeidian_main.this, saeidian_mashat.class);
+            Bundle bundle = new Bundle();
+            i.putExtras(bundle);
+            startActivity(i);
+        });
+        picaso.setOnClickListener(view ->
+
+        {
+            Intent i = new
+                    Intent(saeidian_main.this, saeidian_picaso.class);
+            Bundle bundle = new Bundle();
+            i.putExtras(bundle);
+            startActivity(i);
+        });
+        list_shayan.setOnClickListener(view ->
+
+        {
+            Intent i = new
+                    Intent(saeidian_main.this, saeidian_listview.class);
+            Bundle bundle = new Bundle();
+            i.putExtras(bundle);
+            startActivity(i);
+        });
+        recycleview.setOnClickListener(view ->
+
+        {
+            Intent i = new
+                    Intent(saeidian_main.this, saeidian_recycleview.class);
+            Bundle bundle = new Bundle();
+            i.putExtras(bundle);
+            startActivity(i);
+        });
+        spinner.setOnClickListener(view ->
+
+        {
+            Intent i = new
+                    Intent(saeidian_main.this, saeidian_custom_spinner.class);
             Bundle bundle = new Bundle();
             i.putExtras(bundle);
             startActivity(i);
@@ -290,7 +335,7 @@ factorial=(Button) findViewById(R.id.fact);
                                 {
                                     data = data +" "+ item;
                                 }
-                                Toast.makeText(saeidian.this, data, Toast.LENGTH_LONG).show();
+                                Toast.makeText(saeidian_main.this, data, Toast.LENGTH_LONG).show();
 
 
                             }
