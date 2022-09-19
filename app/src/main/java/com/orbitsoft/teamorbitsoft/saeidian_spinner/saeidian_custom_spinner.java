@@ -39,7 +39,6 @@ int i=0;
 //                            saeidian_klid clickedItem = (saeidian_klid) parent.getItemAtPosition(position);
 //                                adapter_ss.remove(clickedItem);
 //
-//
 //                        }else {
 //                            i++;
 //                        }
