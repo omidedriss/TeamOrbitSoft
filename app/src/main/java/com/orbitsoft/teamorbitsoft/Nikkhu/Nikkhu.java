@@ -24,7 +24,8 @@ import java.util.Random;
 public class Nikkhu extends AppCompatActivity implements View.OnClickListener {
     TextView txt;
 
-    Button bt1, bt2, bt3,bt_info ,btReturn,btn_factor,btn_login;
+   private Button bt1, bt2, bt3,bt_info ,my_recycler,btReturn,btn_factor,btn_login;
+
     private Dialog d;
 
     @Override
@@ -37,9 +38,12 @@ public class Nikkhu extends AppCompatActivity implements View.OnClickListener {
         btn_factor =(Button) findViewById(R.id.btn_factor);
         bt2 = (Button) findViewById(R.id.bt2);
         bt3 = (Button) findViewById(R.id.bt3);
+        my_recycler = (Button) findViewById(R.id.my_recycler);
         btn_login = (Button) findViewById(R.id.btn_login);
         btReturn = findViewById(R.id.btReturn);
         bt_info =(Button) findViewById(R.id.bt_info);
+
+
 
         d=new Dialog(this);
 
@@ -109,13 +113,15 @@ public class Nikkhu extends AppCompatActivity implements View.OnClickListener {
                startActivity(i);
 
                break;
+           case R.id.my_recycler:
+               i=new Intent(this,nikoo_recycle.class);
+               startActivity(i);
 
 
 
 
 
-
-        }
+       }
 
     }
 
