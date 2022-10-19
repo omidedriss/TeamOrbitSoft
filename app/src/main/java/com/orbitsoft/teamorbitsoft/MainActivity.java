@@ -25,12 +25,14 @@ import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian2_main;
 import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_login1;
 import com.orbitsoft.teamorbitsoft.Salimi.SalimiActivity;
 import com.orbitsoft.teamorbitsoft.example.ButtonActivity;
+import com.orbitsoft.teamorbitsoft.example.CheckBoxAndToggleActivity;
 import com.orbitsoft.teamorbitsoft.example.CreateContactActivity;
 import com.orbitsoft.teamorbitsoft.example.ImageViewActivity;
 import com.orbitsoft.teamorbitsoft.example.IntentSample;
 import com.orbitsoft.teamorbitsoft.example.Klid;
 import com.orbitsoft.teamorbitsoft.example.LifeCycleActivity;
 import com.orbitsoft.teamorbitsoft.example.ListViewActivity;
+import com.orbitsoft.teamorbitsoft.example.RadioButtonActivity;
 import com.orbitsoft.teamorbitsoft.example.RecyclerViewActivity;
 import com.orbitsoft.teamorbitsoft.example.MyDialog;
 import com.orbitsoft.teamorbitsoft.example.SavingDataActivity;
@@ -41,7 +43,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 Button btGorji;
-Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts;
+Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts,RadioButton,CheckBoxAndToggel,Progress;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,6 +69,9 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
         SavingData= findViewById(R.id.saving_data);
         ImageView= findViewById(R.id.image);
         CreateContacts=findViewById(R.id.create_contacts);
+        RadioButton=findViewById(R.id.radio_button);
+        CheckBoxAndToggel=findViewById(R.id.checkbox_toggle);
+        Progress=findViewById(R.id.progress);
 //        ArrayList<Klid> klids = new ArrayList<>();
 //        Klid klid = new Klid();
 //        klid.name="omid";
@@ -85,6 +90,20 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
             @Override
             public void onClick(View view) {
                 Intent textView=new Intent(MainActivity.this, TextViewActivity.class);
+                startActivity(textView);
+            }
+        });
+        RadioButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent textView=new Intent(MainActivity.this, RadioButtonActivity.class);
+                startActivity(textView);
+            }
+        });
+        CheckBoxAndToggel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent textView=new Intent(MainActivity.this, CheckBoxAndToggleActivity.class);
                 startActivity(textView);
             }
         });

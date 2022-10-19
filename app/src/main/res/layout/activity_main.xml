@@ -265,6 +265,45 @@
             android:textSize="25dp"
             tools:layout_editor_absoluteX="153dp"
             tools:layout_editor_absoluteY="477dp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enter_number"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sms_drawable2"
+            android:text="RadioButton"
+            android:textColor="#000"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="153dp"
+            tools:layout_editor_absoluteY="477dp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/checkbox_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enter_number"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sms_drawable2"
+            android:text="CheckBox And ToggleBotton"
+            android:textColor="#000"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="153dp"
+            tools:layout_editor_absoluteY="477dp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enter_number"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sms_drawable2"
+            android:text="Progress  "
+            android:textColor="#000"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="153dp"
+            tools:layout_editor_absoluteY="477dp" />
 
     </LinearLayout>
     </ScrollView>
