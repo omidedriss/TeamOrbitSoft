@@ -14,7 +14,7 @@ import com.orbitsoft.teamorbitsoft.R;
 public class RadioButtonActivity extends AppCompatActivity {
 
     Button button;
-    RadioButton genderradioButton;
+    RadioButton MaleradioButton,FemleRadio,genderradioButton;
     RadioGroup radioGroup;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,10 +26,17 @@ public class RadioButtonActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int selectedId = radioGroup.getCheckedRadioButtonId();
                 genderradioButton = (RadioButton) findViewById(selectedId);
+//                FemleRadio = (RadioButton) findViewById(R.id.radioFemale);
+//                if (selectedId==MaleradioButton.getId()){
+//
+//                }else if (selectedId==FemleRadio.getId()){
+//
+//                }
                 if(selectedId==-1){
                     Toast.makeText(RadioButtonActivity.this,"Nothing selected", Toast.LENGTH_SHORT).show();
                 }
-                else{
+                else {
+
                     Toast.makeText(RadioButtonActivity.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
 

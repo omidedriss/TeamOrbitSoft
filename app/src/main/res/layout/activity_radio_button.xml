@@ -27,7 +27,7 @@
         android:layout_gravity="center_horizontal"
         android:text="Radio Button 1"
         android:layout_marginTop="20dp"
-
+        android:checked="true"
         android:textSize="20dp" />
     <RadioButton
         android:id="@+id/radioButton2"
@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:text="Radio Button 2"
         android:layout_marginTop="10dp"
-
+        android:checked="true"
         android:textSize="20dp" />
 
 
@@ -69,11 +69,12 @@
             android:layout_height="wrap_content"
             android:text="  Male"
             android:layout_marginTop="10dp"
-            android:checked="false"
+            android:checked="true"
             android:textSize="20dp" />
 
         <RadioButton
             android:id="@+id/radioFemale"
+            android:layoutDirection="rtl"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="   Female"
