@@ -23,11 +23,17 @@
         android:theme="@style/Theme.TeamOrbitSoft"
         tools:targetApi="31">
         <activity
+            android:name=".CheckBoxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RadioButtonActivity"
+            android:exported="false" />
+        <activity
             android:name=".example.RetrofitActivity"
             android:exported="false" />
-       <activity
-        android:name=".example.CreateContactActivity"
-        android:exported="false" />
+        <activity
+            android:name=".example.CreateContactActivity"
+            android:exported="false" />
         <activity
             android:name=".example.UpdateContactActivity"
             android:exported="false" />
