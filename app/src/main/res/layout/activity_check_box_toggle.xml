@@ -65,8 +65,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="50dp"
-            android:checked="true"
+            android:checked="false"
             android:drawableLeft="@drawable/ic_launcher"
+
             android:drawablePadding="20dp"
             android:textColor="#000" />
     </LinearLayout>
