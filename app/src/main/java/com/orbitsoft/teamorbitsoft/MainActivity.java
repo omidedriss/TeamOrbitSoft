@@ -32,6 +32,7 @@ import com.orbitsoft.teamorbitsoft.example.IntentSample;
 import com.orbitsoft.teamorbitsoft.example.Klid;
 import com.orbitsoft.teamorbitsoft.example.LifeCycleActivity;
 import com.orbitsoft.teamorbitsoft.example.ListViewActivity;
+import com.orbitsoft.teamorbitsoft.example.ProgressBarActivity;
 import com.orbitsoft.teamorbitsoft.example.RadioButtonActivity;
 import com.orbitsoft.teamorbitsoft.example.RecyclerViewActivity;
 import com.orbitsoft.teamorbitsoft.example.MyDialog;
@@ -90,6 +91,13 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
             @Override
             public void onClick(View view) {
                 Intent textView=new Intent(MainActivity.this, TextViewActivity.class);
+                startActivity(textView);
+            }
+        });
+        Progress.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent textView=new Intent(MainActivity.this, ProgressBarActivity.class);
                 startActivity(textView);
             }
         });
