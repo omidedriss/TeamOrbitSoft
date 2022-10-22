@@ -23,16 +23,16 @@
         android:theme="@style/Theme.TeamOrbitSoft"
         tools:targetApi="31">
         <activity
-            android:name=".ThreadAndTryCatchActivity"
+            android:name=".example.ThreadAndTryCatchActivity"
             android:exported="false" />
         <activity
             android:name=".example.ProgressBarActivity"
             android:exported="false" />
         <activity
-            android:name=".CheckBoxActivity"
+            android:name=".example.CheckBoxAndToggleActivity"
             android:exported="false" />
         <activity
-            android:name=".RadioButtonActivity"
+            android:name=".example.RadioButtonActivity"
             android:exported="false" />
         <activity
             android:name=".example.RetrofitActivity"

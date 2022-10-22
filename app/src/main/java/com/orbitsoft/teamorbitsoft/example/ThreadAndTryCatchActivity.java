@@ -10,17 +10,42 @@ import android.widget.Toast;
 
 import com.orbitsoft.teamorbitsoft.R;
 
+import java.io.IOException;
+
 public class ThreadAndTryCatchActivity extends AppCompatActivity {
     boolean boolbtn= false;
+    TextView tv1,tv2,tv3;
+    Button btn;
+    int ii=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thread_and_try_catch);
 
+
+
+        try {
+
+
+             tv1= findViewById(R.id.tv1);
+
+             tv2= findViewById(R.id.tv2);
+
+             tv3= findViewById(R.id.tv3);
+
+             btn = findViewById(R.id.btnStart);
+
+
+        }catch (Exception e){
+
+        }
         try {
             int[] list = {1, 2, 3, 4, 5, 6};
 
             Toast.makeText(ThreadAndTryCatchActivity.this, list[10], Toast.LENGTH_LONG).show();
+
+
+            ///
         } catch (Exception e) {
 
             Toast.makeText(ThreadAndTryCatchActivity.this,"Oops!", Toast.LENGTH_LONG).show();
@@ -28,19 +53,15 @@ public class ThreadAndTryCatchActivity extends AppCompatActivity {
 
         try {
          int ii= 1/0;
-        } catch (Exception e) {
+        }
+
+        catch (Exception e) {
 
             Toast.makeText(ThreadAndTryCatchActivity.this,e.getMessage(), Toast.LENGTH_LONG).show();
         }
 
         // Assigning Layout elements
-                TextView tv1= findViewById(R.id.tv1);
 
-                TextView tv2= findViewById(R.id.tv2);
-
-                TextView tv3= findViewById(R.id.tv3);
-
-                Button btn = findViewById(R.id.btnStart);
 
                 // Boolean for Button (initially False)
 
@@ -67,11 +88,25 @@ public class ThreadAndTryCatchActivity extends AppCompatActivity {
 
                     // Thread 1
 
+
                     new Thread(new Runnable() {
                         @Override
                         public void run() {
 
+
+
+
+                        }
+                    }).start();
+
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+
+                           ii= ii+1;
+                           int zz;
                             while (boolbtn) {
+
 
                                 runOnUiThread(new Runnable() {
                                     @Override
@@ -79,6 +114,11 @@ public class ThreadAndTryCatchActivity extends AppCompatActivity {
                                         tv1.setText("Started1");
                                     }
                                 });
+                                try {
+                                    Thread.sleep(1000);
+                                } catch (InterruptedException e) {
+                                    e.printStackTrace();
+                                }
                                 runOnUiThread(new Runnable() {
                                     @Override
                                     public void run() {
@@ -86,7 +126,7 @@ public class ThreadAndTryCatchActivity extends AppCompatActivity {
                                     }
                                 });
                                 try {
-                                    Thread.sleep(1000);
+                                    Thread.sleep(0);
                                 } catch (InterruptedException e) {
                                     e.printStackTrace();
                                 }
@@ -130,12 +170,14 @@ public class ThreadAndTryCatchActivity extends AppCompatActivity {
 
                     // Thread 3
 
-                    // Thread 2
+
                     new Thread(new Runnable() {
                         @Override
                         public void run() {
                             // Runs only when Button is
                             // True
+
+                            ii= ii+1;
                             while (boolbtn) {
 
                                 runOnUiThread(new Runnable() {

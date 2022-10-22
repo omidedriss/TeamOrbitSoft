@@ -39,12 +39,13 @@ import com.orbitsoft.teamorbitsoft.example.MyDialog;
 import com.orbitsoft.teamorbitsoft.example.SavingDataActivity;
 import com.orbitsoft.teamorbitsoft.example.SpinnerActivity;
 import com.orbitsoft.teamorbitsoft.example.TextViewActivity;
+import com.orbitsoft.teamorbitsoft.example.ThreadAndTryCatchActivity;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 Button btGorji;
-Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts,RadioButton,CheckBoxAndToggel,Progress;
+Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts,RadioButton,CheckBoxAndToggel,Progress,ThreadAndTry;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,6 +74,7 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
         RadioButton=findViewById(R.id.radio_button);
         CheckBoxAndToggel=findViewById(R.id.checkbox_toggle);
         Progress=findViewById(R.id.progress);
+        ThreadAndTry = findViewById(R.id.thread_try);
 //        ArrayList<Klid> klids = new ArrayList<>();
 //        Klid klid = new Klid();
 //        klid.name="omid";
@@ -91,6 +93,14 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
             @Override
             public void onClick(View view) {
                 Intent textView=new Intent(MainActivity.this, TextViewActivity.class);
+                startActivity(textView);
+            }
+        });
+
+        ThreadAndTry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent textView=new Intent(MainActivity.this, ThreadAndTryCatchActivity.class);
                 startActivity(textView);
             }
         });
