@@ -24,6 +24,7 @@ import com.orbitsoft.teamorbitsoft.Saeidian.saeidian;
 import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian2_main;
 import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_login1;
 import com.orbitsoft.teamorbitsoft.Salimi.SalimiActivity;
+import com.orbitsoft.teamorbitsoft.example.AnimationActivity;
 import com.orbitsoft.teamorbitsoft.example.ButtonActivity;
 import com.orbitsoft.teamorbitsoft.example.CheckBoxAndToggleActivity;
 import com.orbitsoft.teamorbitsoft.example.CreateContactActivity;
@@ -45,7 +46,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 Button btGorji;
-Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts,RadioButton,CheckBoxAndToggel,Progress,ThreadAndTry;
+Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts,RadioButton,CheckBoxAndToggel,Progress,ThreadAndTry,Animation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,6 +76,15 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
         CheckBoxAndToggel=findViewById(R.id.checkbox_toggle);
         Progress=findViewById(R.id.progress);
         ThreadAndTry = findViewById(R.id.thread_try);
+        Animation= findViewById(R.id.animation);
+
+        Animation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent textView=new Intent(MainActivity.this, AnimationActivity.class);
+                startActivity(textView);
+            }
+        });
 //        ArrayList<Klid> klids = new ArrayList<>();
 //        Klid klid = new Klid();
 //        klid.name="omid";
