@@ -19,7 +19,7 @@ public class ProgressBarActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_progress_bar);
         // initiate progress bar and start button
         simpleProgressBar = (ProgressBar) findViewById(R.id.simpleProgressBar);
         Button startButton = (Button) findViewById(R.id.startButton);

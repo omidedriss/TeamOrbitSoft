@@ -23,7 +23,10 @@
         android:theme="@style/Theme.TeamOrbitSoft"
         tools:targetApi="31">
         <activity
-            android:name=".ProgressBarActivity"
+            android:name=".ThreadAndTryCatchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".example.ProgressBarActivity"
             android:exported="false" />
         <activity
             android:name=".CheckBoxActivity"
