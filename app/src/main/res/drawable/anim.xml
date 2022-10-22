@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+      <item android:drawable="@drawable/backgrand_1_1" android:duration="500" />  
+    <item android:drawable="@drawable/backgrand_1_2" android:duration="500" />  
+    <item android:drawable="@drawable/backgrand_1_3" android:duration="500" />
+    <item android:drawable="@drawable/backgrand_1_4" android:duration="500" />
+    <item android:drawable="@drawable/backgrand_1_5" android:duration="500" />
+    <item android:drawable="@drawable/backgrand_1_6" android:duration="500" />
+    <item android:drawable="@drawable/backgrand_1_7" android:duration="500" />
+    <item android:drawable="@drawable/backgrand_1_8" android:duration="500" />
+    <item android:drawable="@drawable/backgrand_1_9" android:duration="500" />
+    <item android:drawable="@drawable/backgrand_1_10" android:duration="500" />
+    <item android:drawable="@drawable/backgrand_1_11" android:duration="500" />
+    <item android:drawable="@drawable/backgrand_1_12" android:duration="500" />
+    <item android:drawable="@drawable/backgrand_1_13" android:duration="500" />
+    <item android:drawable="@drawable/backgrand_1_14" android:duration="500" />
+    <item android:drawable="@drawable/backgrand_1_15" android:duration="500" />
+    <item android:drawable="@drawable/backgrand_3" android:duration="500" />
+    <item android:drawable="@drawable/backgrand_4" android:duration="500" />
+    <item android:drawable="@drawable/backgrand_5" android:duration="500" />
+    <item android:drawable="@drawable/backgrand_6" android:duration="500" />
+    <item android:drawable="@drawable/backgrand_7" android:duration="500" />
+    <item android:drawable="@drawable/backgrand_8" android:duration="500" />
+    <item android:drawable="@drawable/backgrand_9" android:duration="500" />
+    <item android:drawable="@drawable/backgrand_10" android:duration="500" />
+    <item android:drawable="@drawable/backgrand_11" android:duration="500" />
+    <item android:drawable="@drawable/backgrand_12" android:duration="500" />
+    <item android:drawable="@drawable/backgrand_13" android:duration="500" />  
+    
+
+</animation-list>

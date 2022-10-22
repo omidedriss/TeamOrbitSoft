@@ -40,6 +40,14 @@ public class ThreadAndTryCatchActivity extends AppCompatActivity {
 
         }
         try {
+
+        }catch (Exception e){
+
+
+
+
+        }
+        try {
             int[] list = {1, 2, 3, 4, 5, 6};
 
             Toast.makeText(ThreadAndTryCatchActivity.this, list[10], Toast.LENGTH_LONG).show();
@@ -88,16 +96,22 @@ public class ThreadAndTryCatchActivity extends AppCompatActivity {
 
                     // Thread 1
 
-
-                    new Thread(new Runnable() {
-                        @Override
-                        public void run() {
-
-
-
-
-                        }
-                    }).start();
+//                    new Thread(new Runnable() {
+//                        @Override
+//                        public void run() {
+//
+//                        }
+//                    }).start();
+//
+//                    new Thread(new Runnable() {
+//                        @Override
+//                        public void run() {
+//
+//
+//
+//
+//                        }
+//                    }).start();
 
                     new Thread(new Runnable() {
                         @Override
@@ -126,7 +140,7 @@ public class ThreadAndTryCatchActivity extends AppCompatActivity {
                                     }
                                 });
                                 try {
-                                    Thread.sleep(0);
+                                    Thread.sleep(1000);
                                 } catch (InterruptedException e) {
                                     e.printStackTrace();
                                 }
