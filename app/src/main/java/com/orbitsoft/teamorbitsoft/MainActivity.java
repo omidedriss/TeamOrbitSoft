@@ -25,6 +25,7 @@ import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian2_main;
 import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_login1;
 import com.orbitsoft.teamorbitsoft.Salimi.SalimiActivity;
 import com.orbitsoft.teamorbitsoft.example.AnimationActivity;
+import com.orbitsoft.teamorbitsoft.example.ButtomNavigationActivity;
 import com.orbitsoft.teamorbitsoft.example.ButtonActivity;
 import com.orbitsoft.teamorbitsoft.example.CheckBoxAndToggleActivity;
 import com.orbitsoft.teamorbitsoft.example.CreateContactActivity;
@@ -48,7 +49,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 Button btGorji;
-Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts,RadioButton,CheckBoxAndToggel,Progress,ThreadAndTry,Animation,MapView,FragmentExample;
+Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts,RadioButton,CheckBoxAndToggel,Progress,ThreadAndTry,Animation,MapView,FragmentExample,BottomNavigationButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,10 +82,18 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
         Animation= findViewById(R.id.animation);
         MapView = findViewById(R.id.map_view);
         FragmentExample = findViewById(R.id.fragment);
+        BottomNavigationButton=findViewById(R.id.bottom_navigation);
         FragmentExample.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent textView=new Intent(MainActivity.this, FragmentExampleActivity.class);
+                startActivity(textView);
+            }
+        });
+        BottomNavigationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent textView=new Intent(MainActivity.this, ButtomNavigationActivity.class);
                 startActivity(textView);
             }
         });
