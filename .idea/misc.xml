@@ -90,13 +90,15 @@
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_check_box_toggle.xml" value="0.5" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_constraint_layout.xml" value="0.1331521739130435" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_create_contact.xml" value="0.1" />
+        <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_fragment_example.xml" value="0.22" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_frame_layout.xml" value="0.18" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_gorji.xml" value="0.1" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_image_view.xml" value="0.1203125" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_list_view.xml" value="0.2" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_list_view2.xml" value="0.16259057971014493" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_listview.xml" value="0.1" />
-        <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_main.xml" value="0.10960144927536232" />
+        <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_main.xml" value="0.12" />
+        <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_map_view.xml" value="0.10052083333333334" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_progress_bar.xml" value="0.20416666666666666" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_radio_button.xml" value="0.2" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_retrofit.xml" value="0.2" />
@@ -111,6 +113,8 @@
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/activity_update_contact.xml" value="0.2" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/adapter_algorithm.xml" value="0.16259057971014493" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/adapter_sample.xml" value="0.33" />
+        <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/fragment_fragment1.xml" value="0.1" />
+        <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/fragment_fragment2.xml" value="0.1" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/item_recycler_contact.xml" value="0.2" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/listview_item.xml" value="0.1" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/menu/menu_update_options.xml" value="0.2" />

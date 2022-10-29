@@ -22,6 +22,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TeamOrbitSoft"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyADW4C9KQRpMqSgKGPLvFFGlB1TbpFi_uU" />
+        <activity
+            android:name=".example.MapViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".example.FragmentExampleActivity"
+            android:exported="false" />
         <activity
             android:name=".example.AnimationActivity"
             android:exported="false" />

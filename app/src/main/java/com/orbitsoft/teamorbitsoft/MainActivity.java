@@ -28,11 +28,13 @@ import com.orbitsoft.teamorbitsoft.example.AnimationActivity;
 import com.orbitsoft.teamorbitsoft.example.ButtonActivity;
 import com.orbitsoft.teamorbitsoft.example.CheckBoxAndToggleActivity;
 import com.orbitsoft.teamorbitsoft.example.CreateContactActivity;
+import com.orbitsoft.teamorbitsoft.example.FragmentExampleActivity;
 import com.orbitsoft.teamorbitsoft.example.ImageViewActivity;
 import com.orbitsoft.teamorbitsoft.example.IntentSample;
 import com.orbitsoft.teamorbitsoft.example.Klid;
 import com.orbitsoft.teamorbitsoft.example.LifeCycleActivity;
 import com.orbitsoft.teamorbitsoft.example.ListViewActivity;
+import com.orbitsoft.teamorbitsoft.example.MapViewActivity;
 import com.orbitsoft.teamorbitsoft.example.ProgressBarActivity;
 import com.orbitsoft.teamorbitsoft.example.RadioButtonActivity;
 import com.orbitsoft.teamorbitsoft.example.RecyclerViewActivity;
@@ -46,7 +48,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 Button btGorji;
-Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts,RadioButton,CheckBoxAndToggel,Progress,ThreadAndTry,Animation;
+Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts,RadioButton,CheckBoxAndToggel,Progress,ThreadAndTry,Animation,MapView,FragmentExample;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,7 +79,22 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
         Progress=findViewById(R.id.progress);
         ThreadAndTry = findViewById(R.id.thread_try);
         Animation= findViewById(R.id.animation);
-
+        MapView = findViewById(R.id.map_view);
+        FragmentExample = findViewById(R.id.fragment);
+        FragmentExample.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent textView=new Intent(MainActivity.this, FragmentExampleActivity.class);
+                startActivity(textView);
+            }
+        });
+        MapView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent textView=new Intent(MainActivity.this, MapViewActivity.class);
+                startActivity(textView);
+            }
+        });
         Animation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
