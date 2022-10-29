@@ -10,6 +10,7 @@ import com.orbitsoft.teamorbitsoft.databinding.ActivityButtomNavigationBinding;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -42,10 +43,13 @@ public class ButtomNavigationActivity extends AppCompatActivity {
                 }
                 else if (item.getItemId() == R.id.navigation_notifications) {
                     selectedFragment = new Fragment1();
+
                 }
                 // It will help to replace the
                 // one fragment to other.
                 if (selectedFragment != null) {
+
+
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
                 }
                 return true;
