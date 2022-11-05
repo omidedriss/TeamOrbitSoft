@@ -53,7 +53,7 @@
             android:name=".example.RadioButtonActivity"
             android:exported="false" />
         <activity
-            android:name=".example.RetrofitActivity"
+            android:name=".example.RetrofitAndVolleyActivity"
             android:exported="false" />
         <activity
             android:name=".example.CreateContactActivity"

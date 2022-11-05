@@ -40,6 +40,7 @@ import com.orbitsoft.teamorbitsoft.example.ProgressBarActivity;
 import com.orbitsoft.teamorbitsoft.example.RadioButtonActivity;
 import com.orbitsoft.teamorbitsoft.example.RecyclerViewActivity;
 import com.orbitsoft.teamorbitsoft.example.MyDialog;
+import com.orbitsoft.teamorbitsoft.example.RetrofitAndVolleyActivity;
 import com.orbitsoft.teamorbitsoft.example.SavingDataActivity;
 import com.orbitsoft.teamorbitsoft.example.SpinnerActivity;
 import com.orbitsoft.teamorbitsoft.example.TextViewActivity;
@@ -49,7 +50,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 Button btGorji;
-Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts,RadioButton,CheckBoxAndToggel,Progress,ThreadAndTry,Animation,MapView,FragmentExample,BottomNavigationButton;
+Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts,RadioButton,CheckBoxAndToggel,Progress,ThreadAndTry,Animation,MapView,FragmentExample,BottomNavigationButton,retrofit_and_volley;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -83,6 +84,17 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
         MapView = findViewById(R.id.map_view);
         FragmentExample = findViewById(R.id.fragment);
         BottomNavigationButton=findViewById(R.id.bottom_navigation);
+        retrofit_and_volley=findViewById(R.id.retrofit_and_volley);
+
+        retrofit_and_volley.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent textView=new Intent(MainActivity.this, RetrofitAndVolleyActivity.class);
+                startActivity(textView);
+            }
+        });
+
+
         FragmentExample.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
