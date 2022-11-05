@@ -25,4 +25,10 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="144dp"
         tools:layout_editor_absoluteY="206dp" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_view">
+
+    </ListView>
 </LinearLayout>

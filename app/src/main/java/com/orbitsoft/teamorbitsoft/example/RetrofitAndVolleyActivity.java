@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -16,10 +18,12 @@ import com.orbitsoft.teamorbitsoft.R;
 import com.orbitsoft.teamorbitsoft.example.Model.GetCategoriesProduct;
 import com.orbitsoft.teamorbitsoft.example.Model.GetItemServer;
 import com.orbitsoft.teamorbitsoft.example.Model.RefreshToken;
+import com.orbitsoft.teamorbitsoft.example.Model.data;
 import com.orbitsoft.teamorbitsoft.example.RestAPI.ServiceGenerator;
 
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -38,6 +42,10 @@ public class RetrofitAndVolleyActivity extends AppCompatActivity {
 
 
         Button b1= findViewById(R.id.button1);
+
+        ListView listView = (ListView) findViewById(R.id.list_view);
+
+
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -107,6 +115,15 @@ public class RetrofitAndVolleyActivity extends AppCompatActivity {
 //                            //  RegisterItem register = new RegisterItem();
                             serverResult = gson.fromJson(response.toString(), GetItemServer.class); //convert json String to ServerResult object
 
+                                    ArrayList<String> name = new ArrayList<>();
+                                    for (data d: serverResult.data) {
+                                        name.add(d.first_name);
+                                    }
+
+                                    ArrayAdapter adapter = new ArrayAdapter<String>(RetrofitAndVolleyActivity.this, R.layout.listview_item,name);
+
+                                    listView.setAdapter(adapter);
+
                                     Snacky.builder().setActivity(RetrofitAndVolleyActivity.this).setText("ارتباط برقرار شد").build().show();
 
 
@@ -122,6 +139,7 @@ public class RetrofitAndVolleyActivity extends AppCompatActivity {
 
                             @Override
                             public void onErrorResponse(VolleyError error) {
+                                Snacky.builder().setActivity(RetrofitAndVolleyActivity.this).setText("خطا در برقراری ارتباط با سرور").build().show();
 
 
                             }
