@@ -45,6 +45,7 @@ import com.orbitsoft.teamorbitsoft.example.SavingDataActivity;
 import com.orbitsoft.teamorbitsoft.example.SpinnerActivity;
 import com.orbitsoft.teamorbitsoft.example.TextViewActivity;
 import com.orbitsoft.teamorbitsoft.example.ThreadAndTryCatchActivity;
+import com.pushpole.sdk.PushPole;
 
 import java.util.ArrayList;
 
@@ -55,6 +56,8 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        PushPole.initialize(this,true);
+
         FastSave.init(getApplicationContext());
         btNickQue = findViewById(R.id.btNickQue);
         btGorji = findViewById(R.id.btactivity_gorji);
