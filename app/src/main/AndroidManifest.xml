@@ -23,6 +23,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TeamOrbitSoft"
         tools:targetApi="31">
+        <meta-data android:name="com.pushpole.sdk.token" android:value="PUSHPOLE_268485333569"/>
         <activity
             android:name=".example.ButtomNavigationActivity"
             android:exported="false"

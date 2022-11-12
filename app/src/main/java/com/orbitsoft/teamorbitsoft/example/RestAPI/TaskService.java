@@ -28,7 +28,7 @@ public interface TaskService {
 
     @FormUrlEncoded
     @POST("RefreshToken")
-    Call<RefreshToken> RefreshToken(@FieldMap Map<String, String> fields);
+    Call<RefreshToken> RefreshToken(String UserName,String password);
 //    @GET("api/MyProtectedApi")
 //    Call<UserInfo> MyProtectedApi();
 //    @GET("Api/User/GetProvinceByCountryId")

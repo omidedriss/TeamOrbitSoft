@@ -225,14 +225,16 @@ public class RetrofitAndVolleyActivity extends AppCompatActivity {
 //                dialog.dismiss();
             }
         });
-        Map<String, String> fields = new HashMap<>();
-//                   fields.put("username", UserName);
+//        Map<String, String> fields = new HashMap<>();
+//                   fields.put("username", "omid");
 //                   fields.put("password", "1234");
+//
+//        fields.put("refresh_token", "refreshToken");
 
-        fields.put("refresh_token", "refreshToken");
+String Username="omid";
+String Password="1234";
 
-
-        new ServiceGenerator().getService().RefreshToken( fields).enqueue(new Callback<RefreshToken>() {
+        new ServiceGenerator().getService().RefreshToken( Username,Password).enqueue(new Callback<RefreshToken>() {
             @Override
             public void onResponse(Call<RefreshToken> call, retrofit2.Response<RefreshToken> response) {
 
