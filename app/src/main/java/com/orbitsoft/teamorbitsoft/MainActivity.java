@@ -10,18 +10,16 @@ import android.view.View;
 import android.widget.Button;
 
 import com.appizona.yehiahd.fastsave.FastSave;
+import com.orbitsoft.mylibrary.MyLibraryMainActivity;
 import com.orbitsoft.teamorbitsoft.Gorji.Gorji;
 import com.orbitsoft.teamorbitsoft.Hatami.Hatami;
 import com.orbitsoft.teamorbitsoft.Kanani.Kanani;
 //import com.orbitsoft.teamorbitsoft.Mazaheri.MazProjects;
 //import com.orbitsoft.teamorbitsoft.Mazaheri.MazProjects;
-import com.orbitsoft.teamorbitsoft.Mazaheri.Mazaheri;
 
 
 import com.orbitsoft.teamorbitsoft.Moosavi.moosavi_login;
 import com.orbitsoft.teamorbitsoft.Nikkhu.Nikkhu;
-import com.orbitsoft.teamorbitsoft.Saeidian.saeidian;
-import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian2_main;
 import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_login1;
 import com.orbitsoft.teamorbitsoft.Salimi.SalimiActivity;
 import com.orbitsoft.teamorbitsoft.example.AnimationActivity;
@@ -32,31 +30,35 @@ import com.orbitsoft.teamorbitsoft.example.CreateContactActivity;
 import com.orbitsoft.teamorbitsoft.example.FragmentExampleActivity;
 import com.orbitsoft.teamorbitsoft.example.ImageViewActivity;
 import com.orbitsoft.teamorbitsoft.example.IntentSample;
-import com.orbitsoft.teamorbitsoft.example.Klid;
 import com.orbitsoft.teamorbitsoft.example.LifeCycleActivity;
 import com.orbitsoft.teamorbitsoft.example.ListViewActivity;
 import com.orbitsoft.teamorbitsoft.example.MapViewActivity;
+import com.orbitsoft.teamorbitsoft.example.NotificationActivity;
 import com.orbitsoft.teamorbitsoft.example.ProgressBarActivity;
 import com.orbitsoft.teamorbitsoft.example.RadioButtonActivity;
 import com.orbitsoft.teamorbitsoft.example.RecyclerViewActivity;
 import com.orbitsoft.teamorbitsoft.example.MyDialog;
 import com.orbitsoft.teamorbitsoft.example.RetrofitAndVolleyActivity;
 import com.orbitsoft.teamorbitsoft.example.SavingDataActivity;
+import com.orbitsoft.teamorbitsoft.example.SendEmailActivity;
 import com.orbitsoft.teamorbitsoft.example.SpinnerActivity;
 import com.orbitsoft.teamorbitsoft.example.TextViewActivity;
 import com.orbitsoft.teamorbitsoft.example.ThreadAndTryCatchActivity;
-import com.pushpole.sdk.PushPole;
+//import com.pushpole.sdk.PushPole;
 
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 Button btGorji;
-Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts,RadioButton,CheckBoxAndToggel,Progress,ThreadAndTry,Animation,MapView,FragmentExample,BottomNavigationButton,retrofit_and_volley;
+    int numMessages;
+   public static MainActivity Instance;
+Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts,RadioButton,CheckBoxAndToggel,Progress,ThreadAndTry,Animation,MapView,FragmentExample,BottomNavigationButton,retrofit_and_volley,SendEmail,Notification,Module;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        PushPole.initialize(this,true);
+
+        Instance=this;
+//        PushPole.initialize(this,true);
 
         FastSave.init(getApplicationContext());
         btNickQue = findViewById(R.id.btNickQue);
@@ -88,7 +90,16 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
         FragmentExample = findViewById(R.id.fragment);
         BottomNavigationButton=findViewById(R.id.bottom_navigation);
         retrofit_and_volley=findViewById(R.id.retrofit_and_volley);
-
+        SendEmail=findViewById(R.id.send_email);
+        Notification=findViewById(R.id.notification);
+        Module=findViewById(R.id.module);
+        Module.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent textView=new Intent(MainActivity.this, MyLibraryMainActivity.class);
+                startActivity(textView);
+            }
+        });
         retrofit_and_volley.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -98,6 +109,21 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
         });
 
 
+        Notification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent textView=new Intent(MainActivity.this, NotificationActivity.class);
+                startActivity(textView);
+            }
+        });
+
+        SendEmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent textView=new Intent(MainActivity.this, SendEmailActivity.class);
+                startActivity(textView);
+            }
+        });
         FragmentExample.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -293,4 +319,5 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
 
 
     }
+
 }

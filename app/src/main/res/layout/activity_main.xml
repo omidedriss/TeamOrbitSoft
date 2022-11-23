@@ -382,6 +382,45 @@
             android:textSize="25dp"
             tools:layout_editor_absoluteX="153dp"
             tools:layout_editor_absoluteY="477dp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enter_number"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sms_drawable2"
+            android:text="Notification  "
+            android:textColor="#000"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="153dp"
+            tools:layout_editor_absoluteY="477dp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/send_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enter_number"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sms_drawable2"
+            android:text="Send Email "
+            android:textColor="#000"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="153dp"
+            tools:layout_editor_absoluteY="477dp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/module"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enter_number"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sms_drawable2"
+            android:text="Module "
+            android:textColor="#000"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="153dp"
+            tools:layout_editor_absoluteY="477dp" />
 
     </LinearLayout>
     </ScrollView>
