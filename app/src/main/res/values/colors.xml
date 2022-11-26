@@ -9,4 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorGreen">#96c896</color>
     <color name="colorblue">#00CCFF</color>
+    <color name="notification_color_control_highlight">#deeeff</color>
+    <color name="notification_color_accent">#50000000</color>
+    <color name="notification_color_title_text">@color/white</color>
+    <color name="notification_color_title_text_material">@color/black</color>
 </resources>

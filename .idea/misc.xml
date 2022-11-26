@@ -77,6 +77,7 @@
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/drawable-v24/selected_state_button.xml" value="0.138" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/drawable-v24/selector_button.xml" value="0.138" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/drawable/anim.xml" value="0.1" />
+        <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/drawable/circle_button_sound_notif_shape.xml" value="0.1" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/drawable/round_text_drawable.xml" value="0.1545" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/drawable/selected_state_button.xml" value="0.138" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/drawable/selector.xml" value="0.138" />
@@ -123,6 +124,7 @@
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/fragment_fragment2.xml" value="0.18" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/item_recycler_contact.xml" value="0.2" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/listview_item.xml" value="0.1" />
+        <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/layout/radio_notification.xml" value="0.22" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
         <entry key="..\:/proje/TeamOrbitSoft/app/src/main/res/menu/menu_update_options.xml" value="0.2" />
         <entry key="..\:/proje/TeamOrbitSoft/mylibrary/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />

@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">TeamOrbitSoft</string>
+
+    <string name="text_value_radio_notification">OrbitSoft Team</string>
     <string name="jadval">جدول ضرب</string>
     <string name="towg">دو عدد بزرگتر</string>
     <string name="Gorji">Gorji</string>

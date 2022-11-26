@@ -107,6 +107,7 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
             public void onClick(View v) {
                 Intent textView=new Intent(MainActivity.this, MyLibraryMainActivity.class);
                 startActivity(textView);
+//                startForegroundService(textView);
             }
         });
         retrofit_and_volley.setOnClickListener(new View.OnClickListener() {
