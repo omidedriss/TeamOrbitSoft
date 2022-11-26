@@ -75,14 +75,14 @@ public class NotificationActivity extends AppCompatActivity {
        // PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_ONE_SHOT);
         Uri soundUri= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
-            @SuppressLint("WrongConstant")
-            NotificationChannel notificationChannel=new NotificationChannel("my_notification","n_channel",NotificationManager.IMPORTANCE_MAX);
-            notificationChannel.setDescription("description");
-            notificationChannel.setName("Channel Name");
-            assert notificationManager != null;
-            notificationManager.createNotificationChannel(notificationChannel);
-        }
+//        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+//            @SuppressLint("WrongConstant")
+//            NotificationChannel notificationChannel=new NotificationChannel("my_notification","n_channel",NotificationManager.IMPORTANCE_MAX);
+//            notificationChannel.setDescription("description");
+//            notificationChannel.setName("Channel Name");
+//            assert notificationManager != null;
+//            notificationManager.createNotificationChannel(notificationChannel);
+//        }
 
 
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)

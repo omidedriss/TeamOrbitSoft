@@ -24,6 +24,18 @@
         android:theme="@style/Theme.TeamOrbitSoft"
         tools:targetApi="31">
         <activity
+            android:name=".example.BackgroundServiceActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".example.MyIntentService"
+            android:exported="false" />
+        <service
+            android:name=".example.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
             android:name=".example.SendEmailActivity"
             android:exported="false" />
         <activity

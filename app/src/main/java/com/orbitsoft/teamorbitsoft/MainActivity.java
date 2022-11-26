@@ -23,6 +23,7 @@ import com.orbitsoft.teamorbitsoft.Nikkhu.Nikkhu;
 import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_login1;
 import com.orbitsoft.teamorbitsoft.Salimi.SalimiActivity;
 import com.orbitsoft.teamorbitsoft.example.AnimationActivity;
+import com.orbitsoft.teamorbitsoft.example.BackgroundServiceActivity;
 import com.orbitsoft.teamorbitsoft.example.ButtomNavigationActivity;
 import com.orbitsoft.teamorbitsoft.example.ButtonActivity;
 import com.orbitsoft.teamorbitsoft.example.CheckBoxAndToggleActivity;
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 Button btGorji;
     int numMessages;
    public static MainActivity Instance;
-Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts,RadioButton,CheckBoxAndToggel,Progress,ThreadAndTry,Animation,MapView,FragmentExample,BottomNavigationButton,retrofit_and_volley,SendEmail,Notification,Module;
+Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts,RadioButton,CheckBoxAndToggel,Progress,ThreadAndTry,Animation,MapView,FragmentExample,BottomNavigationButton,retrofit_and_volley,SendEmail,Notification,Module,Service;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -93,6 +94,14 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
         SendEmail=findViewById(R.id.send_email);
         Notification=findViewById(R.id.notification);
         Module=findViewById(R.id.module);
+        Service=findViewById(R.id.service);
+        Service.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent textView=new Intent(MainActivity.this, BackgroundServiceActivity.class);
+                startActivity(textView);
+            }
+        });
         Module.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
