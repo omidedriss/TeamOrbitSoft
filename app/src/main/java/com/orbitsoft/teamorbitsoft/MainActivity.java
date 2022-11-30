@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -24,6 +25,7 @@ import com.orbitsoft.teamorbitsoft.Saeidian2.saeidian_login1;
 import com.orbitsoft.teamorbitsoft.Salimi.SalimiActivity;
 import com.orbitsoft.teamorbitsoft.example.AnimationActivity;
 import com.orbitsoft.teamorbitsoft.example.BackgroundServiceActivity;
+import com.orbitsoft.teamorbitsoft.example.BroadcastReceiversActivity;
 import com.orbitsoft.teamorbitsoft.example.ButtomNavigationActivity;
 import com.orbitsoft.teamorbitsoft.example.ButtonActivity;
 import com.orbitsoft.teamorbitsoft.example.CheckBoxAndToggleActivity;
@@ -52,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 Button btGorji;
     int numMessages;
    public static MainActivity Instance;
-Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts,RadioButton,CheckBoxAndToggel,Progress,ThreadAndTry,Animation,MapView,FragmentExample,BottomNavigationButton,retrofit_and_volley,SendEmail,Notification,Module,Service;
+Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts,RadioButton,CheckBoxAndToggel,Progress,ThreadAndTry,Animation,MapView,FragmentExample,BottomNavigationButton,retrofit_and_volley,SendEmail,Notification,Module,Service,BroadcastReceivers;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -95,6 +97,14 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
         Notification=findViewById(R.id.notification);
         Module=findViewById(R.id.module);
         Service=findViewById(R.id.service);
+        BroadcastReceivers=findViewById(R.id.broadcast_receivers);
+        BroadcastReceivers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent textView=new Intent(MainActivity.this, BroadcastReceiversActivity.class);
+                startActivity(textView);
+            }
+        });
         Service.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -329,5 +339,15 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
 
 
     }
-
+    @Override
+    public void onResume(){
+        super.onResume();
+        try{
+            IntentFilter filter = new IntentFilter("android.provider.telephony.SMS_RECEIVED");
+            MyReceiver myReceiver= new MyReceiver();
+           registerReceiver(myReceiver,filter);
+        }catch (Exception e){
+            // already registered
+        }
+    }
 }
