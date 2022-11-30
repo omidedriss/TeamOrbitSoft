@@ -342,12 +342,12 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
     @Override
     public void onResume(){
         super.onResume();
-        try{
-            IntentFilter filter = new IntentFilter("android.provider.telephony.SMS_RECEIVED");
-            MyReceiver myReceiver= new MyReceiver();
-           registerReceiver(myReceiver,filter);
-        }catch (Exception e){
-            // already registered
-        }
+//        try{
+//            IntentFilter filter = new IntentFilter("android.provider.telephony.SMS_RECEIVED");
+//            MyReceiver myReceiver= new MyReceiver();
+//           registerReceiver(myReceiver,filter);
+//        }catch (Exception e){
+//            // already registered
+//        }
     }
 }
