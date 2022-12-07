@@ -47,6 +47,7 @@ import com.orbitsoft.teamorbitsoft.example.SendEmailActivity;
 import com.orbitsoft.teamorbitsoft.example.SpinnerActivity;
 import com.orbitsoft.teamorbitsoft.example.TextViewActivity;
 import com.orbitsoft.teamorbitsoft.example.ThreadAndTryCatchActivity;
+import com.orbitsoft.teamorbitsoft.example.bluetoothActivity;
 //import com.pushpole.sdk.PushPole;
 
 
@@ -54,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 Button btGorji;
     int numMessages;
    public static MainActivity Instance;
-Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts,RadioButton,CheckBoxAndToggel,Progress,ThreadAndTry,Animation,MapView,FragmentExample,BottomNavigationButton,retrofit_and_volley,SendEmail,Notification,Module,Service,BroadcastReceivers;
+Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts,RadioButton,CheckBoxAndToggel,Progress,ThreadAndTry,Animation,MapView,FragmentExample,BottomNavigationButton,retrofit_and_volley,SendEmail,Notification,Module,Service,BroadcastReceivers,bluetooth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -98,6 +99,14 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
         Module=findViewById(R.id.module);
         Service=findViewById(R.id.service);
         BroadcastReceivers=findViewById(R.id.broadcast_receivers);
+        bluetooth=findViewById(R.id.bluetooth);
+        bluetooth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent textView=new Intent(MainActivity.this, bluetoothActivity.class);
+                startActivity(textView);
+            }
+        });
         BroadcastReceivers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
