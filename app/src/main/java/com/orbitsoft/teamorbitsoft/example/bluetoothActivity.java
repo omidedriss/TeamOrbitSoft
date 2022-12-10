@@ -9,6 +9,10 @@ import android.Manifest;
 import android.app.Dialog;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
+import android.bluetooth.le.BluetoothLeScanner;
+import android.bluetooth.le.ScanCallback;
+import android.bluetooth.le.ScanFilter;
+import android.bluetooth.le.ScanSettings;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -24,12 +28,17 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.orbitsoft.teamorbitsoft.R;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
-public class bluetoothActivity extends AppCompatActivity {
+public class bluetoothActivity extends AppCompatActivity  {
     Button b1, b2, b3, b4;
     private BluetoothAdapter BA;
     private Set<BluetoothDevice> pairedDevices;
+  //  BluetoothAdapter adapter = BluetoothAdapter.getDefaultAdapter();
+
+    //public List<BluetoothLeScanner> Devices;
+
     ListView lv;
 
     @Override
@@ -50,16 +59,7 @@ public class bluetoothActivity extends AppCompatActivity {
         askForPermission();
         if (!BA.isEnabled()) {
             Intent turnOn = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) {
-                // TODO: Consider calling
-                //    ActivityCompat#requestPermissions
-                // here to request the missing permissions, and then overriding
-                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                //                                          int[] grantResults)
-                // to handle the case where the user grants the permission. See the documentation
-                // for ActivityCompat#requestPermissions for more details.
-                return;
-            }
+
             startActivityForResult(turnOn, 0);
             Toast.makeText(getApplicationContext(), "Turned on", Toast.LENGTH_LONG).show();
         } else {
@@ -88,10 +88,29 @@ public class bluetoothActivity extends AppCompatActivity {
         askForPermission();
 
         pairedDevices = BA.getBondedDevices();
+       // BluetoothLeScanner Device = BA.getBluetoothLeScanner();
 
         ArrayList list = new ArrayList();
 
-        for(BluetoothDevice bt : pairedDevices) list.add(bt.getName());
+        for(BluetoothDevice bt : pairedDevices)
+        {list.add(bt.getName());}
+
+
+//        List<ScanFilter> filters = new ArrayList<>();
+//        ScanFilter.Builder scanFilterBuilder = new ScanFilter.Builder();
+//        filters.add(scanFilterBuilder.build());
+//
+//        ScanSettings.Builder settingsBuilder = new ScanSettings.Builder();
+//        settingsBuilder.setScanMode(ScanSettings.SCAN_MODE_LOW_LATENCY);
+//
+//        BluetoothLeScanner bleScanner = adapter.getBluetoothLeScanner();
+//        if (bleScanner != null) {
+//            bleScanner.startScan(filters, settingsBuilder.build(), scanCallback);
+//        }
+
+
+
+
         Toast.makeText(getApplicationContext(), "Showing Paired Devices",Toast.LENGTH_SHORT).show();
 
         final ArrayAdapter adapter = new  ArrayAdapter(this,android.R.layout.simple_list_item_1, list);

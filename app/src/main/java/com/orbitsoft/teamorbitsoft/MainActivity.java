@@ -30,6 +30,7 @@ import com.orbitsoft.teamorbitsoft.example.ButtomNavigationActivity;
 import com.orbitsoft.teamorbitsoft.example.ButtonActivity;
 import com.orbitsoft.teamorbitsoft.example.CheckBoxAndToggleActivity;
 import com.orbitsoft.teamorbitsoft.example.CreateContactActivity;
+import com.orbitsoft.teamorbitsoft.example.FilePickerActivity;
 import com.orbitsoft.teamorbitsoft.example.FragmentExampleActivity;
 import com.orbitsoft.teamorbitsoft.example.ImageViewActivity;
 import com.orbitsoft.teamorbitsoft.example.IntentSample;
@@ -55,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 Button btGorji;
     int numMessages;
    public static MainActivity Instance;
-Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts,RadioButton,CheckBoxAndToggel,Progress,ThreadAndTry,Animation,MapView,FragmentExample,BottomNavigationButton,retrofit_and_volley,SendEmail,Notification,Module,Service,BroadcastReceivers,bluetooth;
+Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts,RadioButton,CheckBoxAndToggel,Progress,ThreadAndTry,Animation,MapView,FragmentExample,BottomNavigationButton,retrofit_and_volley,SendEmail,Notification,Module,Service,BroadcastReceivers,bluetooth,FilePicker;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -100,6 +101,14 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
         Service=findViewById(R.id.service);
         BroadcastReceivers=findViewById(R.id.broadcast_receivers);
         bluetooth=findViewById(R.id.bluetooth);
+        FilePicker=findViewById(R.id.file_picker);
+        FilePicker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent textView=new Intent(MainActivity.this, FilePickerActivity.class);
+                startActivity(textView);
+            }
+        });
         bluetooth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
