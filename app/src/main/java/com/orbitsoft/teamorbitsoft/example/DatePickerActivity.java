@@ -3,6 +3,7 @@ package com.orbitsoft.teamorbitsoft.example;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,11 +23,18 @@ public class DatePickerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_date_picker);
 
-        Locale l= new Locale("fa");
-        Locale.setDefault(l);
-        Configuration configuration = DatePickerActivity.this.getResources().getConfiguration();
-        configuration.setLocale(l);
-        configuration.setLayoutDirection(l);
+//        Locale l= new Locale("fa");
+//        Locale.setDefault(l);
+//        Configuration configuration = DatePickerActivity.this.getResources().getConfiguration();
+//        configuration.setLocale(l);
+//        configuration.setLayoutDirection(l);
+
+        Locale locale = new Locale("fa");
+        Locale.setDefault(locale);
+        Resources resources = DatePickerActivity.this.getResources();
+        Configuration config = resources.getConfiguration();
+        config.setLocale(locale);
+        resources.updateConfiguration(config, resources.getDisplayMetrics());
         //https://github.com/aliab/Persian-Date-Picker-Dialog
         textview1=(TextView)findViewById(R.id.textView1);
         picker=(DatePicker)findViewById(R.id.datePicker);
