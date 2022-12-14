@@ -5,7 +5,7 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.orbitsoft.teamorbitsoft.R;
-import com.orbitsoft.teamorbitsoft.databinding.ActivityButtomNavigationBinding;
+//import com.orbitsoft.teamorbitsoft.databinding.ActivityButtomNavigationBinding;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;

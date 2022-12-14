@@ -5,14 +5,20 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 
 import com.orbitsoft.teamorbitsoft.R;
+
+import java.io.File;
+
+//import ir.androidexception.filepicker.dialog.SingleFilePickerDialog;
 
 public class FilePickerActivity extends AppCompatActivity {
 
@@ -37,10 +43,21 @@ public class FilePickerActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(permissionGranted()) {
-                    SingleFilePickerDialog singleFilePickerDialog = new SingleFilePickerDialog(this,
-                            () -> Toast.makeText(FilePickerActivity.this, "Canceled!!", Toast.LENGTH_SHORT).show(),
-                            files -> Toast.makeText(FilePickerActivity.this, files[0].getPath(), Toast.LENGTH_SHORT).show());
-                    singleFilePickerDialog.show();
+
+
+//                    FileChooser.Builder builder = new FileChooser.Builder(FileChooser.ChooserType.FILE_CHOOSER, this)
+//                            .setMultipleFileSelectionEnabled(true)
+//                            .setFileFormats(new String[] {".jpg", ".png"})
+//                            .setListItemsTextColor(R.color.colorPrimary)
+//                            .setPreviousDirectoryButtonIcon(R.drawable.ic_prev_dir)
+//                            .setDirectoryIcon(R.drawable.ic_directory)
+//                            .setFileIcon(R.drawable.ic_file)
+//                            // And more...
+//                            ;
+//                    SingleFilePickerDialog singleFilePickerDialog = new SingleFilePickerDialog(FilePickerActivity.this,
+//                            () -> Toast.makeText(FilePickerActivity.this, "Canceled!!", Toast.LENGTH_SHORT).show(),
+//                            files -> Toast.makeText(FilePickerActivity.this, files[0].getPath(), Toast.LENGTH_SHORT).show());
+//                    singleFilePickerDialog.show();
                 }
                 else{
                     requestPermission();

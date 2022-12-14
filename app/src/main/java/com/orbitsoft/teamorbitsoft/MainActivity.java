@@ -9,6 +9,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 
 import com.appizona.yehiahd.fastsave.FastSave;
 import com.orbitsoft.mylibrary.MyLibraryMainActivity;
@@ -30,6 +31,7 @@ import com.orbitsoft.teamorbitsoft.example.ButtomNavigationActivity;
 import com.orbitsoft.teamorbitsoft.example.ButtonActivity;
 import com.orbitsoft.teamorbitsoft.example.CheckBoxAndToggleActivity;
 import com.orbitsoft.teamorbitsoft.example.CreateContactActivity;
+import com.orbitsoft.teamorbitsoft.example.DatePickerActivity;
 import com.orbitsoft.teamorbitsoft.example.FilePickerActivity;
 import com.orbitsoft.teamorbitsoft.example.FragmentExampleActivity;
 import com.orbitsoft.teamorbitsoft.example.ImageViewActivity;
@@ -56,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 Button btGorji;
     int numMessages;
    public static MainActivity Instance;
-Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts,RadioButton,CheckBoxAndToggel,Progress,ThreadAndTry,Animation,MapView,FragmentExample,BottomNavigationButton,retrofit_and_volley,SendEmail,Notification,Module,Service,BroadcastReceivers,bluetooth,FilePicker;
+Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent,btLifeCycle,btNickQue,my_dialog,btSalimi,btKanani,TextViewExample,ButtonExample,RecycleView,ListView,Spinner,SavingData,ImageView,CreateContacts,RadioButton,CheckBoxAndToggel,Progress,ThreadAndTry,Animation,MapView,FragmentExample,BottomNavigationButton,retrofit_and_volley,SendEmail,Notification,Module,Service,BroadcastReceivers,bluetooth,FilePicker,DatePicker;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -102,10 +104,18 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
         BroadcastReceivers=findViewById(R.id.broadcast_receivers);
         bluetooth=findViewById(R.id.bluetooth);
         FilePicker=findViewById(R.id.file_picker);
+        DatePicker =findViewById(R.id.date_picker);
         FilePicker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent textView=new Intent(MainActivity.this, FilePickerActivity.class);
+                startActivity(textView);
+            }
+        });
+        DatePicker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent textView=new Intent(MainActivity.this, DatePickerActivity.class);
                 startActivity(textView);
             }
         });

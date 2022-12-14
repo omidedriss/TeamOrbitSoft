@@ -473,6 +473,19 @@
             android:textSize="25dp"
             tools:layout_editor_absoluteX="153dp"
             tools:layout_editor_absoluteY="477dp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/date_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enter_number"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sms_drawable2"
+            android:text="Date Picker "
+            android:textColor="#000"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="153dp"
+            tools:layout_editor_absoluteY="477dp" />
 
     </LinearLayout>
     </ScrollView>
