@@ -15,6 +15,7 @@ public class MyReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 
+//test
         Toast.makeText(context, "Intent Detected.", Toast.LENGTH_LONG).show();
         // Retrieves a map of extended data from the intent.
         final Bundle bundle = intent.getExtras();
