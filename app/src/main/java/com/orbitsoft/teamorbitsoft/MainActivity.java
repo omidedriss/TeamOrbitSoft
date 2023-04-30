@@ -68,6 +68,7 @@ Button btmaz,btMoosavi,btSaeedian,btSaeidian2,btSaeidian2_main,btHatami,btIntent
 //        PushPole.initialize(this,true);
 
 
+//test
         FastSave.init(getApplicationContext());
         btNickQue = findViewById(R.id.btNickQue);
         btGorji = findViewById(R.id.btactivity_gorji);
